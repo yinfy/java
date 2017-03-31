@@ -1,0 +1,137 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/webpage.xhtml">
+
+	<ui:define name="content">
+		<div align="center" class="pageArea">
+
+
+			<p:tabView orientation="left">
+				<p:tab title="有限责任公司">
+					<h:panelGrid columns="4" cellpadding="5">
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/register/creg.xhtml"><img
+								src="#{request.contextPath}/images/sheli.png" alt="设立"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/registerch/creg.xhtml"><img
+								src="#{request.contextPath}/images/biangeng.png" alt="变更"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/notfound.xhtml"><img
+								src="#{request.contextPath}/images/beian.png" alt="备案"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/notfound.xhtml"><img
+								src="#{request.contextPath}/images/zhuxiao.png" alt="注销"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<h:outputText value="　设立" />
+						<h:outputText value="　变更" />
+						<h:outputText value="　备案" />
+						<h:outputText value="　注销" />
+					</h:panelGrid>
+				</p:tab>
+
+				<p:tab title="有限责任公司分公司">
+					<h:panelGrid columns="4" cellpadding="5">
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/notfound.xhtml"><img
+								src="#{request.contextPath}/images/sheli.png" alt="设立"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/notfound.xhtml"><img
+								src="#{request.contextPath}/images/biangeng.png" alt="变更"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/notfound.xhtml"><img
+								src="#{request.contextPath}/images/beian.png" alt="备案"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/notfound.xhtml"><img
+								src="#{request.contextPath}/images/zhuxiao.png" alt="注销"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<h:outputText value="　设立" />
+						<h:outputText value="　变更" />
+						<h:outputText value="　备案" />
+						<h:outputText value="　注销" />
+					</h:panelGrid>
+				</p:tab>
+
+				<p:tab title="股份有限公司">
+					<img src="#{request.contextPath}/images/construction.png" alt="建设中"
+						width="400" height="300" />
+				</p:tab>
+
+				<p:tab title="股份有限公司分公司">
+					<img src="#{request.contextPath}/images/construction.png" alt="建设中"
+						width="400" height="300" />
+				</p:tab>
+
+				<p:tab title="个人独资企业">
+					<h:panelGrid columns="4" cellpadding="5">
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/personreg/creg.xhtml"><img
+								src="#{request.contextPath}/images/sheli.png" alt="设立"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/notfound.xhtml"><img
+								src="#{request.contextPath}/images/biangeng.png" alt="变更"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/notfound.xhtml"><img
+								src="#{request.contextPath}/images/beian.png" alt="备案"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<p:panel styleClass="big_icon" style="text-align:center;">
+							<a href="#{request.contextPath}/notfound.xhtml"><img
+								src="#{request.contextPath}/images/zhuxiao.png" alt="注销"
+								class="big_icon" /></a>
+							<br />
+						</p:panel>
+						<h:outputText value="　设立" />
+						<h:outputText value="　变更" />
+						<h:outputText value="　备案" />
+						<h:outputText value="　注销" />
+					</h:panelGrid>
+				</p:tab>
+
+				<p:tab title="个人独资企业分支机构">
+					<img src="#{request.contextPath}/images/construction.png" alt="建设中"
+						width="400" height="300" />
+				</p:tab>
+
+				<p:tab title="合伙企业">
+					<img src="#{request.contextPath}/images/construction.png" alt="建设中"
+						width="400" height="300" />
+				</p:tab>
+			</p:tabView>
+		</div>
+
+		<div style="clear: both;">
+			<br />
+		</div>
+	</ui:define>
+</ui:composition>

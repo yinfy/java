@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core"
+	xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+	xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml"
+	xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint"
+	xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+	xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2"
+	xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core"
+	w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no"
+	xml:space="preserve"><w:ignoreSubtree
+	w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" /><o:DocumentProperties><o:Title>长春市___________有限公司章程</o:Title><o:Author>Administrator</o:Author><o:LastAuthor>lenovo</o:LastAuthor><o:Revision>2</o:Revision><o:TotalTime>0</o:TotalTime><o:Created>2016-07-03T01:15:00Z</o:Created><o:LastSaved>2016-07-03T01:15:00Z</o:LastSaved><o:Pages>5</o:Pages><o:Words>546</o:Words><o:Characters>3114</o:Characters><o:Company>JLU</o:Company><o:Lines>25</o:Lines><o:Paragraphs>7</o:Paragraphs><o:CharactersWithSpaces>3653</o:CharactersWithSpaces><o:Version>14</o:Version></o:DocumentProperties><o:CustomDocumentProperties><o:KSOProductBuildVer
+	dt:dt="string">2052-9.1.0.4993</o:KSOProductBuildVer></o:CustomDocumentProperties><w:fonts><w:defaultFonts
+	w:ascii="Times New Roman" w:fareast="宋体" w:h-ansi="Times New Roman"
+	w:cs="Times New Roman" /><w:font w:name="Times New Roman"><w:panose-1
+	w:val="02020603050405020304" /><w:charset w:val="00" /><w:family
+	w:val="Roman" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="E0002EFF" w:usb-1="C0007843" w:usb-2="00000009" w:usb-3="00000000"
+	w:csb-0="000001FF" w:csb-1="00000000" /></w:font><w:font w:name="宋体"><w:altName
+	w:val="SimSun" /><w:panose-1 w:val="02010600030101010101" /><w:charset
+	w:val="86" /><w:family w:val="auto" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000"
+	w:csb-0="00040001" w:csb-1="00000000" /></w:font><w:font w:name="黑体"><w:altName
+	w:val="SimHei" /><w:panose-1 w:val="02010609060101010101" /><w:charset
+	w:val="86" /><w:family w:val="Modern" /><w:pitch
+	w:val="fixed" /><w:sig w:usb-0="800002BF" w:usb-1="38CF7CFA"
+	w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" /></w:font><w:font
+	w:name="Cambria Math"><w:panose-1 w:val="02040503050406030204" /><w:charset
+	w:val="01" /><w:family w:val="Roman" /><w:notTrueType /><w:pitch
+	w:val="variable" /></w:font><w:font w:name="仿宋_GB2312"><w:panose-1
+	w:val="02010509060101010101" /><w:charset w:val="86" /><w:family
+	w:val="Modern" /><w:pitch w:val="fixed" /><w:sig w:usb-0="00000001"
+	w:usb-1="080E0000" w:usb-2="00000010" w:usb-3="00000000" w:csb-0="00040000"
+	w:csb-1="00000000" /></w:font><w:font w:name="仿宋_GB2312"><w:panose-1
+	w:val="02010609030101010101" /><w:charset w:val="86" /><w:family
+	w:val="Modern" /><w:pitch w:val="fixed" /><w:sig w:usb-0="00000001"
+	w:usb-1="080E0000" w:usb-2="00000010" w:usb-3="00000000" w:csb-0="00040000"
+	w:csb-1="00000000" /></w:font><w:font w:name="@黑体"><w:panose-1
+	w:val="02010609060101010101" /><w:charset w:val="86" /><w:family
+	w:val="Modern" /><w:pitch w:val="fixed" /><w:sig w:usb-0="800002BF"
+	w:usb-1="38CF7CFA" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001"
+	w:csb-1="00000000" /></w:font><w:font w:name="@仿宋_GB2312"><w:panose-1
+	w:val="02010609030101010101" /><w:charset w:val="86" /><w:family
+	w:val="Modern" /><w:pitch w:val="fixed" /><w:sig w:usb-0="00000001"
+	w:usb-1="080E0000" w:usb-2="00000010" w:usb-3="00000000" w:csb-0="00040000"
+	w:csb-1="00000000" /></w:font><w:font w:name="@仿宋_GB2312"><w:panose-1
+	w:val="02010509060101010101" /><w:charset w:val="86" /><w:family
+	w:val="Modern" /><w:pitch w:val="fixed" /><w:sig w:usb-0="00000001"
+	w:usb-1="080E0000" w:usb-2="00000010" w:usb-3="00000000" w:csb-0="00040000"
+	w:csb-1="00000000" /></w:font><w:font w:name="@宋体"><w:panose-1
+	w:val="02010600030101010101" /><w:charset w:val="86" /><w:family
+	w:val="auto" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000"
+	w:csb-0="00040001" w:csb-1="00000000" /></w:font></w:fonts><w:styles><w:versionOfBuiltInStylenames
+	w:val="7" /><w:latentStyles w:defLockedState="off"
+	w:latentStyleCount="267"><w:lsdException w:name="Normal" /><w:lsdException
+	w:name="heading 1" /><w:lsdException w:name="heading 2" /><w:lsdException
+	w:name="heading 3" /><w:lsdException w:name="heading 4" /><w:lsdException
+	w:name="heading 5" /><w:lsdException w:name="heading 6" /><w:lsdException
+	w:name="heading 7" /><w:lsdException w:name="heading 8" /><w:lsdException
+	w:name="heading 9" /><w:lsdException w:name="caption" /><w:lsdException
+	w:name="Title" /><w:lsdException w:name="Subtitle" /><w:lsdException
+	w:name="Strong" /><w:lsdException w:name="Emphasis" /><w:lsdException
+	w:name="HTML Top of Form" /><w:lsdException w:name="HTML Bottom of Form" /><w:lsdException
+	w:name="Normal Table" /><w:lsdException w:name="No List" /><w:lsdException
+	w:name="Outline List 1" /><w:lsdException w:name="Outline List 2" /><w:lsdException
+	w:name="Outline List 3" /><w:lsdException w:name="Table Simple 1" /><w:lsdException
+	w:name="Table Simple 2" /><w:lsdException w:name="Table Simple 3" /><w:lsdException
+	w:name="Table Classic 1" /><w:lsdException w:name="Table Classic 2" /><w:lsdException
+	w:name="Table Classic 3" /><w:lsdException w:name="Table Classic 4" /><w:lsdException
+	w:name="Table Colorful 1" /><w:lsdException w:name="Table Colorful 2" /><w:lsdException
+	w:name="Table Colorful 3" /><w:lsdException w:name="Table Columns 1" /><w:lsdException
+	w:name="Table Columns 2" /><w:lsdException w:name="Table Columns 3" /><w:lsdException
+	w:name="Table Columns 4" /><w:lsdException w:name="Table Columns 5" /><w:lsdException
+	w:name="Table Grid 1" /><w:lsdException w:name="Table Grid 2" /><w:lsdException
+	w:name="Table Grid 3" /><w:lsdException w:name="Table Grid 4" /><w:lsdException
+	w:name="Table Grid 5" /><w:lsdException w:name="Table Grid 6" /><w:lsdException
+	w:name="Table Grid 7" /><w:lsdException w:name="Table Grid 8" /><w:lsdException
+	w:name="Table List 1" /><w:lsdException w:name="Table List 2" /><w:lsdException
+	w:name="Table List 3" /><w:lsdException w:name="Table List 4" /><w:lsdException
+	w:name="Table List 5" /><w:lsdException w:name="Table List 6" /><w:lsdException
+	w:name="Table List 7" /><w:lsdException w:name="Table List 8" /><w:lsdException
+	w:name="Table 3D effects 1" /><w:lsdException w:name="Table 3D effects 2" /><w:lsdException
+	w:name="Table 3D effects 3" /><w:lsdException w:name="Table Contemporary" /><w:lsdException
+	w:name="Table Elegant" /><w:lsdException w:name="Table Professional" /><w:lsdException
+	w:name="Table Subtle 1" /><w:lsdException w:name="Table Subtle 2" /><w:lsdException
+	w:name="Table Web 1" /><w:lsdException w:name="Table Web 2" /><w:lsdException
+	w:name="Table Web 3" /><w:lsdException w:name="Table Grid" /><w:lsdException
+	w:name="Table Theme" /><w:lsdException w:name="Placeholder Text" /><w:lsdException
+	w:name="No Spacing" /><w:lsdException w:name="Light Shading" /><w:lsdException
+	w:name="Light List" /><w:lsdException w:name="Light Grid" /><w:lsdException
+	w:name="Medium Shading 1" /><w:lsdException w:name="Medium Shading 2" /><w:lsdException
+	w:name="Medium List 1" /><w:lsdException w:name="Medium List 2" /><w:lsdException
+	w:name="Medium Grid 1" /><w:lsdException w:name="Medium Grid 2" /><w:lsdException
+	w:name="Medium Grid 3" /><w:lsdException w:name="Dark List" /><w:lsdException
+	w:name="Colorful Shading" /><w:lsdException w:name="Colorful List" /><w:lsdException
+	w:name="Colorful Grid" /><w:lsdException w:name="Light Shading Accent 1" /><w:lsdException
+	w:name="Light List Accent 1" /><w:lsdException w:name="Light Grid Accent 1" /><w:lsdException
+	w:name="Medium Shading 1 Accent 1" /><w:lsdException
+	w:name="Medium Shading 2 Accent 1" /><w:lsdException
+	w:name="Medium List 1 Accent 1" /><w:lsdException
+	w:name="Revision" /><w:lsdException w:name="List Paragraph" /><w:lsdException
+	w:name="Quote" /><w:lsdException w:name="Intense Quote" /><w:lsdException
+	w:name="Medium List 2 Accent 1" /><w:lsdException
+	w:name="Medium Grid 1 Accent 1" /><w:lsdException
+	w:name="Medium Grid 2 Accent 1" /><w:lsdException
+	w:name="Medium Grid 3 Accent 1" /><w:lsdException
+	w:name="Dark List Accent 1" /><w:lsdException
+	w:name="Colorful Shading Accent 1" /><w:lsdException
+	w:name="Colorful List Accent 1" /><w:lsdException
+	w:name="Colorful Grid Accent 1" /><w:lsdException
+	w:name="Light Shading Accent 2" /><w:lsdException
+	w:name="Light List Accent 2" /><w:lsdException w:name="Light Grid Accent 2" /><w:lsdException
+	w:name="Medium Shading 1 Accent 2" /><w:lsdException
+	w:name="Medium Shading 2 Accent 2" /><w:lsdException
+	w:name="Medium List 1 Accent 2" /><w:lsdException
+	w:name="Medium List 2 Accent 2" /><w:lsdException
+	w:name="Medium Grid 1 Accent 2" /><w:lsdException
+	w:name="Medium Grid 2 Accent 2" /><w:lsdException
+	w:name="Medium Grid 3 Accent 2" /><w:lsdException
+	w:name="Dark List Accent 2" /><w:lsdException
+	w:name="Colorful Shading Accent 2" /><w:lsdException
+	w:name="Colorful List Accent 2" /><w:lsdException
+	w:name="Colorful Grid Accent 2" /><w:lsdException
+	w:name="Light Shading Accent 3" /><w:lsdException
+	w:name="Light List Accent 3" /><w:lsdException w:name="Light Grid Accent 3" /><w:lsdException
+	w:name="Medium Shading 1 Accent 3" /><w:lsdException
+	w:name="Medium Shading 2 Accent 3" /><w:lsdException
+	w:name="Medium List 1 Accent 3" /><w:lsdException
+	w:name="Medium List 2 Accent 3" /><w:lsdException
+	w:name="Medium Grid 1 Accent 3" /><w:lsdException
+	w:name="Medium Grid 2 Accent 3" /><w:lsdException
+	w:name="Medium Grid 3 Accent 3" /><w:lsdException
+	w:name="Dark List Accent 3" /><w:lsdException
+	w:name="Colorful Shading Accent 3" /><w:lsdException
+	w:name="Colorful List Accent 3" /><w:lsdException
+	w:name="Colorful Grid Accent 3" /><w:lsdException
+	w:name="Light Shading Accent 4" /><w:lsdException
+	w:name="Light List Accent 4" /><w:lsdException w:name="Light Grid Accent 4" /><w:lsdException
+	w:name="Medium Shading 1 Accent 4" /><w:lsdException
+	w:name="Medium Shading 2 Accent 4" /><w:lsdException
+	w:name="Medium List 1 Accent 4" /><w:lsdException
+	w:name="Medium List 2 Accent 4" /><w:lsdException
+	w:name="Medium Grid 1 Accent 4" /><w:lsdException
+	w:name="Medium Grid 2 Accent 4" /><w:lsdException
+	w:name="Medium Grid 3 Accent 4" /><w:lsdException
+	w:name="Dark List Accent 4" /><w:lsdException
+	w:name="Colorful Shading Accent 4" /><w:lsdException
+	w:name="Colorful List Accent 4" /><w:lsdException
+	w:name="Colorful Grid Accent 4" /><w:lsdException
+	w:name="Light Shading Accent 5" /><w:lsdException
+	w:name="Light List Accent 5" /><w:lsdException w:name="Light Grid Accent 5" /><w:lsdException
+	w:name="Medium Shading 1 Accent 5" /><w:lsdException
+	w:name="Medium Shading 2 Accent 5" /><w:lsdException
+	w:name="Medium List 1 Accent 5" /><w:lsdException
+	w:name="Medium List 2 Accent 5" /><w:lsdException
+	w:name="Medium Grid 1 Accent 5" /><w:lsdException
+	w:name="Medium Grid 2 Accent 5" /><w:lsdException
+	w:name="Medium Grid 3 Accent 5" /><w:lsdException
+	w:name="Dark List Accent 5" /><w:lsdException
+	w:name="Colorful Shading Accent 5" /><w:lsdException
+	w:name="Colorful List Accent 5" /><w:lsdException
+	w:name="Colorful Grid Accent 5" /><w:lsdException
+	w:name="Light Shading Accent 6" /><w:lsdException
+	w:name="Light List Accent 6" /><w:lsdException w:name="Light Grid Accent 6" /><w:lsdException
+	w:name="Medium Shading 1 Accent 6" /><w:lsdException
+	w:name="Medium Shading 2 Accent 6" /><w:lsdException
+	w:name="Medium List 1 Accent 6" /><w:lsdException
+	w:name="Medium List 2 Accent 6" /><w:lsdException
+	w:name="Medium Grid 1 Accent 6" /><w:lsdException
+	w:name="Medium Grid 2 Accent 6" /><w:lsdException
+	w:name="Medium Grid 3 Accent 6" /><w:lsdException
+	w:name="Dark List Accent 6" /><w:lsdException
+	w:name="Colorful Shading Accent 6" /><w:lsdException
+	w:name="Colorful List Accent 6" /><w:lsdException
+	w:name="Colorful Grid Accent 6" /><w:lsdException
+	w:name="Subtle Emphasis" /><w:lsdException w:name="Intense Emphasis" /><w:lsdException
+	w:name="Subtle Reference" /><w:lsdException w:name="Intense Reference" /><w:lsdException
+	w:name="Book Title" /><w:lsdException w:name="Bibliography" /><w:lsdException
+	w:name="TOC Heading" /></w:latentStyles><w:style w:type="paragraph"
+	w:default="on" w:styleId="a"><w:name w:val="Normal" /><wx:uiName
+	wx:val="正文" /><w:pPr><w:widowControl w:val="off" /><w:jc
+	w:val="both" /></w:pPr><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" /><wx:font wx:val="Times New Roman" /><w:kern
+	w:val="2" /><w:sz w:val="36" /><w:sz-cs w:val="24" /><w:lang
+	w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" /></w:rPr></w:style><w:style
+	w:type="character" w:default="on" w:styleId="a0"><w:name
+	w:val="Default Paragraph Font" /><wx:uiName wx:val="默认段落字体" /></w:style><w:style
+	w:type="table" w:default="on" w:styleId="a1"><w:name w:val="Normal Table" /><wx:uiName
+	wx:val="普通表格" /><w:rPr><wx:font wx:val="Times New Roman" /><w:lang
+	w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" /></w:rPr><w:tblPr><w:tblInd
+	w:w="0" w:type="dxa" /><w:tblCellMar><w:top w:w="0" w:type="dxa" /><w:left
+	w:w="108" w:type="dxa" /><w:bottom w:w="0" w:type="dxa" /><w:right
+	w:w="108" w:type="dxa" /></w:tblCellMar></w:tblPr></w:style><w:style
+	w:type="list" w:default="on" w:styleId="a2"><w:name w:val="No List" /><wx:uiName
+	wx:val="无列表" /></w:style><w:style w:type="character" w:styleId="a3"><w:name
+	w:val="page number" /><wx:uiName wx:val="页码" /><w:basedOn
+	w:val="a0" /></w:style><w:style w:type="paragraph" w:styleId="a4"><w:name
+	w:val="header" /><wx:uiName wx:val="页眉" /><w:basedOn
+	w:val="a" /><w:pPr><w:pBdr><w:top w:val="none" w:sz="0"
+	wx:bdrwidth="0" w:space="1" w:color="auto" /><w:left w:val="none"
+	w:sz="0" wx:bdrwidth="0" w:space="4" w:color="auto" /><w:bottom
+	w:val="none" w:sz="0" wx:bdrwidth="0" w:space="1" w:color="auto" /><w:right
+	w:val="none" w:sz="0" wx:bdrwidth="0" w:space="4" w:color="auto" /></w:pBdr><w:tabs><w:tab
+	w:val="center" w:pos="4153" /><w:tab w:val="right" w:pos="8306" /></w:tabs><w:snapToGrid
+	w:val="off" /></w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" /><wx:font
+	wx:val="Times New Roman" /><w:sz w:val="18" /></w:rPr></w:style><w:style
+	w:type="paragraph" w:styleId="a5"><w:name w:val="footer" /><wx:uiName
+	wx:val="页脚" /><w:basedOn w:val="a" /><w:pPr><w:tabs><w:tab
+	w:val="center" w:pos="4153" /><w:tab w:val="right" w:pos="8306" /></w:tabs><w:snapToGrid
+	w:val="off" /><w:jc w:val="left" /></w:pPr><w:rPr><wx:font
+	wx:val="Times New Roman" /><w:sz w:val="18" /></w:rPr></w:style></w:styles><w:shapeDefaults><o:shapedefaults
+	v:ext="edit" spidmax="2050" fillcolor="#9cbee0" strokecolor="#739cc3"><v:fill
+	color="#9cbee0" color2="#bbd5f0" type="gradient"><o:fill v:ext="view"
+	type="gradientUnscaled" /></v:fill><v:stroke color="#739cc3"
+	weight="1.25pt" /></o:shapedefaults><o:shapelayout v:ext="edit"><o:idmap
+	v:ext="edit" data="1" /></o:shapelayout></w:shapeDefaults><w:bgPict><w:background
+	w:bgcolor="white" /></w:bgPict><w:docPr><w:view w:val="print" /><w:zoom
+	w:percent="140" /><w:doNotEmbedSystemFonts /><w:bordersDontSurroundHeader /><w:bordersDontSurroundFooter /><w:stylePaneFormatFilter
+	w:val="3F01" /><w:defaultTabStop w:val="420" /><w:drawingGridVerticalSpacing
+	w:val="156" /><w:displayHorizontalDrawingGridEvery
+	w:val="0" /><w:displayVerticalDrawingGridEvery
+	w:val="2" /><w:punctuationKerning /><w:characterSpacingControl
+	w:val="CompressPunctuation" /><w:webPageEncoding
+	w:val="x-cp20936" /><w:optimizeForBrowser /><w:validateAgainstSchema
+	w:val="off" /><w:saveInvalidXML w:val="off" /><w:ignoreMixedContent
+	w:val="off" /><w:alwaysShowPlaceholderText
+	w:val="off" /><w:doNotUnderlineInvalidXML /><w:hdrShapeDefaults><o:shapedefaults
+	v:ext="edit" spidmax="2050" fillcolor="#9cbee0" strokecolor="#739cc3"><v:fill
+	color="#9cbee0" color2="#bbd5f0" type="gradient"><o:fill v:ext="view"
+	type="gradientUnscaled" /></v:fill><v:stroke color="#739cc3"
+	weight="1.25pt" /></o:shapedefaults><o:shapelayout v:ext="edit"><o:idmap
+	v:ext="edit" data="2" /></o:shapelayout></w:hdrShapeDefaults><w:footnotePr><w:footnote
+	w:type="separator"><w:p wsp:rsidR="00BA23F0" wsp:rsidRDefault="00BA23F0"><w:pPr><w:rPr><wx:font
+	wx:val="仿宋_GB2312" /></w:rPr></w:pPr><w:r><w:rPr><wx:font
+	wx:val="仿宋_GB2312" /></w:rPr><w:separator /></w:r></w:p></w:footnote><w:footnote
+	w:type="continuation-separator"><w:p wsp:rsidR="00BA23F0" wsp:rsidRDefault="00BA23F0"><w:pPr><w:rPr><wx:font
+	wx:val="仿宋_GB2312" /></w:rPr></w:pPr><w:r><w:rPr><wx:font
+	wx:val="仿宋_GB2312" /></w:rPr><w:continuationSeparator /></w:r></w:p></w:footnote></w:footnotePr><w:endnotePr><w:endnote
+	w:type="separator"><w:p wsp:rsidR="00BA23F0" wsp:rsidRDefault="00BA23F0"><w:pPr><w:rPr><wx:font
+	wx:val="仿宋_GB2312" /></w:rPr></w:pPr><w:r><w:rPr><wx:font
+	wx:val="仿宋_GB2312" /></w:rPr><w:separator /></w:r></w:p></w:endnote><w:endnote
+	w:type="continuation-separator"><w:p wsp:rsidR="00BA23F0" wsp:rsidRDefault="00BA23F0"><w:pPr><w:rPr><wx:font
+	wx:val="仿宋_GB2312" /></w:rPr></w:pPr><w:r><w:rPr><wx:font
+	wx:val="仿宋_GB2312" /></w:rPr><w:continuationSeparator /></w:r></w:p></w:endnote></w:endnotePr><w:compat><w:spaceForUL /><w:balanceSingleByteDoubleByteWidth /><w:doNotLeaveBackslashAlone /><w:ulTrailSpace /><w:doNotExpandShiftReturn /><w:adjustLineHeightInTable /><w:breakWrappedTables /><w:snapToGridInCell /><w:wrapTextWithPunct /><w:useAsianBreakRules /><w:dontGrowAutofit /><w:useFELayout /></w:compat><wsp:rsids><wsp:rsidRoot
+	wsp:val="00172A27" /><wsp:rsid wsp:val="000558EF" /><wsp:rsid
+	wsp:val="00172A27" /><wsp:rsid wsp:val="001A43BC" /><wsp:rsid
+	wsp:val="002D5212" /><wsp:rsid wsp:val="00382827" /><wsp:rsid
+	wsp:val="00501E13" /><wsp:rsid wsp:val="0056382A" /><wsp:rsid
+	wsp:val="00696E1D" /><wsp:rsid wsp:val="00714648" /><wsp:rsid
+	wsp:val="00B124FB" /><wsp:rsid wsp:val="00BA23F0" /><wsp:rsid
+	wsp:val="00C013EF" /><wsp:rsid wsp:val="00CA3C09" /><wsp:rsid
+	wsp:val="00CE4915" /><wsp:rsid wsp:val="00E96DC6" /><wsp:rsid
+	wsp:val="00F12C5D" /><wsp:rsid wsp:val="03934A6B" /><wsp:rsid
+	wsp:val="3D205459" /><wsp:rsid wsp:val="5F505F0C" /><wsp:rsid
+	wsp:val="67CC2BB7" /></wsp:rsids></w:docPr><w:body><wx:sect><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="黑体" w:cs="黑体" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz-cs w:val="36" /></w:rPr></w:pPr></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="002D5212" wsp:rsidP="002D5212"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="黑体" w:cs="黑体" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz-cs w:val="36" /></w:rPr></w:pPr><w:r
+	wsp:rsidRPr="002D5212"><w:rPr><w:rFonts w:ascii="黑体" w:fareast="黑体"
+	w:h-ansi="黑体" w:cs="黑体" w:hint="fareast" /><wx:font wx:val="黑体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="36" /></w:rPr><w:t>${cname}章程</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr><w:t>第一章   总则</w:t></w:r></w:p><w:p wsp:rsidR="001A43BC"
+	wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第一条  </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>依据《中华人民共和国公司法》（以下简称《公司法》）及其他有关法律、行政法规的规定，制定本章程。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第二条  </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>本公司依据《公司法》和国家有关法规政策设立，是企业法人，有独立的法人财产，享有法人财产权。公司以其全部财产对公司的债务承担有限责任。公司出资人以其认缴的出资额为限对公司承担责任。公司向其他企业投资，除法律另有规定以外，不得成为对所投资企业的债务承担连带责任的出资人。出资人如不能证明公司财产独立于自己的财产的，则应对公司债务承担连带责任</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第三条  </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>本章程中的各项条款与法律、法规、规章不符的，以及本章程未尽事宜，以法律、法规、规章的规定为准。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line="600" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>  </w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr><w:t>第二章 公司名称和住所</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第四条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 公司名称：</w:t></w:r><w:r
+	wsp:rsidR="00CA3C09" wsp:rsidRPr="002D5212"><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> </w:t></w:r><w:r
+	wsp:rsidR="002D5212" wsp:rsidRPr="002D5212"><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>${cname}</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> </w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRPr="00696E1D" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr><w:t>第五条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 公司</w:t></w:r><w:r
+	wsp:rsidRPr="00696E1D"><w:rPr><w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312"
+	w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>住所：</w:t></w:r><w:r
+	wsp:rsidR="00CA3C09" wsp:rsidRPr="00696E1D"><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="黑体" w:cs="黑体" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr><w:t> </w:t></w:r><w:r wsp:rsidR="00696E1D"
+	wsp:rsidRPr="00696E1D"><w:rPr><w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312"
+	w:h-ansi="黑体" w:cs="黑体" w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>吉林省长春市朝阳区</w:t></w:r><w:r
+	wsp:rsidR="002D5212" wsp:rsidRPr="002D5212"><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="黑体" w:cs="黑体" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /> </w:rPr><w:t>${haddress}</w:t></w:r><w:r wsp:rsidRPr="00696E1D"><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>，公司以</w:t></w:r><w:r
+	wsp:rsidRPr="00696E1D"><w:rPr><w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312"
+	w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr><w:t>自己的主要办事机构所在地为</w:t></w:r><w:r
+	wsp:rsidRPr="00696E1D"><w:rPr><w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312"
+	w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>住所。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr><w:r wsp:rsidRPr="00696E1D"><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第三章 公司</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>经营范围</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第六条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>公司经营范围：</w:t></w:r><w:r
+	wsp:rsidR="002D5212" wsp:rsidRPr="002D5212"><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /> </w:rPr><w:t>${crange}</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>（具体经营范围以工商局核定为准）。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第七条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 公司的经营范围由公司章程规定，并经工商行政管理机关依法登记。公司可以修改公司章程，改变经营范围，但是应当办理变更登记。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第八条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 公司的经营范围中属于法律、行政法规和国务院规定须经批准的项目，应当依法经过批准。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr></w:p><w:p wsp:rsidR="001A43BC"
+	wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing w:line="400" w:line-rule="exact" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第四章 公司注册资本</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第九条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 公司注册资本：人民币</w:t></w:r><w:r
+	wsp:rsidR="002D5212" wsp:rsidRPr="002D5212"><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /> </w:rPr><w:t>${capital}</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>万元。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line="570" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:color w:val="000000" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>公司注册资本为在工商行政管理机关登记的全体股东认缴的出资额。</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:color
+	w:val="000000" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>法律、行政法规以及国务院决定对有限责任公司注册资本实缴、注册资本最低限额另有规定的，从其规定。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr></w:p><w:p wsp:rsidR="001A43BC"
+	wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing w:line="400" w:line-rule="exact" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr><w:t>第五章 出资人的名称及住址（住所）、证件号码</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第十条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 出资人的名称、住址（住所）及证照号码如下：</w:t></w:r></w:p>${shareHolders}<w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr><w:t>第六章 股东的出资方式、出资额和出资时间</w:t></w:r></w:p><w:p
+	wsp:rsidR="002D5212" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第十一条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 公司股东的出资方式为</w:t></w:r><w:r
+	wsp:rsidR="002D5212" wsp:rsidRPr="00382827"><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /> </w:rPr><w:t>${sharemode}</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>出资。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第十二条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>股东的出资额、出资比例、出资时间如下：</w:t></w:r></w:p>${shareHolders2}<w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:tabs><w:tab
+	w:val="left" w:pos="765" /></w:tabs><w:spacing w:line="400"
+	w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:color w:val="000000" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:color
+	w:val="000000" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第十三条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:color
+	w:val="000000" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 出资人应按公司法及本公司章程的规定认足出资。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第十四条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>公司随时将出资人的姓名及出资额向工商行政管理机关登记；登记事项发生变更的，应当办理变更登记。未经工商行政管理机登记或者变更登记的，不对抗第三人。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第十五条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 出资人承担以下义务：</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    1、遵守法律、行政法规和公司章程；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    2、依法足额缴纳出资额；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line="645" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>3、以其缴纳的出资额对公司承担责任；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>4、公司设立后不得抽逃出资。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr><w:t>第七章 公司的机构及其产生办法、职权、议事规则</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第十六条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>  出资人依法行使下列职权：</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    1、决定公司的经营方针和投资计划；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    2、指派和更换执行董事、监事，决定其报酬事项；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    3、批准执行董事的报告；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    4、批准监事的报告；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    5、批准公司的年度财务预算方案、决算方案；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    6、批准公司的利润分配方案和弥补亏损方案；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line="645" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>7、决定公司增加或者减少注册资本；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    8、决定公司合并、分立、解散、清算或变更公司形式；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line="645" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>9、修改公司章程。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line="645" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr><w:t>第十七条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>出资人对第十六条所列事项作出的决定，必须采取书面形式，并由出资人签名后置备于公司。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="562" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第十八条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 公司设执行董事1人，由出资人指派。执行董事每届任期3年，任期届满可连任。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="562" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第十九条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 执行董事对出资人负责，行使下列职权：</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>1、执行出资人决议、向出资人报告工作；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>2、决定公司的经营计划和投资方案；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>3、制订公司的年度财务预算方案、决算方案；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>4、制订公司的利润分配方案和弥补亏损方案；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>5、制订公司增加或者减少注册资本方案；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>6、制订公司合并、分立、解散或变更公司形式的方案；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>7、决定公司内部管理机构的设置；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>8、决定聘任或者解聘公司总经理（以下简称经理）及其报酬事项，并根据经理的提名决定聘任或者解聘公司副经理、财务负责人及其报酬事项；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>9、制定公司的基本管理制度。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="562" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第二十条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 公司设经理1名，由执行董事聘任或者解聘。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="562" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第二十一条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>公司经理对出资人和执行董事负责，行使下列职权：</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>1、主持公司的生产经营管理工作；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>2、组织实施公司年度经营计划和投资方案；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>3、拟定公司内部管理机构设置方案；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>4、拟定公司的基本管理制度；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>5、制定公司的具体规章；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>6、提请聘任或者解聘公司副经理、财务负责人；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>7、决定聘任或者解聘除应由执行董事决定聘任或者解聘以外的负责管理人员；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>8、出资人和执行董事授予的其他职权。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line="645" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第二十二条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 公司设1名监事，由出资人指派。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="562" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第二十三条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>监事每届任期3年，任期届满可连任。董事、经理及其他高级管理人员不得兼任监事。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第二十四条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>监事行使下列职权：</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    1、检查公司财务；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line="645" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>2、对执行董事、经理及其他高级管理人员执行公司职务的行为进行监督，对违反法律、行政法规、本章程或者出资人决定的执行董事、经理及其他高级管理人员提出罢免的建议；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line="645" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>3、对执行董事、经理及其他高级管理人员的行为损害公司利益时，要求执行董事、经理及其他高级管理人员予以纠正；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line="645" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>4、向出资人提出提案；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>5、依照《公司法》的有关规定，对执行董事、经理及其他高级管理人员提起诉讼。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="562" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第二十五条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>监事列席执行董事办公会议和经理办公会议，并有权对执行董事提出质询或者建议。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line="645" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第二十六条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>监事发现公司经营情况异常，可以进行调查；必要时可聘请会计师事务所、律师事务所等协助工作。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>                      </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第八章</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:tab /><w:t>公司的法定代表人</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第二十七条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>  公司的法定代表人为执行董事，任期三年，由出资人任命产生，任期届满，可连选连任。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第二十八条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>有下列情形之一的，不得担任公司法定代表人：</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>1、无民事行为能力或者限制民事行为能力；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>2、因贪污、贿赂、侵占财产、挪用财产或者破坏社会主义市场经济秩序，被判处刑罚，执行期满未逾五年，或者因犯罪被剥夺政治权利，执行期满未逾五年；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>3、担任破产清算的公司、企业的董事或者厂长、经理，并对该公司、企业的破产负有个人责任的，自该公司、企业破产清算完结之日起未逾三年；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>4、担任因违法被吊销营业执照、责令关闭的公司、企业的法定代表人，并负有个人责任的，自该公司、企业被吊销营业执照之日起未逾三年；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>5、个人所负数额较大的债务到期未清偿。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>法定代表人在任职期间出现本条所列行为的，公司必须按本章程规定程序，解除其职务。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第二十九条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>公司法定代表人不得有下列行为：</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>1、挪用公司资金；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>2、将公司资金以其个人名义或者以其他个人名义开立账户存储。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>3、违反公司章程的规定，未经股东会、股东大会或者董事会同意，将公司资金借贷给他人或者以公司财产为他人提供担保；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>4、违反公司章程的规定或者未经股东会、股东大会同意，与本公司订立合同或者进行交易；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>5、未经股东会同意，利用职务便利与自己或者他人谋取属于公司的商业机会，自营或者为他人经营与所任职公司同类的业务；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>6、接受他人与公司交易的佣金归为已有；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>7、擅自披露公司秘密；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>8、违反对公司忠实义务的其他行为。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="200"
+	w:first-line="560" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>违反本条规定所得的收入无条件归公司所有。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>  </w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr><w:t>第九章  股东会会议认为需要规定的其他事项</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>  </w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第三十条  </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>公司的营业期限</w:t></w:r><w:r
+	wsp:rsidR="00CA3C09"><w:rPr><w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312"
+	w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>为</w:t></w:r><w:r
+	wsp:rsidR="00382827" wsp:rsidRPr="00382827"><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /> </w:rPr><w:t>${cyears}</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>，自公司营业执照签发之日起计算。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第三十一条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 公司根据需要或涉及公司登记事项变更的，可修改章程，修改后的章程不得与法律、行政法规和国家政策相抵触。修改后的公司章程必须报原登记的工商行政管理机关备案，涉及登记事项变更的，同时应向工商行政管理</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>机关申请变更登记。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第三十二条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 公司因下列原因而解散；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    1、公司章程规定的营业期限届满或者公司章程规定的其他解散事由出现；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    2、出资人决定解散；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    3、因公司合并或者分立需要解散；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    4、依法被吊销营业执照、责令关闭或者被撤销；</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>    5、人民法院依法判决或裁定予以解散。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第三十三条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>公司非因合并或者分立需要而解散的，必须在解散事由出现之日起15日内成立清算组，开始清算。逾期不成立清算组进行清算的，债权人有权申请人民法院指定有关人员组成清算组进行清算。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第三十四条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>公司清算结束后，由清算组制作清算报告，并视具体情况，报出资人或者人民法院确认。清算组持上述文件到工商行政管理机关申请公司注销登记，并公告公司终止。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>  </w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="28" /></w:rPr><w:t>第十章  附则</w:t></w:r></w:p><w:p wsp:rsidR="001A43BC"
+	wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第三十五条 </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>本章程经出资人签署、并自公司设立之日起生效。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>第三十六条</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> 本章程置备于公司，并报公司登记机关登记备案。</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:color w:val="FF0000" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>出资人盖章如下</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>：</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312"
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:color
+	w:val="FF0000" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> </w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="49"
+	w:first-line="137" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:color w:val="0000FF" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="49"
+	w:first-line="137" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:color w:val="0000FF" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRPr="00CA3C09" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="49"
+	w:first-line="137" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r
+	wsp:rsidRPr="00CA3C09"><w:rPr><w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312"
+	w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>法定代表人签字：</w:t></w:r></w:p><w:p
+	wsp:rsidR="00AE18AA" wsp:rsidRDefault="0072060B" wsp:rsidP="00AE18AA"><w:pPr><w:wordWrap
+	w:val="off" /><w:ind w:left="1" /><w:jc w:val="right" /><w:rPr><w:rFonts
+	w:hint="fareast" /><w:sz w:val="28" /><w:sz-cs w:val="28" /> </w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:hint="fareast" /><w:sz w:val="28" /><w:sz-cs w:val="28" /> </w:rPr><w:t>  </w:t></w:r><w:r
+	wsp:rsidR="00AE18AA"><w:rPr><w:rFonts w:hint="fareast" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /> </w:rPr><w:t>${cname}  </w:t></w:r></w:p><w:p
+	wsp:rsidR="000E30A7" wsp:rsidRDefault="000E30A7" wsp:rsidP="00AE18AA"><w:pPr><w:ind
+	w:left="6860" w:hanging-chars="2450" w:hanging="6860" /><w:jc
+	w:val="right" /><w:rPr><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr><w:r
+	wsp:rsidRPr="00AA33F2"><w:rPr><w:rFonts w:hint="fareast" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> </w:t></w:r><w:r
+	wsp:rsidRPr="00AA33F2"><w:rPr><w:rFonts w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>年</w:t></w:r><w:r
+	wsp:rsidR="00AE18AA"><w:rPr><w:rFonts w:hint="fareast" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> </w:t></w:r><w:r
+	wsp:rsidR="0072060B"><w:rPr><w:rFonts w:hint="fareast" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> </w:t></w:r><w:r
+	wsp:rsidRPr="00AA33F2"><w:rPr><w:rFonts w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>月</w:t></w:r><w:r
+	wsp:rsidR="00AE18AA"><w:rPr><w:rFonts w:hint="fareast" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> </w:t></w:r><w:r
+	wsp:rsidR="0072060B"><w:rPr><w:rFonts w:hint="fareast" /><w:sz
+	w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t> </w:t></w:r><w:r
+	wsp:rsidRPr="00AA33F2"><w:rPr><w:rFonts w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr><w:t>日</w:t></w:r></w:p><w:p
+	wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:spacing
+	w:line="400" w:line-rule="exact" /><w:ind w:first-line-chars="49"
+	w:first-line="137" /><w:rPr><w:rFonts w:ascii="仿宋_GB2312"
+	w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:cs="仿宋_GB2312" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="28" /><w:sz-cs w:val="28" /></w:rPr></w:pPr></w:p><w:sectPr
+	wsp:rsidR="001A43BC"><w:ftr w:type="odd"><w:p wsp:rsidR="001A43BC"
+	wsp:rsidRDefault="00BA23F0"><w:pPr><w:pStyle w:val="a5" /><w:rPr><wx:font
+	wx:val="仿宋_GB2312" /></w:rPr></w:pPr><w:r><w:rPr><wx:font
+	wx:val="仿宋_GB2312" /></w:rPr><w:pict><v:shapetype id="_x0000_t202"
+	coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe"><v:stroke joinstyle="miter" /><v:path
+	gradientshapeok="t" o:connecttype="rect" /></v:shapetype><v:shape
+	id="文本框1" o:spid="_x0000_s2049" type="#_x0000_t202"
+	style="position:absolute;margin-left:0;margin-top:0;width:9.05pt;height:23.35pt;z-index:1;mso-wrap-style:none;mso-position-horizontal:center;mso-position-horizontal-relative:margin"
+	filled="f" stroked="f"><v:textbox style="mso-fit-shape-to-text:t"
+	inset="0,0,0,0"><w:txbxContent><w:p wsp:rsidR="001A43BC" wsp:rsidRDefault="001A43BC"><w:pPr><w:snapToGrid
+	w:val="off" /><w:rPr><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="18" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="18" /></w:rPr><w:fldChar
+	w:fldCharType="begin" /></w:r><w:r><w:rPr><w:rFonts w:hint="fareast" /><wx:font
+	wx:val="仿宋_GB2312" /><w:sz w:val="18" /></w:rPr><w:instrText> PAGE  \* MERGEFORMAT </w:instrText></w:r><w:r><w:rPr><w:rFonts
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="18" /></w:rPr><w:fldChar w:fldCharType="separate" /></w:r><w:r
+	wsp:rsidR="00C013EF" wsp:rsidRPr="00C013EF"><w:rPr><wx:font wx:val="仿宋_GB2312" /><w:noProof /></w:rPr><w:t>1</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:hint="fareast" /><wx:font wx:val="仿宋_GB2312" /><w:sz
+	w:val="18" /></w:rPr><w:fldChar w:fldCharType="end" /></w:r></w:p></w:txbxContent></v:textbox><w10:wrap
+	anchorx="margin" /></v:shape></w:pict></w:r></w:p></w:ftr><w:pgSz
+	w:w="11906" w:h="16838" /><w:pgMar w:top="1100" w:right="1236"
+	w:bottom="1100" w:left="1236" w:header="851" w:footer="992" w:gutter="0" /><w:cols
+	w:space="720" /><w:docGrid w:type="lines" w:line-pitch="312" /></w:sectPr></wx:sect></w:body></w:wordDocument>

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>股东信息</title>
+</head>
+
+<body>
+	<form id="editForm" dataset="dsEdit" onsubmit="return false"
+		class="L5form">
+		<fieldset>
+			<legend>出资信息</legend>
+			<table border="1" width="100%">
+				<tr>
+					<td class="FieldLabel" style="width: 15%"><font color="red">*</font>投资人类型</td>
+					<td class="FieldInput" colspan="3" style="width: 85%"><select
+						id="invtypeSelect" title="投资人类型" name="invtype" field="INVTYPE"
+						onchange="showZhengjianOrZhengzhao()" style="width: 80%">
+							<option value="" selected="selected">请选择</option>
+							<option value="10">法人股东</option>
+							<option value="11">企业法人</option>
+							<option value="12">事业法人</option>
+							<option value="13">社团法人</option>
+							<option value="14">机关法人</option>
+							<option value="15">外商投资企业</option>
+							<option value="20">自然人股东</option>
+							<option value="21">农民自然人</option>
+							<option value="22">非农民自然人</option>
+							<option value="30">外国（地区）投资者</option>
+							<option value="31">外国（地区）企业</option>
+							<option value="32">外国（地区）经济组织</option>
+							<option value="33">外商投资投资性公司</option>
+							<option value="34">外商投资创业投资企业</option>
+							<option value="35">外籍自然人</option>
+							<option value="36">华侨</option>
+							<option value="40">合伙企业</option>
+							<option value="50">其他投资者</option>
+					</select></td>
+					<!-- <td class="FieldLabel"><font color="red">*</font>股东类型</td>        
+<td class="FieldInput"><select id="gudongType"         name="gudongType" title="股东类型">        
+</select> </td> -->
+				</tr>
+				<tr>
+					<td class="FieldLabel" style="width: 15%"><font color="red">*</font>姓名或名称</td>
+					<td class="FieldInput" colspan="3" style="width: 85%"><input
+						type="text" name="inv" id="inv" field="INV" style="width: 38%"
+						title="姓名或名称" /> &nbsp;
+						<button id="selectDJL" onclick="selectNameFromDong()"
+							style="padding: 0px; margin: 0px; width: 170px">从董事、监事、经理信息选择</button>
+					</td>
+				</tr>
+				<tr id="cerTr">
+					<td class="FieldLabel" style="width: 15%"><font color="red">*</font>证件类型</td>
+					<td class="FieldInput" style="width: 35%"><select
+						name="certype" style="width: 98%" id="certype" field="CERTYPE"
+						title="证件类型">
+							<option value="" selected="selected">请选择</option>
+							<option value="10">中华人民共和国居民身份证</option>
+							<option value="20">中华人民共和国军官证</option>
+							<option value="30">中华人民共和国警官证</option>
+							<option value="40">外国地区（护照）</option>
+							<option value="51">香港特别行政区护照</option>
+							<option value="52">香港（永久性）居民身份证</option>
+							<option value="53">澳门特别行政区护照</option>
+							<option value="54">澳门（永久性）居民身份证</option>
+							<option value="55">港澳居民来往内地通行证</option>
+							<option value="56">台湾居民身份证</option>
+							<option value="57">台湾居民来往大陆通行证</option>
+							<option value="58">台湾农民身份有关证明</option>
+							<option value="60">户口薄</option>
+							<option value="71">暂住证</option>
+							<option value="72">香港律师（中国委托公证人）...</option>
+							<option value="73">澳门居民身份证</option>
+							<option value="74">澳门特别行政区政府身份证明...</option>
+							<option value="90">其他有效身份证件</option>
+					</select> </select></td>
+					<td class="FieldLabel" style="width: 15%"><font color="red">*</font>证件号码</td>
+					<td class="FieldInput" style="width: 35%"><input type="text"
+						name="cerno" style="width: 98%" id="cerno" field="CERNO"
+						title="证件号码" /></td>
+				</tr>
+				<tr id="blicTr" style="display: none">
+					<td class="FieldLabel" style="width: 15%"><font color="red">*</font>证照类型</td>
+					<td class="FieldInput" style="width: 35%"><select
+						id="blictype" name="blictype" style="width: 98%" field="BLICTYPE"
+						title="证照类型">
+					</select></td>
+					<td class="FieldLabel" style="width: 15%"><font color="red">*</font>证照号码</td>
+					<td class="FieldInput" style="width: 35%"><input id="blicno"
+						type="text" name="blicno" style="width: 98%" field="BLICNO"
+						title="证照号码" /></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel" style="width: 15%"><font color="red">*</font>认缴出资额</td>
+					<td class="FieldInput" style="width: 35%"><input type="text"
+						name="subconam" id="subconam" onblur="gsjs()" field="SUBCONAM"
+						title="认缴出资额" />&nbsp;万元</td>
+					<td class="FieldLabel"><font color="red">*</font>认缴出资比例(%)</td>
+					<td class="FieldInput"><input disabled="disabled"
+						title="认缴出资比例" field="SUBCONPROP" id="subconprop"
+						style="background: #ccc" /></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel"><font color="red">*</font>出资方式</td>
+					<!-- <td class="FieldInput">         
+<select name="certype" style="width:98%" id="CONFORM" field="CONFORM" title="出资方式">          
+<option dataset="conformDs" />         
+</select>         </td> -->
+					<td class="FieldInput"><input type="hidden" name="certype"
+						id=CONFORM field="CONFORM" title="出资方式" /> <input
+						id="view_conform" name="view_conform" disabled="disabled"
+						style="width: 80%" title="出资方式" /> <img
+						src="/iaic/skins/images/l5/help.gif" style="cursor: hand"
+						onclick="selectConform()" /></td>
+					<td class="FieldLabel"><font color="red">*</font>认缴出资时间</td>
+					<td class="FieldInput"><input name="CONDATE" field="CONDATE"
+						onclick="LoushangDate(this)" format="Y-m-d" title="认缴出资时间">
+					</td>
+				</tr>
+				<tr>
+					<td class="FieldLabel">备注</td>
+					<td class="FieldInput" colspan="3"><textarea rows="2"
+							style="width: 80%" name="REMARK" title="备注" field="REMARK">
+</textarea> </select></td>
+				</tr>
+			</table>
+		</fieldset>
+		<br>
+		<table border="1" width="100%">
+			<tr>
+				<td class="FieldLabel" style="text-align: center">
+					<button id="getIdCard" onclick="readIdCard();"
+						style="display: none">读取二代证卡</button>&nbsp;&nbsp;
+					<button id="saveon" onclick="save()">保&nbsp;存</button>&nbsp;&nbsp;
+					<button id="saveadd" onclick="saveAndCon();">保存并增加</button>&nbsp;&nbsp;
+					<button onclick="hideTj();">关&nbsp;闭</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

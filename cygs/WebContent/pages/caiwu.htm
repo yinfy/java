@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>财务负责人</title>
+</head>
+
+<body>
+	<form dataset="cwfzrDs" class="L5form">
+		<table border="1" id="idTable" width="100%">
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>姓名</td>
+				<td class="FieldInput"><input type="text" id="name"
+					name="name" field="NAME" title="姓名" style="width: 60%"></td>
+				<td class="FieldLabel">固定电话</td>
+				<td class="FieldInput"><input type="text" id="tel" name="tel"
+					field="TEL" title="固定电话" style="width: 60%"></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel">移动电话</td>
+				<td class="FieldInput"><input type="text" id="mobtel"
+					name="mobtel" field="MOBTEL" title="移动电话" style="width: 60%">
+				</td>
+				<td class="FieldLabel"><font color="red">*</font>电子邮箱</td>
+				<td class="FieldInput"><input type="text" id="email"
+					name="email" field="EMAIL" title="邮箱" style="width: 60%"></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>身份证件类型
+				</td>
+				<td class="FieldInput" style="width: 35%"><select id="CERTYPE"
+					title="身份证件类型" name="CERTYPE" field="CERTYPE" style="width: 60%">
+						<option value="" selected="selected">请选择</option>
+						<option value="10">中华人民共和国居民身份证</option>
+						<option value="20">中华人民共和国军官证</option>
+						<option value="30">中华人民共和国警官证</option>
+						<option value="40">外国地区（护照）</option>
+						<option value="51">香港特别行政区护照</option>
+						<option value="52">香港（永久性）居民身份证</option>
+						<option value="53">澳门特别行政区护照</option>
+						<option value="54">澳门（永久性）居民身份证</option>
+						<option value="55">港澳居民来往内地通行证</option>
+						<option value="56">台湾居民身份证</option>
+						<option value="57">台湾居民来往大陆通行证</option>
+						<option value="58">台湾农民身份有关证明</option>
+						<option value="60">户口薄</option>
+						<option value="71">暂住证</option>
+						<option value="72">香港律师（中国委托公证人）...</option>
+						<option value="73">澳门居民身份证</option>
+						<option value="74">澳门特别行政区政府身份证明...</option>
+						<option value="90">其他有效身份证件</option>
+				</select></td>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>身份证件号码
+				</td>
+				<td class="FieldInput" style="width: 35%"><input type="text"
+					id="cerno" name="cerno" field="CERNO" title="身份证号"
+					style="width: 60%"></td>
+			</tr>
+		</table>
+		<font color="red" size=\'2\'><b>*注意：固定电话和移动电话必填一项！</b></font>
+		<table border="0" width="100%">
+			<tr>
+				<td style="text-align: center" class="FieldLabel">
+					<button id="saveon" name="saveon" onclick="save();">保&nbsp;存</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>执行董事、监事、经理信息</title>
+</head>
+
+<body>
+	<form id="editForm" dataset="adds" class="L5form">
+		<table border="1" width="100%">
+			<tr>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>姓名</td>
+				<td class="FieldInput" style="width: 35%"><input type="text"
+					name="name" id="name" field="NAME" style="width: 60%" title="姓名" />
+					&nbsp;&nbsp;
+					<button id='tiquButton' onclick="selectNameFromDong()">提取</button>
+				</td>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>职务</td>
+				<td class="FieldInput" style="width: 35%"><select
+					name="POSITION" field="POSITION" style="width: 80%" title="职务">
+						<option value="" selected="selected">请选择</option>
+						<option value="000">监事长</option>
+						<option value="408A">监事</option>
+						<option value="408E">副董事长兼总经理</option>
+						<option value="408F">董事长兼经理</option>
+						<option value="410A">董事长兼总经理</option>
+						<option value="410B">董事兼总经理</option>
+						<option value="410C">执行董事兼总经理</option>
+						<option value="410D">执行董事兼经理</option>
+						<option value="410E">董事长兼经理</option>
+						<option value="431A">董事长</option>
+						<option value="431B">副董事长</option>
+						<option value="432A">董事</option>
+						<option value="432K">执行董事</option>
+						<option value="434Q">总经理</option>
+						<option value="434R">副总经理</option>
+						<option value="436A">经理</option>
+						<option value="490A">负责人</option>
+						<option value="9999">其他人员</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>证件类型</td>
+				<td class="FieldInput" colspan='3'><select name="CERTYPE"
+					field="CERTYPE" id='certype' style="width: 90%">
+						<option value="" selected="selected">请选择</option>
+						<option value="10">中华人民共和国居民身份证</option>
+						<option value="20">中华人民共和国军官证</option>
+						<option value="30">中华人民共和国警官证</option>
+						<option value="40">外国地区（护照）</option>
+						<option value="51">香港特别行政区护照</option>
+						<option value="52">香港（永久性）居民身份证</option>
+						<option value="53">澳门特别行政区护照</option>
+						<option value="54">澳门（永久性）居民身份证</option>
+						<option value="55">港澳居民来往内地通行证</option>
+						<option value="56">台湾居民身份证</option>
+						<option value="57">台湾居民来往大陆通行证</option>
+						<option value="58">台湾农民身份有关证明</option>
+						<option value="60">户口薄</option>
+						<option value="71">暂住证</option>
+						<option value="72">香港律师（中国委托公证人）...</option>
+						<option value="73">澳门居民身份证</option>
+						<option value="74">澳门特别行政区政府身份证明...</option>
+						<option value="90">其他有效身份证件</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>证件号码</td>
+				<td class="FieldInput" colspan='3'><input type="text"
+					name="CERNO" id="cerno" field="CERNO" style="width: 90%" /></td>
+			</tr>
+			</tr>
+		</table>
+		<br>
+		<table border="1" width="100%">
+			<tr>
+				<td class="FieldLabel" style="text-align: center">
+					<button id="getIdCard" onclick="readIdCard();"
+						style="display: none">读取二代证卡</button>&nbsp;&nbsp;
+					<button id="saveon" onclick="save()">保&nbsp;存</button>&nbsp;&nbsp;
+					<button id="saveadd" onclick="saveAndCon();">保存并增加</button>&nbsp;&nbsp;
+					<button onclick="hideXg();">关&nbsp;闭</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

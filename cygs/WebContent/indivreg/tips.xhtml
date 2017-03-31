@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+			<p:selectOneMenu value="#{indivBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="tips" itemLabel="tips" />
+			</p:selectOneMenu>
+			<p:panel styleClass="tableboard">
+				<p:panel rendered="#{not indivBean.admin}">
+					<p style="font-weight: bold; font-size: 24px;">温馨提示</p>
+					<p style="font-weight: bold; text-align: left">
+						登记机关将在3个工作日内进行回复。</p>
+					<p style="font-weight: bold; text-align: left">
+						可点击“我的登记申报”查看结果。状态显示“退回”，则需按照提示内容修改相关资料，
+						再次“确认提交”，等待回复。状态显示“预审通过”，可点击“生成”→“下载”，系统将自动生成个体工商户设立登记申请表格等相关材料。</p>
+					<p style="font-weight: bold; text-align: left">
+						资料下载后打印出来，并请按照提示做好签字、粘贴当事人身份证复印件等相关准备工作。个体工商户到窗口提交材料时，还需同时携带以下资料：
+					</p>
+					<p style="text-align: left">1、 有关人员的身份证原件、复印件；</p>
+					<p style="text-align: left">2、 与填写一致的住所使用证明：</p>
+					<p style="text-align: left">租房合同及产权证复印件，无产权的提供房地产管理部门或有权限
+						部门出具的房屋权属证明</p>
+					<p style="text-align: left">3、 经营者的小二寸照片</p>
+					<p style="text-align: left">到辖区工商所窗口办理并领取执照。</p>
+
+					<p:outputPanel>
+						<h:outputText rendered="false"
+							value="注意：办理地点的选择必须与核名时所选择的相一致！    已知情" style="color:red;" />
+						<p:selectBooleanCheckbox rendered="false"
+							value="#{indivBean.confirmed}">
+							<p:ajax update="prefix" />
+						</p:selectBooleanCheckbox>
+						<br />
+						<p:outputLabel rendered="false" value="办理方式" />
+						<p:selectOneMenu rendered="false" id="prefix"
+							disabled="#{not indivBean.confirmed}"
+							value="#{indivBean.creg.special}" style="width:300px;">
+							<f:selectItem itemValue="请选择" itemLabel="请选择" />
+							<f:selectItems value="#{selectItems.bureau}" />
+							<p:ajax update="commit_button" />
+						</p:selectOneMenu>
+					</p:outputPanel>
+
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{indivBean.admin}">
+					<h1>综合意见：</h1>
+					<p:inputTextarea id="Indivreg_comment5" rows="8" cols="58"
+						value="#{indivBean.creg.comment5}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Indivreg_comment5" />
+				</p:panel>
+				<p:commandButton value="上一步" action="#{indivBean.prepage('weizhi')}"
+					immediate="#{indivList.admin?'false':'false'}">
+					<f:param name="individ" value="#{indivBean.creg.id}" />
+					<p:confirm disabled="#{indivList.admin?'true':'true'}" header="请确认"
+						message="注意：办理地点的选择必须与核名时所选择的相一致！是否 已知情？" icon="ui-icon-alert" />
+				</p:commandButton>
+				<p:commandButton id="commit_button"
+					disabled="#{indivBean.creg.special eq '请选择'}" value="提交审核"
+					action="#{indivBean.commit()}" rendered="#{not indivList.admin}"
+					update="formone" oncomplete="refpara();PF('welcome').show;">
+					<f:param name="individ" value="#{indivBean.creg.id}" />
+					<p:confirm disabled="#{indivList.admin?'true':'true'}" header="请确认"
+						message="注意：办理地点的选择必须与核名时所选择的相一致！是否 已知情？" icon="ui-icon-alert" />
+				</p:commandButton>
+				<p:commandLink styleClass="button3" style="width:100px;"
+					value="预审通过" action="#{indivBean.approve()}"
+					rendered="#{indivList.admin}" oncomplete="refpara();closewin();">
+					<f:param name="individ" value="#{indivBean.creg.id}" />
+				</p:commandLink>
+				<p:commandLink styleClass="button3" value="退回"
+					action="#{indivBean.reject()}" rendered="#{indivList.admin}"
+					oncomplete="refpara();closewin();">
+					<f:param name="individ" value="#{indivBean.creg.id}" />
+				</p:commandLink>
+			</p:panel>
+			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				<p:commandButton value="是" type="button"
+					styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+				<p:commandButton value="否" type="button"
+					styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+			</p:confirmDialog>
+
+			<p:dialog visible="#{indivBean.showWelcome}" showHeader="false"
+				widgetVar="welcome" modal="true">
+				<table border="0">
+					<tr align="center">
+						<td><img src="#{request.contextPath}/images/weixiao.png" /></td>
+						<td><span class="bigfont">
+								<p>您的开业登记已提交成功！</p>
+								<p>请稍后登录系统查看审批状态</p>
+						</span></td>
+					</tr>
+					<tr align="center">
+						<td colspan="2"><p:commandButton value="确定" immediate="true"
+								onclick="PF('welcome').hide();refpara();closewin();" /></td>
+					</tr>
+				</table>
+			</p:dialog>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

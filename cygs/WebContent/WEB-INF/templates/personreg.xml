@@ -1,0 +1,1355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core"
+	xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas"
+	xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml"
+	xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint"
+	xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
+	xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2"
+	xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core"
+	w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no"
+	xml:space="preserve"><w:ignoreSubtree
+	w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" /><o:DocumentProperties><o:Title>公司登记（备案）申请表</o:Title><o:Author>微软用户</o:Author><o:LastAuthor>Yao Zhilin</o:LastAuthor><o:Revision>4</o:Revision><o:TotalTime>5</o:TotalTime><o:LastPrinted>2014-02-14T03:08:00Z</o:LastPrinted><o:Created>2016-10-09T12:10:00Z</o:Created><o:LastSaved>2016-10-09T12:14:00Z</o:LastSaved><o:Pages>2</o:Pages><o:Words>132</o:Words><o:Characters>753</o:Characters><o:Company>Microsoft</o:Company><o:Lines>6</o:Lines><o:Paragraphs>1</o:Paragraphs><o:CharactersWithSpaces>884</o:CharactersWithSpaces><o:Version>14</o:Version></o:DocumentProperties><o:CustomDocumentProperties><o:KSOProductBuildVer
+	dt:dt="string">2052-9.1.0.5218</o:KSOProductBuildVer></o:CustomDocumentProperties><w:fonts><w:defaultFonts
+	w:ascii="Calibri" w:fareast="微软雅黑" w:h-ansi="Calibri" w:cs="Times New Roman" /><w:font
+	w:name="Times New Roman"><w:panose-1 w:val="02020603050405020304" /><w:charset
+	w:val="00" /><w:family w:val="Roman" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="E0002AFF" w:usb-1="C0007841" w:usb-2="00000009" w:usb-3="00000000"
+	w:csb-0="000001FF" w:csb-1="00000000" /></w:font><w:font w:name="Arial"><w:panose-1
+	w:val="020B0604020202020204" /><w:charset w:val="00" /><w:family
+	w:val="Swiss" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="E0002AFF" w:usb-1="C0007843" w:usb-2="00000009" w:usb-3="00000000"
+	w:csb-0="000001FF" w:csb-1="00000000" /></w:font><w:font w:name="宋体"><w:altName
+	w:val="SimSun" /><w:panose-1 w:val="02010600030101010101" /><w:charset
+	w:val="86" /><w:family w:val="auto" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000"
+	w:csb-0="00040001" w:csb-1="00000000" /></w:font><w:font w:name="黑体"><w:altName
+	w:val="SimHei" /><w:panose-1 w:val="02010609060101010101" /><w:charset
+	w:val="86" /><w:family w:val="Modern" /><w:pitch
+	w:val="fixed" /><w:sig w:usb-0="800002BF" w:usb-1="38CF7CFA"
+	w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" /></w:font><w:font
+	w:name="Cambria Math"><w:panose-1 w:val="02040503050406030204" /><w:charset
+	w:val="00" /><w:family w:val="Roman" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="E00002FF" w:usb-1="420024FF" w:usb-2="00000000" w:usb-3="00000000"
+	w:csb-0="0000019F" w:csb-1="00000000" /></w:font><w:font w:name="Cambria"><w:panose-1
+	w:val="02040503050406030204" /><w:charset w:val="00" /><w:family
+	w:val="Roman" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="E00002FF" w:usb-1="400004FF" w:usb-2="00000000" w:usb-3="00000000"
+	w:csb-0="0000019F" w:csb-1="00000000" /></w:font><w:font w:name="Calibri"><w:panose-1
+	w:val="020F0502020204030204" /><w:charset w:val="00" /><w:family
+	w:val="Swiss" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="E00002FF" w:usb-1="4000ACFF" w:usb-2="00000001" w:usb-3="00000000"
+	w:csb-0="0000019F" w:csb-1="00000000" /></w:font><w:font w:name="微软雅黑"><w:panose-1
+	w:val="020B0503020204020204" /><w:charset w:val="86" /><w:family
+	w:val="Swiss" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="80000287" w:usb-1="280F3C52" w:usb-2="00000016" w:usb-3="00000000"
+	w:csb-0="0004001F" w:csb-1="00000000" /></w:font><w:font w:name="@宋体"><w:panose-1
+	w:val="02010600030101010101" /><w:charset w:val="86" /><w:family
+	w:val="auto" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000"
+	w:csb-0="00040001" w:csb-1="00000000" /></w:font><w:font w:name="@黑体"><w:panose-1
+	w:val="02010609060101010101" /><w:charset w:val="86" /><w:family
+	w:val="Modern" /><w:pitch w:val="fixed" /><w:sig w:usb-0="800002BF"
+	w:usb-1="38CF7CFA" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001"
+	w:csb-1="00000000" /></w:font><w:font w:name="@微软雅黑"><w:panose-1
+	w:val="020B0503020204020204" /><w:charset w:val="86" /><w:family
+	w:val="Swiss" /><w:pitch w:val="variable" /><w:sig
+	w:usb-0="80000287" w:usb-1="280F3C52" w:usb-2="00000016" w:usb-3="00000000"
+	w:csb-0="0004001F" w:csb-1="00000000" /></w:font></w:fonts><w:styles><w:versionOfBuiltInStylenames
+	w:val="7" /><w:latentStyles w:defLockedState="off"
+	w:latentStyleCount="267"><w:lsdException w:name="Normal" /><w:lsdException
+	w:name="heading 1" /><w:lsdException w:name="heading 2" /><w:lsdException
+	w:name="heading 3" /><w:lsdException w:name="heading 4" /><w:lsdException
+	w:name="heading 5" /><w:lsdException w:name="heading 6" /><w:lsdException
+	w:name="heading 7" /><w:lsdException w:name="heading 8" /><w:lsdException
+	w:name="heading 9" /><w:lsdException w:name="toc 1" /><w:lsdException
+	w:name="toc 2" /><w:lsdException w:name="toc 3" /><w:lsdException
+	w:name="toc 4" /><w:lsdException w:name="toc 5" /><w:lsdException
+	w:name="toc 6" /><w:lsdException w:name="toc 7" /><w:lsdException
+	w:name="toc 8" /><w:lsdException w:name="toc 9" /><w:lsdException
+	w:name="annotation text" /><w:lsdException w:name="header" /><w:lsdException
+	w:name="footer" /><w:lsdException w:name="caption" /><w:lsdException
+	w:name="annotation reference" /><w:lsdException w:name="page number" /><w:lsdException
+	w:name="Title" /><w:lsdException w:name="Default Paragraph Font" /><w:lsdException
+	w:name="Body Text" /><w:lsdException w:name="Subtitle" /><w:lsdException
+	w:name="Body Text Indent 2" /><w:lsdException w:name="Strong" /><w:lsdException
+	w:name="Emphasis" /><w:lsdException w:name="Normal Table" /><w:lsdException
+	w:name="annotation subject" /><w:lsdException w:name="Balloon Text" /><w:lsdException
+	w:name="Placeholder Text" /><w:lsdException w:name="No Spacing" /><w:lsdException
+	w:name="Light Shading" /><w:lsdException w:name="Light List" /><w:lsdException
+	w:name="Light Grid" /><w:lsdException w:name="Medium Shading 1" /><w:lsdException
+	w:name="Medium Shading 2" /><w:lsdException w:name="Medium List 1" /><w:lsdException
+	w:name="Medium List 2" /><w:lsdException w:name="Medium Grid 1" /><w:lsdException
+	w:name="Medium Grid 2" /><w:lsdException w:name="Medium Grid 3" /><w:lsdException
+	w:name="Dark List" /><w:lsdException w:name="Colorful Shading" /><w:lsdException
+	w:name="Colorful List" /><w:lsdException w:name="Colorful Grid" /><w:lsdException
+	w:name="Light Shading Accent 1" /><w:lsdException
+	w:name="Light List Accent 1" /><w:lsdException w:name="Light Grid Accent 1" /><w:lsdException
+	w:name="Medium Shading 1 Accent 1" /><w:lsdException
+	w:name="Medium Shading 2 Accent 1" /><w:lsdException
+	w:name="Medium List 1 Accent 1" /><w:lsdException
+	w:name="Revision" /><w:lsdException w:name="List Paragraph" /><w:lsdException
+	w:name="Quote" /><w:lsdException w:name="Intense Quote" /><w:lsdException
+	w:name="Medium List 2 Accent 1" /><w:lsdException
+	w:name="Medium Grid 1 Accent 1" /><w:lsdException
+	w:name="Medium Grid 2 Accent 1" /><w:lsdException
+	w:name="Medium Grid 3 Accent 1" /><w:lsdException
+	w:name="Dark List Accent 1" /><w:lsdException
+	w:name="Colorful Shading Accent 1" /><w:lsdException
+	w:name="Colorful List Accent 1" /><w:lsdException
+	w:name="Colorful Grid Accent 1" /><w:lsdException
+	w:name="Light Shading Accent 2" /><w:lsdException
+	w:name="Light List Accent 2" /><w:lsdException w:name="Light Grid Accent 2" /><w:lsdException
+	w:name="Medium Shading 1 Accent 2" /><w:lsdException
+	w:name="Medium Shading 2 Accent 2" /><w:lsdException
+	w:name="Medium List 1 Accent 2" /><w:lsdException
+	w:name="Medium List 2 Accent 2" /><w:lsdException
+	w:name="Medium Grid 1 Accent 2" /><w:lsdException
+	w:name="Medium Grid 2 Accent 2" /><w:lsdException
+	w:name="Medium Grid 3 Accent 2" /><w:lsdException
+	w:name="Dark List Accent 2" /><w:lsdException
+	w:name="Colorful Shading Accent 2" /><w:lsdException
+	w:name="Colorful List Accent 2" /><w:lsdException
+	w:name="Colorful Grid Accent 2" /><w:lsdException
+	w:name="Light Shading Accent 3" /><w:lsdException
+	w:name="Light List Accent 3" /><w:lsdException w:name="Light Grid Accent 3" /><w:lsdException
+	w:name="Medium Shading 1 Accent 3" /><w:lsdException
+	w:name="Medium Shading 2 Accent 3" /><w:lsdException
+	w:name="Medium List 1 Accent 3" /><w:lsdException
+	w:name="Medium List 2 Accent 3" /><w:lsdException
+	w:name="Medium Grid 1 Accent 3" /><w:lsdException
+	w:name="Medium Grid 2 Accent 3" /><w:lsdException
+	w:name="Medium Grid 3 Accent 3" /><w:lsdException
+	w:name="Dark List Accent 3" /><w:lsdException
+	w:name="Colorful Shading Accent 3" /><w:lsdException
+	w:name="Colorful List Accent 3" /><w:lsdException
+	w:name="Colorful Grid Accent 3" /><w:lsdException
+	w:name="Light Shading Accent 4" /><w:lsdException
+	w:name="Light List Accent 4" /><w:lsdException w:name="Light Grid Accent 4" /><w:lsdException
+	w:name="Medium Shading 1 Accent 4" /><w:lsdException
+	w:name="Medium Shading 2 Accent 4" /><w:lsdException
+	w:name="Medium List 1 Accent 4" /><w:lsdException
+	w:name="Medium List 2 Accent 4" /><w:lsdException
+	w:name="Medium Grid 1 Accent 4" /><w:lsdException
+	w:name="Medium Grid 2 Accent 4" /><w:lsdException
+	w:name="Medium Grid 3 Accent 4" /><w:lsdException
+	w:name="Dark List Accent 4" /><w:lsdException
+	w:name="Colorful Shading Accent 4" /><w:lsdException
+	w:name="Colorful List Accent 4" /><w:lsdException
+	w:name="Colorful Grid Accent 4" /><w:lsdException
+	w:name="Light Shading Accent 5" /><w:lsdException
+	w:name="Light List Accent 5" /><w:lsdException w:name="Light Grid Accent 5" /><w:lsdException
+	w:name="Medium Shading 1 Accent 5" /><w:lsdException
+	w:name="Medium Shading 2 Accent 5" /><w:lsdException
+	w:name="Medium List 1 Accent 5" /><w:lsdException
+	w:name="Medium List 2 Accent 5" /><w:lsdException
+	w:name="Medium Grid 1 Accent 5" /><w:lsdException
+	w:name="Medium Grid 2 Accent 5" /><w:lsdException
+	w:name="Medium Grid 3 Accent 5" /><w:lsdException
+	w:name="Dark List Accent 5" /><w:lsdException
+	w:name="Colorful Shading Accent 5" /><w:lsdException
+	w:name="Colorful List Accent 5" /><w:lsdException
+	w:name="Colorful Grid Accent 5" /><w:lsdException
+	w:name="Light Shading Accent 6" /><w:lsdException
+	w:name="Light List Accent 6" /><w:lsdException w:name="Light Grid Accent 6" /><w:lsdException
+	w:name="Medium Shading 1 Accent 6" /><w:lsdException
+	w:name="Medium Shading 2 Accent 6" /><w:lsdException
+	w:name="Medium List 1 Accent 6" /><w:lsdException
+	w:name="Medium List 2 Accent 6" /><w:lsdException
+	w:name="Medium Grid 1 Accent 6" /><w:lsdException
+	w:name="Medium Grid 2 Accent 6" /><w:lsdException
+	w:name="Medium Grid 3 Accent 6" /><w:lsdException
+	w:name="Dark List Accent 6" /><w:lsdException
+	w:name="Colorful Shading Accent 6" /><w:lsdException
+	w:name="Colorful List Accent 6" /><w:lsdException
+	w:name="Colorful Grid Accent 6" /><w:lsdException
+	w:name="Subtle Emphasis" /><w:lsdException w:name="Intense Emphasis" /><w:lsdException
+	w:name="Subtle Reference" /><w:lsdException w:name="Intense Reference" /><w:lsdException
+	w:name="Book Title" /><w:lsdException w:name="Bibliography" /><w:lsdException
+	w:name="TOC Heading" /></w:latentStyles><w:style w:type="paragraph"
+	w:default="on" w:styleId="a"><w:name w:val="Normal" /><wx:uiName
+	wx:val="正文" /><w:pPr><w:widowControl w:val="off" /><w:jc
+	w:val="both" /></w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman"
+	w:fareast="宋体" w:h-ansi="Times New Roman" /><wx:font wx:val="Times New Roman" /><w:kern
+	w:val="2" /><w:sz w:val="21" /><w:sz-cs w:val="24" /><w:lang
+	w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" /></w:rPr></w:style><w:style
+	w:type="character" w:default="on" w:styleId="a0"><w:name
+	w:val="Default Paragraph Font" /><wx:uiName wx:val="默认段落字体" /></w:style><w:style
+	w:type="table" w:default="on" w:styleId="a1"><w:name w:val="Normal Table" /><wx:uiName
+	wx:val="普通表格" /><w:rPr><wx:font wx:val="Calibri" /><w:lang
+	w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" /></w:rPr><w:tblPr><w:tblCellMar><w:top
+	w:w="0" w:type="dxa" /><w:left w:w="108" w:type="dxa" /><w:bottom
+	w:w="0" w:type="dxa" /><w:right w:w="108" w:type="dxa" /></w:tblCellMar></w:tblPr></w:style><w:style
+	w:type="list" w:default="on" w:styleId="a2"><w:name w:val="No List" /><wx:uiName
+	wx:val="无列表" /></w:style><w:style w:type="character" w:styleId="Char"><w:name
+	w:val="页眉 Char" /><w:link w:val="a3" /><w:rPr><w:rFonts
+	w:ascii="Times New Roman" w:fareast="宋体" w:h-ansi="Times New Roman" /><w:kern
+	w:val="2" /><w:sz w:val="18" /><w:sz-cs w:val="18" /></w:rPr></w:style><w:style
+	w:type="character" w:styleId="a4"><w:name w:val="page number" /><wx:uiName
+	wx:val="页码" /><w:basedOn w:val="a0" /></w:style><w:style
+	w:type="character" w:styleId="Char0"><w:name w:val="批注框文本 Char" /><w:link
+	w:val="a5" /><w:rPr><w:rFonts w:ascii="Times New Roman"
+	w:fareast="宋体" w:h-ansi="Times New Roman" /><w:kern w:val="2" /><w:sz
+	w:val="18" /><w:sz-cs w:val="18" /></w:rPr></w:style><w:style
+	w:type="character" w:styleId="a6"><w:name w:val="annotation reference" /><wx:uiName
+	wx:val="批注引用" /><w:rPr><w:sz w:val="21" /><w:sz-cs w:val="21" /></w:rPr></w:style><w:style
+	w:type="character" w:styleId="Char1"><w:name w:val="页脚 Char" /><w:link
+	w:val="a7" /><w:rPr><w:rFonts w:ascii="Times New Roman"
+	w:fareast="宋体" w:h-ansi="Times New Roman" /><w:kern w:val="2" /><w:sz
+	w:val="18" /><w:sz-cs w:val="18" /></w:rPr></w:style><w:style
+	w:type="character" w:styleId="Char2"><w:name w:val="批注主题 Char" /><w:basedOn
+	w:val="Char3" /><w:link w:val="a8" /><w:rPr><w:rFonts
+	w:ascii="Times New Roman" w:fareast="宋体" w:h-ansi="Times New Roman" /><w:kern
+	w:val="2" /><w:sz w:val="21" /><w:sz-cs w:val="24" /></w:rPr></w:style><w:style
+	w:type="character" w:styleId="apple-style-span"><w:name w:val="apple-style-span" /><w:basedOn
+	w:val="a0" /></w:style><w:style w:type="character" w:styleId="2Char"><w:name
+	w:val="正文文本缩进 2 Char" /><w:link w:val="2" /><w:rPr><w:rFonts
+	w:ascii="Times New Roman" w:fareast="宋体" w:h-ansi="Times New Roman"
+	w:cs="Times New Roman" /><w:kern w:val="2" /><w:sz w:val="21" /><w:sz-cs
+	w:val="24" /></w:rPr></w:style><w:style w:type="character"
+	w:styleId="Char4"><w:name w:val="正文文本 Char" /><w:link w:val="a9" /><w:rPr><w:rFonts
+	w:ascii="Times New Roman" w:fareast="宋体" w:h-ansi="Times New Roman" /><w:kern
+	w:val="2" /><w:sz w:val="21" /><w:sz-cs w:val="24" /></w:rPr></w:style><w:style
+	w:type="character" w:styleId="Char3"><w:name w:val="批注文字 Char" /><w:link
+	w:val="aa" /><w:rPr><w:rFonts w:ascii="Times New Roman"
+	w:fareast="宋体" w:h-ansi="Times New Roman" /><w:kern w:val="2" /><w:sz
+	w:val="21" /><w:sz-cs w:val="24" /></w:rPr></w:style><w:style
+	w:type="paragraph" w:styleId="a7"><w:name w:val="footer" /><wx:uiName
+	wx:val="页脚" /><w:basedOn w:val="a" /><w:link w:val="Char1" /><w:pPr><w:tabs><w:tab
+	w:val="center" w:pos="4153" /><w:tab w:val="right" w:pos="8306" /></w:tabs><w:snapToGrid
+	w:val="off" /><w:jc w:val="left" /></w:pPr><w:rPr><wx:font
+	wx:val="Times New Roman" /><w:sz w:val="18" /><w:sz-cs
+	w:val="18" /></w:rPr></w:style><w:style w:type="paragraph"
+	w:styleId="aa"><w:name w:val="annotation text" /><wx:uiName
+	wx:val="批注文字" /><w:basedOn w:val="a" /><w:link w:val="Char3" /><w:pPr><w:jc
+	w:val="left" /></w:pPr><w:rPr><wx:font wx:val="Times New Roman" /></w:rPr></w:style><w:style
+	w:type="paragraph" w:styleId="a9"><w:name w:val="Body Text" /><wx:uiName
+	wx:val="正文文本" /><w:basedOn w:val="a" /><w:link w:val="Char4" /><w:pPr><w:spacing
+	w:after="120" /></w:pPr><w:rPr><wx:font wx:val="Times New Roman" /></w:rPr></w:style><w:style
+	w:type="paragraph" w:styleId="a3"><w:name w:val="header" /><wx:uiName
+	wx:val="页眉" /><w:basedOn w:val="a" /><w:link w:val="Char" /><w:pPr><w:pBdr><w:bottom
+	w:val="single" w:sz="6" wx:bdrwidth="15" w:space="1" w:color="auto" /></w:pBdr><w:tabs><w:tab
+	w:val="center" w:pos="4153" /><w:tab w:val="right" w:pos="8306" /></w:tabs><w:snapToGrid
+	w:val="off" /><w:jc w:val="center" /></w:pPr><w:rPr><wx:font
+	wx:val="Times New Roman" /><w:sz w:val="18" /><w:sz-cs
+	w:val="18" /></w:rPr></w:style><w:style w:type="paragraph"
+	w:styleId="a8"><w:name w:val="annotation subject" /><wx:uiName
+	wx:val="批注主题" /><w:basedOn w:val="aa" /><w:next w:val="aa" /><w:link
+	w:val="Char2" /><w:rPr><wx:font wx:val="Times New Roman" /></w:rPr></w:style><w:style
+	w:type="paragraph" w:styleId="2"><w:name w:val="Body Text Indent 2" /><wx:uiName
+	wx:val="正文文本缩进 2" /><w:basedOn w:val="a" /><w:link
+	w:val="2Char" /><w:pPr><w:spacing w:after="120" w:line="480"
+	w:line-rule="auto" /><w:ind w:left-chars="200" w:left="420" /></w:pPr><w:rPr><wx:font
+	wx:val="Times New Roman" /></w:rPr></w:style><w:style w:type="paragraph"
+	w:styleId="a5"><w:name w:val="Balloon Text" /><wx:uiName
+	wx:val="批注框文本" /><w:basedOn w:val="a" /><w:link w:val="Char0" /><w:rPr><wx:font
+	wx:val="Times New Roman" /><w:sz w:val="18" /><w:sz-cs
+	w:val="18" /></w:rPr></w:style><w:style w:type="paragraph"
+	w:styleId="New"><w:name w:val="正文 New" /><w:pPr><w:widowControl
+	w:val="off" /><w:jc w:val="both" /></w:pPr><w:rPr><w:rFonts
+	w:ascii="Times New Roman" w:fareast="宋体" w:h-ansi="Times New Roman" /><wx:font
+	wx:val="Times New Roman" /><w:kern w:val="2" /><w:sz w:val="21" /><w:lang
+	w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" /></w:rPr></w:style></w:styles><w:shapeDefaults><o:shapedefaults
+	v:ext="edit" spidmax="2049" fillcolor="#9cbee0" strokecolor="#739cc3"><v:fill
+	color="#9cbee0" color2="#bbd5f0" type="gradient"><o:fill v:ext="view"
+	type="gradientUnscaled" /></v:fill><v:stroke color="#739cc3"
+	weight="1.25pt" /></o:shapedefaults><o:shapelayout v:ext="edit"><o:idmap
+	v:ext="edit" data="1" /></o:shapelayout></w:shapeDefaults><w:bgPict><w:background
+	w:bgcolor="white" /></w:bgPict><w:docPr><w:view w:val="print" /><w:zoom
+	w:percent="130" /><w:doNotEmbedSystemFonts /><w:bordersDontSurroundHeader /><w:bordersDontSurroundFooter /><w:proofState
+	w:spelling="clean" w:grammar="clean" /><w:attachedTemplate
+	w:val="Normal" /><w:stylePaneFormatFilter
+	w:val="3F01" /><w:defaultTabStop w:val="720" /><w:drawingGridHorizontalSpacing
+	w:val="105" /><w:drawingGridVerticalSpacing
+	w:val="156" /><w:displayHorizontalDrawingGridEvery
+	w:val="2" /><w:displayVerticalDrawingGridEvery
+	w:val="2" /><w:punctuationKerning /><w:characterSpacingControl
+	w:val="DontCompress" /><w:webPageEncoding w:val="x-cp20936" /><w:optimizeForBrowser /><w:targetScreenSz
+	w:val="800x600" /><w:validateAgainstSchema
+	w:val="off" /><w:saveInvalidXML w:val="off" /><w:ignoreMixedContent
+	w:val="off" /><w:alwaysShowPlaceholderText
+	w:val="off" /><w:doNotUnderlineInvalidXML /><w:hdrShapeDefaults><o:shapedefaults
+	v:ext="edit" spidmax="2049" fillcolor="#9cbee0" strokecolor="#739cc3"><v:fill
+	color="#9cbee0" color2="#bbd5f0" type="gradient"><o:fill v:ext="view"
+	type="gradientUnscaled" /></v:fill><v:stroke color="#739cc3"
+	weight="1.25pt" /></o:shapedefaults></w:hdrShapeDefaults><w:footnotePr><w:footnote
+	w:type="separator"><w:p wsp:rsidR="00052FA9" wsp:rsidRDefault="00052FA9"><w:r><w:separator /></w:r></w:p></w:footnote><w:footnote
+	w:type="continuation-separator"><w:p wsp:rsidR="00052FA9" wsp:rsidRDefault="00052FA9"><w:r><w:continuationSeparator /></w:r></w:p></w:footnote></w:footnotePr><w:endnotePr><w:endnote
+	w:type="separator"><w:p wsp:rsidR="00052FA9" wsp:rsidRDefault="00052FA9"><w:r><w:separator /></w:r></w:p></w:endnote><w:endnote
+	w:type="continuation-separator"><w:p wsp:rsidR="00052FA9" wsp:rsidRDefault="00052FA9"><w:r><w:continuationSeparator /></w:r></w:p></w:endnote></w:endnotePr><w:compat><w:spaceForUL /><w:doNotLeaveBackslashAlone /><w:breakWrappedTables /><w:snapToGridInCell /><w:wrapTextWithPunct /><w:useAsianBreakRules /><w:dontGrowAutofit /><w:useFELayout /></w:compat><wsp:rsids><wsp:rsidRoot
+	wsp:val="00172A27" /><wsp:rsid wsp:val="000258F3" /><wsp:rsid
+	wsp:val="00052FA9" /><wsp:rsid wsp:val="000B02C2" /><wsp:rsid
+	wsp:val="000D1137" /><wsp:rsid wsp:val="00132CD3" /><wsp:rsid
+	wsp:val="00154BBB" /><wsp:rsid wsp:val="00164C14" /><wsp:rsid
+	wsp:val="00185F00" /><wsp:rsid wsp:val="001E62D9" /><wsp:rsid
+	wsp:val="00232269" /><wsp:rsid wsp:val="00305ECB" /><wsp:rsid
+	wsp:val="003D272E" /><wsp:rsid wsp:val="003D64EB" /><wsp:rsid
+	wsp:val="00414DC9" /><wsp:rsid wsp:val="004341CB" /><wsp:rsid
+	wsp:val="00435D6B" /><wsp:rsid wsp:val="00441262" /><wsp:rsid
+	wsp:val="004B0A17" /><wsp:rsid wsp:val="00500723" /><wsp:rsid
+	wsp:val="00591DCD" /><wsp:rsid wsp:val="006477A8" /><wsp:rsid
+	wsp:val="00690A47" /><wsp:rsid wsp:val="006A22AC" /><wsp:rsid
+	wsp:val="007653F4" /><wsp:rsid wsp:val="00793057" /><wsp:rsid
+	wsp:val="007A309E" /><wsp:rsid wsp:val="007E6A3E" /><wsp:rsid
+	wsp:val="00805AC9" /><wsp:rsid wsp:val="008802F1" /><wsp:rsid
+	wsp:val="008E3DE4" /><wsp:rsid wsp:val="0092154A" /><wsp:rsid
+	wsp:val="009A4116" /><wsp:rsid wsp:val="00A43909" /><wsp:rsid
+	wsp:val="00B36917" /><wsp:rsid wsp:val="00B86888" /><wsp:rsid
+	wsp:val="00C1698D" /><wsp:rsid wsp:val="00C55123" /><wsp:rsid
+	wsp:val="00C80F20" /><wsp:rsid wsp:val="00C91CE8" /><wsp:rsid
+	wsp:val="00D340DA" /><wsp:rsid wsp:val="00D36D28" /><wsp:rsid
+	wsp:val="00D528A3" /><wsp:rsid wsp:val="00D75995" /><wsp:rsid
+	wsp:val="00D76065" /><wsp:rsid wsp:val="00D8420B" /><wsp:rsid
+	wsp:val="00DF01FA" /><wsp:rsid wsp:val="00E4613B" /><wsp:rsid
+	wsp:val="00E5184C" /><wsp:rsid wsp:val="00E75708" /><wsp:rsid
+	wsp:val="00EC1C3C" /><wsp:rsid wsp:val="00F607CA" /><wsp:rsid
+	wsp:val="00F76EE5" /><wsp:rsid wsp:val="00F906E8" /><wsp:rsid
+	wsp:val="0C4F5A7A" /><wsp:rsid wsp:val="1D9057FD" /><wsp:rsid
+	wsp:val="54DE3D6F" /></wsp:rsids></w:docPr><w:body><wx:sect><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:pStyle w:val="2" /><w:spacing
+	w:after="0" w:line="240" w:line-rule="auto" /><w:ind
+	w:left-chars="0" w:left="0" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:sz
+	w:val="36" /><w:sz-cs w:val="36" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:sz
+	w:val="36" /><w:sz-cs w:val="36" /></w:rPr><w:t>个人独资企业登记（备案）申请书</w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE
+	w:val="off" /><w:autoSpaceDN w:val="off" /><w:adjustRightInd
+	w:val="off" /><w:spacing w:line="700" w:line-rule="exact" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>注：</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>请仔细阅读本申请书《填写说明》，按要求填写。</w:t></w:r></w:p><w:tbl><w:tblPr><w:tblpPr
+	w:leftFromText="180" w:rightFromText="180" w:vertAnchor="text"
+	w:tblpXSpec="center" w:tblpY="1" /><w:tblOverlap w:val="Never" /><w:tblW
+	w:w="0" w:type="auto" /><w:tblInd w:w="0" w:type="dxa" /><w:tblBorders><w:top
+	w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="auto" /><w:insideH
+	w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="auto" /><w:insideV
+	w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="auto" /></w:tblBorders><w:tblLayout
+	w:type="Fixed" /></w:tblPr><w:tblGrid><w:gridCol w:w="1628" /><w:gridCol
+	w:w="67" /><w:gridCol w:w="1785" /><w:gridCol w:w="532" /><w:gridCol
+	w:w="468" /><w:gridCol w:w="626" /><w:gridCol w:w="619" /><w:gridCol
+	w:w="15" /><w:gridCol w:w="169" /><w:gridCol w:w="109" /><w:gridCol
+	w:w="809" /><w:gridCol w:w="424" /><w:gridCol w:w="773" /><w:gridCol
+	w:w="181" /><w:gridCol w:w="1826" /></w:tblGrid><w:tr
+	wsp:rsidR="00F607CA"><w:trPr><w:trHeight w:val="680" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="10031" w:type="dxa" /><w:gridSpan w:val="15" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="黑体" w:fareast="黑体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="黑体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>□基本信息</w:t></w:r></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA"><w:trPr><w:trHeight w:val="680" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1695" w:type="dxa" /><w:gridSpan w:val="2" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>名   称</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8336" w:type="dxa" /><w:gridSpan w:val="13" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00D340DA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:proofErr w:type="spellStart" /><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>${cname}</w:t></w:r><w:proofErr
+	w:type="spellEnd" /></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"><w:trPr><w:trHeight
+	w:val="680" /></w:trPr><w:tc><w:tcPr><w:tcW w:w="1695" w:type="dxa" /><w:gridSpan
+	w:val="2" /><w:tcBorders><w:top w:val="single" w:sz="12"
+	wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>备用名称1</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8336" w:type="dxa" /><w:gridSpan w:val="13" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"><w:trPr><w:trHeight
+	w:val="680" /></w:trPr><w:tc><w:tcPr><w:tcW w:w="1695" w:type="dxa" /><w:gridSpan
+	w:val="2" /><w:tcBorders><w:top w:val="single" w:sz="12"
+	wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>备用名称2</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8336" w:type="dxa" /><w:gridSpan w:val="13" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"><w:trPr><w:trHeight
+	w:val="680" /></w:trPr><w:tc><w:tcPr><w:tcW w:w="1695" w:type="dxa" /><w:gridSpan
+	w:val="2" /><w:tcBorders><w:left w:val="single" w:sz="12"
+	wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>名称预先核准文号/注册号/</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:b-cs /><w:sz-cs w:val="21" /></w:rPr><w:t>统一社会信用</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>代码</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8336" w:type="dxa" /><w:gridSpan w:val="13" /><w:tcBorders><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00D340DA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:proofErr w:type="spellStart" /><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>${cnameno}</w:t></w:r><w:proofErr
+	w:type="spellEnd" /></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"><w:trPr><w:trHeight
+	w:val="536" /></w:trPr><w:tc><w:tcPr><w:tcW w:w="1695" w:type="dxa" /><w:gridSpan
+	w:val="2" /><w:tcBorders><w:left w:val="single" w:sz="12"
+	wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom w:val="single"
+	w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>组织机构代码</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="1785" w:type="dxa" /><w:tcBorders><w:bottom w:val="single"
+	w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="1626" w:type="dxa" /><w:gridSpan w:val="3" /><w:tcBorders><w:left
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>纳税人识别号</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="1721" w:type="dxa" /><w:gridSpan w:val="5" /><w:tcBorders><w:left
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="1378" w:type="dxa" /><w:gridSpan w:val="3" /><w:tcBorders><w:left
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>社保登记号</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="1826" w:type="dxa" /><w:tcBorders><w:left w:val="single"
+	w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"><w:trPr><w:trHeight
+	w:val="1246" /></w:trPr><w:tc><w:tcPr><w:tcW w:w="1695" w:type="dxa" /><w:gridSpan
+	w:val="2" /><w:tcBorders><w:left w:val="single" w:sz="12"
+	wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom w:val="single"
+	w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>企业住所</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8336" w:type="dxa" /><w:gridSpan w:val="13" /><w:tcBorders><w:bottom
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00D340DA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:spacing
+	w:line="300" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:proofErr w:type="spellStart" /><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>${haddress}</w:t></w:r><w:proofErr
+	w:type="spellEnd" /></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"><w:trPr><w:trHeight
+	w:val="1220" /></w:trPr><w:tc><w:tcPr><w:tcW w:w="1695" w:type="dxa" /><w:gridSpan
+	w:val="2" /><w:tcBorders><w:top w:val="single" w:sz="4"
+	wx:bdrwidth="10" w:space="0" w:color="auto" /><w:left w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>生产经营地</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8336" w:type="dxa" /><w:gridSpan w:val="13" /><w:tcBorders><w:top
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA" wsp:rsidRPr="00D340DA"
+	wsp:rsidRDefault="00D340DA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:spacing
+	w:line="300" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:proofErr w:type="spellStart" /><w:r
+	wsp:rsidRPr="00D340DA"><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>${caddress}</w:t></w:r><w:proofErr
+	w:type="spellEnd" /></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"><w:trPr><w:trHeight
+	w:val="680" /></w:trPr><w:tc><w:tcPr><w:tcW w:w="1695" w:type="dxa" /><w:gridSpan
+	w:val="2" /><w:tcBorders><w:left w:val="single" w:sz="12"
+	wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>联系电话</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="2785" w:type="dxa" /><w:gridSpan w:val="3" /><w:tcBorders><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00D340DA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:proofErr w:type="spellStart" /><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>${ctelephone}</w:t></w:r><w:proofErr
+	w:type="spellEnd" /></w:p></w:tc><w:tc><w:tcPr><w:tcW w:w="1429"
+	w:type="dxa" /><w:gridSpan w:val="4" /><w:tcBorders><w:top
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>邮政编码</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4122" w:type="dxa" /><w:gridSpan w:val="6" /><w:tcBorders><w:top
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00D340DA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:proofErr w:type="spellStart" /><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>${czip}</w:t></w:r><w:proofErr
+	w:type="spellEnd" /></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"><w:trPr><w:trHeight
+	w:val="680" /></w:trPr><w:tc><w:tcPr><w:tcW w:w="10031" w:type="dxa" /><w:gridSpan
+	w:val="15" /><w:tcBorders><w:top w:val="single" w:sz="12"
+	wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="黑体"
+	w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>□设立</w:t></w:r></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA"><w:trPr><w:trHeight w:val="672" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1695" w:type="dxa" /><w:gridSpan w:val="2" /><w:tcBorders><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>出资额</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4045" w:type="dxa" /><w:gridSpan w:val="6" /><w:tcBorders><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA" wsp:rsidRPr="00D340DA"
+	wsp:rsidRDefault="00D340DA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r wsp:rsidRPr="00D340DA"><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>${capital}</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>万元</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="1511" w:type="dxa" /><w:gridSpan w:val="4" /><w:tcBorders><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:u w:val="single" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>从业人数</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="2780" w:type="dxa" /><w:gridSpan w:val="3" /><w:tcBorders><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00D75995"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:kern w:val="0" /><w:sz-cs w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:kern w:val="0" /><w:sz-cs w:val="21" /><w:u
+	w:val="single" /></w:rPr><w:t> </w:t></w:r><w:proofErr
+	w:type="spellStart" /><w:r wsp:rsidR="00D340DA"><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:kern w:val="0" /><w:sz-cs w:val="21" /><w:u
+	w:val="single" /></w:rPr><w:t>${empnum}</w:t></w:r><w:proofErr
+	w:type="spellEnd" /><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:kern
+	w:val="0" /><w:sz-cs w:val="21" /><w:u w:val="single" /></w:rPr><w:t> </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:kern w:val="0" /><w:sz-cs w:val="21" /></w:rPr><w:t>人，其中外籍</w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA" wsp:rsidP="00D340DA"><w:pPr><w:autoSpaceDE
+	w:val="off" /><w:autoSpaceDN w:val="off" /><w:adjustRightInd
+	w:val="off" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:u w:val="single" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:kern w:val="0" /><w:sz-cs w:val="21" /></w:rPr><w:t>人数</w:t></w:r><w:r
+	wsp:rsidR="00D75995"><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:kern w:val="0" /><w:sz-cs
+	w:val="21" /><w:u w:val="single" /></w:rPr><w:t> </w:t></w:r><w:proofErr
+	w:type="spellStart" /><w:r wsp:rsidR="00D340DA"><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:kern w:val="0" /><w:sz-cs w:val="21" /><w:u
+	w:val="single" /></w:rPr><w:t>${empfornum}</w:t></w:r><w:proofErr
+	w:type="spellEnd" /><w:r wsp:rsidR="00D75995"><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:kern w:val="0" /><w:sz-cs w:val="21" /><w:u
+	w:val="single" /></w:rPr><w:t> </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" /><wx:font
+	wx:val="宋体" /><w:kern w:val="0" /><w:sz-cs w:val="21" /></w:rPr><w:t>人</w:t></w:r></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA" wsp:rsidTr="00D75995"><w:trPr><w:trHeight w:val="984" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1695" w:type="dxa" /><w:gridSpan w:val="2" /><w:tcBorders><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>出资方式</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8336" w:type="dxa" /><w:gridSpan w:val="13" /><w:tcBorders><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00D340DA" wsp:rsidP="00D340DA"><w:pPr><w:autoSpaceDE
+	w:val="off" /><w:autoSpaceDN w:val="off" /><w:adjustRightInd
+	w:val="off" /><w:rPr><w:rFonts w:ascii="Cambria" w:h-ansi="Cambria"
+	w:cs="Arial" /><wx:font wx:val="Cambria" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:proofErr w:type="spellStart" /><w:r
+	wsp:rsidRPr="00D340DA"><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:bdr w:val="single" w:sz="4" wx:bdrwidth="10"
+	w:space="0" w:color="auto" /></w:rPr><w:t>${capitalmodea}</w:t></w:r><w:proofErr
+	w:type="spellEnd" /><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t> </w:t></w:r><w:r wsp:rsidR="00F607CA"><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>1.以个人财产出资   </w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00D340DA"><w:pPr><w:autoSpaceDE
+	w:val="off" /><w:autoSpaceDN w:val="off" /><w:adjustRightInd
+	w:val="off" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:proofErr w:type="spellStart" /><w:r
+	wsp:rsidRPr="00D340DA"><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:bdr w:val="single" w:sz="4" wx:bdrwidth="10"
+	w:space="0" w:color="auto" /></w:rPr><w:t>${capitalmodeb}</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:bdr w:val="single" w:sz="4" wx:bdrwidth="10"
+	w:space="0" w:color="auto" /></w:rPr><w:t></w:t></w:r><w:proofErr
+	w:type="spellEnd" /><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t> </w:t></w:r><w:r wsp:rsidR="00F607CA"><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>2.以家庭共有财产作为个人出资。</w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE
+	w:val="off" /><w:autoSpaceDN w:val="off" /><w:adjustRightInd
+	w:val="off" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:u w:val="single" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>出资人的家庭成员签名：</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:u w:val="single" /></w:rPr><w:t>                           </w:t></w:r></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA" wsp:rsidTr="00D340DA"><w:trPr><w:trHeight w:val="2685" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1695" w:type="dxa" /><w:gridSpan w:val="2" /><w:tcBorders><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>经营范围</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8336" w:type="dxa" /><w:gridSpan w:val="13" /><w:tcBorders><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders></w:tcPr><w:p
+	wsp:rsidR="00D75995" wsp:rsidRPr="00D340DA" wsp:rsidRDefault="00D340DA"
+	wsp:rsidP="00D340DA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:proofErr w:type="spellStart" /><w:r
+	wsp:rsidRPr="00D340DA"><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>${crange}</w:t></w:r><w:proofErr
+	w:type="spellEnd" /></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"><w:trPr><w:trHeight
+	w:val="526" /></w:trPr><w:tc><w:tcPr><w:tcW w:w="10031" w:type="dxa" /><w:gridSpan
+	w:val="15" /><w:tcBorders><w:top w:val="single" w:sz="8"
+	wx:bdrwidth="20" w:space="0" w:color="auto" /><w:left w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:tabs><w:tab w:val="left" w:pos="4508" /></w:tabs><w:autoSpaceDE
+	w:val="off" /><w:autoSpaceDN w:val="off" /><w:adjustRightInd
+	w:val="off" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>□变更</w:t></w:r></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA" wsp:rsidTr="007E6A3E"><w:trPr><w:trHeight w:val="899" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1628" w:type="dxa" /><w:tcBorders><w:top w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>变更项目</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4097" w:type="dxa" /><w:gridSpan w:val="6" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>原登记事项</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4306" w:type="dxa" /><w:gridSpan w:val="8" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>申请变更登记事项</w:t></w:r></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA" wsp:rsidTr="00D75995"><w:trPr><w:trHeight w:val="367" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1628" w:type="dxa" /><w:tcBorders><w:left w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4097" w:type="dxa" /><w:gridSpan w:val="6" /><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4306" w:type="dxa" /><w:gridSpan w:val="8" /><w:tcBorders><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA" wsp:rsidTr="00D75995"><w:trPr><w:trHeight w:val="415" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1628" w:type="dxa" /><w:tcBorders><w:left w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4097" w:type="dxa" /><w:gridSpan w:val="6" /><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4306" w:type="dxa" /><w:gridSpan w:val="8" /><w:tcBorders><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA" wsp:rsidTr="00D75995"><w:trPr><w:trHeight w:val="421" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1628" w:type="dxa" /><w:tcBorders><w:left w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4097" w:type="dxa" /><w:gridSpan w:val="6" /><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4306" w:type="dxa" /><w:gridSpan w:val="8" /><w:tcBorders><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA" wsp:rsidTr="00D75995"><w:trPr><w:trHeight w:val="413" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1628" w:type="dxa" /><w:tcBorders><w:left w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4097" w:type="dxa" /><w:gridSpan w:val="6" /><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="4306" w:type="dxa" /><w:gridSpan w:val="8" /><w:tcBorders><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA"><w:trPr><w:trHeight w:val="624" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="10031" w:type="dxa" /><w:gridSpan w:val="15" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="黑体" w:fareast="黑体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="黑体" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>□备案</w:t></w:r></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA"><w:trPr><w:trHeight w:val="624" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1628" w:type="dxa" /><w:vmerge w:val="restart" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>分支机构</w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE
+	w:val="off" /><w:autoSpaceDN w:val="off" /><w:adjustRightInd
+	w:val="off" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>□</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>增设</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t> </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>□</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>注销</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="2384" w:type="dxa" /><w:gridSpan w:val="3" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>名称</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="2006" w:type="dxa" /><w:gridSpan w:val="6" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="141" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="2006" w:type="dxa" /><w:gridSpan w:val="3" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>注册号/统一社会信用代码</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="2007" w:type="dxa" /><w:gridSpan w:val="2" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="141" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA"><w:trPr><w:trHeight w:val="624" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1628" w:type="dxa" /><w:vmerge /><w:tcBorders><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="黑体" w:fareast="黑体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="黑体" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="2384" w:type="dxa" /><w:gridSpan w:val="3" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>登记机关</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="2006" w:type="dxa" /><w:gridSpan w:val="6" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="141" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="2006" w:type="dxa" /><w:gridSpan w:val="3" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="center" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>登记日期</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="2007" w:type="dxa" /><w:gridSpan w:val="2" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="141" /><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA"><w:trPr><w:trHeight w:val="624" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1628" w:type="dxa" /><w:tcBorders><w:top w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="黑体" w:fareast="黑体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="黑体" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>其他</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8403" w:type="dxa" /><w:gridSpan w:val="14" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:spacing
+	w:line="360" w:line-rule="auto" /><w:ind w:first-line-chars="50"
+	w:first-line="105" /><w:rPr><w:rFonts w:ascii="黑体" w:fareast="黑体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="黑体" /><w:b /><w:b-cs /><w:sz
+	w:val="28" /><w:sz-cs w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>     □联络员               □财务负责人 </w:t></w:r></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA"><w:trPr><w:trHeight w:val="624" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="10031" w:type="dxa" /><w:gridSpan w:val="15" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:u w:val="single" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>□注销</w:t></w:r></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA"><w:trPr><w:trHeight w:val="1278" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="1628" w:type="dxa" /><w:tcBorders><w:top w:val="single"
+	w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>注销原因</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8403" w:type="dxa" /><w:gridSpan w:val="14" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="left" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr></w:p><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="left" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>□投资人决定解散</w:t></w:r></w:p><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="50" w:first-line="105" /><w:jc w:val="left" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>□投资人死亡或者被宣告死亡，无继承人或者继承人决定放弃继承</w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE
+	w:val="off" /><w:autoSpaceDN w:val="off" /><w:adjustRightInd
+	w:val="off" /><w:ind w:first-line-chars="50" w:first-line="105" /><w:jc
+	w:val="left" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>□依法被吊销营业执照</w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE
+	w:val="off" /><w:autoSpaceDN w:val="off" /><w:adjustRightInd
+	w:val="off" /><w:ind w:first-line-chars="50" w:first-line="105" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>□法律、行政法规规定的其他情形__________________</w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE
+	w:val="off" /><w:autoSpaceDN w:val="off" /><w:adjustRightInd
+	w:val="off" /><w:ind w:first-line-chars="50" w:first-line="105" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"><w:trPr><w:trHeight
+	w:val="656" /></w:trPr><w:tc><w:tcPr><w:tcW w:w="1628" w:type="dxa" /><w:tcBorders><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>分支机构</w:t></w:r></w:p><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>注销情况</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8403" w:type="dxa" /><w:gridSpan w:val="14" /><w:tcBorders><w:left
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:spacing
+	w:line="360" w:line-rule="auto" /><w:ind w:first-line-chars="50"
+	w:first-line="105" /><w:jc w:val="left" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"><w:trPr><w:trHeight
+	w:val="567" /></w:trPr><w:tc><w:tcPr><w:tcW w:w="1628" w:type="dxa" /><w:tcBorders><w:top
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>清税情况</w:t></w:r></w:p></w:tc><w:tc><w:tcPr><w:tcW
+	w:w="8403" w:type="dxa" /><w:gridSpan w:val="14" /><w:tcBorders><w:top
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="100" w:first-line="210" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>□</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>已清理完毕          </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>□未涉及纳税义务</w:t></w:r></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA"><w:trPr><w:trHeight w:val="534" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="10031" w:type="dxa" /><w:gridSpan w:val="15" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:jc
+	w:val="center" /><w:rPr><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz w:val="24" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast" /><wx:font
+	wx:val="黑体" /><w:b /><w:b-cs /><w:sz w:val="28" /><w:sz-cs
+	w:val="21" /><w:lang w:val="ZH-CN" /></w:rPr><w:t>□申请人声明</w:t></w:r></w:p></w:tc></w:tr><w:tr
+	wsp:rsidR="00F607CA"><w:trPr><w:trHeight w:val="1554" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="10031" w:type="dxa" /><w:gridSpan w:val="15" /><w:tcBorders><w:top
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE w:val="off" /><w:autoSpaceDN
+	w:val="off" /><w:adjustRightInd w:val="off" /><w:ind
+	w:first-line-chars="200" w:first-line="420" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr></w:p><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr><w:t>  </w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /></w:rPr><w:t>  本企业依照</w:t></w:r><w:r><w:rPr><w:rStyle
+	w:val="apple-style-span" /><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz
+	w:val="24" /></w:rPr><w:t>相关法律法规规定</w:t></w:r><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /></w:rPr><w:t>申请登记、变更（备案）、注销，</w:t></w:r><w:r><w:rPr><w:rStyle
+	w:val="apple-style-span" /><w:rFonts w:ascii="宋体" w:h-ansi="宋体"
+	w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz
+	w:val="24" /></w:rPr><w:t>提交材料真实有效。通过联络员登录企业信用信息公示系统向登记机关报送、向社会公示的企业信息为本企业提供、发布的信息，信息真实、有效。</w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:pStyle w:val="New" /><w:adjustRightInd
+	w:val="off" /><w:snapToGrid w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /><w:sz-cs w:val="24" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /><w:sz-cs w:val="24" /></w:rPr><w:t>         </w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:pStyle w:val="New" /><w:adjustRightInd
+	w:val="off" /><w:snapToGrid w:val="off" /><w:ind
+	w:first-line-chars="300" w:first-line="630" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr></w:p></w:tc></w:tr><w:tr wsp:rsidR="00F607CA"
+	wsp:rsidTr="00D8420B"><w:trPr><w:trHeight w:val="1548" /></w:trPr><w:tc><w:tcPr><w:tcW
+	w:w="10031" w:type="dxa" /><w:gridSpan w:val="15" /><w:tcBorders><w:top
+	w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" /><w:left
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:bottom
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /><w:right
+	w:val="single" w:sz="12" wx:bdrwidth="30" w:space="0" w:color="auto" /></w:tcBorders><w:vAlign
+	w:val="center" /></w:tcPr><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:pStyle w:val="New" /><w:adjustRightInd
+	w:val="off" /><w:snapToGrid w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /><w:sz-cs w:val="24" /></w:rPr></w:pPr></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:pStyle w:val="New" /><w:adjustRightInd
+	w:val="off" /><w:snapToGrid w:val="off" /><w:ind
+	w:first-line-chars="550" w:first-line="1320" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /><w:sz-cs w:val="24" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /><w:sz-cs w:val="24" /></w:rPr><w:t>投资人签字：                           </w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:pStyle w:val="New" /><w:adjustRightInd
+	w:val="off" /><w:snapToGrid w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /><w:sz-cs w:val="24" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /><w:sz-cs w:val="24" /></w:rPr><w:t>       投资人或清算人签字：                      企业盖章</w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:pStyle w:val="New" /><w:adjustRightInd
+	w:val="off" /><w:snapToGrid w:val="off" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /><w:sz-cs w:val="24" /></w:rPr></w:pPr></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:pStyle w:val="New" /><w:adjustRightInd
+	w:val="off" /><w:snapToGrid w:val="off" /><w:ind
+	w:first-line-chars="300" w:first-line="720" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /><w:sz-cs w:val="24" /></w:rPr></w:pPr><w:r><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz
+	w:val="24" /><w:sz-cs w:val="24" /></w:rPr><w:t>                                         年     月     日</w:t></w:r></w:p><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:pStyle w:val="New" /><w:adjustRightInd
+	w:val="off" /><w:snapToGrid w:val="off" /><w:ind
+	w:first-line-chars="300" w:first-line="630" /><w:rPr><w:rFonts
+	w:ascii="宋体" w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:sz-cs
+	w:val="21" /></w:rPr></w:pPr></w:p></w:tc></w:tr></w:tbl><w:p
+	wsp:rsidR="00F607CA" wsp:rsidRDefault="00F607CA"><w:pPr><w:autoSpaceDE
+	w:val="off" /><w:autoSpaceDN w:val="off" /><w:adjustRightInd
+	w:val="off" /><w:spacing w:after-lines="30" w:after="93"
+	w:line="320" w:line-rule="exact" /><w:rPr><w:rFonts w:ascii="宋体"
+	w:h-ansi="宋体" w:hint="fareast" /><wx:font wx:val="宋体" /><w:b-cs /><w:sz
+	w:val="24" /></w:rPr></w:pPr></w:p><w:sectPr wsp:rsidR="00F607CA"><w:hdr
+	w:type="even"><wx:pBdrGroup><wx:borders><wx:bottom wx:val="solid"
+	wx:bdrwidth="15" wx:space="1" wx:color="auto" /></wx:borders><w:p
+	wsp:rsidR="007E6A3E" wsp:rsidRDefault="007E6A3E"><w:pPr><w:pStyle w:val="a3" /></w:pPr></w:p></wx:pBdrGroup></w:hdr><w:hdr
+	w:type="odd"><w:p wsp:rsidR="007E6A3E" wsp:rsidRDefault="007E6A3E"
+	wsp:rsidP="00D8420B"><w:pPr><w:pStyle w:val="a3" /><w:pBdr><w:bottom
+	w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto" /></w:pBdr></w:pPr></w:p></w:hdr><w:ftr
+	w:type="even"><w:p wsp:rsidR="007E6A3E" wsp:rsidRDefault="007E6A3E"><w:pPr><w:pStyle
+	w:val="a7" /></w:pPr></w:p></w:ftr><w:ftr w:type="odd"><wx:pBdrGroup><wx:apo><wx:jc
+	wx:val="center" /></wx:apo><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:pStyle w:val="a7" /><w:framePr
+	w:wrap="around" w:vanchor="text" w:hanchor="margin" w:x-align="center"
+	w:y-align="top" /><w:pBdr><w:between w:val="none" w:sz="50"
+	wx:bdrwidth="0" w:space="0" w:color="auto" /></w:pBdr></w:pPr><w:r><w:fldChar
+	w:fldCharType="begin" /></w:r><w:r><w:rPr><w:rStyle w:val="a4" /></w:rPr><w:instrText> PAGE  </w:instrText></w:r><w:r><w:fldChar
+	w:fldCharType="separate" /></w:r><w:r wsp:rsidR="00D340DA"><w:rPr><w:rStyle
+	w:val="a4" /><w:noProof /></w:rPr><w:t>1</w:t></w:r><w:r><w:fldChar
+	w:fldCharType="end" /></w:r></w:p></wx:pBdrGroup><w:p wsp:rsidR="00F607CA"
+	wsp:rsidRDefault="00F607CA"><w:pPr><w:pStyle w:val="a7" /></w:pPr></w:p></w:ftr><w:hdr
+	w:type="first"><wx:pBdrGroup><wx:borders><wx:bottom wx:val="solid"
+	wx:bdrwidth="15" wx:space="1" wx:color="auto" /></wx:borders><w:p
+	wsp:rsidR="007E6A3E" wsp:rsidRDefault="007E6A3E"><w:pPr><w:pStyle w:val="a3" /></w:pPr></w:p></wx:pBdrGroup></w:hdr><w:ftr
+	w:type="first"><w:p wsp:rsidR="007E6A3E" wsp:rsidRDefault="007E6A3E"><w:pPr><w:pStyle
+	w:val="a7" /></w:pPr></w:p></w:ftr><w:pgSz w:w="11906" w:h="16838" /><w:pgMar
+	w:top="1361" w:right="1797" w:bottom="1361" w:left="1797" w:header="851"
+	w:footer="992" w:gutter="0" /><w:pgNumType w:start="1" /><w:cols
+	w:space="720" /><w:docGrid w:type="lines" w:line-pitch="312" /></w:sectPr></wx:sect></w:body></w:wordDocument>

@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+
+			<p:dialog visible="#{not empty cregBean.messages}"
+				header="#{cregBean.messages[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{cregBean.messages}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true">
+			</p:messages>
+
+			<p:selectOneMenu value="#{cregBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="ceo" itemLabel="ceo" />
+			</p:selectOneMenu>
+			<p:panel>
+				<div class="WordSection1" style='layout-grid: 15.6pt'>
+
+					<p class="New" align="center"
+						style='text-align: center; line-height: 26.0pt'>
+						<b><span lang="EN-US"
+							style='font-size: 22.0pt; font-family: 宋体'>&nbsp;</span></b>
+					</p>
+
+					<p class="New" align="center"
+						style='text-align: center; line-height: 26.0pt'>
+						<b><span style='font-size: 18.0pt; font-family: 宋体'>法定代表人信息</span></b>
+					</p>
+
+					<p class="New" align="center"
+						style='text-align: center; line-height: 26.0pt'>
+						<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+					</p>
+
+					<div align="center">
+
+						<table class="MsoNormalTable" border="1" cellspacing="0"
+							cellpadding="0" style='border-collapse: collapse; border: none'>
+							<tr style='height: 45.35pt'>
+								<td width="129"
+									style='width: 97.1pt; border-top: 1.5pt; border-left: 1.5pt; border-bottom: 1.0pt; border-right: 1.0pt; border-color: windowtext; border-style: solid; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>姓<span lang="EN-US">&nbsp;&nbsp;&nbsp;
+										</span>名
+										</span>
+									</p>
+								</td>
+								<td width="179"
+									style='width: 134.0pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+
+									<p:outputLabel value="#{cregBean.creg.ceoName}" />
+
+								</td>
+								<td width="119"
+									style='width: 89.1pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; text-indent: 15.75pt; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>固定电话</span>
+									</p>
+								</td>
+								<td width="168"
+									style='width: 126.2pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'> <p:inputText
+												id="Companyreg_ceoTele" value="#{cregBean.creg.ceoTele}"
+												style="width:90%;">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:watermark for="Companyreg_ceoTele" value="输入电话号码"
+												id="watermark1" /> <p:message for="Companyreg_ceoTele" />
+										</span>
+									</p>
+								</td>
+							</tr>
+							<tr style='height: 45.35pt'>
+								<td width="129"
+									style='width: 97.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>移动电话</span>
+									</p>
+								</td>
+								<td width="179"
+									style='width: 134.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'> <p:inputText
+												id="Companyreg_ceoMobile" value="#{cregBean.creg.ceoMobile}"
+												style="width:90%;">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:watermark for="Companyreg_ceoMobile" value="输入手机号码"
+												id="watermark2" /> <p:message for="Companyreg_ceoMobile" />
+										</span>
+									</p>
+								</td>
+								<td width="119"
+									style='width: 89.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>电子邮箱</span>
+									</p>
+								</td>
+								<td width="168"
+									style='width: 126.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'> <p:inputText
+												id="Companyreg_ceoMail" value="#{cregBean.creg.ceoMail}"
+												style="width:90%;">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:watermark for="Companyreg_ceoMail" value="输入电子邮件"
+												id="watermark3" /> <p:message for="Companyreg_ceoMail" />
+										</span>
+									</p>
+								</td>
+							</tr>
+							<tr style='height: 44.45pt'>
+								<td width="129"
+									style='width: 97.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>身份证件类型</span>
+									</p>
+								</td>
+								<td width="179"
+									style='width: 134.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+									<p:selectOneMenu value="#{cregBean.creg.ceoIdtype}"
+										style="width:80%">
+										<f:selectItems value="#{selectItems.idTypes}" />
+									</p:selectOneMenu>
+								</td>
+								<td width="119"
+									style='width: 89.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>身份证件号码</span>
+									</p>
+								</td>
+								<td width="168"
+									style='width: 126.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'> <p:inputText
+												id="Companyreg_ceoIdno" value="#{cregBean.creg.ceoIdno}"
+												style="width:90%;">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:watermark for="Companyreg_ceoIdno" value="输入证件号码"
+												id="watermark4" /> <p:message for="Companyreg_ceoIdno" />
+										</span>
+									</p>
+
+								</td>
+							</tr>
+							<tr style='height: 260.05pt'>
+								<td width="595" colspan="4"
+									style='width: 446.4pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 260.05pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;提示：固定电话和移动电话至少输入一项。</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>（身份证件复印件粘贴处）</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+								</td>
+							</tr>
+							<tr style='height: 169.15pt'>
+								<td width="595" colspan="4"
+									style='width: 446.4pt; border: solid windowtext 1.5pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 169.15pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>法定代表人签字：<span
+											lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										</span>年<span lang="EN-US">&nbsp;&nbsp; </span>月<span lang="EN-US">&nbsp;&nbsp;
+										</span>日
+										</span>
+									</p>
+								</td>
+							</tr>
+						</table>
+
+
+					</div>
+				</div>
+			</p:panel>
+
+			<p:fragment id="frag00">
+				<p:dialog header="人员信息" widgetVar="persons" modal="true"
+					showEffect="fade" hideEffect="fade" resizable="false" width="850">
+					<div style="clear: both;"></div>
+					<div>
+						<p:dataTable emptyMessage="无记录" id="persons"
+							value="#{cregBean.persons}" var="person" paginator="false"
+							rows="20" selection="#{cregBean.selectedPerson}"
+							rowKey="#{person.idNo}">
+							<p:column selectionMode="single"
+								style="width:16px;text-align:center" />
+							<p:column style="width:200px" headerText="姓名">
+								<h:outputText value="#{person.name}" />
+							</p:column>
+							<p:column style="width:200px" headerText="证件类型">
+								<h:outputText value="#{person.idType}" />
+							</p:column>
+							<p:column style="width:280px" headerText="证件号码">
+								<h:outputText value="#{person.idNo}" />
+							</p:column>
+						</p:dataTable>
+					</div>
+					<div class="center">
+						<p:commandButton update="formone" value="取消" immediate="true"
+							onclick="PF('persons').close()" />
+						<p:commandButton update="formone" value="保存"
+							action="#{cregBean.updatePerson('ceo')}"
+							oncomplete="PF('persons').hide()">
+						</p:commandButton>
+					</div>
+				</p:dialog>
+			</p:fragment>
+
+			<div class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{cregBean.admin}">
+					<p:inputTextarea id="Companyreg_comment3" rows="8" cols="58"
+						value="#{cregBean.creg.comment3}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Companyreg_comment3" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not cregBean.admin and cregBean.creg.comment3 ne null and cregBean.creg.comment3 ne '' }">
+					<h:outputText value="#{cregBean.creg.comment3}"
+						style="width:100%;color:red;" />
+				</p:panel>
+				<h:commandLink styleClass="button3" value="上一步"
+					action="#{cregBean.prepage('shares')}"
+					immediate="#{cregList.admin?'false':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton action="#{cregBean.saveData('ceo')}" value="保存"
+					update="formone" />
+				<h:commandLink styleClass="button3" value="下一步"
+					action="#{cregBean.openpage('jingli')}"
+					immediate="#{cregList.admin?'false':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+			</div>
+
+
+
+		</h:form>
+	</ui:define>
+</ui:composition>

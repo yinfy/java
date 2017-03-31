@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>财务负责人</title>
+</head>
+
+<body>
+
+	<form dataset="sqwtDs" class="L5form">
+		<table border="1" id="sqwtTable" width="100%">
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>申请方式</td>
+				<td class="FieldInput" colspan="3"><select id="APPFORM"
+					title="申请方式" field="APPFORM" style="width: 24%">
+						<option dataset="appformDs"></option>
+				</select></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>申请人</td>
+				<td class="FieldInput" colspan="3"><input type="text"
+					id="APPPER" name="APPPER" field="APPPER" title="申请人"
+					style="width: 60%"></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>委托代理人</td>
+				<td class="FieldInput" colspan="3"><input type="text"
+					id="CONSIGNER" name="CONSIGNER" field="CONSIGNER" title="委托代理人"
+					style="width: 60%"></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>委托人证件类型
+				</td>
+				<td class="FieldInput" style="width: 30%"><select id="CERTYPE"
+					title="委托人证件类型" field="CERTYPE" style="width: 80%">
+						<option value="" selected="selected">请选择</option>
+						<option value="10">中华人民共和国居民身份证</option>
+						<option value="20">中华人民共和国军官证</option>
+						<option value="30">中华人民共和国警官证</option>
+						<option value="40">外国地区（护照）</option>
+						<option value="51">香港特别行政区护照</option>
+						<option value="52">香港（永久性）居民身份证</option>
+						<option value="53">澳门特别行政区护照</option>
+						<option value="54">澳门（永久性）居民身份证</option>
+						<option value="55">港澳居民来往内地通行证</option>
+						<option value="56">台湾居民身份证</option>
+						<option value="57">台湾居民来往大陆通行证</option>
+						<option value="58">台湾农民身份有关证明</option>
+						<option value="60">户口薄</option>
+						<option value="71">暂住证</option>
+						<option value="72">香港律师（中国委托公证人）...</option>
+						<option value="73">澳门居民身份证</option>
+						<option value="74">澳门特别行政区政府身份证明...</option>
+						<option value="90">其他有效身份证件</option>
+				</select></td>
+				<td class="FieldLabel" style="width: 13%"><font color="red">*</font>证件号码
+				</td>
+				<td class="FieldInput" nowrap><input type="text" id="CERNO"
+					name="CERNO" field="CERNO" title="证件号码" style="width: 60%">
+					&nbsp;&nbsp;
+					<button id="getIdCard" onclick="readIdCard();"
+						style="display: none">读取二代证卡</button></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>联系电话</td>
+				<td colspan="3" class="FieldInput"><input type="text" id="TEL"
+					name="TEL" field="TEL" title="移动电话" style="width: 25%"></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel">授权期限</td>
+				<td class="FieldInput" colspan="3">自 <input type="text"
+					id="CONFROM" name="CONFROM" field="CONFROM" readonly="readonly"
+					onclick="LoushangDate(this)" format="Y-m-d" title="有效期起"
+					style="width: 100"> 至 <input type="text" id="CONTO"
+					name="CONTO" field="CONTO" readonly="readonly"
+					onclick="LoushangDate(this)" format="Y-m-d" title="有效期至"
+					style="width: 100">
+				</td>
+			</tr>
+			<tr>
+				<td class="FieldLabel" rowspan="3">授权权限</td>
+				<td class="FieldInput" colspan="3"><input type="radio"
+					name="CONPRI1" id="CONPRI01" field="CONPRI1" value="1">同意 <input
+					type="radio" name="CONPRI1" id="CONPRI02" field="CONPRI1" value="2">不同意
+					&nbsp;&nbsp;&nbsp;&nbsp; 核对登记材料中的复印件并签署核对意见；</td>
+			</tr>
+			<tr>
+				<td class="FieldInput" colspan="3"><input type="radio"
+					name="CONPRI2" id="CONPRI03" field="CONPRI2" value="1">同意 <input
+					type="radio" name="CONPRI2" id="CONPRI04" field="CONPRI2" value="2">不同意
+					&nbsp;&nbsp;&nbsp;&nbsp; 修改有关表格的填写错误；</td>
+			</tr>
+			<tr>
+				<td class="FieldInput" colspan="3"><input type="radio"
+					name="CONPRI3" id="CONPRI05" field="CONPRI3" value="1">同意 <input
+					type="radio" name="CONPRI3" id="CONPRI06" field="CONPRI3" value="2">不同意
+					&nbsp;&nbsp;&nbsp;&nbsp; 领取《企业名称预先核准通知书》。</td>
+			</tr>
+			<tr>
+				<td class="FieldLabel">授权日期</td>
+				<td class="FieldInput" colspan="3"><input type="text"
+					id="CONDATE" name="CONDATE" field="CONDATE" readonly="readonly"
+					onclick="LoushangDate(this)" format="Y-m-d" title="委托日期"
+					style="width: 100"></td>
+			</tr>
+			<tr>
+				<td colspan="4" align="center">
+					<button id="saveon" onclick="save()">保&nbsp;存</button>&nbsp;&nbsp;
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

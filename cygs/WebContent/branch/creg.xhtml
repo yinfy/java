@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:selectOneMenu value="#{branBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="creg" itemLabel="creg" />
+			</p:selectOneMenu>
+
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+
+			<!-- ************************************************************************************************************* -->
+			<p class="MsoBodyTextIndent2" align="center"
+				style='margin-top: 0cm; margin-right: 4.85pt; margin-bottom: 0cm; margin-left: 0cm; margin-bottom: .0001pt; text-align: center; line-height: normal'>
+				<b><span style='font-size: 18.0pt; font-family: 宋体'>分公司登记申请书</span></b>
+			</p>
+
+			<p class="MsoNormal" align="center"
+				style='text-align: center; line-height: 35.0pt; text-autospace: none'>
+				<b><span style='font-family: 宋体'>注：</span></b><span
+					style='font-family: 宋体'>请仔细阅读本申请书《填写说明》，按要求填写。</span>
+			</p>
+
+			<div align="center">
+				<table class="MsoNormalTable" border="1" cellspacing="0"
+					cellpadding="0" align="center" width="718"
+					style='width: 538.7pt; border-collapse: collapse; border: none; margin-left: 6.75pt; margin-right: 6.75pt'>
+					<tr style='height: 29.6pt'>
+						<td width="718" colspan="9"
+							style='width: 538.7pt; border: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 29.6pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-size: 14.0pt; font-family: 黑体'>□基本信息</span>
+							</p>
+						</td>
+					</tr>
+					<tr style='height: 48.95pt'>
+						<td width="158"
+							style='width: 118.8pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 48.95pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>公司名称</span>
+							</p>
+						</td>
+						<td width="256" colspan="3"
+							style='width: 192.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 48.95pt'>
+							<p:inputText id="Branchreg_cname" value="#{branBean.creg.cname}"
+								style="width:95%;">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</p:inputText> <p:watermark for="Branchreg_cname" value="输入核准的公司名称"
+								id="watermark1" /> <p:message for="Branchreg_cname" />
+						</td>
+						<td width="115" colspan="3"
+							style='width: 86.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 48.95pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>公司注册号<span lang="EN-US">/</span>统一社会信用代码
+								</span>
+							</p>
+						</td>
+						<td width="189" colspan="2"
+							style='width: 141.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 48.95pt'>
+
+							<p:inputText id="Branchreg_cnameno"
+								value="#{branBean.creg.cnameno}" style="width:95%;">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</p:inputText> <p:watermark for="Branchreg_cnameno" value="输入公司注册号" /> <p:message
+								for="Branchreg_cnameno" />
+
+						</td>
+					</tr>
+					<tr style='height: 29.85pt'>
+						<td width="158"
+							style='width: 118.8pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 29.85pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>分公司名称</span>
+							</p>
+						</td>
+						<td width="560" colspan="8"
+							style='width: 419.9pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 29.85pt'>
+							<p:inputText id="Branchreg_cnameb"
+								value="#{branBean.creg.cnameb}" style="width:95%;">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</p:inputText> <p:watermark for="Branchreg_cnameb" value="输入分公司名称" /> <p:message
+								for="Branchreg_cnameb" />
+
+						</td>
+					</tr>
+					<tr style='height: 17.0pt'>
+						<td width="158"
+							style='width: 118.8pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.0pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>分公司名称预先核准文号<span
+									lang="EN-US" style='letter-spacing: -.55pt'>/</span><span
+									style='letter-spacing: -.55pt'>注册号<span lang="EN-US">/</span>统一社会信用代码
+								</span></span>
+							</p>
+						</td>
+						<td width="560" colspan="8"
+							style='width: 419.9pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.0pt'>
+							<p class="MsoNormal" style='text-autospace: none'>
+								<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+							</p>
+						</td>
+					</tr>
+					<tr style='height: 30.05pt'>
+						<td width="158"
+							style='width: 118.8pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 30.05pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>组织机构代码</span>
+							</p>
+						</td>
+						<td width="142"
+							style='width: 106.7pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 30.05pt'>
+							<p class="MsoNormal" style='text-autospace: none'>
+								<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+							</p>
+						</td>
+						<td width="60"
+							style='width: 44.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 30.05pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>纳税人识别号</span>
+							</p>
+						</td>
+						<td width="125" colspan="2"
+							style='width: 93.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 30.05pt'>
+							<p class="MsoNormal" style='text-autospace: none'>
+								<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+							</p>
+						</td>
+						<td width="85" colspan="3"
+							style='width: 63.7pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 30.05pt'>
+							<p class="MsoNormal" style='text-autospace: none'>
+								<span style='font-family: 宋体'>社保登记号</span>
+							</p>
+						</td>
+						<td width="148"
+							style='width: 110.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 30.05pt'>
+							<p class="MsoNormal" style='text-autospace: none'>
+								<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+							</p>
+						</td>
+					</tr>
+					<tr style='height: 32.05pt'>
+						<td width="158"
+							style='width: 118.8pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 32.05pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>营业场所</span>
+							</p>
+						</td>
+						<td width="560" colspan="8"
+							style='width: 419.9pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 32.05pt'>
+
+							<p:fragment>
+								<h:outputText value="注意：行政区划的选择必须与核名时所选择的相一致！    已知情"
+									style="color:red;" />
+								<p:selectBooleanCheckbox value="#{branBean.confirmed}">
+									<p:ajax update="prefix buttons" />
+								</p:selectBooleanCheckbox>
+							</p:fragment> <br /> <p:fragment>
+								<p:selectOneMenu id="prefix"
+									disabled="#{not branBean.confirmed}"
+									value="#{branBean.creg.prefix}" immediate="false"
+									style="width:240px;float:left;">
+									<f:ajax update="distriction_panel" />
+									<f:selectItems value="#{selectItems.districtions}" />
+								</p:selectOneMenu>
+							</p:fragment> <p:inputText id="Branchreg_haddress"
+								value="#{branBean.creg.haddress}"
+								style="width:250px;float:left;">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</p:inputText> <p:watermark for="Branchreg_haddress" value="输入分公司住所" /> <p:message
+								for="Branchreg_haddress" />
+						</td>
+					</tr>
+					<tr style='height: 41.05pt'>
+						<td width="158"
+							style='width: 118.8pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 41.05pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>生产经营地</span>
+							</p>
+						</td>
+						<td width="560" colspan="8"
+							style='width: 419.9pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 41.05pt'>
+							<p:outputPanel autoUpdate="true" id="distriction_panel"
+								style="display:inline-block;">
+								<p:outputLabel value="#{branBean.creg.prefix}" id="distriction" />
+							</p:outputPanel> <p:inputText id="Branchreg_caddress"
+								value="#{branBean.creg.caddress}" style="width:250px;">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</p:inputText> <p:watermark for="Branchreg_caddress" value="输入分公司经营地址" /> <p:message
+								for="Branchreg_caddress" />
+						</td>
+					</tr>
+					<tr style='height: 24.35pt'>
+						<td width="158"
+							style='width: 118.8pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.5pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 24.35pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>联系电话</span>
+							</p>
+						</td>
+						<td width="256" colspan="3"
+							style='width: 192.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.5pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 24.35pt'>
+							<p:inputText id="Branchreg_ctelephone"
+								value="#{branBean.creg.ctelephone}" style="width:95%;">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</p:inputText> <p:watermark for="Branchreg_ctelephone" value="输入联系电话" /> <p:message
+								for="Branchreg_ctelephone" />
+
+						</td>
+						<td width="104" colspan="2"
+							style='width: 78.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.5pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 24.35pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-indent: 5.25pt; text-autospace: none'>
+								<span style='font-family: 宋体'>邮政编码</span>
+							</p>
+						</td>
+						<td width="200" colspan="3"
+							style='width: 149.9pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.5pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 24.35pt'>
+							<p:inputText id="Branchreg_czip" value="#{branBean.creg.czip}"
+								style="width:95%;">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</p:inputText> <p:watermark for="Branchreg_czip" value="130000" /> <p:message
+								for="Branchreg_czip" />
+						</td>
+					</tr>
+					<tr style='height: 27.75pt'>
+						<td width="718" colspan="9"
+							style='width: 538.7pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.5pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 27.75pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-size: 14.0pt; font-family: 黑体'>□设立</span>
+							</p>
+						</td>
+					</tr>
+					<tr style='height: 17.0pt'>
+						<td width="158"
+							style='width: 118.8pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.0pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>负责人</span>
+							</p>
+						</td>
+						<td width="256" colspan="3" valign="top"
+							style='width: 192.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.0pt'>
+							<p:inputText id="Branchreg_ceoName"
+								value="#{branBean.creg.ceoName}" style="width:95%;">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</p:inputText> <p:watermark for="Branchreg_ceoName" value="负责 人姓名" /> <p:message
+								for="Branchreg_ceoName" />
+						</td>
+						<td width="104" colspan="2"
+							style='width: 78.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.0pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span class="apple-style-span"><span
+									style='font-family: 宋体; letter-spacing: -.4pt'>申请执照副本数量</span></span>
+							</p>
+						</td>
+						<td width="200" colspan="3"
+							style='width: 149.9pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.0pt'>
+							<p:inputText id="Branchreg_cernum"
+								value="#{branBean.creg.cernum}" style="width:30px;align:right; ">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</p:inputText>个 <p:watermark for="Branchreg_cernum" value="" /> <p:message
+								for="Branchreg_cernum" />
+						</td>
+					</tr>
+					<tr style='height: 61.1pt'>
+						<td width="158"
+							style='width: 118.8pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 61.1pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>分公司</span>
+							</p>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>经营范围</span>
+							</p>
+						</td>
+						<td width="560" colspan="8" valign="top"
+							style='width: 419.9pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 61.1pt'>
+							<p:inputTextarea id="Branchreg_crange" rows="5" cols="65"
+								value="#{branBean.creg.crange}" counter="crange_remain"
+								maxlength="500" counterTemplate="还可输入{0}字 ." autoResize="false">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</p:inputTextarea> <br /> <h:outputText id="crange_remain" /> <p:message
+								for="Branchreg_crange" />
+						</td>
+					</tr>
+					<tr style='height: 14.85pt'>
+						<td width="158"
+							style='width: 118.8pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.85pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>核算方式</span>
+							</p>
+						</td>
+						<td width="560" colspan="8"
+							style='width: 419.9pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.85pt'>
+							<p:selectOneRadio id="Branchreg_calmode"
+								value="#{branBean.creg.calmode}" layout="grid" columns="2">
+								<f:selectItem itemLabel="独立核算" itemValue="独立核算" />
+								<f:selectItem itemLabel="非独立核算" itemValue="非独立核算" />
+							</p:selectOneRadio>
+						</td>
+					</tr>
+					<tr style='height: 14.85pt'>
+						<td width="718" colspan="9"
+							style='width: 538.7pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.85pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-size: 15.0pt; font-family: 黑体'>□其他信息</span>
+							</p>
+						</td>
+					</tr>
+					<tr style='height: 20.55pt'>
+						<td width="158"
+							style='width: 118.8pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 6.85pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>雇员人数</span>
+							</p>
+						</td>
+						<td width="560" colspan="8"
+							style='width: 419.9pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 6.85pt'>
+							<p:message for="Branchreg_empnum" /> <h:inputText
+								id="Branchreg_empnum" value="#{branBean.creg.empnum}"
+								style="width:60px;align:right; ">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</h:inputText>人，其中外籍人数 <h:inputText id="Branchreg_empfornum"
+								value="#{branBean.creg.empfornum}"
+								style="width:60px;align:right; ">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</h:inputText>人 <p:message for="Branchreg_empfornum" />
+						</td>
+					</tr>
+					<tr style='height: 14.4pt'>
+						<td width="718" colspan="9"
+							style='width: 538.7pt; border: solid windowtext 1.5pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.4pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-size: 15.0pt; font-family: 黑体'>□申请人声明</span>
+							</p>
+						</td>
+					</tr>
+					<tr style='height: 112.15pt'>
+						<td width="718" colspan="9"
+							style='width: 538.7pt; border: solid windowtext 1.5pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 112.15pt'>
+							<p class="MsoNormal"
+								style='text-indent: 21.0pt; text-autospace: none'>
+								<span style='font-family: 宋体'>本公司依照《公司法》、《公司登记管理条例》<span
+									class="apple-style-span">及相关规定</span>申请分公司登记，<span
+									class="apple-style-span">提交材料真实有效。通过联络员登录企业信用信息公示系统向登记机关报送、向社会公示的企业信息为本企业提供、发布的信息，信息真实、有效。</span></span>
+							</p>
+							<p class="New" style='text-indent: 21.0pt'>
+								<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+							</p>
+							<p class="New" align="left"
+								style='margin-left: 330.75pt; text-align: left; text-indent: -309.75pt'>
+								<span style='font-family: 宋体'>法定代表人签字： <span lang="EN-US"
+									style='color: red'>&nbsp;&nbsp;</span><b><span
+										style='color: red'>总公司法定代表人签字</span></b><span lang="EN-US"
+									style='color: red'>&nbsp; </span><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>公司盖章：
+								</span>
+							</p>
+							<p class="New" align="left"
+								style='margin-left: 330.75pt; text-align: left; text-indent: -309.75pt'>
+								<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+							</p>
+							<p class="New" align="left"
+								style='margin-left: 330.75pt; text-align: left; text-indent: -309.75pt'>
+								<span lang="EN-US" style='font-family: 宋体'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</p>
+							<p class="New" align="left"
+								style='margin-left: 330.75pt; text-align: left'>
+								<span style='font-family: 宋体'>年<span lang="EN-US">&nbsp;&nbsp;&nbsp;
+								</span>月<span lang="EN-US">&nbsp;&nbsp;&nbsp; </span>日
+								</span>
+							</p>
+							<p class="New" align="left"
+								style='margin-left: 330.75pt; text-align: left'>
+								<span style='font-family: 宋体'>&nbsp;</span>
+							</p>
+						</td>
+					</tr>
+
+				</table>
+			</div>
+			<div class="clearfloat" />
+
+			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				<p:commandButton value="是" type="button"
+					styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+				<p:commandButton value="否" type="button"
+					styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+			</p:confirmDialog>
+
+			<div align="center" class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{branBean.admin}">
+					<p:inputTextarea styleClass="center" id="Branchreg_comment1"
+						rows="8" cols="58" value="#{branBean.creg.comment1}"
+						counter="comment_remain" maxlength="1000"
+						counterTemplate="还可输入{0}字 ." autoResize="true">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Branchreg_comment1" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not branBean.admin and branBean.creg.comment1 ne null and branBean.creg.comment1 ne '' }">
+					<h:outputText value="#{branBean.creg.comment1}"
+						style="width:100%;color:red;" />
+				</p:panel>
+				<p:outputPanel id="buttons">
+					<p:commandButton style="text-align:center; margin:0 auto;"
+						action="#{branBean.saveData('creg')}" value="保存" update="formone">
+						<p:confirm disabled="#{branList.admin?'true':'false'}"
+							header="请确认" message="注意：行政区划的选择必须与核名时所选择的相一致！是否 已知情？"
+							icon="ui-icon-alert" />
+					</p:commandButton>
+					<p:commandButton style="text-align:center; margin:0 auto;"
+						value="下一步" action="#{branBean.openpage('ceo')}"
+						immediate="#{branList.admin?'false':'false'}">
+						<p:confirm disabled="#{branList.admin?'true':'false'}"
+							header="请确认" message="注意：行政区划的选择必须与核名时所选择的相一致！是否 已知情？"
+							icon="ui-icon-alert" />
+						<f:param name="branid" value="#{branBean.creg.id}" />
+					</p:commandButton>
+				</p:outputPanel>
+			</div>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

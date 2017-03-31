@@ -1,0 +1,118 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/userpage.xhtml">
+
+	<ui:define name="userdesk">
+		<div align="center">
+
+			<h:form id="formone">
+				<p:growl id="ajaxmsg" showDetail="true" />
+
+				<div align="left">
+					<p:fieldset rendered="#{nameList.admin}" legend="筛选"
+						id="filterPanel" collapsed="false" widgetVar="filter"
+						toggleable="true" toggleSpeed="500">
+						<table>
+							<tr>
+								<td>公司名称</td>
+								<td colspan="2">申请日期</td>
+								<td>状态</td>
+							</tr>
+							<tr>
+								<td><p:inputText id="filterCompanyName"
+										value="#{nameList.filterCompanyName}" /></td>
+								<td><p:calendar id="filterAppDateBegin"
+										value="#{nameList.filterAppDateBegin}" pattern="yyyy/MM/dd"
+										navigator="true" readonlyInput="true" yearRange="c:c+5">
+									</p:calendar></td>
+								<td><p:calendar id="filterAppDateEnd"
+										value="#{nameList.filterAppDateEnd}" pattern="yyyy/MM/dd"
+										navigator="true" readonlyInput="true" yearRange="c:c+5">
+									</p:calendar></td>
+								<td><p:selectOneMenu id="filterState"
+										value="#{nameList.filterState}">
+										<f:selectItem itemValue="" itemLabel="" />
+										<f:selectItems value="#{selectItems.statesName}" />
+									</p:selectOneMenu></td>
+
+							</tr>
+						</table>
+
+						<br />
+						<div align="center">
+							<p:commandButton value="清空" update="oneTable filterPanel"
+								actionListener="#{nameList.resetFilter}" immediate="true"
+								resetValues="true" />
+							<p:commandButton value="查询" update="oneTable filterPanel"
+								actionListener="#{nameList.doFilter}" />
+						</div>
+					</p:fieldset>
+				</div>
+
+				<div align="center">
+					<p:dataTable id="oneTable" var="creg" value="#{nameList.model}"
+						paginator="true" rows="10"
+						paginatorTemplate="{RowsPerPageDropdown} {FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}"
+						emptyMessage="无数据" editable="false" selectionMode="single"
+						selection="#{nameList.selectedCreg}" rowKey="#{creg.id}"
+						rowsPerPageTemplate="5,10,15" lazy="true">
+						<p:column sortBy="#{creg.cname1}" headerText="公司名称"
+							style="width:260px">
+							<h:commandLink onclick="history.go(0)"
+								rendered="#{(not nameList.admin and (creg.capprove eq '核名' or creg.capprove eq '核名未通过')) or ((creg.capprove eq '提交核名' or creg.capprove eq '核名中' ) and nameList.admin) }"
+								value="#{creg.cname1}" action="#{cregBean.openpage('heming')}"
+								target="_blank">
+								<f:param name="cregid" value="#{creg.id}" />
+							</h:commandLink>
+							<h:outputText value="#{creg.cname1}"
+								rendered="#{not((not nameList.admin and (creg.capprove eq '核名' or creg.capprove eq '核名未通过')) or ((creg.capprove eq '提交核名' or creg.capprove eq '核名中' ) and nameList.admin))}" />
+						</p:column>
+						<p:column sortBy="capptime" headerText="申请日期" style="width:80px">
+							<h:outputText value="#{creg.capptime}">
+								<f:convertDateTime pattern="yyyy/MM/dd" locale="en_SG"
+									timeZone="GMT+8" />
+							</h:outputText>
+						</p:column>
+						<p:column sortBy="#{creg.capprove}" headerText="状态"
+							style="width:80px">
+							<h:outputText value="#{creg.capprove}" />
+						</p:column>
+						<p:column sortBy="#{creg.jingshou}" headerText="审核人"
+							style="width:80px">
+							<h:outputText value="#{creg.jingshou}" />
+						</p:column>
+						<p:column headerText="操作" rendered="#{not nameList.admin}"
+							style="text-align:center;">
+							<p:commandButton value="提交" style="width:70px;margin:0;"
+								rendered="#{creg.capprove eq '核名'}" update="formone"
+								action="#{nameList.commitCheckName}">
+								<f:setPropertyActionListener value="#{creg}"
+									target="#{nameList.selectedCreg}" />
+							</p:commandButton>
+						</p:column>
+						<p:column headerText="审批" rendered="#{nameList.admin}"
+							style="width:140px">
+							<p:commandButton value="退回" style="width:70px;margin:0;"
+								rendered="#{creg.capprove eq '核名中' and creg.jingshou eq nameList.currentUser.displayName}"
+								update="formone" action="#{nameList.rejectName}">
+								<f:setPropertyActionListener value="#{creg}"
+									target="#{nameList.selectedCreg}" />
+							</p:commandButton>
+							<p:commandButton value="批准" style="width:70px;margin:0;"
+								rendered="#{creg.capprove eq '核名中' and creg.jingshou eq nameList.currentUser.displayName}"
+								update="formone" action="#{nameList.approveName}">
+								<f:setPropertyActionListener value="#{creg}"
+									target="#{nameList.selectedCreg}" />
+							</p:commandButton>
+						</p:column>
+
+					</p:dataTable>
+				</div>
+
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>
+

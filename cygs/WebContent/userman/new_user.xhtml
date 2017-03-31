@@ -1,0 +1,97 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/userpage.xhtml">
+	<ui:define name="menu">
+		<ui:include name="menu" src="/layout/dymenu.xhtml" />
+	</ui:define>
+
+	<ui:define name="userdesk">
+		<div align="center">
+			<p></p>
+			<p></p>
+			<h:form id="formone">
+				<p:growl showDetail="true" />
+				<div align="center">
+					<table width="520" border="0" cellpadding="3px" cellspacing="0">
+						<tr>
+							<td width="260">登录名*</td>
+							<td width="260"><h:outputText
+									rendered="#{sysUserBean.update}" style="width:240px"
+									value="#{sysUserBean.user.loginId}" /> <h:inputText
+									rendered="#{not sysUserBean.update}" class="input3"
+									id="SysUser_loginId" style="width:240px"
+									value="#{sysUserBean.user.loginId}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</h:inputText> <h:message for="SysUser_loginId" /></td>
+						</tr>
+						<tr>
+							<td width="260">真实姓名*</td>
+							<td width="260"><h:inputText class="input3"
+									style="width:240px" id="SysUser_displayName"
+									value="#{sysUserBean.user.displayName}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</h:inputText></td>
+						</tr>
+						<tr>
+							<td width="260">角色：</td>
+							<td width="260"><h:selectOneMenu style="width:195px"
+									value="#{sysUserBean.user.role}">
+									<f:selectItem itemValue="管理员" itemLabel="管理员" />
+									<f:selectItem itemDisabled="#{not loginUser.super_admin}"
+										itemValue="分局管理员" itemLabel="分局管理员" />
+								</h:selectOneMenu></td>
+						</tr>
+						<tr>
+							<td width="260">密码*</td>
+							<td width="260"><h:inputSecret class="input3"
+									style="width:240px" value="#{sysUserBean.user.password}"
+									id="SysUser_password">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</h:inputSecret> <h:message for="SysUser_password" /></td>
+						</tr>
+						<tr>
+							<td width="260">再次输入密码*</td>
+							<td width="260"><h:inputSecret class="input3"
+									style="width:240px" value="#{sysUserBean.password2}"
+									id="SysUser_password2">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</h:inputSecret> <h:message for="SysUser_password2" /></td>
+						</tr>
+						<tr>
+							<td width="260">所属行政区</td>
+							<td width="260"><p:selectOneMenu
+									rendered="#{loginUser.super_admin}"
+									value="#{sysUserBean.user.distriction}">
+									<f:selectItems value="#{selectItems.bureau}" />
+								</p:selectOneMenu> <p:selectOneMenu rendered="#{loginUser.local_admin}"
+									value="#{sysUserBean.user.distriction}">
+									<f:selectItem itemLabel="#{loginUser.user.distriction}"
+										itemValue="#{loginUser.user.distriction}" />
+								</p:selectOneMenu></td>
+						</tr>
+						<tr>
+							<td width="260">电子邮件</td>
+							<td width="260"><h:inputText class="input3"
+									style="width:240px" value="#{sysUserBean.user.email}"
+									id="SysUser_emailId">
+								</h:inputText></td>
+						</tr>
+					</table>
+				</div>
+
+				<div style="padding-top: 20px; display: inherit;" align="center">
+					<p:commandButton value="保存" id="saveButton" update=":formone"
+						action="#{sysUserBean.save}" />
+				</div>
+			</h:form>
+
+			<div style="clear: both;">
+				<br />
+			</div>
+		</div>
+		<p></p>
+		<p></p>
+	</ui:define>
+</ui:composition>

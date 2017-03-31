@@ -1,0 +1,71 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>朝阳工商视频会议室</title>
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="templateo_container">
+		<div id="templatemo_top_panel">
+			<div id="site_logo">
+				<a href=""><img src="images/logo.jpg" alt="Site Title" /></a>
+			</div>
+			<div id="header_menu_section">
+				<div class="header_menu home_menu">
+					<a href=""></a>
+				</div>
+				<div class="header_menu contact_menu">
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="cleaner"></div>
+		</div>
+		<div class="loginArea">
+			<div class="url-wrapper">
+				<h3>加入视频会议室</h3>
+				<div class="url-bar">
+					<label for="room-name">输入用户昵称</label> <input id="room-name"
+						type="text"></input>
+					<button class="button blue" onclick="enterHouse()">进入</button>
+				</div>
+			</div>
+		</div>
+		<div id="templatemo_footer">Copyright © 2017</div>
+	</div>
+</body>
+<script>
+	document.getElementById("room-name").focus();
+	function enterHouse()
+	{		
+		var name=document.getElementById("room-name").value;  
+		if(name=='')
+		{
+			alert("请输入用户昵称");  
+		}
+		else
+		{
+			setCookie("roomusername", name);						
+			this.location.href="room.html";
+			
+			//window.naviage("room.html");
+		}
+	}
+	
+	function setCookie(name,value)
+	{
+		var Days = 30;
+		var exp = new Date();
+		exp.setTime(exp.getTime() + Days*24*60*60*1000);
+		document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+	}
+	
+	function getCookie(name)
+	{
+		var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+		if(arr=document.cookie.match(reg))
+			return unescape(arr[2]);
+		else
+			return null;
+	}
+</script>
+</html>

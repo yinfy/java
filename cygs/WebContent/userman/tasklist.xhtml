@@ -1,0 +1,123 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/userpage.xhtml">
+
+	<ui:define name="menu">
+		<ui:include name="menu" src="/layout/dymenu.xhtml" />
+	</ui:define>
+
+	<ui:define name="userdesk">
+		<div align="center">
+
+			<h:form id="formone">
+				<p:dialog visible="#{not empty facesContext.messageList}"
+					header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+					modal="true">
+					<p:repeat value="#{facesContext.messageList}" var="message">
+						<h:panelGrid columns="2" style="width:100%"
+							columnClasses="logo,detail">
+							<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+								url="/images/info.png" />
+							<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+								url="/images/warn.png" />
+							<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+								url="/images/error.png" />
+							<h:outputText value="#{message.detail}" style="font-weight: bold" />
+						</h:panelGrid>
+					</p:repeat>
+				</p:dialog>
+				<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+					closable="true" />
+
+
+				<div align="left">
+					<p:fieldset rendered="#{cregList.admin}" legend="筛选"
+						id="filterPanel" collapsed="false" widgetVar="filter"
+						toggleable="true" toggleSpeed="500">
+						<table>
+							<tr>
+								<td>公司名称</td>
+								<td colspan="2">申请日期</td>
+							</tr>
+							<tr>
+								<td><p:inputText id="filterCompanyName"
+										value="#{cregList.filterCompanyName}" /></td>
+								<td><p:calendar id="filterAppDateBegin"
+										value="#{cregList.filterAppDateBegin}" pattern="yyyy/MM/dd"
+										navigator="true" readonlyInput="true" yearRange="c:c+5">
+									</p:calendar></td>
+								<td><p:calendar id="filterAppDateEnd"
+										value="#{cregList.filterAppDateEnd}" pattern="yyyy/MM/dd"
+										navigator="true" readonlyInput="true" yearRange="c:c+5">
+									</p:calendar></td>
+							</tr>
+						</table>
+
+						<br />
+						<div align="center">
+							<p:commandButton value="清空" update="oneTable filterPanel"
+								actionListener="#{cregList.resetFilter}" immediate="true"
+								resetValues="true" />
+							<p:commandButton value="查询" update="oneTable filterPanel"
+								actionListener="#{cregList.doFilter}" />
+						</div>
+					</p:fieldset>
+				</div>
+
+				<div align="center">
+
+					<p:dataTable id="oneTable" var="creg" value="#{taskList.cregList}"
+						paginator="true" rows="10" paginatorPosition="top"
+						paginatorTemplate="{RowsPerPageDropdown} {FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}"
+						emptyMessage="无数据" editable="false" selectionMode="single"
+						selection="#{taskList.selectedCreg}" rowKey="#{creg.id}"
+						rowsPerPageTemplate="5,10,15" lazy="false">
+						<f:facet name="header">
+							<h:outputText value="待处理登记任务" style="font-size:32px;" />
+						</f:facet>
+						<p:column sortBy="#{creg.capprove}" headerText="类别"
+							style="width:80px"
+							styleClass="#{(creg.capprove eq '已受理' and cregList.admin)?'fn_red':'fn_black'}">
+							<h:outputText value="#{creg.taskType}" />
+						</p:column>
+						<p:column sortBy="#{creg.cname}" headerText="公司名称"
+							style="width:240px"
+							styleClass="#{(creg.capprove eq '已受理' and cregList.admin)?'fn_red':'fn_black'}">
+							<h:commandLink value="#{creg.cname}"
+								action="#{taskBean.openpage('creg')}" target="_blank"
+								styleClass="#{(creg.capprove eq '已受理' and cregList.admin)?'fn_red':'fn_black'}">
+								<f:param name="taskid" value="#{creg.id}" />
+								<f:param name="entityname" value="#{creg.entityName}" />
+							</h:commandLink>
+						</p:column>
+						<p:column sortBy="capptime" headerText="申请日期" style="width:80px"
+							styleClass="#{(creg.capprove eq '已受理' and cregList.admin)?'fn_red':'fn_black'}">
+							<h:outputText value="#{creg.capptime}">
+								<f:convertDateTime pattern="yyyy/MM/dd" locale="en_SG"
+									timeZone="GMT+8" />
+							</h:outputText>
+						</p:column>
+						<p:column sortBy="#{creg.capprove}" headerText="状态"
+							style="width:60px"
+							styleClass="#{(creg.capprove eq '已受理' and cregList.admin)?'fn_red':'fn_black'}">
+							<h:outputText value="#{creg.capprove}" />
+						</p:column>
+						<p:column sortBy="#{creg.jingshou}" headerText="审核人"
+							style="width:60px"
+							styleClass="#{(creg.capprove eq '已受理' and cregList.admin)?'fn_red':'fn_black'}">
+							<h:outputText value="#{creg.jingshou}" />
+						</p:column>
+						<f:facet name="footer">
+							<p:commandButton value="刷新" action="#{taskList.refTasks}"
+								update="formone" />
+						</f:facet>
+					</p:dataTable>
+				</div>
+
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>
+

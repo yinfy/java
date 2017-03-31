@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+			<p:selectOneMenu value="#{branBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="ceo" itemLabel="ceo" />
+			</p:selectOneMenu>
+			<p:panel>
+				<p class="New" align="center"
+					style='text-align: center; line-height: 26.0pt'>
+					<b><span style='font-size: 18.0pt; font-family: 宋体'>负责人信息</span></b>
+				</p>
+
+				<p class="New" align="center"
+					style='text-align: center; line-height: 26.0pt'>
+					<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+				</p>
+
+				<div align="center">
+
+					<table class="MsoNormalTable" border="1" cellspacing="0"
+						cellpadding="0" width="595"
+						style='width: 446.4pt; border-collapse: collapse; border: none'>
+						<tr style='height: 38.25pt'>
+							<td width="115"
+								style='width: 86.3pt; border-top: 1.5pt; border-left: 1.5pt; border-bottom: 1.0pt; border-right: 1.0pt; border-color: windowtext; border-style: solid; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>姓<span lang="EN-US">&nbsp;&nbsp;&nbsp;
+									</span>名
+									</span>
+								</p>
+							</td>
+							<td width="193"
+								style='width: 144.85pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+
+								<h:outputText value="#{branBean.creg.ceoName}" />
+
+							</td>
+							<td width="113"
+								style='width: 84.75pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>固定电话</span>
+								</p>
+							</td>
+							<td width="174"
+								style='width: 130.5pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+								<p:inputText id="Branchreg_ceoTele"
+									value="#{branBean.creg.ceoTele}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Branchreg_ceoTele" value="负责人电话" /> <p:message
+									for="Branchreg_ceoTele" />
+							</td>
+						</tr>
+						<tr style='height: 38.25pt'>
+							<td width="115"
+								style='width: 86.3pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>移动电话</span>
+								</p>
+							</td>
+							<td width="193"
+								style='width: 144.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+								<p:inputText id="Branchreg_ceoMobile"
+									value="#{branBean.creg.ceoMobile}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Branchreg_ceoMobile" value="负责人移动电话" /> <p:message
+									for="Branchreg_ceoMobile" />
+							</td>
+							<td width="113"
+								style='width: 84.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>电子邮箱</span>
+								</p>
+							</td>
+							<td width="174"
+								style='width: 130.5pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+								<p:inputText id="Branchreg_ceoMail"
+									value="#{branBean.creg.ceoMail}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Branchreg_ceoMail" value="负责人电子邮件" /> <p:message
+									for="Branchreg_ceoMail" />
+							</td>
+						</tr>
+						<tr style='height: 38.25pt'>
+							<td width="115"
+								style='width: 86.3pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>身份证件类型</span>
+								</p>
+							</td>
+							<td width="480" colspan="3"
+								style='width: 360.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+								<p:selectOneMenu value="#{branBean.creg.ceoIdtype}"
+									style="width:80%">
+									<f:selectItems value="#{selectItems.idTypes}" />
+								</p:selectOneMenu>
+							</td>
+						</tr>
+						<tr style='height: 38.25pt'>
+							<td width="115"
+								style='width: 86.3pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>身份证件号码</span>
+								</p>
+							</td>
+							<td width="480" colspan="3"
+								style='width: 360.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.25pt'>
+								<p:inputText id="Branchreg_ceoIdno"
+									value="#{branBean.creg.ceoIdno}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Branchreg_ceoIdno" value="负责人证件号码" /> <p:message
+									for="Branchreg_ceoIdno" />
+							</td>
+						</tr>
+						<tr style='height: 259.9pt'>
+							<td width="595" colspan="4"
+								style='width: 446.4pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 259.9pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>（身份证件复印件粘贴处）</span>
+								</p>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;&nbsp;&nbsp;&nbsp;
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 169.1pt'>
+							<td width="595" colspan="4"
+								style='width: 446.4pt; border: solid windowtext 1.5pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 169.1pt'>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;&nbsp;&nbsp;
+									</span>
+								</p>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</span><span style='font-family: 宋体'>负责人签字：</span>
+								</p>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</span>
+								</p>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									</span><span style='font-family: 宋体'>年<span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;
+									</span>月<span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; </span>日
+									</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+			</p:panel>
+
+			<p:fragment id="frag00">
+				<p:dialog header="人员信息" widgetVar="persons" modal="true"
+					showEffect="fade" hideEffect="fade" resizable="false" width="850">
+					<div style="clear: both;"></div>
+					<div>
+						<p:dataTable emptyMessage="无记录" id="persons"
+							value="#{branBean.persons}" var="person" paginator="false"
+							rows="20" selection="#{branBean.selectedPerson}"
+							rowKey="#{person.idNo}">
+							<p:column selectionMode="single"
+								style="width:16px;text-align:center" />
+							<p:column style="width:200px" headerText="姓名">
+								<h:outputText value="#{person.name}" />
+							</p:column>
+							<p:column style="width:200px" headerText="证件类型">
+								<h:outputText value="#{person.idType}" />
+							</p:column>
+							<p:column style="width:280px" headerText="证件号码">
+								<h:outputText value="#{person.idNo}" />
+							</p:column>
+						</p:dataTable>
+					</div>
+					<div class="center">
+						<p:commandButton update="formone" value="取消" immediate="true"
+							onclick="PF('persons').close()" />
+						<p:commandButton update="formone" value="保存"
+							action="#{branBean.updatePerson('ceo')}"
+							oncomplete="PF('persons').hide()">
+						</p:commandButton>
+					</div>
+				</p:dialog>
+			</p:fragment>
+
+			<div class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{branBean.admin}">
+					<p:inputTextarea id="Branchreg_comment2" rows="8" cols="58"
+						value="#{branBean.creg.comment2}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Branchreg_comment2" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not branBean.admin and branBean.creg.comment2 ne null and branBean.creg.comment2 ne '' }">
+					<h:outputText value="#{branBean.creg.comment2}"
+						style="width:100%;color:red;" />
+				</p:panel>
+				<h:commandLink styleClass="button3" value="上一步"
+					action="#{branBean.prepage('creg')}"
+					immediate="#{branList.admin?'false':'false'}">
+					<f:param name="branid" value="#{branBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton action="#{branBean.saveData('ceo')}" value="保存"
+					update="formone" />
+				<h:commandLink styleClass="button3" value="下一步"
+					action="#{branBean.openpage('lianluo')}"
+					immediate="#{branList.admin?'false':'false'}">
+					<f:param name="branid" value="#{branBean.creg.id}" />
+				</h:commandLink>
+
+			</div>
+
+
+
+		</h:form>
+	</ui:define>
+</ui:composition>

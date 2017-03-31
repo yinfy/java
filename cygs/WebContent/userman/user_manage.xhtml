@@ -1,0 +1,110 @@
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/userpage.xhtml">
+	<ui:define name="menu">
+		<ui:include name="menu" src="/layout/dymenu.xhtml" />
+	</ui:define>
+
+	<ui:define name="userdesk">
+
+		<h:form id="sysusersform">
+			<h:messages layout="table" />
+
+			<div align="left">
+				<p:fieldset legend="筛选" id="filterPanel" collapsed="false"
+					widgetVar="filter" toggleable="true" toggleSpeed="500">
+					<table>
+						<tr>
+							<td>登 录 名</td>
+							<td>用户姓名</td>
+							<td>电话号码</td>
+							<td>行 政 区</td>
+						</tr>
+						<tr>
+							<td><p:inputText id="filterLoginId"
+									value="#{sysUserList.filterLoginId}" /></td>
+							<td><p:inputText id="filterUserName"
+									value="#{sysUserList.filterUserName}" /></td>
+							<td><p:inputText id="filterUserPhone"
+									value="#{sysUserList.filterUserPhone}" /></td>
+							<td><p:selectOneMenu id="filterUserDistriction"
+									value="#{sysUserList.filterUserDistriction}">
+									<f:selectItem itemValue="" itemLabel="" />
+									<f:selectItems value="#{selectItems.bureau}" />
+								</p:selectOneMenu></td>
+						</tr>
+					</table>
+
+					<br />
+					<div align="center">
+						<p:commandButton value="清空" update="UserTable filterPanel"
+							actionListener="#{sysUserList.resetFilter}" immediate="true"
+							resetValues="true" />
+						<p:commandButton value="查询" update="UserTable filterPanel"
+							actionListener="#{sysUserList.doFilter}" />
+					</div>
+				</p:fieldset>
+			</div>
+
+			<p:commandButton value="加密所有用户密码"
+				rendered="#{not sysUserBean.sysConfig.enpass and loginUser.super_admin}"
+				update="UserTable filterPanel" action="#{sysUserBean.ChangAllPass}" />
+
+			<p:dataTable var="user" value="#{sysUserList.model}" paginator="true"
+				rows="10" selectionMode="single" id="UserTable" lazy="true"
+				selection="#{sysUserList.selectedUser}" rowKey="#{user.id}"
+				paginatorPosition="top">
+				<p:column sortBy="#{user.loginId}" headerText="登录名">
+					<h:commandLink onclick="history.go(0)" value="#{user.loginId}"
+						action="#{sysUserBean.openpage}" target="_blank">
+						<f:param name="userid" value="#{user.id}" />
+						<f:param name="man" value="1" />
+					</h:commandLink>
+				</p:column>
+				<p:column sortBy="#{user.displayName}" headerText="姓名">
+					<h:outputText value="#{user.displayName}" />
+				</p:column>
+				<p:column rendered="#{not sysUserList.innerManage}"
+					sortBy="#{user.idno}" headerText="身份证号">
+					<h:outputText value="#{user.idno}" />
+				</p:column>
+				<p:column rendered="#{not sysUserList.innerManage}"
+					sortBy="#{user.mobileNo}" headerText="手机号">
+					<h:outputText value="#{user.mobileNo}" />
+				</p:column>
+				<p:column sortBy="#{user.role}" headerText="角色">
+					<h:outputText value="#{user.role}" />
+				</p:column>
+				<p:column rendered="#{sysUserList.currentUser.role eq '分局管理员'}"
+					sortBy="#{user.loginId}" headerText="请假管理">
+					<h:commandLink value="请假管理"
+						action="#{sysUserBean.openpage('vacation')}" target="_blank">
+						<f:param name="userid" value="#{user.id}" />
+						<f:param name="man" value="1" />
+					</h:commandLink>
+				</p:column>
+				<p:column
+					rendered="#{sysUserList.currentUser.role eq '超级管理员'  or sysUserList.currentUser.role eq '分局管理员'}"
+					sortBy="#{user.loginId}" headerText="删除">
+					<p:commandButton value="删除" action="#{sysUserList.deleteUser}"
+						update="UserTable">
+						<p:confirm header="请确认" message="是否确认删除该用户？" icon="ui-icon-alert" />
+						<f:setPropertyActionListener value="#{user}"
+							target="#{sysUserList.selectedUser}" />
+					</p:commandButton>
+				</p:column>
+			</p:dataTable>
+
+			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				<p:commandButton value="是" type="button"
+					styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+				<p:commandButton value="否" type="button"
+					styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+			</p:confirmDialog>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

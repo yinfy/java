@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:selectOneMenu value="#{pageBean.currentpage}"
+				style="display:none;">
+				<f:selectItem itemValue="test" itemLabel="test" />
+			</p:selectOneMenu>
+
+			<p:dialog visible="false"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true">
+			</p:messages>
+
+			<div align="center" class="center">
+				<p:outputPanel id="buttons">
+					<h:commandButton id="btnSave"
+						style="text-align:center; margin:0 auto;"
+						action="#{pageBean.saveData('test')}" value="保存" update="formone">
+					</h:commandButton>
+				</p:outputPanel>
+
+			</div>
+
+			<p:outputLabel value="#{pageBean.selectItemnames[88]}" />
+
+			<p:dataTable value="#{pageBean.selectItemnames}" var="item">
+				<p:column>
+					<h:outputText value="#{item}" />
+				</p:column>
+			</p:dataTable>
+
+
+
+		</h:form>
+	</ui:define>
+</ui:composition>

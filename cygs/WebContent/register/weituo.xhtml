@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:dialog visible="#{not empty cregBean.messages}"
+				header="#{cregBean.messages[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{cregBean.messages}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true">
+			</p:messages>
+			<p:selectOneMenu value="#{cregBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="weituo" itemLabel="weituo" />
+			</p:selectOneMenu>
+			<p:panel styleClass="tableboard">
+				<div class="WordSection1"
+					style='font-size: 12.0pt; layout-grid: 15.6pt'>
+
+					<p class="MsoNormal" align="center" style='text-align: center'>
+						<b><span
+							style='font-size: 18.0pt; font-family: 宋体; color: black'>指定代表或者共同委托代理人授权委托书</span></b>
+					</p>
+
+					<p class="MsoNormal" style='line-height: 21.0pt'>
+						<span lang="EN-US" style='font-family: 宋体; color: black'>&nbsp;</span>
+					</p>
+
+					<p class="MsoNormal" style='font-size: 12.0pt; margin-top: 7.8pt'>
+						<span style='font-family: 宋体; color: black'>申 请 人 ：<u>
+								<h:outputText styleClass="sysfont" style="font-size:18px;"
+									id="Companyreg_shareNames" value="#{cregBean.creg.shareNames}" />
+						</u></span>
+					</p>
+
+					<p class="MsoNormal"
+						style='font-size: 12.0pt; margin-top: 7.8pt; margin-right: 0cm; margin-bottom: 0cm; margin-bottom: .0001pt; text-indent: 0pt'>
+						<span style='font-family: 宋体; color: black'>指定代表或者委托代理人 ： <h:inputText
+								id="Companyreg_authDname" styleClass="sysfont"
+								value="#{cregBean.creg.authDname}" style="width:60px;">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</h:inputText> <p:watermark for="Companyreg_authDname" value="输入姓名"
+								id="watermark1" /> <h:message for="Companyreg_authDname" />
+							身份证件类型 <h:selectOneMenu styleClass="sysfont"
+								value="#{cregBean.creg.authIdtype}" style="width:100px;">
+								<f:selectItems value="#{selectItems.idTypes}" />
+							</h:selectOneMenu> <br /> 身份证件编号 <h:inputText id="Companyreg_authIdno"
+								styleClass="sysfont" value="#{cregBean.creg.authIdno}"
+								style="width:160px;">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</h:inputText> <p:watermark for="Companyreg_authIdno" value="输入证件号码"
+								id="watermark2" /> <h:message for="Companyreg_authIdno" /> <p:commandButton
+								rendered="#{not cregBean.admin}"
+								style="width:70px;font-size:14px;padding:0px;" immediate="true"
+								update="formone" value="选取" oncomplete="PF('persons').show()" />
+
+						</span>
+					</p>
+
+					<p class="MsoNormal" style='font-size: 12.0pt; margin-top: 7.8pt'>
+						<span style='font-family: 宋体; color: black'>委托事项及权限 ：</span>
+					</p>
+
+					<div
+						style='text-align: left; margin-top: 7.8pt; margin-left: 40px;'>
+						1、办理<u><h:outputText value="#{cregBean.creg.cname}" /></u>（企业名称）的
+
+						<p class="MsoNormal">
+							<span style='text-align: left; font-family: 宋体; color: black'>
+								<p:selectBooleanCheckbox disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt1}" style="width:12px;" />&nbsp;名称预先核准
+								<p:selectBooleanCheckbox disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt2}" style="width:12px;" />&nbsp;设立
+								<p:selectBooleanCheckbox disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt3}" style="width:12px;" />&nbsp;变更
+								<p:selectBooleanCheckbox disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt4}" style="width:12px;" />&nbsp;注销
+								<p:selectBooleanCheckbox disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt5}" style="width:12px;" />&nbsp;备案
+								<p:selectBooleanCheckbox disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt6}" style="width:12px;" />&nbsp;撤销变更登记
+							</span>
+						</p>
+						<p class="MsoNormal">
+							<span style='font-family: 宋体; color: black'> <p:selectBooleanCheckbox
+									disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt7}" style="width:12px;" />&nbsp;股权出质
+								（<p:selectBooleanCheckbox disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt8}" style="width:12px;" />&nbsp;设立
+								<p:selectBooleanCheckbox disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt9}" style="width:12px;" />&nbsp;变更
+								<p:selectBooleanCheckbox disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt10}" style="width:12px;" />&nbsp;注销
+								<p:selectBooleanCheckbox disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt11}" style="width:12px;;" />&nbsp;撤销）
+								<p:selectBooleanCheckbox disabled="true" styleClass="sysfont"
+									value="#{cregBean.creg.authOpt12}" style="width:12px;;" />&nbsp;其他
+								<span lang="EN-US"> <p:inputText disabled="true"
+										styleClass="sysfont" id="Companyreg_authOptblank"
+										value="#{cregBean.creg.authOptblank}" style="width:60px;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText> <p:message for="Companyreg_authOptblank" />
+							</span>手续。
+							</span>
+						</p>
+
+
+						2、
+						<p:inputSwitch styleClass="sysfont" onLabel="同意" offLabel="不同意"
+							value="#{cregBean.creg.authOpt13}" style="width:43px;" />
+						核对登记材料中的复印件并签署核对意见； <br /> 3、
+						<p:inputSwitch styleClass="sysfont" onLabel="同意" offLabel="不同意"
+							value="#{cregBean.creg.authOpt14}" style="width:43px;" />
+						修改企业自备文件的错误； <br /> 4、
+						<p:inputSwitch styleClass="sysfont" onLabel="同意" offLabel="不同意"
+							value="#{cregBean.creg.authOpt15}" style="width:43px;" />
+						修改有关表格的填写错误； <br /> 5、
+						<p:inputSwitch styleClass="sysfont" onLabel="同意" offLabel="不同意"
+							value="#{cregBean.creg.authOpt16}" style="width:43px;" />
+						领取营业执照和有关文书。
+					</div>
+
+					<p class="MsoNormal" style='font-size: 12.0pt; margin-top: 7.8pt'>
+						<span style='font-family: 宋体; color: black'>指定或者委托的有效期限：自 <span
+							lang="EN-US"> <p:calendar styleClass="sysfont"
+									locale="zh_CN" value="#{cregBean.creg.authDateb}"
+									pattern="yyyy年M月d日" navigator="true" readonlyInput="true"
+									yearRange="c-1:c+1" />
+						</span> 至<span lang="EN-US"> <span lang="EN-US"> <p:calendar
+										styleClass="sysfont" locale="zh_CN"
+										value="#{cregBean.creg.authDatee}" pattern="yyyy年M月d日"
+										navigator="true" readonlyInput="true" yearRange="c-1:c+1" />
+							</span>
+						</span>
+						</span>
+					</p>
+
+					<table class="MsoNormal" border="1" cellspacing="0" cellpadding="0"
+						style='border-collapse: collapse; border: none'>
+						<tr style='page-break-inside: avoid; height: 26.7pt'>
+							<td width="240" rowspan="3"
+								style='width: 144.0pt; border: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.7pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span style='font-family: 宋体; color: black'>指定代表或委托代理人或者经办人信息</span>
+								</p>
+							</td>
+							<td width="480"
+								style='width: 288.0pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.7pt'>
+								<p class="MsoNormal" style='margin-top: 7.8pt'>
+									<span style='font-family: 宋体; color: black'>签<span
+										lang="EN-US">&nbsp;&nbsp;&nbsp; </span>字：
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='page-break-inside: avoid; height: 27.75pt'>
+							<td width="480"
+								style='width: 288.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 27.75pt'>
+								<p class="MsoNormal" style='margin-top: 7.8pt'>
+									<span style='font-family: 宋体; color: black'>固定电话： <p:inputText
+											styleClass="sysfont" id="Companyreg_authTele"
+											value="#{cregBean.creg.authTele}" style="width:150px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText> <p:message for="Companyreg_authTele" />
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='page-break-inside: avoid; height: 30.0pt'>
+							<td width="480" valign="top"
+								style='width: 288.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 30.0pt'>
+								<p class="MsoNormal" style='margin-top: 7.8pt'>
+									<span style='font-family: 宋体; color: black'>移动电话： <p:inputText
+											id="Companyreg_authMobile"
+											value="#{cregBean.creg.authMobile}" style="width:150px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText> <p:message for="Companyreg_authMobile" />
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 188.85pt'>
+							<td width="720" colspan="2"
+								style='width: 432.0pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 188.85pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span style='font-family: 宋体; color: black'>（指定代表或委托代理人、具体经办人身份证明复印件粘贴处）</span>
+								</p>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span lang="EN-US" style='font-family: 宋体; color: black'>&nbsp;</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+
+					<p class="MsoNormal"
+						style='margin-top: 7.8pt; margin-right: 0cm; margin-bottom: 0cm; margin-left: 252.0pt; margin-bottom: .0001pt; text-indent: 21.0pt'>
+						<span lang="EN-US" style='font-family: 宋体; color: black'>&nbsp;</span>
+					</p>
+
+					<p class="MsoNormal" style='margin-top: 7.8pt'>
+						<span lang="EN-US" style='font-family: 宋体; color: black'>&nbsp;</span>
+					</p>
+
+					<p class="MsoNormal" style='margin-top: 7.8pt'>
+						<span style='font-family: 宋体; color: black'>（申请人签字或盖章）(全体股东签字)</span>
+					</p>
+					<p class="MsoNormal" style='margin-top: 7.8pt'>
+						<span style='font-family: 宋体; color: black'>(如果股东中含有法人股；要加盖法人股公章及法定代表人签字)</span>
+					</p>
+
+					<p class="MsoNormal"
+						style='margin-top: 7.8pt; margin-right: 0cm; margin-bottom: 0cm; margin-left: 302.0pt; margin-bottom: .0001pt'>
+						<span style='font-family: 宋体; color: black'><span
+							lang="EN-US"> <p:calendar styleClass="sysfont"
+									locale="zh_CN" value="#{cregBean.creg.authDate}"
+									pattern="yyyy年M月d日" navigator="true" readonlyInput="true"
+									yearRange="c-1:c+1" />
+						</span> </span>
+					</p>
+
+					<p class="MsoNormal"
+						style='margin-top: 7.8pt; margin-right: 0cm; margin-bottom: 0cm; margin-left: 252.0pt; margin-bottom: .0001pt; text-indent: 52.5pt; line-height: 21.0pt'>
+						<span lang="EN-US" style='font-family: 宋体; color: black'>&nbsp;</span>
+					</p>
+
+				</div>
+
+				<p:fragment id="frag00">
+					<p:dialog header="人员信息" widgetVar="persons" modal="true"
+						showEffect="fade" hideEffect="fade" resizable="false" width="850">
+						<div style="clear: both;"></div>
+						<div>
+							<p:dataTable emptyMessage="无记录" id="persons"
+								value="#{cregBean.persons}" var="person" paginator="false"
+								rows="20" selection="#{cregBean.selectedPerson}"
+								rowKey="#{person.idNo}">
+								<p:column selectionMode="single"
+									style="width:16px;text-align:center" />
+								<p:column style="width:200px" headerText="姓名">
+									<h:outputText value="#{person.name}" />
+								</p:column>
+								<p:column style="width:200px" headerText="证件类型">
+									<h:outputText value="#{person.idType}" />
+								</p:column>
+								<p:column style="width:280px" headerText="证件号码">
+									<h:outputText value="#{person.idNo}" />
+								</p:column>
+							</p:dataTable>
+						</div>
+						<div class="center">
+							<p:commandButton update="formone" value="取消" immediate="true"
+								onclick="PF('persons').close()" />
+							<p:commandButton update="formone" value="保存"
+								action="#{cregBean.updatePerson('auth')}"
+								oncomplete="PF('persons').hide()">
+							</p:commandButton>
+						</div>
+					</p:dialog>
+				</p:fragment>
+
+			</p:panel>
+			<div class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{cregBean.admin}">
+					<p:inputTextarea id="Companyreg_comment7" rows="8" cols="58"
+						value="#{cregBean.creg.comment7}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Companyreg_comment7" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not cregBean.admin and cregBean.creg.comment7 ne null and cregBean.creg.comment7 ne '' }">
+					<h:outputText value="#{cregBean.creg.comment7}"
+						style="width:100%;color:red;" />
+				</p:panel>
+				<h:commandLink styleClass="button3" value="上一步"
+					action="#{cregBean.prepage('caiwu')}"
+					immediate="#{cregList.admin?'false':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton action="#{cregBean.saveData('weituo')}" value="保存"
+					update="formone" />
+				<h:commandLink styleClass="button3" value="下一步"
+					action="#{cregBean.openpage('zhusuo')}"
+					immediate="#{cregList.admin?'false':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+			</div>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

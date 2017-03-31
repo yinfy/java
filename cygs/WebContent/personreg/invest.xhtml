@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:selectOneMenu value="#{persBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="invest" itemLabel="invest" />
+			</p:selectOneMenu>
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+			<!-- ************************************************************************************************************* -->
+			<div class="WordSection1" style="layout-grid: 15.6pt">
+
+				<p class="New" align="center"
+					style='text-align: center; line-height: 26.0pt'>
+					<b><span style='font-size: 18.0pt; font-family: 宋体'>投资人信息</span></b>
+				</p>
+
+				<div align="center">
+
+					<table class="MsoNormalTable" border="1" cellspacing="0"
+						cellpadding="0" style='border-collapse: collapse; border: none'>
+						<tr style='height: 45.35pt'>
+							<td width="129"
+								style='width: 97.1pt; border-top: 1.5pt; border-left: 1.5pt; border-bottom: 1.0pt; border-right: 1.0pt; border-color: windowtext; border-style: solid; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>姓<span lang="EN-US">&nbsp;&nbsp;
+									</span>名
+									</span>
+								</p>
+							</td>
+							<td width="179"
+								style='width: 134.0pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+								<p:inputText id="Personreg_shname"
+									value="#{persBean.creg.shname}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Personreg_shname" value="输入投资人姓名"
+									id="watermark1" /> <p:message for="Personreg_shname" />
+							</td>
+							<td width="119"
+								style='width: 89.1pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-indent: 5.25pt; text-autospace: none'>
+									<span style='font-family: 宋体'>性<span lang="EN-US">&nbsp;
+									</span>别
+									</span>
+								</p>
+							</td>
+							<td width="168"
+								style='width: 126.2pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+								<p:selectOneRadio id="Personreg_shgender"
+									value="#{persBean.creg.shgender}">
+									<f:selectItem itemLabel="男" itemValue="男" />
+									<f:selectItem itemLabel="女" itemValue="女" />
+								</p:selectOneRadio>
+							</td>
+						</tr>
+						<tr style='height: 45.35pt'>
+							<td width="129"
+								style='width: 97.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>出生日期</span>
+								</p>
+							</td>
+							<td width="179"
+								style='width: 134.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+								<p:calendar locale="zh_CN" id="Personreg_shbirthday"
+									mask="9999/99/99" value="#{persBean.creg.shbirthday}"
+									pattern="yyyy/MM/dd" navigator="true" readonlyInput="false"
+									yearRange="c-30:c+30">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:calendar>
+							</td>
+							<td width="119"
+								style='width: 89.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>民族</span>
+								</p>
+							</td>
+							<td width="168"
+								style='width: 126.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+								<p:selectOneMenu id="Personreg_shnat"
+									value="#{persBean.creg.shnat}" style="width:85%">
+									<f:selectItems value="#{selectItems.nats}" />
+								</p:selectOneMenu>
+							</td>
+						</tr>
+						<tr style='height: 44.45pt'>
+							<td width="129"
+								style='width: 97.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>文化程度</span>
+								</p>
+							</td>
+							<td width="179"
+								style='width: 134.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+								<p:selectOneMenu id="Personreg_shlevel"
+									value="#{persBean.creg.shlevel}" style="width:125px">
+									<f:selectItems value="#{selectItems.levels}" />
+								</p:selectOneMenu>
+							</td>
+							<td width="119"
+								style='width: 89.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>政治面貌</span>
+								</p>
+							</td>
+							<td width="168"
+								style='width: 126.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+								<p:selectOneMenu id="Personreg_shpolitical"
+									value="#{persBean.creg.shpolitical}" style="width:125px">
+									<f:selectItems value="#{selectItems.politicals}" />
+								</p:selectOneMenu>
+							</td>
+						</tr>
+						<tr style='height: 44.45pt'>
+							<td width="129"
+								style='width: 97.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>移动电话</span>
+								</p>
+							</td>
+							<td width="179"
+								style='width: 134.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+								<p:inputText id="Personreg_shmobile"
+									value="#{persBean.creg.shmobile}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Personreg_shmobile" value="输入手机号码" /> <p:message
+									for="Personreg_shmobile" />
+							</td>
+							<td width="119"
+								style='width: 89.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>电子邮箱</span>
+								</p>
+							</td>
+							<td width="168"
+								style='width: 126.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+								<p:inputText id="Personreg_shemail"
+									value="#{persBean.creg.shemail}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Personreg_shemail" value="输入电子邮件" /> <p:message
+									for="Personreg_shemail" />
+							</td>
+						</tr>
+						<tr style='height: 37.3pt'>
+							<td width="129"
+								style='width: 97.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 37.3pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>身份证件类型</span>
+								</p>
+							</td>
+							<td width="179"
+								style='width: 134.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 37.3pt'>
+								<p:selectOneMenu value="#{persBean.creg.shidtype}"
+									style="width:80%">
+									<f:selectItems value="#{selectItems.idTypes}" />
+								</p:selectOneMenu>
+							</td>
+							<td width="119"
+								style='width: 89.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 37.3pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>身份证件号码</span>
+								</p>
+							</td>
+							<td width="168"
+								style='width: 126.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 37.3pt'>
+								<p:inputText id="Personreg_shidno"
+									value="#{persBean.creg.shidno}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Personreg_shidno" value="输入证件号码" /> <p:message
+									for="Personreg_shidno" />
+							</td>
+						</tr>
+						<tr style='height: 37.3pt'>
+							<td width="129"
+								style='width: 97.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 37.3pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>居所</span>
+								</p>
+							</td>
+							<td width="179"
+								style='width: 134.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 37.3pt'>
+								<p:inputText id="Personreg_shaddr"
+									value="#{persBean.creg.shaddr}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Personreg_shaddr" value="输入家庭住址" /> <p:message
+									for="Personreg_shaddr" />
+							</td>
+							<td width="119"
+								style='width: 89.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 37.3pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>邮政编码</span>
+								</p>
+							</td>
+							<td width="168"
+								style='width: 126.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 37.3pt'>
+								<p:inputText id="Personreg_shzip" value="#{persBean.creg.shzip}"
+									style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Personreg_shzip" value="130000" /> <p:message
+									for="Personreg_shzip" />
+							</td>
+						</tr>
+						<tr style='height: 37.3pt'>
+							<td width="129"
+								style='width: 97.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 37.3pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>申请前职业状况</span>
+								</p>
+							</td>
+							<td width="466" colspan="3"
+								style='width: 349.3pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 37.3pt'>
+								<p:inputText id="Personreg_shcarr"
+									value="#{persBean.creg.shcarr}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Personreg_shcarr" value="输入申请前职业状况" /> <p:message
+									for="Personreg_shcarr" />
+							</td>
+						</tr>
+						<tr style='height: 188.45pt'>
+							<td width="595" colspan="4"
+								style='width: 446.4pt; border: solid windowtext 1.5pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 188.45pt'>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="New" align="center"
+									style='text-align: center; line-height: 26.0pt'>
+									<span style='font-family: 宋体'>（身份证件复印件粘贴处）</span>
+								</p>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="New" style='line-height: 26.0pt'>
+									<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+			<div align="center" class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{persBean.admin}">
+					<p:inputTextarea styleClass="center" id="Personreg_comment2"
+						rows="8" cols="58" value="#{persBean.creg.comment2}"
+						counter="comment_remain" maxlength="500"
+						counterTemplate="还可输入{0}字 ." autoResize="true">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Personreg_comment2" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not persBean.admin and persBean.creg.comment2 ne null and persBean.creg.comment2 ne '' }">
+					<h:outputText value="#{persBean.creg.comment2}"
+						style="width:100%;color:red;" />
+				</p:panel>
+
+				<h:commandLink styleClass="button3" value="上一步"
+					action="#{persBean.prepage('creg')}"
+					immediate="#{persList.admin?'false':'false'}">
+					<f:param name="persid" value="#{cregchBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton style="text-align:center; margin:0 auto;"
+					action="#{persBean.saveData('invest')}" value="保存" update="formone" />
+				<h:commandLink styleClass="button3 center" value="下一步"
+					action="#{persBean.openpage('lianluo')}"
+					immediate="#{persList.admin?'false':'false'}">
+					<f:param name="persid" value="#{persBean.creg.id}" />
+				</h:commandLink>
+			</div>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

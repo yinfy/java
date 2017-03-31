@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+			<p:selectOneMenu value="#{indivBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="zhusuo" itemLabel="zhusuo" />
+			</p:selectOneMenu>
+			<div class="tableboard">
+
+				<div class="WordSection1" style='layout-grid: 15.6pt'>
+
+					<p class="MsoNormal" align="center" style='text-align: center'>
+						<b><span style='font-size: 16.0pt; font-family: 宋体'>个体工商户党建情况统计表</span></b>
+					</p>
+
+					<p class="MsoNormal">
+						<span style='font-size: 12.0pt; font-family: 宋体'>字号名称： <h:outputText
+								styleClass="sysfont" style="font-size:18px;"
+								value="#{indivBean.creg.cname}" />
+						</span>
+					</p>
+
+					<table class="MsoTableGrid" border="1" cellspacing="0"
+						cellpadding="0" width="612"
+						style='width: 459.05pt; border-collapse: collapse; border: none'>
+						<tr>
+							<td width="45" rowspan="3" valign="top"
+								style='width: 33.75pt; border: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>党员人数（含预备党员）（无党员填</span><span
+										lang="EN-US">0</span><span style='font-family: 宋体'>）</span>
+								</p>
+							</td>
+							<td width="76" colspan="2" valign="top"
+								style='width: 2.0cm; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>经营者是否党员</span>
+								</p>
+							</td>
+							<td width="113" colspan="3" valign="top"
+								style='width: 3.0cm; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>党组织建制数</span>
+								</p>
+							</td>
+							<td width="142" colspan="3" valign="top"
+								style='width: 106.35pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>党组织组建方式</span>
+								</p>
+							</td>
+							<td width="76" colspan="2" valign="top"
+								style='width: 2.0cm; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>党组织是否本年度组建</span>
+								</p>
+							</td>
+							<td width="76" colspan="2" valign="top"
+								style='width: 2.0cm; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>经营者是否党组织书记</span>
+								</p>
+							</td>
+							<td width="85" valign="top"
+								style='width: 63.8pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>党建联络员及联络电话</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 22.55pt'>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>是</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>否</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>党委</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>党总支</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>党支部</span>
+								</p>
+							</td>
+							<td width="47" rowspan="2"
+								style='width: 35.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>单独</span>
+								</p>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>组建</span>
+								</p>
+							</td>
+							<td width="47" rowspan="2"
+								style='width: 35.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>联合</span>
+								</p>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>组建</span>
+								</p>
+							</td>
+							<td width="47" rowspan="2"
+								style='width: 35.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>其他</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>是</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>否</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>是</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>否</span>
+								</p>
+							</td>
+							<td width="85" valign="top"
+								style='width: 63.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.55pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>联络员姓名</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 71.35pt'>
+							<td width="85" valign="top"
+								style='width: 63.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 71.35pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <h:inputText id="Indivreg_connname"
+											styleClass="sysfont" value="#{indivBean.creg.connname}"
+											style="width:100px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</h:inputText> <h:message for="Indivreg_connname" />
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 25.75pt'>
+							<td width="45" rowspan="2"
+								style='width: 33.75pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <h:inputText id="Indivreg_partynum"
+											styleClass="sysfont" value="#{indivBean.creg.partynum}"
+											style="width:60px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</h:inputText> <h:message for="Indivreg_partynum" />
+
+									</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p:selectOneRadio id="manageispmRadio"
+									value="#{indivBean.creg.manageispm}" layout="custom">
+									<f:selectItem itemLabel="是" itemValue="是" />
+									<f:selectItem itemLabel="否" itemValue="否" />
+								</p:selectOneRadio>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <p:radioButton id="manageispmopt1"
+											for="manageispmRadio" itemIndex="0" /> <h:outputLabel
+											for="manageispmopt1" value="是" />
+									</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <p:radioButton id="manageispmopt2"
+											for="manageispmRadio" itemIndex="1" /> <h:outputLabel
+											for="manageispmopt2" value="否" />
+
+									</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <h:inputText
+											id="Indivreg_partyorgnnum1" styleClass="sysfont"
+											value="#{indivBean.creg.partyorgnnum1}" style="width:20px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</h:inputText> <h:message for="Indivreg_partyorgnnum1" />
+									</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <h:inputText
+											id="Indivreg_partyorgnnum2" styleClass="sysfont"
+											value="#{indivBean.creg.partyorgnnum2}" style="width:20px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</h:inputText> <h:message for="Indivreg_partyorgnnum2" />
+									</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <h:inputText
+											id="Indivreg_partyorgnnum3" styleClass="sysfont"
+											value="#{indivBean.creg.partyorgnnum3}" style="width:20px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</h:inputText> <h:message for="Indivreg_partyorgnnum3" />
+									</span>
+								</p>
+							</td>
+							<td width="47" rowspan="2"
+								style='width: 35.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p:selectOneRadio id="partyorgmodeRadio"
+									value="#{indivBean.creg.partyorgmode}" layout="custom">
+									<f:selectItem itemLabel="单独组建" itemValue="单独组建" />
+									<f:selectItem itemLabel="联合组建" itemValue="联合组建" />
+									<f:selectItem itemLabel="其他" itemValue="其他" />
+								</p:selectOneRadio>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <p:radioButton id="partyorgmodeopt1"
+											for="partyorgmodeRadio" itemIndex="0" /> <h:outputLabel
+											for="partyorgmodeopt1" value="单独组建" />
+									</span>
+								</p>
+							</td>
+							<td width="47" rowspan="2"
+								style='width: 35.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <p:radioButton id="partyorgmodeopt2"
+											for="partyorgmodeRadio" itemIndex="1" /> <h:outputLabel
+											for="partyorgmodeopt2" value="联合组建" />
+									</span>
+								</p>
+							</td>
+							<td width="47" rowspan="2"
+								style='width: 35.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <p:radioButton id="partyorgmodeopt3"
+											for="partyorgmodeRadio" itemIndex="2" /> <h:outputLabel
+											for="partyorgmodeopt3" value="其他" />
+									</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p:selectOneRadio id="partyorgyearRadio"
+									value="#{indivBean.creg.partyorgyear}" layout="custom">
+									<f:selectItem itemLabel="是" itemValue="是" />
+									<f:selectItem itemLabel="否" itemValue="否" />
+								</p:selectOneRadio>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <p:radioButton id="partyorgyearopt1"
+											for="partyorgyearRadio" itemIndex="0" /> <h:outputLabel
+											for="partyorgyearopt1" value="是" />
+									</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <p:radioButton id="partyorgyearopt2"
+											for="partyorgyearRadio" itemIndex="1" /> <h:outputLabel
+											for="partyorgyearopt2" value="否" />
+									</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p:selectOneRadio id="partyleaderRadio"
+									value="#{indivBean.creg.partyleader}" layout="custom">
+									<f:selectItem itemLabel="是" itemValue="是" />
+									<f:selectItem itemLabel="否" itemValue="否" />
+								</p:selectOneRadio>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <p:radioButton id="partyleaderopt1"
+											for="partyleaderRadio" itemIndex="0" /> <h:outputLabel
+											for="partyleaderopt1" value="是" />
+									</span>
+								</p>
+							</td>
+							<td width="38" rowspan="2"
+								style='width: 1.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <p:radioButton id="partyleaderopt2"
+											for="partyleaderRadio" itemIndex="1" /> <h:outputLabel
+											for="partyleaderopt2" value="否" />
+									</span>
+								</p>
+							</td>
+							<td width="85" valign="top"
+								style='width: 63.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>联系电话</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 81.95pt'>
+							<td width="85" valign="top"
+								style='width: 63.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 81.95pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span lang="EN-US"> <h:inputText id="Indivreg_conntele"
+											styleClass="sysfont" value="#{indivBean.creg.conntele}"
+											style="width:100px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</h:inputText> <h:message for="Indivreg_conntele" />
+									</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+
+					<p class="MsoNormal">
+						<span style='font-size: 12.0pt; font-family: 宋体'>填报人：</span><span
+							lang="EN-US" style='font-size: 12.0pt'> </span><span
+							style='font-size: 12.0pt; font-family: 宋体'>填报时间：</span>
+					</p>
+
+
+				</div>
+			</div>
+			<div class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{indivBean.admin}">
+					<p:inputTextarea id="Indivreg_comment3" rows="8" cols="58"
+						value="#{indivBean.creg.comment3}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Indivreg_comment3" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not indivBean.admin and indivBean.creg.comment3 ne null and indivBean.creg.comment3 ne '' }">
+					<h:outputText value="#{indivBean.creg.comment3}"
+						style="width:100%;color:red;" />
+				</p:panel>
+				<h:commandLink styleClass="button3" value="上一步"
+					action="#{indivBean.prepage('weizhi')}"
+					immediate="#{indivList.admin?'false':'false'}">
+					<f:param name="individ" value="#{indivBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton action="#{indivBean.saveData('zhusuo')}" value="保存"
+					update="formone" />
+				<h:commandLink styleClass="button3" value="下一步"
+					action="#{indivBean.openpage('tips')}"
+					immediate="#{indivList.admin?'false':'false'}">
+					<f:param name="individ" value="#{indivBean.creg.id}" />
+				</h:commandLink>
+			</div>
+		</h:form>
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,139 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/webpage.xhtml">
+
+	<ui:define name="content">
+		<h:form id="formone">
+
+			<p:dialog visible="true" showHeader="false" widgetVar="welcome"
+				width="600" height="300" resizable="false" modal="true">
+				<table border="0">
+					<tr align="center">
+						<td><img src="#{request.contextPath}/images/weixiao.png" /></td>
+						<td><span class="bigfont">
+								<p>欢迎使用长春市工商局网上登记大厅！</p>
+								<p>请登录系统后开始网上登记！</p>
+						</span></td>
+					</tr>
+					<tr align="center">
+						<td colspan="2"><p:commandButton value="确定" immediate="true"
+								onclick="PF('welcome').hide()" /></td>
+					</tr>
+				</table>
+			</p:dialog>
+
+			<div align="center" class="pageArea">
+				<div style="border-color: #FFF; border-width: 0; margin-top: 0px;">
+					<div
+						style="float: left; margin-top: 0px; display: block; width: 510px; text-align: center;">
+						<p:panel id="main_register" header="用户登记(注册)"
+							style="height:220px;text-align:center;font-size:14px;font-weight: bold;background-color:#9CF;">
+							<table style="text-align: center; margin: 0 auto;">
+								<tr align="center" height="50">
+									<td>用户名：</td>
+									<td colspan="2"><h:inputText id="username"
+											value="#{loginUser.userName}" /> <p:watermark for="username"
+											value="输入用户名" id="watermark" /></td>
+									<td></td>
+								</tr>
+								<tr align="center" height="50">
+									<td>密 码：</td>
+									<td colspan="2"><h:inputSecret id="password"
+											value="#{loginUser.password}" /> <p:watermark for="password"
+											value="输入密码" id="watermark2" /></td>
+									<td>忘记密码</td>
+								</tr>
+								<tr align="center" height="50">
+
+									<td colspan="2"><p:commandButton value="登录"
+											action="#{loginUser.login}">
+										</p:commandButton></td>
+									<td colspan="2"><p:commandButton value="注册"
+											action="/userman/register.xhtml?new=1">
+										</p:commandButton></td>
+								</tr>
+							</table>
+						</p:panel>
+					</div>
+
+					<p:panel id="main_service" header="网上办事"
+						style="float:left;margin-bottom:5px;display:inline-block;width:500px;height:220px;font-size:14px;background-color:#9CF;">
+						<p:panelGrid>
+							<p:row style="height:80px; margin:0; padding:0;">
+								<p:column style="width:240px;text-align:center;">
+									<a id="blink0" href="#{request.contextPath}/intro.xhtml?i=4"
+										class="docLink"><img
+										src="#{request.contextPath}/images/m_dengji.png" alt="网上登记"
+										class="m_icon" />网上登记</a>
+								</p:column>
+								<p:column style="width:240px;text-align:center;">
+									<a href="#{request.contextPath}/notfound.xhtml" class="docLink"><img
+										src="#{request.contextPath}/images/m_yuyue.png" alt="登记预约"
+										class="m_icon" />登记预约</a>
+								</p:column>
+							</p:row>
+							<p:row style="height:80px; margin:0; padding:0;">
+								<p:column style="width:240px;text-align:center;">
+									<a href="#{request.contextPath}/notfound.xhtml" class="docLink"><img
+										src="#{request.contextPath}/images/m_chaxun.png" alt="进度查询"
+										class="m_icon" />进度查询</a>
+								</p:column>
+								<p:column style="width:240px;text-align:center;">
+									<a href="#{request.contextPath}/intro.xhtml" class="docLink"><img
+										src="#{request.contextPath}/images/m_zhinan.png" alt="登记指南"
+										class="m_icon" />登记指南</a>
+								</p:column>
+							</p:row>
+							<p:row style="height:30px;  margin:0; padding:0;"
+								rendered="false">
+								<p:column colspan="2" style="width:420px;">提交材料规范及表格下载</p:column>
+							</p:row>
+						</p:panelGrid>
+					</p:panel>
+				</div>
+				<div style="clear: both;" />
+				<div>
+					<div
+						style="float: left; margin-top: 0px; display: block; width: 510px;">
+						<p:panel id="main_laws" header="法律法规查询"
+							style="text-align:left; height:180px;font-size:14px;background-color:#9CF;">
+							<ul>
+								<li><a href="laws/law00.xhtml" class="docLink">公司法</a></li>
+								<li><a href="laws/law01.xhtml" class="docLink">个人独资企业登记管理办法</a></li>
+								<li><a href="laws/law02.xhtml" class="docLink">工商行政管理机关股权出质登记办法</a></li>
+								<li><a href="laws/law03.xhtml" class="docLink">中华人民共和国公司登记管理条例</a></li>
+								<li><a href="laws/law04.xhtml" class="docLink">吉林省“五证合一”登记制度改革实施办法</a></li>
+								<li><a href="laws/law05.xhtml" class="docLink">吉林省市场主体住所（经营场所）登记管理暂行办法</a></li>
+								<li><a href="laws/law06.xhtml" class="docLink">企业法人法定代表人登记管理规定</a></li>
+								<li><a href="#{request.contextPath}/laws.xhtml"
+									class="docLink">......</a></li>
+							</ul>
+						</p:panel>
+					</div>
+					<p:panel id="main_intro" header="业务范围"
+						style="float:left;margin-bottom:5px;display:inline-block;width:500px;height:180px;font-size:14px;background-color:#9CF; ">
+						<p:panelGrid style="background-color:#9CF;border:0px;">
+							<p:row style=" height:30px;">
+								<p:column style="font-weight:bold;width:100px;">职能部门:</p:column>
+								<p:column style="width:390px;">长春市工商行政管理局</p:column>
+							</p:row>
+							<p:row style="height:30px;">
+								<p:column style="font-weight:bold;width:100px;">登记职能:</p:column>
+								<p:column style="width:390px;">长春市内各类企业（外资企业除外）登记备案</p:column>
+							</p:row>
+							<p:row style="height:30px;">
+								<p:column style="font-weight:bold;width:100px;">办公时间:</p:column>
+								<p:column style="width:390px;">上午8:30—11:30；下午13:00—16:30</p:column>
+							</p:row>
+						</p:panelGrid>
+					</p:panel>
+
+					<div style="clear: both; height: 20px;" />
+				</div>
+			</div>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

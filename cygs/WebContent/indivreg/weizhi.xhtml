@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+
+		<script type="text/javascript">
+    function handleDrop(event, ui) {
+    	//var draggable = ui.draggable;
+    	//var helper = ui.helper;
+    	var position = ui.position;  //position of draggable helper
+    	//alert("left: " + position.left + " top: " + position.top);
+    	//var offset = ui.offset; //absolute position of draggable helper
+    	//alert("Top: " + offset.top + " Left: " + offset.left);
+    	var mapx = document.getElementById("formone:mapx");
+    	var mapy = document.getElementById("formone:mapy");
+    	mapx.value = position.left;
+    	mapy.value = position.top;
+    }
+</script>
+
+		<h:form id="formone">
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+			<p:selectOneMenu value="#{indivBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="weizhi" itemLabel="weizhi" />
+			</p:selectOneMenu>
+			<div class="tableboard">
+
+				<div class="WordSection1" style='layout-grid: 15.6pt'>
+
+					<p class="MsoNormal" align="center" style='text-align: center'>
+						<b><span style='font-size: 16.0pt; font-family: 宋体'>经营场所位置图</span></b>
+					</p>
+
+					<div align="center">
+
+						<table class="MsoNormalTable" border="1" cellspacing="0"
+							cellpadding="0" style='border-collapse: collapse; border: none'>
+							<tr>
+								<td width="102"
+									style='width: 76.3pt; border: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+									<p class="MsoNormal" align="center" style='text-align: center'>
+										<span style='font-size: 14.0pt; font-family: 宋体'>名</span><span
+											lang="EN-US" style='font-size: 14.0pt'>&nbsp;&nbsp;&nbsp;
+										</span><span style='font-size: 14.0pt; font-family: 宋体'>称</span>
+									</p>
+								</td>
+								<td width="466"
+									style='width: 349.8pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+									<p class="MsoNormal">
+										<span lang="EN-US" style='font-size: 14.0pt'> <p:outputLabel
+												value="#{indivBean.creg.cname}" />
+										</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td width="102"
+									style='width: 76.3pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+									<p class="MsoNormal" align="center" style='text-align: center'>
+										<span style='font-size: 14.0pt; font-family: 宋体'>经营范围</span>
+									</p>
+								</td>
+								<td width="466"
+									style='width: 349.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+									<p class="MsoNormal">
+										<span lang="EN-US" style='font-size: 14.0pt'> <p:outputLabel
+												value="#{indivBean.creg.crange}" />
+										</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td width="102"
+									style='width: 76.3pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+									<p class="MsoNormal" align="center" style='text-align: center'>
+										<span style='font-size: 14.0pt; font-family: 宋体'>地</span><span
+											lang="EN-US" style='font-size: 14.0pt'>&nbsp;&nbsp; </span><span
+											style='font-size: 14.0pt; font-family: 宋体'>址</span>
+									</p>
+								</td>
+								<td width="466"
+									style='width: 349.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+									<p class="MsoNormal">
+										<span lang="EN-US" style='font-size: 14.0pt'> <p:outputLabel
+												value="#{indivBean.creg.prefix}" id="distriction" /> <p:outputLabel
+												value="#{indivBean.creg.caddress}" />
+										</span>
+									</p>
+								</td>
+							</tr>
+							<tr style='height: 539.9pt'>
+								<td width="568" colspan="2"
+									style='width: 426.1pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 539.9pt'>
+									<p:inputText style="display:none;" id="mapx"
+										value="#{indivBean.creg.mapx}" /> <p:inputText
+										style="display:none;" id="mapy" value="#{indivBean.creg.mapy}" /><br />
+									<div style="display: inline-block; width: 70%;">
+										<p>
+											<p:outputLabel value="请按方向按钮找到经营地址所在地图，" />
+											<br />
+										</p>
+										<p>
+											<p:outputLabel value="然后用鼠标拖动红点到地图上的相应位置" />
+										</p>
+										<p:spacer width="10" height="5" />
+									</div>
+									<div style="display: inline-block;">
+										<table align="center" cellpadding="0" cellspacing="0">
+											<tr align="center">
+												<td align="center" colspan="2"><p:commandButton
+														value="北" actionListener="#{indivBean.movemap('north')}" />
+												</td>
+											</tr>
+											<tr align="center">
+												<td><p:commandButton value="西"
+														actionListener="#{indivBean.movemap('west')}" /></td>
+												<td><p:commandButton value="东"
+														actionListener="#{indivBean.movemap('east')}" /></td>
+											</tr>
+											<tr align="center">
+												<td colspan="2" align="center"><p:commandButton
+														value="南" actionListener="#{indivBean.movemap('south')}" />
+												</td>
+											</tr>
+										</table>
+									</div> <p:outputPanel id="posbox" autoUpdate="true"
+										style="width:600px; height:600px;background-image:url(../images/map/#{indivBean.creg.mapfile}.jpg);">
+										<p:graphicImage id="position" height="20" width="20"
+											style="left:#{indivBean.creg.mapx}px;top:#{indivBean.creg.mapy}px;"
+											url="/images/pos.png" />
+										<p:fieldset rendered="false"
+											style="top:10px;left:10px;width:540px; height:540px;">
+										</p:fieldset>
+										<p:draggable for="position" containment="parent" />
+										<p:droppable for="posbox" tolerance="touch"
+											onDrop="handleDrop" />
+									</p:outputPanel>
+
+								</td>
+							</tr>
+						</table>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{indivBean.admin}">
+					<p:inputTextarea id="Indivreg_comment4" rows="8" cols="58"
+						value="#{indivBean.creg.comment4}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Indivreg_comment4" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not indivBean.admin and indivBean.creg.comment4 ne null and indivBean.creg.comment4 ne '' }">
+					<h:outputText value="#{indivBean.creg.comment4}"
+						style="width:100%;color:red;" />
+				</p:panel>
+				<h:commandLink styleClass="button3" value="上一步"
+					action="#{indivBean.prepage('weituo')}"
+					immediate="#{indivList.admin?'false':'false'}">
+					<f:param name="individ" value="#{indivBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton action="#{indivBean.saveData('weizhi')}" value="保存"
+					update="formone" />
+				<h:commandLink styleClass="button3" value="下一步"
+					action="#{indivBean.openpage('dangjian')}"
+					immediate="#{indivList.admin?'false':'false'}">
+					<f:param name="individ" value="#{indivBean.creg.id}" />
+				</h:commandLink>
+			</div>
+		</h:form>
+	</ui:define>
+</ui:composition>

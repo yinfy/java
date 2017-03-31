@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>朝阳工商视频会议室</title>
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="templateo_container">
+		<div id="templatemo_top_panel">
+			<div id="site_logo">
+				<a href=""><img src="images/logo.jpg" alt="Site Title" /></a>
+			</div>
+			<div id="header_menu_section">
+				<div class="header_menu home_menu">
+					<a href=""></a>
+				</div>
+				<div class="header_menu contact_menu">
+					<a href=""></a>
+				</div>
+			</div>
+			<!-- end of header mneu section -->
+			<div class="cleaner"></div>
+		</div>
+
+		<!-- end of top panel -->
+		<div id="templatemo_menu_banner_panel">
+			<div id="templatemo_menu_wrapper">
+				<div class="title">本机视频</div>
+				<div id="local" class="video_box_local" onclick="toggleLocal()"></div>
+				<div class="title">在线用户</div>
+				<div id="templatemo_menu">
+					<ul>
+						<li id="local_name"><a class="current"></a></li>
+						<li id="name1"><a class="current"></a></li>
+						<li id="name2"><a class="current"></a></li>
+						<li id="name3"><a class="current"></a></li>
+						<li id="name4"><a class="current"></a></li>
+						<li id="name5"><a class="current"></a></li>
+						<li id="name6"><a class="current"></a></li>
+						<li id="name7"><a class="current"></a></li>
+						<li id="name8"><a class="current"></a></li>
+						<li id="name9"><a class="current"></a></li>
+						<li id="name10"><a class="current"></a></li>
+						<li id="name11"><a class="current"></a></li>
+					</ul>
+				</div>
+				<!-- end of menu -->
+			</div>
+			<!-- end of menu wrapper -->
+		</div>
+		<!-- end of banner -->
+
+		<div class="remote_area">
+			<div class="title">远程视频</div>
+			<div class="div_parent">
+				<div id="remote1" class="div_child" onclick="toggleRmote(1)"></div>
+				<div id="remote1_label" class="remote1Label">无信号</div>
+				<div id="remote2" class="div_child" onclick="toggleRmote(2)"></div>
+				<div id="remote2_label" class="remote2Label">无信号</div>
+				<div id="remote3" class="div_child" onclick="toggleRmote(3)"></div>
+				<div id="remote3_label" class="remote3Label">无信号</div>
+				<div id="remote4" class="div_child" onclick="toggleRmote(4)"></div>
+				<div id="remote4_label" class="remote4Label">无信号</div>
+				<div id="remote5" class="div_child" onclick="toggleRmote(5)"></div>
+				<div id="remote5_label" class="remote5Label">无信号</div>
+				<div id="remote6" class="div_child" onclick="toggleRmote(6)"></div>
+				<div id="remote6_label" class="remote6Label">无信号</div>
+				<div id="remote7" class="div_child" onclick="toggleRmote(7)"></div>
+				<div id="remote7_label" class="remote7Label">无信号</div>
+				<div id="remote8" class="div_child" onclick="toggleRmote(8)"></div>
+				<div id="remote8_label" class="remote8Label">无信号</div>
+				<div id="remote9" class="div_child" onclick="toggleRmote(9)"></div>
+				<div id="remote9_label" class="remote9Label">无信号</div>
+				<div id="remote10" class="div_child" onclick="toggleRmote(10)"></div>
+				<div id="remote10_label" class="remote10Label">无信号</div>
+				<div id="remote11" class="div_child" onclick="toggleRmote(11)"></div>
+				<div id="remote11_label" class="remote11Label">无信号</div>
+				<div id="remote12" class="div_child" onclick="toggleRmote(12)"></div>
+				<div id="remote12_label" class="remote12Label">无信号</div>
+			</div>
+		</div>
+		<div class="message_box">
+			<div class="title">消息窗口</div>
+			<div id="textinfo" style="color: #FFFFFF;" readonly="readonly"></div>
+			<input id="textinput" style="color: #FFFFFF;"
+				placeholder="请在这里输入内容,按回车发送">
+		</div>
+		<!--div class="cleaner">&nbsp;</div-->
+		<!-- end of container-->
+		<div id="templatemo_footer">Copyright © 2017</div>
+
+	</div>
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/realtimecat-0.4.0.min.js"></script>
+<script>
+    var localName;
+	var msgSenders = {};	
+	var remoteBoxes = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+	var remoteNodes = {};
+	var session,stream;   
+    var messageInput = $('#textinput');	
+
+    var apikey = "91af9be9-7bac-40df-962d-f141eebe9d43",
+            secret="ce8df259-1f7a-4aa4-9e4e-862af9f6c24d",
+            p2p_session="073df4a9-e9ef-4f45-a2b0-e14c778bcd86";
+
+    var token_url = "https://api.realtimecat.com/v0.3/sessions/"+p2p_session+'/tokens';
+
+    $.ajax({
+        'url':token_url,
+        'method':'POST',
+        'headers':{
+            'X-RTCAT-APIKEY':apikey,
+            'X-RTCAT-SECRET':secret
+        },
+        'data':{
+            'session_id':p2p_session,
+            'type':'pub'
+        }
+    }).done(function(msg)
+	{
+		var localName = getCookie('roomusername');		
+		if(localName == null)
+		{	
+			var con=confirm("请从主页进入，确认跳转吗？"); //在页面上弹出对话框
+			if(con==true)
+			{				
+				window.location.href="index.html";
+			}
+			return;
+		}
+		
+        var token = msg.uuid;
+        
+		//1. 定义LocalStream
+        stream = new RTCat.Stream();
+		
+		//-------------------------事件响应函数区-----------------------------------
+		
+		//3. 执行stream.init()方法初始化本地流,初始化成功触发 accepted 事件
+        stream.on("accepted", function () 
+		{
+			//alert("accepted");
+			
+            //4. LocalStream创建成功了，先自己播放			
+			stream.play("local");
+			var ns = new Object();
+			ns.width = 270;
+			ns.height = 202;
+			stream.resize(ns);		
+			var obj = document.getElementById('local_name').getElementsByTagName("a");
+			obj[0].innerHTML = localName;
+						
+			//5. 创建Session
+            session = new RTCat.Session(token);
+			
+			//7. 用户执行 session.Connect()成功后，触发connected事件
+            session.on("connected", function () 
+			{          
+				//alert("connected");
+				
+				//9. 用户执行session.send()成功后，触发local事件
+				session.on('local', function (sender) 
+				{
+                    //9.1. 获取对应的Receiver（即通信对端）的Token。
+					//    注意：使用P2P时，一个Sender和一个Reciver组成一个单向信道
+					var id = sender.getReceiverToken();
+                    
+					//9.2 保存已经创建的信道的sender
+					msgSenders[id] = sender;
+					
+					//9.3. 订阅channel_close事件
+					//     channel_close事件不是由方法执行触发，而是由于Receiver（即通信对端）关闭而触发
+					sender.on('channel_close',function () 
+					{ 	
+						//alert("sender.on(channel_close)");
+						//删除消息接收方
+                        delete msgSenders[id];
+						
+						
+						//找到窗口号
+						/*var senderToken = receiver.getSenderToken();						
+                        var node = remoteNodes[senderToken];						
+						var boxId = node.boxId;	
+						
+						//释放窗口
+						remoteBoxes[boxId] = 0;
+						
+						//清空名称
+						var obj = document.getElementById('name' + boxId).getElementsByTagName("a");
+						obj[0].innerHTML = '';
+		
+						//清空播放提示信息						
+						var labelName = 'remote' + boxId + '_label'; 						
+						var playerDiv = document.getElementById(labelName);
+						playerDiv.innerHTML = '无信号';*/
+						
+                    });
+                });
+				
+				//10. 通信对端执行session.send()成功后，触发remote事件，注意：send()是新接入用户使用的
+				session.on('remote', function (receiver) 
+				{
+					//alert("remote");
+					//10.1 订阅message事件，对方发送消息触发
+					receiver.on('message',function(message)
+					{
+						//alert("message");
+                        //var name = receiver.getSenderToken().substr(0,7);
+						var attr = receiver.getAttr();					
+						var name = attr.name;
+						
+						showMessage(name, message);                      
+                    });
+					
+					//10.2 订阅stream事件，对方发送流触发
+					receiver.on('stream',function(recStream)
+					{	
+						//alert("stream");
+						
+						var attr = receiver.getAttr();
+						var name = attr.name;
+						
+						if(typeof(name) == "undefined")
+						{							
+							return;
+						}
+						
+						//播放流						
+						for(var i=1;i<remoteBoxes.length;i++)
+						{
+							if(remoteBoxes[i] == 0)
+							{								
+								remoteBoxes[i] = 1;
+					
+								//显示名称
+								var attr = receiver.getAttr();					
+								var name = attr.name;								
+								
+								var obj = document.getElementById('name' + i).getElementsByTagName("a");
+								
+								obj[0].innerText = name;
+								
+								//保存接入的远端节点的信息
+								var senderToken = receiver.getSenderToken();
+								
+								var node = new Object();								
+								node.boxId = i;
+								node.stream = recStream;
+								remoteNodes[senderToken] = node;								
+								
+								//播放流
+								recStream.play("remote" + i);
+								var ns = new Object();
+								ns.width = 320;
+								ns.height = 240;
+								recStream.resize(ns);								
+								
+								//显示播放提示信息
+								var labelName = 'remote' + i + '_label'; 						
+								var playerDiv = document.getElementById(labelName);
+								playerDiv.innerHTML = name;
+								
+								break;
+							}
+						}	
+                    });
+
+					receiver.on('channel_close', function () 
+					{				
+						//alert("receiver.on(channel_close)");
+						//找到窗口号
+						var senderToken = receiver.getSenderToken();						
+                        var node = remoteNodes[senderToken];						
+						var boxId = node.boxId;	
+						
+						//释放窗口
+						remoteBoxes[boxId] = 0;
+						
+						//清空名称
+						var obj = document.getElementById('name' + boxId).getElementsByTagName("a");
+						obj[0].innerHTML = '';
+		
+						//清空播放提示信息						
+						var labelName = 'remote' + boxId + '_label'; 						
+						var playerDiv = document.getElementById(labelName);
+						playerDiv.innerHTML = '无信号';
+                        
+                    });					
+                });
+				
+				session.on('in', function (token)  //11. 新的Token进入Session。
+				{
+                    //有新的Token接入到Session，则建立数据信道，向其发送流		
+					var attr = {name:localName};					
+                    session.sendTo({to:token, attr:attr, data:true, stream:stream});												
+                });	
+
+				session.on('error', function ()  //11. 新的Token进入Session。
+				{
+                    alert("error");
+                });
+				
+				//8. 给 Session 中的所有 Token发送流， data 为 true 时, 建立数据信道，stream指明要发送的本地流
+				//   触发local事件				
+				var attr = new Object();				
+				attr.name = localName;				
+                session.send({data:true, attr:attr, stream:stream});
+            });			
+			//-------------------------事件响应函数区结束-----------------------------------
+            
+			//6. Session接入服务器，触发connected事件
+			session.connect();
+			
+        });		
+		//2. 初始化LocalStream，触发accept事件
+		stream.init();
+    }).error(function(error)
+	{
+        console.log(error)
+    });
+	
+	function broadcastMessage(message) 
+	{		
+        for(var i in msgSenders)
+		{		    
+            msgSenders[i].sendMessage(message);			
+        }
+    }
+	
+	function closeSenders() 
+	{		
+        for(var i in msgSenders)
+		{		    
+            msgSenders[i].close();			
+        }
+    }
+	
+	function showMessage(sender, message) 
+	{
+		var messageContent = $('#textinfo');		
+		
+		var innerMsg = '<p>[' + sender + '] ' + message + '</p>';		
+		
+		messageContent.scrollTop(messageContent[0].scrollHeight);
+        messageContent.append(innerMsg);
+
+	}
+	
+	messageInput.keypress(function (event) 
+	{
+        if(event.keyCode == 13)
+        {	
+            var message = messageInput.val().trim();
+		
+            if(message != '')
+            {            
+				messageInput.val("");
+				showMessage('我', message);
+				broadcastMessage(message);				
+			}		
+            
+        }
+    });
+    
+	function toggleRmote(boxId)
+	{	
+		for(var i in remoteNodes)
+		{   
+            var node = remoteNodes[i];
+			if(node.boxId == boxId)
+			{
+				node.stream.toggleVideo();
+				node.stream.toggleAudio();
+			}
+        }
+	}
+	
+	function toggleLocal()
+	{	    
+	    stream.toggleVideo();
+		stream.toggleAudio();
+	}
+	
+	function getCookie(name)
+	{
+		var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+		if(arr=document.cookie.match(reg))
+			return unescape(arr[2]);
+		else
+			return null;
+	}
+	
+	window.onbeforeunload = function(e)
+	{
+		/*e = e || window.event;
+		var msg = "您确定要离开会议室吗？";
+		  
+		// IE
+		e.cancelBubble = true;
+		e.returnValue = msg;
+		  
+		// Firefox
+		if(e.stopPropagation) {
+			e.stopPropagation();
+			e.preventDefault();
+		}
+		 
+		// Chrome / Safari
+		return msg;*/
+		closeSenders();
+	};
+</script>
+</html>

@@ -1,0 +1,14 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+</h:head>
+<h:form>
+	<p:menu model="#{menuView.model}" toggleable="true" />
+	<p:commandButton action="#{loginUser.logout}" value="退出系统"
+		style="width:97%;" />
+</h:form>
+</html>

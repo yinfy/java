@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+
+			<p:selectOneMenu value="#{cregchBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="lianluo" itemLabel="lianluo" />
+			</p:selectOneMenu>
+			<p:panel>
+
+				<div class="WordSection1" style='layout-grid: 15.6pt'>
+
+					<p class="New" align="center"
+						style='text-align: center; line-height: 26.0pt'>
+						<b><span lang="EN-US"
+							style='font-size: 22.0pt; font-family: 宋体'>&nbsp;</span></b>
+					</p>
+
+					<p class="New" align="center"
+						style='text-align: center; line-height: 26.0pt'>
+						<b><span style='font-size: 18.0pt; font-family: 宋体'>联络员信息</span></b>
+					</p>
+
+					<p class="New" align="center"
+						style='text-align: center; line-height: 26.0pt'>
+						<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+					</p>
+
+					<div align="center">
+
+						<table class="MsoNormal" border="1" cellspacing="0"
+							cellpadding="0" style='border-collapse: collapse; border: none'>
+							<tr style='height: 45.35pt'>
+								<td width="162"
+									style='width: 97.1pt; border-top: 1.5pt; border-left: 1.5pt; border-bottom: 1.0pt; border-right: 1.0pt; border-color: windowtext; border-style: solid; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>*姓<span lang="EN-US">&nbsp;&nbsp;&nbsp;
+										</span>名
+										</span>
+									</p>
+								</td>
+								<td width="223"
+									style='width: 134.0pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'> <p:inputText
+												id="Companychg_llyName" value="#{cregchBean.creg.llyName}"
+												style="width:100px;">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:watermark for="Companychg_llyTele" value="输入姓名"
+												id="watermark1" /> <p:message for="Companychg_llyName" />
+										</span>
+									</p>
+								</td>
+								<td width="149"
+									style='width: 89.1pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; text-indent: 15.75pt; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>固定电话</span>
+									</p>
+								</td>
+								<td width="210"
+									style='width: 126.2pt; border-top: solid windowtext 1.5pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'> <p:inputText
+												id="Companychg_llyTele" value="#{cregchBean.creg.llyTele}"
+												style="width:95%;">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:watermark for="Companychg_llyTele" value="输入电话号码"
+												id="watermark2" /> <p:message for="Companychg_llyTele" />
+										</span>
+									</p>
+								</td>
+							</tr>
+							<tr style='height: 45.35pt'>
+								<td width="162"
+									style='width: 97.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>移动电话</span>
+									</p>
+								</td>
+								<td width="223"
+									style='width: 134.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'> <p:inputText
+												id="Companychg_llyMobile"
+												value="#{cregchBean.creg.llyMobile}" style="width:95%;">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:watermark for="Companychg_llyMobile" value="输入手机号码"
+												id="watermark3" /> <p:message for="Companychg_llyMobile" />
+										</span>
+									</p>
+								</td>
+								<td width="149"
+									style='width: 89.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>电子邮箱</span>
+									</p>
+								</td>
+								<td width="210"
+									style='width: 126.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 45.35pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'> <p:inputText
+												id="Companychg_llyMail" value="#{cregchBean.creg.llyMail}"
+												style="width:95%;">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:watermark for="Companychg_llyMail" value="输入电子邮件"
+												id="watermark4" /> <p:message for="Companychg_llyMail" />
+										</span>
+									</p>
+								</td>
+							</tr>
+							<tr style='height: 44.45pt'>
+								<td width="162"
+									style='width: 97.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>身份证件类型</span>
+									</p>
+								</td>
+								<td width="223"
+									style='width: 134.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'> <p:selectOneMenu
+												value="#{cregchBean.creg.llyIdtype}" style="width:80%">
+												<f:selectItems value="#{selectItems.idTypes}" />
+											</p:selectOneMenu>
+										</span>
+									</p>
+
+								</td>
+								<td width="149"
+									style='width: 89.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>身份证件号码</span>
+									</p>
+								</td>
+								<td width="210"
+									style='width: 126.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 44.45pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'> <p:inputText
+												id="Companychg_llyIdno" value="#{cregchBean.creg.llyIdno}"
+												style="width:95%;">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:watermark for="Companychg_llyIdno" value="输入证件号码"
+												id="watermark5" /> <p:message for="Companychg_llyIdno" />
+										</span>
+									</p>
+								</td>
+							</tr>
+							<tr style='height: 224.65pt'>
+								<td width="744" colspan="4"
+									style='width: 446.4pt; border: solid windowtext 1.5pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 224.65pt'>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;提示：固定电话和移动电话至少输入一项。</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 26.0pt'>
+										<span style='font-family: 宋体'>（身份证件复印件粘贴处）</span>
+									</p>
+									<p class="New" style='line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" style='line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" style='line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" style='line-height: 26.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<p class="MsoBodyTextIndent2" align="center"
+						style='margin-top: 0cm; margin-right: 4.85pt; margin-bottom: 0cm; margin-left: 0cm; margin-bottom: .0001pt; text-align: center; line-height: normal'>
+						<span lang="zh-CN" style='font-family: 宋体'>&nbsp;</span>
+					</p>
+
+					<p class="MsoNormal">
+						<span lang="EN-US">&nbsp;</span>
+					</p>
+
+				</div>
+
+
+			</p:panel>
+			<div class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{cregchBean.admin}">
+					<p:inputTextarea id="Companychg_comment3" rows="8" cols="58"
+						value="#{cregchBean.creg.comment3}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Companychg_comment3" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not cregchBean.admin and cregchBean.creg.comment3 ne null and cregchBean.creg.comment3 ne '' }">
+					<h:outputText value="#{cregchBean.creg.comment3}"
+						style="width:100%;color:red;" />
+				</p:panel>
+
+				<h:commandLink styleClass="button3" value="上一步"
+					action="#{cregchBean.prepage('biangeng')}"
+					immediate="#{cregchList.admin?'false':'false'}">
+					<f:param name="cregchid" value="#{cregchBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton action="#{cregchBean.saveData('lianluo')}"
+					value="保存" update="formone" />
+				<h:commandLink styleClass="button3" value="下一步"
+					action="#{cregchBean.openpage('weituo')}"
+					immediate="#{cregchList.admin?'false':'false'}">
+					<f:param name="cregchid" value="#{cregchBean.creg.id}" />
+				</h:commandLink>
+			</div>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

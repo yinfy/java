@@ -1,0 +1,44 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/userpage.xhtml">
+
+	<ui:define name="userdesk">
+		<div align="center">
+			<h:form id="formone">
+
+				<p:growl id="ajaxMsg" autoUpdate="true" showDetail="true" />
+				<div class="panelBlock2" style="height: 120px;">
+					<p:commandButton disabled="#{not adminBean.admin}" value="开始导出"
+						update=":formone" action="#{adminBean.export}"
+						style="left:220px;float:left;width:120px;height:90px;">
+					</p:commandButton>
+					<p:link rendered="#{adminBean.outFile ne ''}" styleClass="g_icon"
+						target="_blank" href="/database/#{adminBean.outFile}.zip"
+						value="_" />
+				</div>
+				<div class="panelBlock2" style="height: 120px;">
+					<p:fileUpload disabled="#{not adminBean.admin}"
+						style="display:inline-block;height:90px;width:190px"
+						fileUploadListener="#{adminBean.handleFileUpload}" mode="advanced"
+						update="formone" label="上传文件来完成导入" sizeLimit="100000000"
+						auto="true" skinSimple="false" fileLimit="1"
+						allowTypes="/(\.|\/)(zip)$/">
+					</p:fileUpload>
+				</div>
+				<div class="clearfloat"></div>
+				<div>
+					<p:dataList value="#{adminBean.oldOutput}" var="ofile"
+						type="ordered" itemType="none" paginator="true" rows="10"
+						styleClass="paginated">
+						<f:facet name="header">
+            历史导出数据
+        </f:facet>
+						<p:link target="_blank" href="/database/#{ofile}" value="#{ofile}" />
+					</p:dataList>
+				</div>
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>

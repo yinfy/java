@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:selectOneMenu value="#{eventBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="creg" itemLabel="creg" />
+			</p:selectOneMenu>
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+			<!-- ************************************************************************************************************* -->
+
+
+			<p class="MsoNormal" align="center" style='text-align: center'>
+				<b><span style='font-size: 18.0pt; font-family: 宋体'>网络投诉登记表</span></b>
+			</p>
+
+			<p class="MsoNormal">
+				<span lang="EN-US"></span>
+			</p>
+
+			<p class="MsoNormal">
+				<span style='font-family: 宋体'>编号：</span>
+				<p:outputLabel value="#{eventBean.creg.eventno}" />
+			</p>
+
+			<table class="MsoTableGrid" border="1" cellspacing="0"
+				cellpadding="0" style='border-collapse: collapse; border: none'>
+				<tr>
+					<td width="114" valign="top"
+						style='width: 85.2pt; border: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>投诉来源</span>
+						</p>
+					</td>
+					<td width="149" valign="top"
+						style='width: 111.6pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US">微信</span>
+						</p>
+					</td>
+					<td width="123" valign="top"
+						style='width: 92.1pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>投诉时间</span>
+						</p>
+					</td>
+					<td width="180" valign="top"
+						style='width: 134.75pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> <p:calendar locale="zh_CN"
+									id="Eventhand_eventtime" value="#{eventBean.creg.eventtime}"
+									pattern="yyyy/MM/dd HH:mm:ss" navigator="true"
+									readonlyInput="false" yearRange="c-20:c+20">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:calendar>
+
+							</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="114" valign="top"
+						style='width: 85.2pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>顾客姓名</span>
+						</p>
+					</td>
+					<td width="149" valign="top"
+						style='width: 111.6pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> <p:inputText id="Eventhand_custname"
+									value="#{eventBean.creg.custname}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:message for="Eventhand_custname" />
+							</span>
+						</p>
+					</td>
+					<td width="123" valign="top"
+						style='width: 92.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>手机号码</span>
+						</p>
+					</td>
+					<td width="180" valign="top"
+						style='width: 134.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> <p:inputText id="Eventhand_custtele"
+									value="#{eventBean.creg.custtele}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:message for="Eventhand_custtele" />
+							</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="114" valign="top"
+						style='width: 85.2pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>所在地区</span>
+						</p>
+					</td>
+					<td width="149" valign="top"
+						style='width: 111.6pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> <p:inputText id="Eventhand_eventarea"
+									value="#{eventBean.creg.eventarea}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:message for="Eventhand_eventarea" />
+							</span>
+						</p>
+					</td>
+					<td width="123" valign="top"
+						style='width: 92.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>被投诉企业</span><span lang="EN-US">/</span><span
+								style='font-family: 宋体'>品牌</span>
+						</p>
+					</td>
+					<td width="180" valign="top"
+						style='width: 134.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> <p:inputText
+									id="Eventhand_eventtarget"
+									value="#{eventBean.creg.eventtarget}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:message for="Eventhand_eventtarget" />
+							</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="114" valign="top"
+						style='width: 85.2pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>具体地址</span>
+						</p>
+					</td>
+					<td width="451" colspan="3" valign="top"
+						style='width: 338.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> <p:inputText id="Eventhand_eventplace"
+									value="#{eventBean.creg.eventplace}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:message for="Eventhand_eventplace" />
+							</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="114" valign="top"
+						style='width: 85.2pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>投诉问题</span>
+						</p>
+					</td>
+					<td width="149" valign="top"
+						style='width: 111.6pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> <p:inputText
+									id="Eventhand_eventreason"
+									value="#{eventBean.creg.eventreason}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:message for="Eventhand_eventreason" />
+							</span>
+						</p>
+					</td>
+					<td width="123" valign="top"
+						style='width: 92.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>投诉标题</span>
+						</p>
+					</td>
+					<td width="180" valign="top"
+						style='width: 134.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> <p:inputText id="Eventhand_eventtitle"
+									value="#{eventBean.creg.eventtitle}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:message for="Eventhand_eventtitle" />
+							</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="114" valign="top"
+						style='width: 85.2pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>投诉诉求</span>
+						</p>
+					</td>
+					<td width="451" colspan="3" valign="top"
+						style='width: 338.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> <p:inputTextarea
+									id="Eventhand_eventrequest" rows="5" cols="95"
+									value="#{eventBean.creg.eventrequest}" counter="request_remain"
+									maxlength="500" counterTemplate="还可输入{0}字 ." autoResize="false">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputTextarea> <br /> <h:outputText id="request_remain" /> <p:message
+									for="Eventhand_eventrequest" />
+							</span>
+						</p>
+					</td>
+				</tr>
+				<tr style='height: 118.45pt'>
+					<td width="114" valign="top"
+						style='width: 85.2pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 118.45pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>详细经过</span>
+						</p>
+					</td>
+					<td width="451" colspan="3" valign="top"
+						style='width: 338.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 118.45pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> <p:inputTextarea
+									id="Eventhand_eventdetail" rows="5" cols="95"
+									value="#{eventBean.creg.eventdetail}" counter="detail_remain"
+									maxlength="500" counterTemplate="还可输入{0}字 ." autoResize="false">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputTextarea> <br /> <h:outputText id="detail_remain" /> <p:message
+									for="Eventhand_eventdetail" />
+							</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="114" valign="top"
+						style='width: 85.2pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>经手人</span>
+						</p>
+					</td>
+					<td width="149" valign="top"
+						style='width: 111.6pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> <p:inputText id="Eventhand_jingshou"
+									value="#{eventBean.creg.jingshou}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:message for="Eventhand_jingshou" />
+							</span>
+						</p>
+					</td>
+					<td width="123" valign="top"
+						style='width: 92.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>交办单位</span>
+						</p>
+					</td>
+					<td width="180" valign="top"
+						style='width: 134.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> </span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="114" valign="top"
+						style='width: 85.2pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>交办时间</span>
+						</p>
+					</td>
+					<td width="149" valign="top"
+						style='width: 111.6pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> </span>
+						</p>
+					</td>
+					<td width="123" valign="top"
+						style='width: 92.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>交办人员</span>
+						</p>
+					</td>
+					<td width="180" valign="top"
+						style='width: 134.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> </span>
+						</p>
+					</td>
+				</tr>
+				<tr style='height: 87.3pt'>
+					<td width="114" valign="top"
+						style='width: 85.2pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 87.3pt'>
+						<p class="MsoNormal" align="center" style='text-align: center'>
+							<span style='font-family: 宋体'>处理结果</span>
+						</p>
+					</td>
+					<td width="451" colspan="3" valign="top"
+						style='width: 338.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 87.3pt'>
+						<p class="MsoNormal">
+							<span lang="EN-US"> </span>
+						</p>
+					</td>
+				</tr>
+			</table>
+
+			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				<p:commandButton value="是" type="button"
+					styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+				<p:commandButton value="否" type="button"
+					styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+			</p:confirmDialog>
+
+			<div align="center" class="center">
+				<p:outputPanel id="buttons">
+					<p:commandButton style="text-align:center; margin:0 auto;"
+						action="#{eventBean.saveData('creg')}" value="保存" update="formone">
+					</p:commandButton>
+					<p:commandButton style="text-align:center; margin:0 auto;"
+						value="上传照片" action="#{eventBean.openpage('uploads')}">
+						<f:param name="eventid" value="#{eventBean.creg.id}" />
+					</p:commandButton>
+				</p:outputPanel>
+			</div>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

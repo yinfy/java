@@ -1,0 +1,743 @@
+@charset "utf-8";
+
+.panelBlock {
+	float: left;
+	display: block;
+	text-align: left;
+	height: 220px;
+	width: 220px;
+	background-color: #9CF;
+}
+
+.bigfont {
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.message {
+	border: 0;
+	position: absolute;
+	height: 300px;
+	width: 500px;
+	left: 50%;
+	top: 50%;
+	margin: -150px 0 0 -250px;
+	text-align: center;
+	z-index: 10;
+}
+
+div.box {
+	border: 1px solid #000000;
+	position: absolute;
+	height: 300px;
+	width: 500px;
+	left: 50%;
+	top: 50%;
+	margin: -150px 0 0 -250px;
+	text-align: center;
+	z-index: 99;
+}
+
+div.box_contents {
+	background-color: transparent;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+	text-align: center;
+	z-index: 101;
+}
+
+div.box_background {
+	background-color: white;
+	filter: alpha(opacity = 60); /* IE's opacity*/
+	opacity: 0.6;
+	position: absolute;
+	height: 300px;
+	width: 500px;
+	left: 50%;
+	top: 50%;
+	margin: -150px 0 0 -250px;
+	text-align: center;
+	z-index: 99;
+}
+
+.bgwhite {
+	width: 1024px;
+	background-color: white;
+}
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.sysfont {
+	font-size: 14px;
+}
+
+.panelBlock2 {
+	float: left;
+	display: inline-block;
+	text-align: center;
+	height: 120px;
+	width: 300px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.arrowBlock {
+	float: left;
+	display: block;
+	background-image: url(../images/arrow.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 220px;
+	width: 110px;
+}
+
+.docLink {
+	font-size: 14px;
+	text-decoration: none;
+}
+
+body {
+	background-image: url(../images/back01.png);
+	background-repeat: repeat-x;
+}
+
+.pageArea {
+	text-align: center;
+	margin: 0 auto;
+	border-color: #FFF;
+	border-width: 0;
+	margin-top: 0px;
+	width: 1024px;
+}
+
+.m_icon {
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.g_icon {
+	height: 26px;
+	width: 26px;
+	top: 0px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	background-image: url(../images/s_search.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.s_icon {
+	height: 26px;
+	width: 26px;
+	top: 0px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	background-image: url(../images/s_search.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.big_icon {
+	float: left;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	padding: 0px;
+	margin: 0 auto;
+	border: 0px;
+}
+
+.leftbar {
+	width: 200px;
+	border-right-width: thin;
+	height: 100%;
+	float: left;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-image: url(../images/back01.png);
+	background-repeat: repeat-x;
+	overflow: hidden;
+}
+
+.userdesk {
+	width: 824px;
+	height: 90%;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.userdeskb {
+	width: 1024px;
+	height: 90%;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.userdesks {
+	width: 523px;
+	height: 90%;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.tableboard {
+	width: 550pt;
+	margin: 0 auto;
+}
+
+.board {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	color: #000;
+	position: relative;
+	height: 80%;
+	width: 80%;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10%;
+}
+
+.hide {
+	display: none;
+}
+
+.label1 {
+	background-color: #666;
+	text-align: center;
+	vertical-align: middle;
+	float: none;
+	height: 20px;
+	width: 150px;
+	font-size: 16px;
+	clear: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	display: inline-block;
+}
+
+.th_gray {
+	background-color: #999;
+}
+
+.fn_green {
+	color: #093;
+	font-weight: bold;
+}
+
+.fn_red {
+	color: #F00 !important;
+	font-weight: bold;
+}
+
+.fn_black {
+	color: #000;
+}
+
+.bd_top {
+	border-top: 1px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+}
+
+.employ_board1 {
+	width: 820px;
+	height: 630px;
+	overflow: scroll;
+}
+
+.input1 {
+	font-size: 16px;
+	background-color: #CCC;
+	text-align: left;
+	height: 20px;
+	width: 180px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	vertical-align: middle;
+}
+
+.input2 {
+	font-size: 14px;
+	background-color: #CCC;
+	text-align: left;
+	height: 25px;
+	width: 180px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	vertical-align: middle;
+}
+
+.input3 {
+	font-size: 12px;
+	background-color: #ffffff;
+	text-align: left;
+	height: 20px;
+	border: 1px;
+	border-style: solid;
+	border-color: #000;
+	margin: 0;
+	padding: 0;
+	width: 120px;
+	vertical-align: middle;
+}
+
+.button1 {
+	font-size: 14px;
+	background-color: #999;
+	text-align: center;
+	vertical-align: middle;
+	height: 30px;
+	width: 150px;
+	margin: 15px;
+	padding: 5px;
+	border: 2px solid #333;
+	display: inline-block;
+}
+
+.button2 {
+	font-size: 16px;
+	background-color: #cccccc;
+	text-align: center;
+	vertical-align: middle;
+	height: 20px;
+	line-height: 20px;
+	width: 150px;
+	margin: 15px;
+	padding: 5px;
+	border: 1px solid #aaaaaa;
+	background-image: url(../img/ui/ui-bg_highlight-soft.png);
+	background-repeat: repeat-x;
+	display: inline-block;
+}
+
+.buttons a, .buttons a:visited { /* 对这些选择器进行分组可确保链接即使在访问之后也能保持其按钮外观 */
+	padding: 0px 5px 0px 5px;
+	color: #000;
+	text-decoration: none;
+}
+
+.buttons a:hover, .buttons a:active, .buttons a:focus {
+	/* 这将更改鼠标和键盘导航的背景和文本颜色 */
+	color: #00F;
+	background-color: #6F7D94;
+	background-image: url(../img/ui/ui-bg_highlight-dark.png);
+	background-repeat: repeat-x;
+}
+
+.button3 {
+	font-size: 15px;
+	background-color: #cccccc;
+	color: #000;
+	text-align: center;
+	vertical-align: top;
+	font-weight: bold;
+	height: 32px;
+	width: 70px;
+	line-height: 32px;
+	margin: 0 9 0 9px;
+	padding: 0px;
+	border: 1px solid #aaaaaa;
+	background-image: url(../images/ui/bk01.png);
+	background-repeat: repeat-x;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.button3:hover {
+	background-image: url(../images/ui/bk02.png);
+	background-repeat: repeat-x;
+}
+
+.button3 a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+.menuButton {
+	font-size: 15px;
+	background-color: #cccccc;
+	color: #000;
+	text-align: center;
+	vertical-align: top;
+	font-weight: bold;
+	height: 22px;
+	width: 75px;
+	line-height: 22px;
+	margin: 0 9 0 9px;
+	padding: 0px;
+	border: 1px solid #aaaaaa;
+	background-image: url(../images/ui/bk01.png);
+	background-repeat: repeat-x;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.menuButton:hover {
+	background-image: url(../images/ui/bk02.png);
+	background-repeat: repeat-x;
+}
+
+.menuButton a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+.menuhome {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: #000;
+	background-color: #999;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	height: 40px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	display: block;
+}
+
+.menuitem {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: #000;
+	background-color: #CCC;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	height: 40px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	display: block;
+}
+
+.menuitems a, .menuitems a:visited {
+	/* 对这些选择器进行分组可确保链接即使在访问之后也能保持其按钮外观 */
+	padding: 5px 0px 5px 0px;
+	color: #000;
+	text-decoration: none;
+}
+
+.menuitems a:hover, .menuitems a:active, .menuitems a:focus {
+	/* 这将更改鼠标和键盘导航的背景和文本颜色 */
+	color: #FFF;
+	background-color: #999;
+}
+
+.headbar {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 28px;
+	color: #666;
+	background-color: #CCC;
+	text-align: left;
+	vertical-align: middle;
+	line-height: 65px;
+	height: 65px;
+	padding: 0px 15px 0px 15px;
+	margin: 0px;
+	border: 0px;
+	background-image: url(../img/ui/headbar.png);
+	background-repeat: repeat-x;
+	display: block;
+}
+
+.bluebutton {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #CCC;
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+	padding: 0px 15px 0px 15px;
+	margin: 0px 0 0 0;
+	border: 0px;
+	border-radius: 5px;
+	background-image: url(../img/ui/bluebar.png);
+	background-repeat: repeat-x;
+}
+
+.naviblock1 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 12px;
+	color: #000;
+	background-color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 29px;
+	width: 140px;
+	height: 29px;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 0 0 0;
+	border: 0px;
+	background-image: url(../img/ui/naviblock1.png);
+	background-repeat: no-repeat;
+	display: inline-block
+}
+
+.naviblock2 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	background-color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 29px;
+	width: 140px;
+	height: 29px;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 0 0 0;
+	border: 0px;
+	background-image: url(../img/ui/naviblock2.png);
+	background-repeat: no-repeat;
+	display: inline-block
+}
+
+.black_tbl_head {
+	background-color: #333;
+	color: #FFF;
+}
+
+.bordered {
+	border-style: solid !important;
+	border-top-color: #000 !important;
+	border-left-color: #000 !important;
+	border-right-color: #000 !important;
+	border-bottom-color: #000 !important;
+	border-width: 1px 1px 1px 1px !important;
+}
+
+.bottom_cell {
+	border-bottom: 0px !important;
+	border-style: solid !important;
+	border-top-color: #000 !important;
+	border-left-color: #FFF !important;
+	border-right-color: #FFF !important;
+	border-bottom-color: #FFF !important;
+	border-width: 1px 0px 0px 0px !important;
+}
+
+/* ~~ 此固定宽度容器包含所有其它 div ~~ */
+.container {
+	width: 100%;
+	background-color: #FFF;
+	overflow: hidden;
+	border: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.leftmenu {
+	width: 240px;
+	border-right-width: thin;
+	height: 90%;
+	float: left;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	overflow: hidden;
+}
+
+.desk {
+	width: 100%;
+	height: 98%;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.toolbar0 {
+	height: 70px;
+	width: 1296px;
+	background-color: #CCC;
+	margin: 0 auto;
+	text-align: center;
+	float: left;
+	padding: 0px;
+	border: 0px;
+}
+
+.toolbutton {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	float: left;
+	font-size: 14px;
+	background-color: #cccccc;
+	text-align: center;
+	vertical-align: middle;
+	height: 35px;
+	line-height: 35px;
+	width: 45px;
+	margin: 0px;
+	display: inline-block;
+	background-size: contain;
+}
+
+.toolbutton2 {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 14px;
+	background-color: #cccccc;
+	text-align: center;
+	vertical-align: middle;
+	height: 70px;
+	line-height: 70px;
+	width: 100px;
+	margin: 0px;
+	padding: 20px 0 20px 10px;
+	display: inline-block;
+	background-size: contain;
+}
+
+/* ~~ 其它浮动/清除类 ~~ */
+.fltrt { /* 此类可用于在页面中使元素向右浮动。浮动元素必须位于其在页面上的相邻元素之前。 */
+	float: right;
+	margin-left: 8px;
+}
+
+.fltlft { /* 此类可用于在页面中使元素向左浮动。浮动元素必须位于其在页面上的相邻元素之前。 */
+	float: left;
+	margin-right: 8px;
+}
+
+.clearfloat {
+	/* 如果从 .container 中删除了 overflow:hidden，则可以将此类放置在 <br /> 或空 div 中，作为 #container 内最后一个浮动 div 之后的最终元素 */
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.ifream_table, .iframe_tr, .iframe_td {
+	width: 100%;
+	height: 100%
+}
+
+iframe {
+	height: 100%;
+	border: 0px;
+	overflow: hidden;
+	text-align: center;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0px;
+}

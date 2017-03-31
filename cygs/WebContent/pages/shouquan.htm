@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>授权信息</title>
+</head>
+
+
+<body>
+	<form id="editForm" dataset="ds" onsubmit="return false" class="L5form">
+		<table border="1" width="100%">
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>申请方式</td>
+				<td class="FieldInput" colspan="4"><select id="APPFORM"
+					title="申请方式" field="APPFORM" style="width: 24%">
+						<option dataset="appformDs"></option>
+				</select></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel" style="width: 20%"><font color="red">*</font>申请人</td>
+				<td class="FieldInput" colspan="4"><input type="text"
+					name="appper" id="appper" title="申请人" field="APPPER"
+					style="width: 50%" />
+			</tr>
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>委托代理人</td>
+				<td class="FieldInput" colspan="4"><input type="text"
+					name="consigner" title="委托代理人" field="CONSIGNER" style="width: 50%" />
+					&nbsp;&nbsp;
+					<button id="getIdCard" onclick="readIdCard();"
+						style="display: none">读取二代证卡</button> &nbsp;&nbsp;
+					<button id=\ 'tiquButton\' onclick="selectNameFromDong()">提取</button>
+				</td>
+			</tr>
+			<tr>
+				<td class="FieldLabel" style="width: 20%">委托人证件信息:</td>
+				<td class="FieldLabel" style="width: 10%"><font color="red">*</font>证件类型</td>
+				<td class="FieldInput" style="width: 30%"><select type="text"
+					name="certype" id="certypeSelect" title="证件类型" field="CERTYPE"
+					style="width: 100%">
+						<option value="" selected="selected">请选择</option>
+						<option value="10">中华人民共和国居民身份证</option>
+						<option value="20">中华人民共和国军官证</option>
+						<option value="30">中华人民共和国警官证</option>
+						<option value="40">外国地区（护照）</option>
+						<option value="51">香港特别行政区护照</option>
+						<option value="52">香港（永久性）居民身份证</option>
+						<option value="53">澳门特别行政区护照</option>
+						<option value="54">澳门（永久性）居民身份证</option>
+						<option value="55">港澳居民来往内地通行证</option>
+						<option value="56">台湾居民身份证</option>
+						<option value="57">台湾居民来往大陆通行证</option>
+						<option value="58">台湾农民身份有关证明</option>
+						<option value="60">户口薄</option>
+						<option value="71">暂住证</option>
+						<option value="72">香港律师（中国委托公证人）...</option>
+						<option value="73">澳门居民身份证</option>
+						<option value="74">澳门特别行政区政府身份证明...</option>
+						<option value="90">其他有效身份证件</option>
+				</select>
+				<td class="FieldLabel" style="width: 10%"><font color="red">*</font>证件号码</td>
+				<td class="FieldInput" style="width: 30%"><input type="text"
+					name="cerno" id="cerno" title="证件号码" field="CERNO"
+					style="width: 70%" />
+					<button onclick="getRyxx()">提取</button>
+			</tr>
+			<tr>
+				<td class="FieldLabel" rowspan="5">委托事项及权限</td>
+				<td colspan="4" class="FieldInput" style="padding-left: 3%">
+					1.&nbsp;办理&nbsp; <input type="text" name="appname" id="appname"
+					title="企业名称" field="APPNAME" style="width: 40%" />
+					&nbsp;(企业名称)的&nbsp; <input type="text" name="blsx" id="blsx"
+					title="手续" field="BLSX" style="width: 10%" /> &nbsp;登记手续
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="FieldInput" style="padding-left: 3%">2.<input
+					type="radio" style="width: 2%" name="CONPRI1" field="CONPRI1"
+					value="1">同意 <input type="radio" style="width: 2%"
+					name="CONPRI1" field="CONPRI1" value="2">不同意
+					&nbsp;核对登记材料中的复印件并签署核对意见
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="FieldInput" style="padding-left: 3%">3.<input
+					type="radio" style="width: 2%" name="CONPRI2" field="CONPRI2"
+					value="1">同意 <input type="radio" style="width: 2%"
+					name="CONPRI2" field="CONPRI2" value="2">不同意
+					&nbsp;修改企业自备文件的错误
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="FieldInput" style="padding-left: 3%">4.<input
+					type="radio" style="width: 2%" name="CONPRI3" field="CONPRI3"
+					value="1">同意 <input type="radio" style="width: 2%"
+					name="CONPRI3" field="CONPRI3" value="2">不同意
+					&nbsp;修改有关表格的填写错误
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="FieldInput" style="padding-left: 3%">5.<input
+					type="radio" style="width: 2%" name="CONPRI4" field="CONPRI4"
+					value="1">同意 <input type="radio" style="width: 2%"
+					name="CONPRI4" field="CONPRI4" value="2">不同意
+					&nbsp;领取营业执照和有关文书
+				</td>
+			</tr>
+			<tr>
+				<td class="FieldLabel">指定代表或委托代理人或者经办人信息</td>
+				<td class="FieldLabel" width="12%">固定电话</td>
+				<td class="FieldInput"><input type="text" name="tel"
+					title="固定电话" field="TEL" style="width: 90%" /></td>
+				<td class="FieldLabel" width="12%">移动电话</td>
+				<td class="FieldInput"><input type="text" name="mobtel"
+					title="移动电话" field="MOBTEL" style="width: 90%" />
+			</tr>
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>指定或者委托</br>的有效期限</td>
+				<td class="FieldInput" colspan="4">&nbsp;自&nbsp; <input
+					type="text" name="confrom" title="指定或者委托的有效期限自" id="CONFROM_ID"
+					field="CONFROM" onclick="LoushangDate(this)" format="Y-m-d" />
+					&nbsp;至&nbsp; <input type="text" name="conto" title="指定或者委托的有效期限至"
+					id="CONTO_ID" field="CONTO" onclick="LoushangDate(this)"
+					format="Y-m-d" />
+				</td>
+			</tr>
+			<tr>
+				<td class="FieldLabel">委托日期</td>
+				<td class="FieldInput" colspan="4"><input field="CONDATE"
+					title="委托日期" name="condate" onclick="LoushangDate(this)"
+					format="Y-m-d" /></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel" colspan="5" style="text-align: center;">
+					<button id="savejbxx" name="savejbxx" onclick="save();">保&nbsp;存</button>
+				</td>
+			</tr>
+		</table>
+		<font color="red" size=\'2\'><b>*注意：固定电话和移动电话必填一项！</b></font>
+	</form>
+
+
+</body>
+</html>

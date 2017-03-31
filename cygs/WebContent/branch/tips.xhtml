@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+
+			<p:selectOneMenu value="#{branBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="tips" itemLabel="tips" />
+			</p:selectOneMenu>
+			<p:panel styleClass="tableboard">
+				<p:panel rendered="#{not branBean.admin}">
+					<p style="font-weight: bold; font-size: 24px;">温馨提示</p>
+					<p style="font-weight: bold; text-align: left">
+						登记机关将在3个工作日内进行回复。</p>
+					<p style="font-weight: bold; text-align: left">
+						可点击“我的登记申报”查看结果。状态显示“退回”，则需按照提示内容修改相关资料，
+						再次“确认提交”，等待回复。状态显示“预审通过”，可点击“生成”→“下载”，系统将自动生成企业设立登记申请表格等相关材料。</p>
+					<p style="font-weight: bold; text-align: left">
+						资料下载后，请按照提示做好签字、粘贴当事人身份证复印件等相关准备工作。企业到窗口提交材料时，还需同时携带以下资料：</p>
+					<p style="text-align: left">1、 带投资人、委托人身份证原件、复印件；</p>
+					<p style="text-align: left">2、 住所使用证明：</p>
+					<p style="text-align: left">（1） 自有房产：带产权证复印件</p>
+					<p style="text-align: left">（2） 租赁房屋：带租赁协议与产权证复印件</p>
+					<p style="text-align: left">房屋未取得产权证的：带整套购房合同复印件或社区、物业加盖公章的住所证明
+					</p>
+					<p style="text-align: left">3、设立网吧的个体独资企业，地址必须为商业用房。</p>
+
+					<p:outputPanel>
+						<h:outputText value="注意：办理地点的选择必须与核名时所选择的相一致！    已知情"
+							style="color:red;" />
+						<p:selectBooleanCheckbox value="#{branBean.confirmed}">
+							<p:ajax update="prefix" />
+						</p:selectBooleanCheckbox>
+						<br />
+						<p:outputLabel value="办理方式" />
+						<p:selectOneMenu id="prefix" value="#{branBean.creg.special}"
+							style="width:300px;">
+							<f:selectItem itemValue="请选择" itemLabel="请选择" />
+							<f:selectItems value="#{selectItems.bureau}" />
+							<p:ajax update="commit_button" />
+						</p:selectOneMenu>
+					</p:outputPanel>
+
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{branBean.admin}">
+					<h1>综合意见：</h1>
+					<p:inputTextarea id="Branchreg_comment7" rows="8" cols="58"
+						value="#{branBean.creg.comment7}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Branchreg_comment7" />
+				</p:panel>
+				<p:commandButton value="上一步" action="#{branBean.prepage('zhusuo')}"
+					immediate="#{branList.admin?'false':'false'}">
+					<f:param name="branid" value="#{branBean.creg.id}" />
+					<p:confirm disabled="#{branList.admin?'true':'false'}" header="请确认"
+						message="注意：办理地点的选择必须与核名时所选择的相一致！是否 已知情？" icon="ui-icon-alert" />
+				</p:commandButton>
+				<p:commandButton id="commit_button"
+					disabled="#{branBean.creg.special eq '请选择'}" value="提交审核"
+					action="#{branBean.commit()}" rendered="#{not branList.admin}"
+					update="formone" oncomplete="refpara();PF('welcome').show;">
+					<f:param name="branid" value="#{branBean.creg.id}" />
+					<p:confirm disabled="#{branList.admin?'true':'false'}" header="请确认"
+						message="注意：办理地点的选择必须与核名时所选择的相一致！   是否 已知情？" icon="ui-icon-alert" />
+				</p:commandButton>
+				<p:commandLink styleClass="button3" style="width:110px;"
+					value="预审通过" action="#{branBean.approve()}"
+					rendered="#{branList.admin}" oncomplete="refpara();closewin();">
+					<f:param name="branid" value="#{branBean.creg.id}" />
+				</p:commandLink>
+				<p:commandLink styleClass="button3" value="退回"
+					action="#{branBean.reject()}" rendered="#{branList.admin}"
+					oncomplete="refpara();closewin();">
+					<f:param name="branid" value="#{branBean.creg.id}" />
+				</p:commandLink>
+			</p:panel>
+
+			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				<p:commandButton value="是" type="button"
+					styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+				<p:commandButton value="否" type="button"
+					styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+			</p:confirmDialog>
+
+			<p:dialog visible="#{branBean.showWelcome}" showHeader="false"
+				widgetVar="welcome" modal="true">
+				<table border="0">
+					<tr align="center">
+						<td><img src="#{request.contextPath}/images/weixiao.png" /></td>
+						<td><span class="bigfont">
+								<p>您的分公司登记已提交成功！</p>
+								<p>请稍后登录系统查看审批状态</p>
+						</span></td>
+					</tr>
+					<tr align="center">
+						<td colspan="2"><p:commandButton value="确定" immediate="true"
+								onclick="PF('welcome').hide();refpara();closewin();" /></td>
+					</tr>
+				</table>
+			</p:dialog>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

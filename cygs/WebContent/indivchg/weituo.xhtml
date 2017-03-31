@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+			<p:selectOneMenu value="#{indivchBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="weituo" itemLabel="weituo" />
+			</p:selectOneMenu>
+			<p:panel styleClass="tableboard">
+
+
+				<div class="WordSection1" style='layout-grid: 15.6pt' align="left">
+
+					<p class="MsoNormal" align="center" style='text-align: center'>
+						<b><span
+							style='font-size: 18.0pt; font-family: 宋体; color: black'>委托代理人证明</span></b>
+					</p>
+
+					<p class="MsoNormal" style='line-height: 21.0pt'>
+						<span lang="EN-US" style='font-family: 宋体; color: black'>&nbsp;</span>
+					</p>
+
+					<p class="MsoNormal" style='margin-top: 7.8pt'>
+						<span style='font-family: 宋体; color: black'>委<span
+							lang="EN-US">&nbsp; </span>托 人 姓 名 ：<span lang="EN-US">&nbsp;
+								<u> </u>
+						</span></span>
+					</p>
+
+					<p class="MsoNormal"
+						style='margin-top: 7.8pt; margin-right: 0cm; margin-bottom: 0cm; margin-left: 60.7pt; margin-bottom: .0001pt; text-indent: -60.7pt'>
+						<span style='font-family: 宋体; color: black'>委托代理人姓名 ： <h:inputText
+								id="Indivchg_authDname" styleClass="sysfont"
+								value="#{indivchBean.creg.authDname}" style="width:60px;">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</h:inputText> <p:watermark for="Indivchg_authDname" value="输入姓名"
+								id="watermark1" /> <h:message for="Indivchg_authDname" />
+
+						</span>
+					</p>
+
+					<p class="MsoNormal" style='margin-top: 7.8pt'>
+						<span style='font-family: 宋体; color: black'>委托代理权限 ：</span>
+					</p>
+
+
+					1、
+					<p:inputSwitch styleClass="sysfont" onLabel="同意" offLabel="不同意"
+						value="#{indivchBean.creg.authOpt1}" style="width:43px;" />
+					核对登记材料中的复印件并签署核对意见； <br /> 2、
+					<p:inputSwitch styleClass="sysfont" onLabel="同意" offLabel="不同意"
+						value="#{indivchBean.creg.authOpt2}" style="width:43px;" />
+					修改有关表格的填写错误； <br /> 3、
+					<p:inputSwitch styleClass="sysfont" onLabel="同意" offLabel="不同意"
+						value="#{indivchBean.creg.authOpt3}" style="width:43px;" />
+					领取各类通知书； <br /> 4、
+					<p:inputSwitch styleClass="sysfont" onLabel="同意" offLabel="不同意"
+						value="#{indivchBean.creg.authOpt4}" style="width:43px;" />
+					领取个体工商户营业执照。
+
+					<p class="MsoNormal" style='font-size: 12.0pt; margin-top: 7.8pt'>
+						<span style='font-family: 宋体; color: black'>委托有效期限：自 <span
+							lang="EN-US"> <p:calendar styleClass="sysfont"
+									locale="zh_CN" value="#{indivchBean.creg.authDateb}"
+									pattern="yyyy年M月d日" navigator="true" readonlyInput="true"
+									yearRange="c-1:c+1" />
+						</span> 至<span lang="EN-US"> <span lang="EN-US"> <p:calendar
+										styleClass="sysfont" locale="zh_CN"
+										value="#{indivchBean.creg.authDatee}" pattern="yyyy年M月d日"
+										navigator="true" readonlyInput="true" yearRange="c-1:c+1" />
+							</span>
+						</span>
+						</span>
+					</p>
+
+					<table class="MsoNormalTable" border="1" cellspacing="0"
+						cellpadding="0" width="576"
+						style='width: 432.0pt; border-collapse: collapse; border: none'>
+						<tr style='page-break-inside: avoid; height: 26.7pt'>
+							<td width="192" colspan="2"
+								style='width: 144.0pt; border: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.7pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span style='font-family: 宋体; color: black'>委托代理人住所</span>
+								</p>
+							</td>
+							<td width="384" colspan="2"
+								style='width: 288.0pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.7pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span lang="EN-US" style='font-family: 宋体; color: black'>
+
+										<p:inputText id="Indivchg_authAddress"
+											value="#{indivchBean.creg.authAddress}" style="width:90%;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText> <p:message for="Indivchg_authAddress" />
+
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='page-break-inside: avoid; height: 26.7pt'>
+							<td width="192" colspan="2"
+								style='width: 144.0pt; border: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.7pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span style='font-family: 宋体; color: black'>委托代理人身份证号码</span>
+								</p>
+							</td>
+							<td width="384" colspan="2"
+								style='width: 288.0pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 26.7pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span lang="EN-US" style='font-family: 宋体; color: black'>
+
+										<p:inputText id="Indivchg_authIdno"
+											value="#{indivchBean.creg.authIdno}" style="width:90%;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText> <p:message for="Indivchg_authIdno" />
+
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='page-break-inside: avoid; height: 27.75pt'>
+							<td width="96"
+								style='width: 72.0pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 27.75pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span style='font-family: 宋体; color: black'>邮政编码</span>
+								</p>
+							</td>
+							<td width="96"
+								style='width: 72.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 27.75pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span lang="EN-US" style='font-family: 宋体; color: black'>
+
+										<p:inputText id="Indivchg_authZip"
+											value="#{indivchBean.creg.authZip}" style="width:150px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText> <p:message for="Indivchg_authZip" />
+
+									</span>
+								</p>
+							</td>
+							<td width="89"
+								style='width: 66.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 27.75pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span style='font-family: 宋体; color: black'>移动电话</span>
+								</p>
+							</td>
+							<td width="295"
+								style='width: 221.05pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 27.75pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span lang="EN-US" style='font-family: 宋体; color: black'>
+
+										<p:inputText id="Indivchg_authMobile"
+											value="#{indivchBean.creg.authMobile}" style="width:150px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText> <p:message for="Indivchg_authMobile" />
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 188.85pt'>
+							<td width="576" colspan="4"
+								style='width: 432.0pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 188.85pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span style='font-family: 宋体; color: black'>（委托代理身份证复印件粘贴处）</span>
+								</p>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 7.8pt; text-align: center'>
+									<span lang="EN-US" style='font-family: 宋体; color: black'>&nbsp;</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+
+					<p class="MsoNormal"
+						style='margin-top: 7.8pt; margin-right: 0cm; margin-bottom: 0cm; margin-left: 252.0pt; margin-bottom: .0001pt; text-indent: 21.0pt'>
+						<span lang="EN-US" style='font-family: 宋体; color: black'>&nbsp;</span>
+					</p>
+
+					<p class="MsoNormal" style='margin-top: 7.8pt'>
+						<span lang="EN-US" style='font-family: 宋体; color: black'>&nbsp;</span>
+					</p>
+
+					<p class="MsoNormal" style='margin-top: 7.8pt'>
+						<span style='font-family: 宋体; color: black'>委托人签名</span>
+					</p>
+
+					<p class="MsoNormal"
+						style='margin-top: 7.8pt; margin-right: 0cm; margin-bottom: 0cm; margin-left: 252.0pt; margin-bottom: .0001pt'>
+						<span style='font-family: 宋体; color: black'> <p:calendar
+								styleClass="sysfont" locale="zh_CN"
+								value="#{indivchBean.creg.authDate}" pattern="yyyy年M月d日"
+								navigator="true" readonlyInput="true" yearRange="c-1:c+1" />
+						</span>
+					</p>
+
+					<p class="MsoNormal">
+						<span lang="EN-US">&nbsp;</span>
+					</p>
+
+					<p class="MsoNormal"
+						style='margin-left: 42.0pt; text-indent: -42.0pt'>
+						<span style='font-family: 宋体'>须知：</span><span lang="EN-US">1.
+						</span><span style='font-family: 宋体'>委托代理人的委托事项主要包括：办理名称预先核准、开业登记、变更登记和注销登记等。</span>
+					</p>
+
+					<p class="MsoNormal"
+						style='margin-left: 42.0pt; text-indent: -42.0pt'>
+						<span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							2. </span><span style='font-family: 宋体'>委托人应当指定委托代理人更正有关材料的权限，在选择“同意”或“不同意”后的</span><span
+							style='font-family: 宋体; color: black'>□中打√。</span>
+					</p>
+
+				</div>
+
+			</p:panel>
+			<div class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{indivchBean.admin}">
+					<p:inputTextarea id="Indivchg_comment2" rows="8" cols="58"
+						value="#{indivchBean.creg.comment2}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Indivchg_comment2" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not indivchBean.admin and indivchBean.creg.comment2 ne null and indivchBean.creg.comment2 ne '' }">
+					<h:outputText value="#{indivchBean.creg.comment2}"
+						style="width:100%;color:red;" />
+				</p:panel>
+				<h:commandLink styleClass="button3"
+					rendered="#{indivchBean.creg.caddressnew eq ''}" value="上一步"
+					action="#{indivchBean.prepage('creg')}"
+					immediate="#{indivchList.admin?'false':'false'}">
+					<f:param name="indivchid" value="#{indivchBean.creg.id}" />
+				</h:commandLink>
+				<h:commandLink styleClass="button3"
+					rendered="#{indivchBean.creg.caddressnew ne ''}" value="上一步"
+					action="#{indivchBean.openpage('weizhi')}"
+					immediate="#{indivchList.admin?'false':'false'}">
+					<f:param name="indivchid" value="#{indivchBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton action="#{indivchBean.saveData('weituo')}"
+					value="保存" update="formone" />
+				<h:commandLink styleClass="button3" value="下一步"
+					action="#{indivchBean.openpage('tips')}"
+					immediate="#{indivchList.admin?'false':'false'}">
+					<f:param name="indivchid" value="#{indivchBean.creg.id}" />
+				</h:commandLink>
+			</div>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

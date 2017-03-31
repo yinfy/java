@@ -1,0 +1,76 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/webpage.xhtml">
+
+	<ui:define name="content">
+
+		<div class="WordSection1" style='layout-grid: 15.6pt'>
+
+			<p class="MsoNormal" align="center" style='text-align: center'>
+				<b><span style='font-size: 22.0pt; font-family: 宋体; color: red'>非常重要，请认真阅读</span></b>
+			</p>
+
+			<p class="MsoNormal" align="center" style='text-align: center'>
+				<b><span style='font-size: 22.0pt; font-family: 宋体'>登记指南</span></b>
+			</p>
+
+			<p class="MsoNormal">
+				<span lang="EN-US"></span>
+			</p>
+
+			<div align="left">
+				<p class="MsoNormal" style='text-indent: 28.0pt'>
+					<span style='font-size: 14.0pt; font-family: 宋体'>一、本系统为我局自主研发的企业网上登记系统，目前开通了有限公司、个人独资企业设立登记，有限公司名称、住所、经营范围、营业期限变更登记等功能。企业通过本系统提交登记申请，无需事先到登记窗口领取表格、准备章程、任职文件等书式材料，网上登记申请经审核后，系统将自动生成上述文件，企业自行下载并补充好其他材料后，直接到登记窗口申请登记，领取营业执照。</span>
+				</p>
+
+				<p class="MsoNormal" style='text-indent: 28.0pt'>
+					<span style='font-size: 14.0pt; font-family: 宋体'>二、<span
+						style='color: red'>初次使用</span>本系统的用户，需通过首页右下方“用户登录（注册）”窗口进行用户注册，注册后进行用户登录，方可使用。用户一次注册，长期有效，并可申请多家企业的注册申请，因此请记住您的用户名和登录密码。
+					</span>
+				</p>
+
+				<p class="MsoNormal" style='text-indent: 28.0pt'>
+					<span style='font-size: 14.0pt; font-family: 宋体; color: red'>老用户</span><span
+						style='font-size: 14.0pt; font-family: 宋体'>可直接通过首页右下方“用户登录（注册）”窗口登录使用。</span>
+				</p>
+
+				<p class="MsoNormal" style='text-indent: 28.0pt'>
+					<span style='font-size: 14.0pt; font-family: 宋体'>三、登录后，<span
+						style='color: red'>初次申请</span>登记的企业，请点击左侧菜单栏中“新的登记申请”，按照提示操作；已经通过本系统报送申请（确认提交）的企业，请点击左侧菜单栏中“我的登记申请”来查看审核结果。
+					</span>
+				</p>
+
+				<p class="MsoNormal" style='text-indent: 28.0pt'>
+					<span style='font-size: 14.0pt; font-family: 宋体'>四、本系统提供的登记申请录入事项与登记窗口发放的纸质申请表格完全一致，请按照系统提示，将所有输入框中内容填写完整。每页填写完毕后，点击“下一页”，系统将自动保存所填内容。填写经营范围时，可点击“添加”进行选择，也可在“输出入其他经营范围”栏内直接填写。</span>
+				</p>
+
+				<p class="MsoNormal" style='text-indent: 28.0pt'>
+					<span style='font-size: 14.0pt; font-family: 宋体'>五、表格全部填写完成后，请点击“确认提交”，登记机关将在</span><span
+						lang="EN-US" style='font-size: 14.0pt'>3</span><span
+						style='font-size: 14.0pt; font-family: 宋体'>个工作日内进行回复。可点击“我的登记申请”查看结果。状态显示“退回”，则需按照提示内容修改相关资料，再次“确认提交”，等待回复。状态显示“已批准”，可点击“生成”→“下载”，系统将自动生成全部登记申请表格及其他需企业自拟的制式文字资料（如决议、章程、任职文件等）。企业如需提交个性化相关材料，则无需下载此项，自行准备后到登记窗口提交申请。</span>
+				</p>
+
+				<p class="MsoNormal" style='text-indent: 28.0pt'>
+					<span style='font-size: 14.0pt; font-family: 宋体'>六、企业到窗口提交申请时，除系统自动生成的材料外，还需按照系统提示携带其他补充资料。</span>
+				</p>
+			</div>
+			<p class="MsoNormal" style='text-indent: 28.0pt'>
+				<span style='font-size: 14.0pt; font-family: 宋体'>温馨提示：</span>
+			</p>
+
+			<p class="MsoNormal" style='text-indent: 28.0pt'>
+				<span style='font-size: 14.0pt; font-family: 宋体'>企业在使用本系统时，遇到任何问题，可查看本网站“咨询电话”栏，找到对应的登记机关和电话与我们联系。</span>
+			</p>
+
+		</div>
+
+		<div>
+			<p:link styleClass="button3" style="width:110px;"
+				href="/register.xhtml?i=2" value="开始登记"
+				rendered="#{not loginUser.admin}" />
+		</div>
+
+	</ui:define>
+</ui:composition>

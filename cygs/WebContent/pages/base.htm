@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>基本信息</title>
+</head>
+
+<body>
+	<form dataset="gsdj_jbxx_editDs" class="L5form">
+		<fieldset>
+			<legend style="border: 0px; background-color: white;">
+				登记基本信息 </legend>
+			<table border="1" id="idTable1" width="100%">
+				<tr>
+					<td class="FieldLabel" style="width: 20%"><font color="red">*</font>企业名称</td>
+					<td class="FieldInput" style="width: 80%" colspan="3"><input
+						readonly type="text" id="entname" style="width: 60%"
+						name="entname" field="ENTNAME" title="企业名称"></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel" style="width: 20%"><font color="red">*</font>名称预先核准文号</td>
+					<td class="FieldInput" style="width: 80%" colspan="3"><input
+						readonly type="text" id="apprno" style="width: 60%" name="apprno"
+						field="APPRNO" title="名称预先核准通知书文号"></td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<table border="1" id="jbxxTable2" width="100%">
+				<tr>
+					<td class="FieldLabel" rowspan="2" style="width: 20%"><font
+						color="red">*</font>住所</td>
+					<td class="FieldInput"><select id=\ 'shengSel\'  field=\'PROVINCE\'  >
+							<option dataset=\'shengDs\'  ></option>
+					</select>(省/直辖市/自治区)</td>
+					<td class="FieldInput"><select id=\ 'shiSel\' onchange=\
+						'loadXianByShi(this)\'  field=\'CITY\'>
+							<option dataset=\'shiDs\'  ></option>
+					</select>(市/地区/盟/自治州)</td>
+					<td class="FieldInput"><select id=\ 'xianSel\'   onchange=\
+						'editDom(this)\' field=\'COUNTY\'>
+							<option dataset=\'xianDs\' ></option>
+					</select>(区/县/县级市/旗)</td>
+				</tr>
+				<tr>
+					<td class="FieldInput"><input type="text" onkeyup=\
+						'editDom(this)\' name="zhen" id="zhen" field=\ 'STREET\' title="镇"
+						style="text-align: right; width: 66%">(乡/民族乡/镇/街道)</td>
+					<td class="FieldInput"><input type="text" name="" id="xiang"
+						onkeyup=\ 'editDom(this)\' title="村" field=\
+						'ROAD\' style="text-align: right; width: 64%">(路/村/社区)</td>
+					<td class="FieldInput"><input type="text" name="" id="lu"
+						onkeyup=\ 'editDom(this)\' title="门牌号" field=\
+						'DOORPLATE\' style="text-align: right; width: 54%">(门牌号)</td>
+				</tr>
+				<tr>
+					<td colspan="4" class="FieldInput" style=""'padding:0px\'>
+						<table border=0 style="" 'border:0px\' id="jbxxTable2"
+							width="100%" cellpadding=0 cellspacing=0>
+							<tr>
+								<td class="FieldLabel" style=""'width:20%;border-top: 0px\' >详细地址</td>
+								<td class="FieldInput" style="display: none;" id=\'xiangxiDom\'></td>
+								<td style=""'border-top: 0px;border-right: 0px;\'><input
+									type=\ 'text\' style="width: 60%;" id="dom" field=\
+									'DOM\' title="企业住所地"> <input type=\ 'hidden\' field=\
+									'DOMDISTRICT\' title="企业住所地">
+									<button onclick="ccDom()">地址查重</button>&nbsp;&nbsp;
+									<button id="yzdz" onclick="addDoms()">一照多址</button></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br> <br>
+			<table border="1" id="jbxxTable2" width="100%">
+				<tr>
+					<td class="FieldLabel" rowspan="2" style="width: 20%"><font
+						color="red">*</font>生产经营地</td>
+					<td class="FieldInput"><select id=\ 'shengSel2\'  field=\'PAPROVINCE\'  >
+							<option dataset=\'shengDs\'  ></option>
+					</select>(省/直辖市/自治区)</td>
+					<td class="FieldInput"><select id=\ 'shiSel2\' onchange=\
+						'loadPruXianByShi(this)\'  field=\'PACITY\'>
+							<option dataset=\'shiDs\'  ></option>
+					</select>(市/地区/盟/自治州)</td>
+					<td class="FieldInput"><select id=\ 'xianSel2\'   onchange=\
+						'editDom2(this)\' field=\'PACOUNTY\'>
+							<option dataset=\'pruXianDs\' ></option>
+					</select>(区/县/县级市/旗)</td>
+				</tr>
+				<tr>
+					<td class="FieldInput"><input type="text" onkeyup=\
+						'editDom2(this)\' name="zhen" id="zhen2" field=\
+						'PASTREET\' title="镇" style="text-align: right; width: 66%">(乡/民族乡/镇/街道)
+					</td>
+					<td class="FieldInput"><input type="text" name="" id="xiang2"
+						onkeyup=\ 'editDom2(this)\' title="村" field=\
+						'PAROAD\' style="text-align: right; width: 64%">(路/村/社区)</td>
+					<td class="FieldInput"><input type="text" name="" id="lu2"
+						onkeyup=\ 'editDom2(this)\' title="门牌号" field=\
+						'PADOORPLATE\' style="text-align: right; width: 54%">(门牌号)
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" class="FieldInput" style=""'padding:0px\'>
+						<table border=0 style="" 'border:0px\' id="jbxxTable2"
+							width="100%" cellpadding=0 cellspacing=0>
+							<tr>
+								<td class="FieldLabel" style=""'width:20%;border-top: 0px\' >详细地址</td>
+								<td style=""'border-top: 0px;border-right: 0px;\'><input
+									type=\ 'text\' style="width: 60%;" id="proloc" field=\
+									'PROLOC\' title="生产经营地"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br> <br>
+			<table border="1" id="jbxxTable3" width="100%">
+				<tr>
+					<td class="FieldLabel" style="width: 20%"><font color="red">*</font>联系电话</td>
+					<td class="FieldInput" style="width: 30%"><input type="text"
+						id="tel" name="TEL" style="width: 60%" field="TEL" title="联系电话">
+					</td>
+					<td class="FieldLabel" style="width: 20%"><font color="red">*</font>邮政编码</td>
+					<td class="FieldInput" style="width: 30%"><input type="text"
+						id="postalcode" style="width: 60%" name="POSTALCODE"
+						field="POSTALCODE" title="邮政编码"></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel">法定代表人姓名</td>
+					<td class="FieldInput" colspan="3"><input type="text"
+						readonly="readonly" id="lerep"
+						style="width: 24%; background: #DBDBDB;" name="LEREP"
+						field="LEREP" title="法定代表人姓名"></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel" style="width: 20%"><font color="red">*</font>注册资本</td>
+					<td class="FieldInput" style="width: 30%"><input type="text"
+						id="regcap" style="width: 40%; text-align: right" name="REGCAP"
+						field="REGCAP" title="注册资本">万元</td>
+					<td class="FieldLabel"><font color="red">*</font>公司类型</td>
+					<td class="FieldInput"><input id="ENTTYPE" type="hidden"
+						title="公司类型" field="ENTTYPE" /> <input id="VIEW_ENTTYPE"
+						title="公司类型" field="VIEW_ENTTYPE" disabled="disabled"
+						style="width: 75%;" /> <img src="/iaic/skins/images/l5/help.gif"
+						style="cursor: hand" onclick="selectEntCat()" /></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel">实收资本</td>
+					<td class="FieldInput"><input type="text" id="reccap"
+						style="width: 40%; text-align: right" name="RECCAP" field="RECCAP"
+						title="实收资本">万元</td>
+					<td class="FieldLabel">设立方式</td>
+					<td class="FieldInput"><select id="insform" title="设立方式"
+						style="" field="INSFORM">
+							<option dataset="insformDs"></option>
+					</select></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel"><font color="red">*</font>所属行业</td>
+					<td class="FieldInput" colspan="3"><input type="hidden"
+						name="INDUSTRYPHY" title="所属行业" id="INDUSTRYPHY"
+						field="INDUSTRYPHY" /> <input id="VIEW_INDUSTRYPHY" title="所属行业"
+						name="VIEW_INDUSTRYPHY" field="VIEW_INDUSTRYPHY"
+						disabled="disabled" style="width: 35%" /> <font color="red">*</font>行业代码
+						<input type="hidden" title="行业代码" name="INDUSTRYCO"
+						id="INDUSTRYCO" field="INDUSTRYCO" /> <input id="VIEW_INDUSTRYCO"
+						title="行业代码" name="VIEW_INDUSTRYCO" field="VIEW_INDUSTRYCO"
+						disabled="disabled" style="width: 40%" /> <img
+						src="/iaic/skins/images/l5/help.gif" style="cursor: hand"
+						onclick="selectIndus()" /></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel" style="width: 20%">是否实缴</td>
+					<td class="FieldInput" style="width: 30%"><input type="radio"
+						name="ifsj" field="IFSJ" value="1" title="是否实缴"
+						onclick="fn_issj();" />是 <input type="radio" name="ifsj"
+						field="IFSJ" value="2" title="是否实缴" checked
+						onclick="fn_isnotsj();" />否</td>
+					<td class="FieldLabel" style="width: 20%">实缴类型</td>
+					<td class="FieldInput" style="width: 30%"><select id="sjtype"
+						title="实缴类型" style="width: 70%" field="SJTYPE" disabled="disabled">
+							<option dataset="brjhyDs"></option>
+					</select></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel"><font color="red">*</font>经营范围</td>
+					<td class="FieldInput" colspan="3"><textarea id="busscope"
+							style="width: 97%; height: 50" name="BUSSCOPE" field="BUSSCOPE"
+							title="经营范围"></textarea>
+						<button id="busscopeselecter" onclick="wino()">打开选择窗口</button> <input
+						type="hidden" id="xkxx" /></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel"><font color="red">*</font>营业期限</td>
+					<td class="FieldInput"><input type="radio"
+						name="checkboxInput" id="check1" title="营业期限"
+						onclick="opfyears(this)" value="2">&nbsp; <input
+						type="text" id="OPFYEARS" style="width: 20%" name="OPFYEARS"
+						field="OPFYEARS" title="营业期限" disabled>年&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="checkboxInput" id="check1" title="营业期限"
+						onclick="opfyears(this)" value="1">&nbsp;长期</td>
+					<td class="FieldLabel"><font color="red">*</font>申请副本数</td>
+					<td class="FieldInput"><input type="text" id="CONUM"
+						style="width: 60%" name="CONUM" field="CONUM" title="申请副本数">
+					</td>
+				</tr>
+				<tr>
+					<td class="FieldLabel">营业期限</td>
+					<td class="FieldInput" colspan="3">自 <input type="text"
+						title="营业期限自" name="OPFROM" field="OPFROM"
+						onclick="LoushangDate(this)" onclick="LoushangDate(this)"
+						format="Y-m-d" />至 <input type="text" title="营业期限至" name="OPTO"
+						field="OPTO" onclick="LoushangDate(this)"
+						onclick="LoushangDate(this)" format="Y-m-d"
+						onChange="alert(&quot;营业期限年数为&quot;+document.getElementById(&quot;OPFYEARS&quot;).value+&quot;年，请核对是否准确。&quot;)" />
+						<br>
+					<br>
+					<Strong><font color="red">（1）“营业期限自”以设立核准日期为准，如果早于核准日期，系统将自动置为核准日期；<br>（2）“营业期限自至”可不填写，系统在“核准”通过后，自动根据营业期限年数计算营业期限自至。
+						</font></Strong>
+					</td>
+				</tr>
+				<tr>
+					<td class="FieldLabel"><font color="red">*</font>登记机关</td>
+					<td class="FieldInput"><input type="hidden" name="REGORG"
+						id="REGORG" title="登记机关" field="REGORG" /> <input
+						id="VIEW_REGORG" style="width: 100%" title="登记机关"
+						name="VIEW_REGORG" field="VIEW_REGORG" disabled="disabled" /></td>
+					<td class="FieldLabel"><font color="red">*</font>管辖机关</td>
+					<td class="FieldInput"><input type="hidden" name="LOCALORG"
+						id="LOCALORG" title="管辖机关" field="LOCALORG" /> <input
+						id="VIEW_LOCALORG" style="width: 75%" title="管辖机关"
+						name="VIEW_LOCALORG" field="VIEW_LOCALORG" disabled="disabled" />
+						<img src="/iaic/skins/images/l5/help.gif" style="cursor: hand"
+						onclick="selectLocalorg()" /></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel">属地工商所</td>
+					<td class="FieldInput" colspan="3"><select style=""
+						'width:40%\' field=\'LOCALADM\'  ><option dataset=\ 'localadmDs\'/></select>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend style="border: 0px; background-color: white;">补充信息 </legend>
+			<table border="1" id="idTable2" width="100%">
+				<tr>
+					<td class="FieldLabel" style="width: 20%"><font color="red">*</font>特定经营行业</td>
+					<td class="FieldInput" style="width: 30%"><select
+						id="highindustry" title="特定经营行业" style="width: 100%"
+						field="HIGHINDUSTRY">
+							<option dataset="highindustryDs"></option>
+					</select></td>
+					<td class="FieldLabel" style="width: 20%">特定经营地域</td>
+					<td class="FieldInput" style="width: 30%"><select
+						id="busaddscope" title="特定经营地域" style="width: 100%"
+						field="BUSADDSCOPE">
+							<option dataset="busaddscopeDs"></option>
+					</select></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel" style="width: 20%">城乡标志</td>
+					<td class="FieldInput" style="width: 30%"><input type="radio"
+						name="CITYSIGN" title="城乡标志" id="CITYSIGN1" field="CITYSIGN"
+						value="1">城市 <input type="radio" name="CITYSIGN"
+						title="城乡标志" id="CITYSIGN2" field="CITYSIGN" value="2">农村
+					</td>
+					<td class="FieldLabel" style="width: 20%">是否扶持户</td>
+					<td class="FieldInput" style="width: 30%"><input type="radio"
+						name="ifforhelp" title="是否扶持户" id="IFFORHELP1" field="IFFORHELP"
+						value="1">是 <input type="radio" name="ifforhelp"
+						title="是否扶持户" id="IFFORHELP2" field="IFFORHELP" value="2">否
+					</td>
+				</tr>
+				<tr>
+					<td class="FieldLabel">是否经纪人</td>
+					<td class="FieldInput"><input type="radio" name="BORSIGN"
+						id="BORSIGN_Y" title="是否经济人" field="BORSIGN" value="1">是 <input
+						type="radio" name="BORSIGN" id="BORSIGN_N" title="是否经济人"
+						field="BORSIGN" value="2">否</td>
+					<td class="FieldLabel" style="width: 20%">是否市场开办者</td>
+					<td class="FieldInput" style="width: 30%"><input type="radio"
+						name="marsign" title="是否市场开办者" id="MARSIGN1" field="MARSIGN"
+						value="1">是 <input type="radio" name="marsign"
+						title="是否市场开办者" id="MARSIGN2" field="MARSIGN" value="2">否
+					</td>
+				</tr>
+				<tr>
+					<td class="FieldLabel">是否广告企业</td>
+					<td class="FieldInput"><input type="radio" name="ADVSIGN"
+						id="ADVSIGN_Y" title="是否广告企业" field="ADVSIGN" value="1">是
+						<input type="radio" name="ADVSIGN" id="ADVSIGN_N" title="是否广告企业"
+						field="ADVSIGN" value="2">否</td>
+					<td class="FieldLabel">是否农资市场</td>
+					<td class="FieldInput"><input type="radio" name="AGRSIGN"
+						id="AGRSIGN_Y" title="是否农资市场" field="AGRSIGN" value="1">是
+						<input type="radio" name="AGRSIGN" id="AGRSIGN_N" title="是否农资市场"
+						field="AGRSIGN" value="2">否</td>
+				</tr>
+				<tr>
+					<td class="FieldLabel" style="width: 20%"><label
+						id="empnumdiv"><font color="red">*</font></label>雇工人数</td>
+					<td class="FieldInput" colspan="3" style="width: 30%"><input
+						type="text" id="empnum" style="width: 60%" name="EMPNUM"
+						field="EMPNUM" title="雇工人数"></td>
+				</tr>
+				<tr>
+					<td class="FieldLabel" style="width: 15%">备注</td>
+					<td class="FieldInput" colspan="3"><textarea id="REMARK"
+							style="width: 97%" name="REMARK" field="REMARK" title="备注">
+</textarea></td>
+				</tr>
+			</table>
+		</fieldset>
+		<table border="0" width="100%">
+			<tr>
+				<td style="text-align: center" class="FieldLabel">
+					<button id="savejbxx" name="savejbxx" onclick="save();">保&nbsp;存</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<div class="center" align="center">
+			<h:form id="formone">
+				<p:dialog visible="#{not empty cregBean.messages}"
+					header="#{cregBean.messages[0].severity eq 'ERROR 2'?'错误':' '}"
+					modal="true">
+					<p:repeat value="#{cregBean.messages}" var="message">
+						<h:panelGrid columns="2" style="width:100%"
+							columnClasses="logo,detail">
+							<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+								url="/images/info.png" />
+							<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+								url="/images/warn.png" />
+							<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+								url="/images/error.png" />
+							<h:outputText value="#{message.detail}" style="font-weight: bold" />
+						</h:panelGrid>
+					</p:repeat>
+				</p:dialog>
+
+				<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+					closable="true">
+				</p:messages>
+
+				<p:selectOneMenu value="#{cregBean.currentPage}"
+					style="display:none;">
+					<f:selectItem itemValue="jianshi" itemLabel="jianshi" />
+				</p:selectOneMenu>
+				<div>
+					<p:fragment>
+
+						<div style="font-size: 20px; background-color: #E0D964;">
+							<p:selectOneRadio
+								rendered="#{cregBean.creg.duty ne '执行董事' and cregBean.creg.dshui}"
+								disabled="#{!cregBean.creg.dshui}" id="establish"
+								value="#{cregBean.creg.jshui}" styleClass="center">
+								<f:selectItem itemLabel="设监事会" itemValue="true" />
+								<f:selectItem itemLabel="不设监事会" itemValue="false" />
+								<f:ajax update="jianshipos" />
+							</p:selectOneRadio>
+						</div>
+
+						<p:dataTable emptyMessage="无记录" style="font:12px;" id="jianshis"
+							var="jianshi" value="#{cregBean.creg.jianshis}" paginator="false"
+							rows="20" selection="#{cregBean.selectedJianshi}"
+							rowKey="#{jianshi.uuid}" selectionMode="single">
+							<p:ajax event="rowSelect" listener="#{cregBean.onJianshiSelect}"
+								update="formone" />
+							<p:column style="width:80px" headerText="职务">
+								<h:outputText value="#{jianshi.jspos}" />
+							</p:column>
+							<p:column style="width:80px" headerText="姓名">
+								<h:outputText value="#{jianshi.jsname}" />
+							</p:column>
+							<p:column style="width:80px" headerText="证件类型">
+								<h:outputText value="#{jianshi.jsidtype}" />
+							</p:column>
+							<p:column style="width:165px" headerText="证件号码">
+								<h:outputText value="#{jianshi.jsidno}" />
+							</p:column>
+							<p:column style="width:65px" headerText="是否职工代表">
+								<h:outputText value="#{jianshi.jsempl}" />
+							</p:column>
+
+							<p:column style="width:35px" headerText=""
+								rendered="#{not cregList.admin}">
+								<p:commandLink process="jianshis" update="formone" value="修改"
+									oncomplete="PF('manage').show()">
+									<f:setPropertyActionListener value="#{jianshi}"
+										target="#{cregBean.selectedJianshi}" />
+								</p:commandLink>
+							</p:column>
+							<p:column style="width:35px" headerText=""
+								rendered="#{not cregList.admin}">
+								<p:commandLink process="jianshis" update="formone" value="删除"
+									action="#{cregBean.deleteJianshi()}">
+									<f:setPropertyActionListener value="#{jianshi}"
+										target="#{cregBean.selectedJianshi}" />
+								</p:commandLink>
+							</p:column>
+						</p:dataTable>
+
+						<p:commandButton update="jianshis frag00" value="添加监事"
+							rendered="#{not cregList.admin}" action="#{cregBean.newJianshi}"
+							oncomplete="PF('manage').show()" />
+					</p:fragment>
+
+					<p:fragment id="frag00">
+						<p:dialog rendered="#{cregBean.selectedJianshi ne null}"
+							header="监事信息" widgetVar="manage" modal="true" showEffect="fade"
+							hideEffect="fade" resizable="false" width="500">
+							<div>
+								<table align="left">
+									<tr>
+										<td>监事职务</td>
+										<td align="left" colspan="2"><p:fragment id="frag01">
+												<p:selectOneMenu id="jianshipos"
+													value="#{cregBean.selectedJianshi.jspos}"
+													style="width:100%">
+													<f:selectItem itemLabel="监事" itemValue="监事" />
+													<f:selectItem itemLabel="监事会主席" itemValue="监事会主席"
+														itemDisabled="#{not cregBean.creg.jshui}" />
+												</p:selectOneMenu>
+											</p:fragment></td>
+									</tr>
+									<tr>
+										<td>姓名</td>
+										<td align="left" colspan="2"><p:inputText
+												id="Jianshi_jsname"
+												value="#{cregBean.selectedJianshi.jsname}">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:commandButton rendered="#{not cregBean.admin}"
+												style="width:60px;font-size:14px;padding:0px;"
+												immediate="true" update="formone" value="选取"
+												oncomplete="PF('persons2').show()" /> <p:message
+												for="Jianshi_jsname" /></td>
+									</tr>
+									<tr>
+										<td>*证件类型</td>
+										<td align="left" colspan="2"><p:selectOneMenu
+												id="Jianshi_jsidtype"
+												value="#{cregBean.selectedJianshi.jsidtype}">
+												<f:selectItems value="#{selectItems.idTypes}" />
+											</p:selectOneMenu></td>
+									</tr>
+									<tr>
+										<td>*证件号码</td>
+										<td align="left" colspan="2"><p:inputText
+												id="Jianshi_jsidno"
+												value="#{cregBean.selectedJianshi.jsidno}">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:message for="Jianshi_jsidno" /></td>
+									</tr>
+									<tr>
+										<td>*是否是职工代表</td>
+										<td align="left" colspan="2"><p:selectOneMenu
+												id="Jianshi_jsempl"
+												value="#{cregBean.selectedJianshi.jsempl}">
+												<f:selectItem itemLabel="职工代表" itemValue="职工代表" />
+												<f:selectItem itemLabel="非职工代表" itemValue="非职工代表" />
+											</p:selectOneMenu></td>
+									</tr>
+								</table>
+							</div>
+							<div class="clearfloat" />
+							<div>
+								<p:commandButton update="jianshis" value="取消" immediate="true"
+									onclick="PF('manage').close()" />
+								<p:commandButton update="jianshis" value="确定"
+									action="#{cregBean.updateJianshi()}"
+									onclick="PF('manage').close()" />
+							</div>
+						</p:dialog>
+					</p:fragment>
+
+					<p:fragment id="frag02">
+						<p:dialog header="人员信息" widgetVar="persons2" modal="true"
+							showEffect="fade" hideEffect="fade" resizable="false" width="850">
+							<div style="clear: both;"></div>
+							<div>
+								<p:dataTable emptyMessage="无记录" id="persons2"
+									value="#{cregBean.persons}" var="person" paginator="false"
+									rows="20" selection="#{cregBean.selectedPerson}"
+									rowKey="#{person.idNo}">
+									<p:column selectionMode="single"
+										style="width:16px;text-align:center" />
+									<p:column style="width:200px" headerText="姓名">
+										<h:outputText value="#{person.name}" />
+									</p:column>
+									<p:column style="width:200px" headerText="证件类型">
+										<h:outputText value="#{person.idType}" />
+									</p:column>
+									<p:column style="width:280px" headerText="证件号码">
+										<h:outputText value="#{person.idNo}" />
+									</p:column>
+								</p:dataTable>
+							</div>
+							<div class="center">
+								<p:commandButton update="formone" value="取消" immediate="true"
+									onclick="PF('persons2').close()" />
+								<p:commandButton update="formone" value="保存"
+									action="#{cregBean.updatePerson('jianshi')}"
+									oncomplete="PF('persons2').hide()">
+								</p:commandButton>
+							</div>
+						</p:dialog>
+					</p:fragment>
+
+					<br /> <br />
+				</div>
+
+
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{cregBean.admin}">
+					<p:inputTextarea id="Companyreg_comment13" rows="8" cols="58"
+						value="#{cregBean.creg.comment13}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Companyreg_comment13" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not cregBean.admin and cregBean.creg.comment13 ne null and cregBean.creg.comment13 ne '' }">
+					<h:outputText value="#{cregBean.creg.comment13}"
+						style="width:100%;color:red;" />
+				</p:panel>
+
+				<h:commandLink styleClass="button3" value="上一步"
+					action="#{cregBean.prepage('dongshi')}"
+					immediate="#{cregList.admin?'false':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton action="#{cregBean.saveJianshi()}" value="保存"
+					update="formone" />
+				<h:commandLink styleClass="button3" value="下一步"
+					action="#{cregBean.openpage('lianluo')}"
+					immediate="#{cregList.admin?'false':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>

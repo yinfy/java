@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<link rel="stylesheet"
+		href="#{request.contextPath}/static/commons/styles/pageview.css" />
+</h:head>
+
+<div class="container">
+	<div class="top">
+		<img src="#{request.contextPath}/static/commons/images/pagetop.png"
+			alt="" />
+	</div>
+	<h:form id="formone">
+
+		<div style="width: 500px; text-align: center; margin: 0 auto"
+			align="center">
+
+			<div>
+				<p:growl id="ajaxMsg" autoUpdate="true" showDetail="true" />
+				<div align="center">
+					<table width="800">
+						<tr height="35">
+							<td>预约类型</td>
+							<td colspan="2" align="left"><h:outputText
+									value="#{yuyueBean.yuyue.ordertype}" /></td>
+						</tr>
+
+						<tr height="35">
+							<td>预约日期</td>
+							<td colspan="2" align="left"><h:outputFormat
+									value="#{yuyueBean.yuyue.orderdate}">
+									<f:convertDateTime pattern="yyyy/MM/dd" timeZone="GMT+8" />
+								</h:outputFormat></td>
+						</tr>
+
+						<tr height="35">
+							<td>预约时段</td>
+							<td colspan="2" align="left"><h:outputText
+									value="#{yuyueBean.yuyue.ordertimeNew}" /></td>
+						</tr>
+
+						<tr height="35">
+							<td>预约编号</td>
+							<td colspan="2" align="left"><h:outputText
+									value="#{yuyueBean.yuyue.orderno}" /></td>
+						</tr>
+
+						<tr height="35">
+							<td>预约人姓名</td>
+							<td colspan="2" align="left"><h:outputText
+									value="#{yuyueBean.yuyue.personName}" /></td>
+						</tr>
+
+						<tr height="35">
+							<td>身份证号</td>
+							<td colspan="2" align="left"><h:outputText
+									value="#{yuyueBean.yuyue.personId}" /></td>
+						</tr>
+
+						<tr height="35">
+							<td>手机号码</td>
+							<td colspan="2" align="left"><h:outputText
+									value="#{yuyueBean.yuyue.mobile}" /></td>
+						</tr>
+					</table>
+				</div>
+				<p:commandButton value="确定" id="saveButton" update=":formone"
+					actionListener="#{yuyueBean.updateData}">
+				</p:commandButton>
+			</div>
+		</div>
+	</h:form>
+</div>
+</html>

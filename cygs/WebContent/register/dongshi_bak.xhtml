@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:growl id="ajaxmsg" showDetail="true" />
+			<p:selectOneMenu value="#{cregBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="dongshi" itemLabel="dongshi" />
+			</p:selectOneMenu>
+			<p:panel>
+
+				<div class="WordSection1" style='layout-grid: 15.6pt'>
+
+					<p class="New" align="center"
+						style='text-align: center; line-height: 26.0pt'>
+						<b><span style='font-size: 18.0pt; font-family: 宋体'>董事、监事、经理信息</span></b>
+					</p>
+
+
+					<div align="center">
+						<p class="New" align="center"
+							style='text-align: center; line-height: 26.0pt'>
+							<span lang="EN-US" style='font-size: 12.0pt; font-family: 宋体'>(监事不可兼任其他职务)</span>
+						</p>
+						<table class="MsoNormal" border="1" cellspacing="0"
+							cellpadding="0" style='border-collapse: collapse; border: none'>
+							<tr style='height: 22.7pt'>
+								<td width="1360"
+									style='width: 640.95pt; border: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.7pt'>
+									姓名 <h:inputText styleClass="sysfont" id="Companyreg_zxdsName"
+										value="#{cregBean.creg.zxdsName}" style="width:80px;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</h:inputText> <p:commandButton rendered="#{not cregBean.admin}"
+										style="width:60px;font-size:14px;padding:0px;"
+										immediate="true" update="formone" value="选取"
+										oncomplete="PF('persons').show()" /> <h:message
+										for="Companyreg_zxdsName" /> 职务 <h:selectOneMenu
+										styleClass="sysfont" value="#{cregBean.creg.zxdsDuty}"
+										style="width:95px;">
+										<f:selectItem itemLabel="执行董事" itemValue="执行董事" />
+									</h:selectOneMenu> 身份证件类型 <h:selectOneMenu styleClass="sysfont"
+										value="#{cregBean.creg.zxdsIdtype}" style="width:100px;">
+										<f:selectItems value="#{selectItems.idTypes}" />
+									</h:selectOneMenu> 身份证件号码 <h:inputText styleClass="sysfont"
+										id="Companyreg_zxdsIdno" value="#{cregBean.creg.zxdsIdno}"
+										style="width:180px;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</h:inputText> <h:message for="Companyreg_zxdsIdno" />
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<u><span lang="EN-US" style='font-family: 宋体'><span
+												style='text-decoration: none'>&nbsp;</span></span></u>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<u><span lang="EN-US" style='font-family: 宋体'><span
+												style='text-decoration: none'>&nbsp;</span></span></u>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span style='font-family: 宋体'>（身份证件复印件粘贴处）</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+								</td>
+							</tr>
+							<tr style='height: 22.7pt'>
+								<td width="1360"
+									style='width: 640.95pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.7pt'>
+									姓名 <h:inputText id="Companyreg_jlName" styleClass="sysfont"
+										value="#{cregBean.creg.jlName}" style="width:80px;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</h:inputText> <p:commandButton rendered="#{not cregBean.admin}"
+										style="width:60px;font-size:14px;padding:0px;"
+										immediate="true" update="formone" value="选取"
+										oncomplete="PF('persons2').show()" /> <h:message
+										for="Companyreg_jlName" /> 职务 <h:selectOneMenu
+										styleClass="sysfont" value="#{cregBean.creg.jlDuty}"
+										style="width:95px;">
+										<f:selectItem itemLabel="经理" itemValue="经理" />
+									</h:selectOneMenu> 身份证件类型 <h:selectOneMenu styleClass="sysfont"
+										value="#{cregBean.creg.jlIdtype}" style="width:100px;">
+										<f:selectItems value="#{selectItems.idTypes}" />
+									</h:selectOneMenu> 身份证件号码 <h:inputText id="Companyreg_jlIdno"
+										styleClass="sysfont" value="#{cregBean.creg.jlIdno}"
+										style="width:180px;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</h:inputText> <h:message for="Companyreg_jlIdno" />
+
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<u><span lang="EN-US" style='font-family: 宋体'><span
+												style='text-decoration: none'>&nbsp;</span></span></u>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<u><span lang="EN-US" style='font-family: 宋体'><span
+												style='text-decoration: none'>&nbsp;</span></span></u>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<u><span lang="EN-US" style='font-family: 宋体'><span
+												style='text-decoration: none'>&nbsp;</span></span></u>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span style='font-family: 宋体'>（身份证件复印件粘贴处）</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+								</td>
+							</tr>
+							<tr style='height: 22.7pt'>
+								<td width="1360"
+									style='width: 640.95pt; border: solid windowtext 1.5pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.7pt'>
+									姓名 <h:inputText id="Companyreg_jsName" styleClass="sysfont"
+										value="#{cregBean.creg.jsName}" style="width:80px;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</h:inputText> <p:commandButton rendered="#{not cregBean.admin}"
+										style="width:60px;font-size:14px;padding:0px;"
+										immediate="true" update="formone" value="选取"
+										oncomplete="PF('persons3').show()" /> <h:message
+										for="Companyreg_jsName" /> 职务 <h:selectOneMenu
+										styleClass="sysfont" value="#{cregBean.creg.jsDuty}"
+										style="width:95px;">
+										<f:selectItem itemLabel="监事" itemValue="监事" />
+									</h:selectOneMenu> 身份证件类型 <h:selectOneMenu styleClass="sysfont"
+										value="#{cregBean.creg.jsIdtype}" style="width:100px;">
+										<f:selectItems value="#{selectItems.idTypes}" />
+									</h:selectOneMenu> 身份证件号码 <h:inputText styleClass="sysfont"
+										id="Companyreg_jsIdno" value="#{cregBean.creg.jsIdno}"
+										style="width:180px;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</h:inputText> <h:message for="Companyreg_jsIdno" />
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" align="center"
+										style='text-align: center; line-height: 25.0pt'>
+										<span style='font-family: 宋体'>（身份证件复印件粘贴处）</span>
+									</p>
+									<p class="New" style='line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" style='line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+									<p class="New" style='line-height: 25.0pt'>
+										<span lang="EN-US" style='font-family: 宋体'>&nbsp;</span>
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<span style='font-size: 10.5pt; font-family: 宋体'><br
+						clear="all" style='page-break-before: always' /> </span>
+
+					<p:fragment id="frag00">
+						<p:dialog header="人员信息" widgetVar="persons" modal="true"
+							showEffect="fade" hideEffect="fade" resizable="false" width="850">
+							<div style="clear: both;"></div>
+							<div>
+								<p:dataTable emptyMessage="无记录" id="persons"
+									value="#{cregBean.persons}" var="person" paginator="false"
+									rows="20" selection="#{cregBean.selectedPerson}"
+									rowKey="#{person.idNo}">
+									<p:column selectionMode="single"
+										style="width:16px;text-align:center" />
+									<p:column style="width:200px" headerText="姓名">
+										<h:outputText value="#{person.name}" />
+									</p:column>
+									<p:column style="width:200px" headerText="证件类型">
+										<h:outputText value="#{person.idType}" />
+									</p:column>
+									<p:column style="width:280px" headerText="证件号码">
+										<h:outputText value="#{person.idNo}" />
+									</p:column>
+								</p:dataTable>
+							</div>
+							<div class="center">
+								<p:commandButton update="formone" value="取消" immediate="true"
+									onclick="PF('persons').close()" />
+								<p:commandButton update="formone" value="保存"
+									action="#{cregBean.updatePerson('zxds')}"
+									oncomplete="PF('persons').hide()">
+								</p:commandButton>
+							</div>
+						</p:dialog>
+					</p:fragment>
+
+					<p:fragment id="frag01">
+						<p:dialog header="人员信息" widgetVar="persons2" modal="true"
+							showEffect="fade" hideEffect="fade" resizable="false" width="850">
+							<div style="clear: both;"></div>
+							<div>
+								<p:dataTable emptyMessage="无记录" id="persons2"
+									value="#{cregBean.persons}" var="person" paginator="false"
+									rows="20" selection="#{cregBean.selectedPerson}"
+									rowKey="#{person.idNo}">
+									<p:column selectionMode="single"
+										style="width:16px;text-align:center" />
+									<p:column style="width:200px" headerText="姓名">
+										<h:outputText value="#{person.name}" />
+									</p:column>
+									<p:column style="width:200px" headerText="证件类型">
+										<h:outputText value="#{person.idType}" />
+									</p:column>
+									<p:column style="width:280px" headerText="证件号码">
+										<h:outputText value="#{person.idNo}" />
+									</p:column>
+								</p:dataTable>
+							</div>
+							<div class="center">
+								<p:commandButton update="formone" value="取消" immediate="true"
+									onclick="PF('persons2').close()" />
+								<p:commandButton update="formone" value="保存"
+									action="#{cregBean.updatePerson('jl')}"
+									oncomplete="PF('persons2').hide()">
+								</p:commandButton>
+							</div>
+						</p:dialog>
+					</p:fragment>
+
+					<p:fragment id="frag02">
+						<p:dialog header="人员信息" widgetVar="persons3" modal="true"
+							showEffect="fade" hideEffect="fade" resizable="false" width="850">
+							<div style="clear: both;"></div>
+							<div>
+								<p:dataTable emptyMessage="无记录" id="persons3"
+									value="#{cregBean.persons}" var="person" paginator="false"
+									rows="20" selection="#{cregBean.selectedPerson}"
+									rowKey="#{person.idNo}">
+									<p:column selectionMode="single"
+										style="width:16px;text-align:center" />
+									<p:column style="width:200px" headerText="姓名">
+										<h:outputText value="#{person.name}" />
+									</p:column>
+									<p:column style="width:200px" headerText="证件类型">
+										<h:outputText value="#{person.idType}" />
+									</p:column>
+									<p:column style="width:280px" headerText="证件号码">
+										<h:outputText value="#{person.idNo}" />
+									</p:column>
+								</p:dataTable>
+							</div>
+							<div class="center">
+								<p:commandButton update="formone" value="取消" immediate="true"
+									onclick="PF('persons3').close()" />
+								<p:commandButton update="formone" value="保存"
+									action="#{cregBean.updatePerson('js')}"
+									oncomplete="PF('persons3').hide()">
+								</p:commandButton>
+							</div>
+						</p:dialog>
+					</p:fragment>
+
+				</div>
+			</p:panel>
+			<div class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{cregBean.admin}">
+					<p:inputTextarea styleClass="sysfont" id="Companyreg_comment5"
+						rows="8" cols="58" value="#{cregBean.creg.comment5}"
+						counter="comment_remain" maxlength="150"
+						counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<h:message for="Companyreg_comment5" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not cregBean.admin and cregBean.creg.comment5 ne null and cregBean.creg.comment5 ne '' }">
+					<h:outputText value="#{cregBean.creg.comment5}"
+						style="width:100%;color:red;" />
+				</p:panel>
+
+				<h:commandLink styleClass="button3" value="上一步"
+					action="#{cregBean.prepage('ceo')}"
+					immediate="#{cregList.admin?'true':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton action="#{cregBean.saveData('dongshi')}" value="保存"
+					update="formone" />
+				<h:commandLink styleClass="button3" value="下一步"
+					action="#{cregBean.openpage('lianluo')}"
+					immediate="#{cregList.admin?'true':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+
+			</div>
+
+
+
+		</h:form>
+	</ui:define>
+</ui:composition>

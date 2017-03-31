@@ -1,0 +1,23 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/userpage.xhtml">
+
+	<ui:define name="menu">
+		<ui:include name="menu" src="/layout/dymenu.xhtml" />
+	</ui:define>
+
+	<ui:define name="userdesk">
+		<div align="center">
+			<h2>即将跳转到吉林省企业名称全程电子化登记系统</h2>
+			<p:graphicImage url="/images/checkname.png" />
+			<br />
+			<p>
+				<a href="http://211.141.74.198:4333/front/login.html"
+					class="button3" target="_blank">确定</a>
+			</p>
+		</div>
+	</ui:define>
+</ui:composition>
+

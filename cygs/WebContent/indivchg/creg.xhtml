@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:selectOneMenu value="#{indivchBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="creg" itemLabel="creg" />
+			</p:selectOneMenu>
+
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+
+			<!-- ************************************************************************************************************* -->
+
+			<div align="center">
+
+				<p class="MsoNormal" align="center" style='text-align: center'>
+					<b><span style='font-size: 16.0pt; font-family: 宋体'>个体工商户变更登记申请书</span></b>
+				</p>
+				<div align="right">
+					注册号：
+					<p:inputText id="Indivchg_cnameno"
+						value="#{indivchBean.creg.cnameno}" style="width:220px;">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputText>
+					<p:watermark for="Indivchg_cnameno" value="注册号" />
+					<p:message for="Indivchg_cnameno" />
+				</div>
+
+				<p class="MsoNormal" align="center" style='text-align: center'>
+					<span lang="EN-US">&nbsp;</span>
+				</p>
+				<table class="center MsoNormalTable" border="1" cellspacing="0"
+					cellpadding="0" align="center" width="878"
+					style='width: 708.2pt; border-collapse: collapse; border: none; margin-left: 6.75pt; margin-right: 6.75pt'>
+					<tr style='height: 12.45pt'>
+						<td width="878" colspan="6"
+							style='width: 708.2pt; border-top: 1.0pt; border-left: 1.5pt; border-bottom: 1.0pt; border-right: 1.5pt; border-color: windowtext; border-style: solid; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.45pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<b><span style='font-size: 14.0pt; font-family: 黑体'>□变更</span></b>
+							</p>
+						</td>
+					</tr>
+					<tr style='height: 25.5pt'>
+						<td width="209"
+							style='width: 182.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.5pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>变更项目</span>
+							</p>
+						</td>
+						<td width="298" colspan="3"
+							style='width: 223.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.5pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>原登记事项</span>
+							</p>
+						</td>
+						<td width="270" colspan="2"
+							style='width: 202.25pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.5pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<span style='font-family: 宋体'>申请变更登记事项</span>
+							</p>
+						</td>
+					</tr>
+					<tr style='height: 46.7pt'>
+						<td width="209"
+							style='width: 182.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 46.7pt'>
+							<p:fragment>
+								<p:selectBooleanCheckbox itemLabel="名　　称"
+									disabled="#{indivchBean.admin}" value="#{indivchBean.chkOpt1}">
+									<p:ajax update="output_panel11 output_panel12"
+										listener="#{indivchBean.onChkOpt1Change}" />
+								</p:selectBooleanCheckbox>
+							</p:fragment>
+						</td>
+						<td width="298" colspan="3" valign="center"
+							style='width: 223.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 46.7pt'>
+							<p:outputPanel id="output_panel11">
+								<p:inputText id="Indivchg_cname"
+									value="#{indivchBean.creg.cname}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText>
+							</p:outputPanel>
+						</td>
+						<td width="270" colspan="2" valign="center"
+							style='width: 202.25pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 46.7pt'>
+							<p:outputPanel id="output_panel12">
+								<p:inputText id="Indivchg_cnamenew"
+									rendered="#{indivchBean.chkOpt1}"
+									value="#{indivchBean.creg.cnamenew}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText>
+							</p:outputPanel>
+						</td>
+					</tr>
+					<tr style='height: 50.2pt'>
+						<td width="209"
+							style='width: 182.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 50.2pt'>
+
+							<p:fragment>
+								<p:selectBooleanCheckbox itemLabel="经营场所"
+									disabled="#{indivchBean.admin}" value="#{indivchBean.chkOpt2}">
+									<p:ajax update="output_panel21 output_panel22"
+										listener="#{indivchBean.onChkOpt2Change}" />
+								</p:selectBooleanCheckbox>
+							</p:fragment>
+
+						</td>
+						<td width="298" colspan="3" valign="center"
+							style='width: 223.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 50.2pt'>
+							<p:outputPanel id="output_panel21">
+								<p:fragment>
+									<p:selectOneMenu value="#{indivchBean.creg.prefix}"
+										rendered="#{indivchBean.chkOpt2}" immediate="false"
+										style="width:240px;float:left;">
+										<f:selectItems value="#{selectItems.districtions}" />
+									</p:selectOneMenu>
+								</p:fragment>
+								<p:inputText id="Indivchg_caddress"
+									rendered="#{indivchBean.chkOpt2}"
+									value="#{indivchBean.creg.caddress}" style="width:55%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText>
+							</p:outputPanel>
+						</td>
+						<td width="270" colspan="2" valign="center"
+							style='width: 202.25pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 50.2pt'>
+							<p:outputPanel id="output_panel22">
+								<p:selectOneMenu value="#{indivchBean.creg.prefixnew}"
+									rendered="#{indivchBean.chkOpt2}" immediate="false"
+									style="width:240px;float:left;">
+									<f:selectItems value="#{selectItems.districtions}" />
+								</p:selectOneMenu>
+								<p:inputText id="Indivchg_caddressnew"
+									rendered="#{indivchBean.chkOpt2}"
+									value="#{indivchBean.creg.caddressnew}" style="width:55%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText>
+								<p class="MsoNormal">
+									<p:outputLabel rendered="#{indivchBean.chkOpt2}"
+										value="务必选择您辖区所属工商所，如不确定，请致电垂询。" />
+								</p>
+								<p class="MsoNormal">
+									<p:selectOneMenu rendered="#{indivchBean.chkOpt2}"
+										id="Indivchg_local" value="#{indivchBean.creg.local}"
+										style="width:325px">
+										<f:selectItem itemLabel="重庆工商所 88928200" itemValue="重庆工商所" />
+										<f:selectItem itemLabel="红旗工商所 85914535" itemValue="红旗工商所" />
+										<f:selectItem itemLabel="南湖工商所 85196279" itemValue="南湖工商所" />
+										<f:selectItem itemLabel="富锋工商所 85031007" itemValue="富锋工商所" />
+										<f:selectItem itemLabel="清和工商所 88568401" itemValue="清和工商所" />
+										<f:selectItem itemLabel="桂林工商所 85663511" itemValue="桂林工商所" />
+										<f:selectItem itemLabel="前进工商所 81090959" itemValue="前进工商所" />
+										<f:selectItem itemLabel="乐山工商所 85030540" itemValue="乐山工商所" />
+									</p:selectOneMenu>
+								</p>
+							</p:outputPanel>
+						</td>
+					</tr>
+					<tr style='height: 48.8pt'>
+						<td width="209"
+							style='width: 182.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 48.8pt'>
+
+							<p:fragment>
+								<p:selectBooleanCheckbox itemLabel="经营范围"
+									disabled="#{indivchBean.admin}" value="#{indivchBean.chkOpt3}">
+									<p:ajax update="output_panel31 output_panel32"
+										listener="#{indivchBean.onChkOpt3Change}" />
+								</p:selectBooleanCheckbox>
+							</p:fragment>
+
+						</td>
+						<td width="298" colspan="3" valign="center"
+							style='width: 223.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 48.8pt'>
+							<p:outputPanel id="output_panel31">
+								<p:inputTextarea id="Indivchg_crange"
+									rendered="#{indivchBean.chkOpt3}" rows="5" cols="45"
+									value="#{indivchBean.creg.crange}" counter="crange_remain"
+									maxlength="1000" counterTemplate="还可输入{0}字 ." autoResize="true">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputTextarea>
+								<br />
+								<h:outputText rendered="#{indivchBean.chkOpt3}"
+									id="crange_remain" />
+								<p:message rendered="#{indivchBean.chkOpt3}"
+									for="Indivchg_crange" />
+							</p:outputPanel>
+						</td>
+						<td width="270" colspan="2" valign="center"
+							style='width: 202.25pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 48.8pt'>
+							<p:outputPanel id="output_panel32">
+								<p:inputTextarea id="Indivchg_crangenew"
+									rendered="#{indivchBean.chkOpt3}" rows="5" cols="45"
+									value="#{indivchBean.creg.crangenew}" counter="crange_remain2"
+									maxlength="1000" counterTemplate="还可输入{0}字 ." autoResize="true">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputTextarea>
+								<br />
+								<h:outputText rendered="#{indivchBean.chkOpt3}"
+									id="crange_remain2" />
+								<p:message rendered="#{indivchBean.chkOpt3}"
+									for="Indivchg_crangenew" />
+							</p:outputPanel>
+						</td>
+					</tr>
+					<tr style='height: 49.4pt'>
+						<td width="209"
+							style='width: 182.1pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 49.4pt'>
+
+							<p:fragment>
+								<p:selectBooleanCheckbox itemLabel="组成形式"
+									disabled="#{indivchBean.admin}" value="#{indivchBean.chkOpt4}">
+									<p:ajax update="output_panel41 output_panel42"
+										listener="#{indivchBean.onChkOpt4Change}" />
+								</p:selectBooleanCheckbox>
+							</p:fragment>
+
+						</td>
+						<td width="298" colspan="3" valign="top"
+							style='width: 223.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 49.4pt'>
+							<p:outputPanel id="output_panel41">
+								<p:selectOneMenu id="Indivchg_cmode"
+									rendered="#{indivchBean.chkOpt4}"
+									value="#{indivchBean.creg.cmode}" style="width:125px">
+									<f:selectItem itemLabel="个人经营" itemValue="个人经营" />
+									<f:selectItem itemLabel="家庭经营" itemValue="家庭经营" />
+								</p:selectOneMenu>
+								<br />
+								<p:inputText id="Indivchg_family"
+									rendered="#{indivchBean.chkOpt4}"
+									value="#{indivchBean.creg.family}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText>
+								<p:watermark for="Indivchg_family" value="输入家庭成员姓名及身份证号码" />
+								<p:message for="Indivchg_family" />
+							</p:outputPanel>
+						</td>
+
+						<td width="270" colspan="2" valign="top"
+							style='width: 202.25pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 49.4pt'>
+							<p:outputPanel id="output_panel42">
+								<p:selectOneMenu id="Indivchg_cmodenew"
+									rendered="#{indivchBean.chkOpt4}"
+									value="#{indivchBean.creg.cmodenew}" style="width:125px">
+									<f:selectItem itemLabel=" " itemValue=" " />
+									<f:selectItem itemLabel="个人经营" itemValue="个人经营" />
+									<f:selectItem itemLabel="家庭经营" itemValue="家庭经营" />
+								</p:selectOneMenu>
+								<br />
+								<p:inputText id="Indivchg_familynew"
+									rendered="#{indivchBean.chkOpt4}"
+									value="#{indivchBean.creg.familynew}" style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText>
+								<p:watermark for="Indivchg_familynew" value="输入家庭成员姓名及身份证号码" />
+								<p:message for="Indivchg_familynew" />
+							</p:outputPanel>
+						</td>
+					</tr>
+
+					<tr style='height: 15.1pt'>
+						<td width="878" colspan="6"
+							style='width: 708.2pt; border: solid windowtext 1.5pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 15.1pt'>
+							<p class="MsoNormal" align="center"
+								style='text-align: center; text-autospace: none'>
+								<b><span style='font-size: 14.0pt; font-family: 黑体'>□申请人声明</span></b>
+							</p>
+						</td>
+					</tr>
+					<tr style='height: 124.7pt'>
+						<td width="878" colspan="6"
+							style='width: 708.2pt; border: solid windowtext 1.5pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 124.7pt'>
+							<p class="MsoNormal"
+								style='text-indent: 36.0pt; line-height: 150%'>
+								<span
+									style='font-size: 12.0pt; line-height: 150%; font-family: 宋体'>本公司依照《个体工商户条例》申请变更登记，<span
+									class="apple-style-span">提交材料真实有效。谨对真实性承担责任。</span> <span
+									lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								</span></span>
+							</p>
+							<p class="New"
+								style='text-indent: 66.0pt; layout-grid-mode: char'>
+								<span style='font-size: 12.0pt; font-family: 宋体'>经营者签名：<span
+									lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+							</p>
+							<p class="New"
+								style='text-indent: 360.0pt; layout-grid-mode: char'>
+								<span style='font-size: 12.0pt; font-family: 宋体'>年<span
+									lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; </span>月<span
+									lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; </span>日
+								</span>
+							</p>
+						</td>
+					</tr>
+				</table>
+
+				<p class="MsoNormal">
+					<span lang="EN-US">&nbsp;</span>
+				</p>
+
+			</div>
+			<div class="clearfloat"></div>
+
+			<!-- ************************************************************************************************************* -->
+			<div align="center" class="center">
+				<p:panel styleClass="center" style="width:708.2pt;" id="comment"
+					rendered="#{indivchBean.admin}">
+					<p:inputTextarea styleClass="center" id="Indivchg_comment1"
+						rows="8" cols="58" value="#{indivchBean.creg.comment1}"
+						counter="comment_remain" maxlength="1000"
+						counterTemplate="还可输入{0}字 ." autoResize="true">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Indivchg_comment1" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:708.2pt;" id="commentuser"
+					rendered="#{not indivchBean.admin and indivchBean.creg.comment1 ne null and indivchBean.creg.comment1 ne '' }">
+					<h:outputText value="#{indivchBean.creg.comment1}"
+						style="width:100%;color:red;" />
+				</p:panel>
+
+				<p:commandButton action="#{indivchBean.saveData('creg')}" value="保存"
+					update="formone" />
+				<h:commandLink styleClass="button3"
+					rendered="#{indivchBean.creg.caddressnew ne ''}" value="下一步"
+					action="#{indivchBean.openpage('zhusuo')}"
+					immediate="#{indivchList.admin?'false':'false'}">
+					<f:param name="indivchid" value="#{indivchBean.creg.id}" />
+				</h:commandLink>
+				<h:commandLink styleClass="button3"
+					rendered="#{indivchBean.creg.caddressnew eq ''}" value="下一步"
+					action="#{indivchBean.openpage('weituo')}"
+					immediate="#{indivchList.admin?'false':'false'}">
+					<f:param name="indivchid" value="#{indivchBean.creg.id}" />
+				</h:commandLink>
+			</div>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

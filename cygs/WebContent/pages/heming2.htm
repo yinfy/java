@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>财务负责人</title>
+</head>
+
+<body>
+
+	<form dataset="nzmcjbxxDs" class="L5form">
+		<table border="1" id="jbxxTable" width="100%">
+			<tr>
+				<td class="FieldLabel" style="width: 15%">冠名类型</td>
+				<td class="FieldInput" style="width: 35%" colspan="6"><input
+					type="radio" name="NAMETYPE" title="冠名类型" disabled id="radio1"
+					field="NAMETYPE" value="3">省名 <input type="radio"
+					name="NAMETYPE" title="冠名类型" disabled id="radio2" field="NAMETYPE"
+					value="2">地（市）名 <input type="radio" name="NAMETYPE"
+					title="冠名类型" disabled id="radio3" field="NAMETYPE" value="1">区（县）名
+				</td>
+			</tr>
+			<!-- <tr style="display:none">       
+<td class="FieldLabel" style="width: 15%"  >        是否变更名称       </td>       
+<td  class="FieldInput" style="width: 35%" colspan="3">        
+<input type="radio"  onclick="nzmcjbxxTC(this)" title="是否变更名称" name="ISENTNAMEALT" id="ISENTNAMEALT1" field="ISENTNAMEALT" value="1">是        
+<input type="radio"  onclick="nzmcjbxx(this)" title="是否变更名称" name="ISENTNAMEALT" id="ISENTNAMEALT2" field="ISENTNAMEALT" value="2">否        &nbsp;&nbsp;变更前名称        
+<input type="text" id="ENTNAMEBEALT" disabled="true" name="ENTNAMEBEALT" field="ENTNAMEBEALT"         title="变更前名称" style="width:60%">       
+</td>       </tr> -->
+			<tr>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>申请名称
+				</td>
+				<td class="FieldInput" style="width: 35%" colspan="3"><input
+					id="entname_cx" disabled name="ENTNAME" field="ENTNAME"
+					title="申请名称" style="width: 70%" /> &nbsp;&nbsp;&nbsp;
+					<button style="cursor: hand" onclick='openMCCC()'>字号查重</button></td>
+				<!--      <td class="FieldLabel" style="width: 15%">        <font color="red">*</font>申请名称拼音       </td>       
+<td class="FieldInput" style="width: 35%">        
+<input id="entnamespell_cx" name="ENTNAMESPELL" field="ENTNAMESPELL" title="申请名称拼音" readonly="readonly" style="width:80%"/>
+               </td> -->
+			</tr>
+			<tr>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>字号
+				</td>
+				<td class="FieldInput" style="width: 35%"><input id="enttra_cx"
+					name="ENTTRA" field="ENTTRA" title="字号" disabled style="width: 80%" />
+				</td>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>字号拼音
+				</td>
+				<td class="FieldInput" style="width: 35%"><input
+					id="tradpiny_cx" name="TRADPINY" field="TRADPINY" title="字号拼音"
+					readonly="readonly" style="width: 80%" /></td>
+			</tr>
+		</table>
+		<br>
+		<table border="1" id="jbxxTable2" width="100%">
+			<tr>
+				<td class="FieldLabel" rowspan="2" style="width: 15%"><font
+					color="red">*</font>住所</td>
+				<td class="FieldInput"><select id='shengSel' field='PROVINCE'>
+						<option dataset='shengDs'></option>
+				</select> (省/直辖市/自治区)</td>
+				<td class="FieldInput"><select id='shiSel'
+					onchange='loadXianByShi(this)' field='CITY'>
+						<option dataset='shiDs'></option>
+				</select> (市/地区/盟/自治州)</td>
+				<td class="FieldInput"><select id='xianSel'
+					onchange='editDom(this)' field='COUNTY'>
+						<option dataset='xianDs'></option>
+				</select> (区/县/县级市/旗)<br></td>
+			</tr>
+			<tr style="display: none">
+				<td class="FieldInput"><input type="text"
+					onkeyup='editDom(this)' name="zhen" id="zhen" field='STREET'
+					title="镇" style="text-align: right; width: 66%">
+					(乡/民族乡/镇/街道)</td>
+				<td class="FieldInput"><input type="text" name="" id="xiang"
+					onkeyup='editDom(this)' title="村" field='ROAD'
+					style="text-align: right; width: 64%">(路/村/社区)</td>
+				<td class="FieldInput"><input type="text" name="" id="lu"
+					onkeyup='editDom(this)' title="门牌号" field='DOORPLATE'
+					style="text-align: right; width: 54%">(门牌号)</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="FieldInput" style='padding: 0px'>
+					<table border=0 style='border: 0px' id="jbxxTable2" width="100%"
+						cellpadding=0 cellspacing=0>
+						<tr>
+							<td class="FieldLabel" style='width: 15%; border-top: 0px'>详细地址</td>
+							<td class="FieldInput" style="display: none;" id='xiangxiDom'></td>
+							<td style='border-top: 0px; border-right: 0px;'><input
+								type='text' style="width: 60%;" id="dom" field='DOM'> <input
+								type='hidden' field='DOMDISTRICT' title="企业住所地"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<table border="1" id="jbxxTable3" width="100%">
+			</td>
+			</tr>
+			<tr>
+				<td class="FieldLabel" nowrap style="width: 15%">注册资本(金)</td>
+				<td class="FieldInput"><input type="text" id="REGCAP"
+					name="REGCAP" field="REGCAP" title="注册资本"
+					style="text-align: right; width: 50%">万元</td>
+				<td class="FieldLabel" nowrap style="width: 10%"><font
+					color="red">*</font>企业类型</td>
+				<td class="FieldInput" style="width: 60%">
+					<!-- <select id="ENTTYPE" title="企业（机构）类型" field="ENTTYPE" style="width:50%">         
+<option dataset="enttypeDs"></option>        
+</select> --> <input type="hidden" title="企业（机构）类型" name="ENTTYPE"
+					id="ENTTYPE" field="ENTTYPE" /> <input id="VIEW_ENTTYPE"
+					field="VIEW_ENTTYPE" disabled="disabled" style="width: 70%" /> <img
+					src="/iaic/skins/images/l5/help.gif" style="cursor: hand"
+					onclick="selectEntCat()" />
+				</td>
+			</tr>
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>所属行业</td>
+				<td class="FieldInput" colspan="3"><input type="hidden"
+					title="所属行业" field="INDUSTRYPHY" /> <input id="VIEW_INDUSTRYPHY"
+					field="VIEW_INDUSTRYPHY" disabled="disabled" style="width: 33%" />
+					<font color="red">*</font>行业代码 <input type="hidden" title="行业代码"
+					field="INDUSTRYCO" /> <input id="VIEW_INDUSTRYCO"
+					field="VIEW_INDUSTRYCO" disabled="disabled" style="width: 33%" />
+					<img src="/iaic/skins/images/l5/help.gif" style="cursor: hand"
+					onclick="selectIndus()" /></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel"><font color="red">*</font>拟登记机关</td>
+				<td class="FieldInput" colspan="3"><input type="hidden"
+					title="拟登记机关" field="PREREGORG" /> <input id="VIEW_PREREGORG"
+					field="VIEW_PREREGORG" disabled="disabled" style="width: 60%" /> <img
+					src="/iaic/skins/images/l5/help.gif" style="cursor: hand"
+					onclick="selectSupregnorg()" /></td>
+				<!--  <td class="FieldLabel"  >申请方式</td>                        
+<td class="FieldInput" >                            
+<select field = 'APPFORM' noPlease = 'true' ><option dataset = 'appformDs'    /></select>                       
+</td> -->
+			</tr>
+			<tr id="mczt_bl" style="display: none;">
+				<td class="FieldLabel">名称状态</td>
+				<td class="FieldInput" colspan="3"><select style='width: 35%'
+					field='NAMESTATUS'>
+						<option dataset='nameStatusDs' />
+				</select></td>
+			</tr>
+			<tr id="tr_localadm" style="display: none">
+				<td class="FieldLabel">属地工商所</td>
+				<td class="FieldInput" colspan="3"><select style='width: 35%'
+					field='LOCALADM'>
+						<option dataset='localadmDs' />
+				</select></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel">经营范围</td>
+				<td colspan="3" class="FieldInput"><textarea rows="3"
+						cols="100" id="busscope" name="BUSSCOPE" field="BUSSCOPE"
+						style="width: 93%; height: 50px;" title="经营范围">
+</textarea>
+					<button id="busscopeselecter" onclick="wino()">打开选择窗口</button> <input
+					type="hidden" id="xkxx" /></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel">备注说明</td>
+				<td colspan="3" class="FieldInput"><textarea rows="3"
+						cols="100" id="REMARK" name="REMARK" field="REMARK"
+						style="width: 93%; height: 50px;" title="备注说明">
+</textarea></td>
+			</tr>
+			<tr>
+				<td colspan="4" align="center">
+					<button id="savejbxx" name="savejbxx" onclick="save();">保&nbsp;存</button>&nbsp;&nbsp;
+				</td>
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/userpage.xhtml">
+
+	<ui:define name="leftbar">
+		<div align="center">
+			<a href="#{request.contextPath}/userman/create_user.xhtml">个人信息</a><br />
+			<a href="#{request.contextPath}/register/index.xhtml">我的申报</a><br />
+			<a href="#{request.contextPath}/order/index.xhtml">我的预约</a><br />
+			<p:commandButton action="#{loginUser.logout}" value="退出系统" />
+			<br />
+		</div>
+	</ui:define>
+
+	<ui:define name="userdesk">
+		<div align="center">
+
+			<h:form id="formone">
+				<p:growl id="ajaxmsg" />
+
+				<div align="left">
+					<p:fieldset styleClass="sysfont" legend="Filter" id="filterPanel"
+						collapsed="false" widgetVar="filter" toggleable="true"
+						toggleSpeed="500">
+						<p:messages id="msgs" />
+						<table>
+							<tr>
+								<td>预约类型</td>
+								<td>姓名</td>
+								<td>身份证号</td>
+								<td>预约编号</td>
+								<td>日期</td>
+								<td>已确认</td>
+							</tr>
+							<tr>
+								<td><p:selectOneMenu id="filterYuyueType"
+										value="#{yuyueList.filterYuyueType}" style="width:100px;">
+										<f:selectItem itemLabel="" itemValue="" />
+										<f:selectItems value="#{selectItems.ordertypes}" />
+									</p:selectOneMenu></td>
+								<td><p:inputText id="filterPersonName"
+										value="#{yuyueList.filterPersonName}" /></td>
+								<td><p:inputText id="filterPersonId"
+										value="#{yuyueList.filterPersonId}" /></td>
+								<td><p:inputText id="filterYuyueNo"
+										value="#{yuyueList.filterYuyueNo}" /></td>
+								<td><p:calendar id="filterOrderdate"
+										value="#{yuyueList.filterOrderdate}" pattern="yyyy/MM/dd"
+										navigator="true" readonlyInput="true" yearRange="c:c+5">
+									</p:calendar></td>
+								<td><p:selectOneMenu id="filterHandled"
+										value="#{yuyueList.filterHandled}">
+										<f:selectItem itemLabel="" itemValue="false" />
+										<f:selectItem itemLabel="已发号" itemValue="true" />
+									</p:selectOneMenu></td>
+							</tr>
+						</table>
+						<br />
+						<div align="center">
+							<p:commandButton value="清空" update="oneTable filterPanel"
+								actionListener="#{yuyueList.resetFilter}" immediate="true"
+								resetValues="true" />
+							<p:commandButton value="查询" update="oneTable filterPanel"
+								actionListener="#{yuyueList.doFilter}" />
+						</div>
+					</p:fieldset>
+				</div>
+
+				<div align="center">
+					<p:dataTable styleClass="sysfont" id="oneTable" var="yuyue"
+						value="#{yuyueList.model}" paginator="true" rows="10"
+						paginatorTemplate="{RowsPerPageDropdown} {FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}"
+						editable="true" selectionMode="single"
+						selection="#{yuyueList.selectedYuyue}" rowKey="#{yuyue.id}"
+						rowsPerPageTemplate="5,10,15" lazy="true">
+
+						<p:ajax event="rowEdit" listener="#{yuyueList.onRowEdit}"
+							update="oneTable" />
+
+						<p:column sortBy="#{yuyue.ordertype}" headerText="预约类型"
+							style="width:80px">
+							<h:outputText value="#{yuyue.ordertype}" />
+						</p:column>
+						<p:column sortBy="#{yuyue.orderdate}" headerText="预约日期"
+							style="width:100px">
+							<h:outputFormat value="#{yuyue.orderdate}">
+								<f:convertDateTime pattern="yyyy/MM/dd/" locale="en_SG"
+									timeZone="GMT+8" />
+							</h:outputFormat>
+						</p:column>
+						<p:column sortBy="#{yuyue.ordertime}" headerText="预约时段"
+							style="width:100px">
+							<h:outputText value="#{yuyue.ordertime}" />
+						</p:column>
+						<p:column sortBy="#{yuyue.orderno}" headerText="预约编号"
+							style="width:100px">
+							<h:commandLink onclick="history.go(0)" value="#{yuyue.orderno}"
+								action="#{yuyueBean.openpage}" target="new_blank">
+								<f:param name="yuyueid" value="#{yuyue.id}" />
+							</h:commandLink>
+						</p:column>
+						<p:column sortBy="#{yuyue.personName}" headerText="姓名"
+							style="width:80px">
+							<h:outputText value="#{yuyue.personName}" />
+						</p:column>
+						<p:column sortBy="#{yuyue.personId}" headerText="身份证号"
+							style="width:120px">
+							<h:outputText value="#{yuyue.personId}" />
+						</p:column>
+						<p:column sortBy="#{yuyue.handled}" headerText="确认"
+							style="width:20px">
+							<p:cellEditor>
+								<f:facet name="output">
+									<h:outputText value="#{yuyue.handled?'已发号':''}" />
+								</f:facet>
+								<f:facet name="input">
+									<p:selectOneMenu id="handled" value="#{yuyue.handled}"
+										style="width:100%">
+										<f:selectItem itemLabel="" itemValue="false" />
+										<f:selectItem itemLabel="已发号" itemValue="true" />
+									</p:selectOneMenu>
+								</f:facet>
+							</p:cellEditor>
+						</p:column>
+						<p:column style="width:32px" exportable="false">
+							<p:rowEditor />
+						</p:column>
+
+					</p:dataTable>
+				</div>
+
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>
+

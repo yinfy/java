@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:dialog visible="#{not empty cregBean.messages}"
+				header="#{cregBean.messages[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{cregBean.messages}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true">
+			</p:messages>
+
+			<p:selectOneMenu value="#{cregBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="uploads" itemLabel="uploads" />
+			</p:selectOneMenu>
+			<p:fragment>
+				<p:dataTable emptyMessage="无记录" style="font:12px;" id="uploads"
+					var="upfile" value="#{cregBean.creg.upfiles}" paginator="false"
+					rows="20" selection="#{cregBean.selectUpfile}"
+					rowKey="#{upfile.uuid}" selectionMode="single">
+					<p:ajax event="rowSelect" listener="#{cregBean.onFileSelect}"
+						update="formone" />
+					<p:column style="width:60px" headerText="类型">
+						<h:outputText value="#{upfile.filetype}" />
+					</p:column>
+					<p:column style="width:60px" headerText="查看">
+						<p:commandButton id="imageBtn" value="查看" type="button" />
+						<p:overlayPanel id="imagePanel" for="imageBtn"
+							showCloseIcon="true" hideEffect="fade">
+							<p:graphicImage url="../userspace/uploads/#{upfile.uuid}.jpg"
+								width="600" height="800" />
+						</p:overlayPanel>
+					</p:column>
+					<p:column style="width:280px" headerText="名称">
+						<h:outputText value="#{upfile.remark}" />
+					</p:column>
+					<p:column style="width:35px" headerText=""
+						rendered="#{not cregList.admin}">
+						<p:commandLink process="uploads" update="formone" value="修改"
+							oncomplete="PF('manageUpfile').show()">
+							<f:setPropertyActionListener value="#{upfile}"
+								target="#{cregBean.selectUpfile}" />
+						</p:commandLink>
+					</p:column>
+					<p:column style="width:35px" headerText=""
+						rendered="#{not cregList.admin}">
+						<p:commandLink process="uploads" update="formone" value="删除"
+							action="#{cregBean.deleteUpfile()}">
+							<f:setPropertyActionListener value="#{upfile}"
+								target="#{cregBean.selectUpfile}" />
+						</p:commandLink>
+					</p:column>
+				</p:dataTable>
+				<p:commandButton update="uploads frag00" value="添加图片"
+					action="#{cregBean.newUpfile('')}"
+					oncomplete="PF('manageUpfile').show()" />
+			</p:fragment>
+
+			<p:fragment id="frag00">
+				<p:dialog header="上传图片信息" widgetVar="manageUpfile" modal="true"
+					showEffect="fade" hideEffect="fade" resizable="true" height="700"
+					width="800">
+					<div>
+						<p:panelGrid columns="5">
+							<p:outputLabel value="*图片类型" />
+							<p:selectOneMenu value="#{cregBean.selectUpfile.filetype}"
+								style="width:120px">
+								<f:selectItem itemLabel="身份证明" itemValue="身份证明" />
+								<f:selectItem itemLabel="场所证明" itemValue="场所证明" />
+								<f:selectItem itemLabel="其他" itemValue="其他" />
+							</p:selectOneMenu>
+							<p:outputLabel value="*图片说明" />
+							<p:inputText id="Upfile_remark"
+								value="#{cregBean.selectUpfile.remark}" style="width:300px">
+								<f:converter converterId="gov.cygs.ConValidator" />
+							</p:inputText>
+							<p:message for="Upfile_remark" />
+						</p:panelGrid>
+					</div>
+					<p:outputPanel id="photo">
+						<p:graphicImage width="240" height="360"
+							rendered="#{cregBean.selectUpfile.uuid eq ''}"
+							url="/images/upload.jpg" />
+						<p:graphicImage width="240" height="360"
+							rendered="#{cregBean.selectUpfile.uuid ne ''}"
+							url="/userspace/uploads/#{cregBean.selectUpfile.uuid}.jpg" />
+					</p:outputPanel>
+					<div>
+
+						<p:fileUpload fileUploadListener="#{cregBean.handleFileUploadA}"
+							mode="advanced" dragDropSupport="false" update="photo" label="选择"
+							uploadLabel="上传" cancelLabel="取消" sizeLimit="600000" auto="false"
+							skinSimple="false" fileLimit="1" allowTypes="/(\.|\/)(jpg)$/">
+						</p:fileUpload>
+						上传图片，单个图片最大不能超500K。
+					</div>
+
+					<p:commandButton value="取消" update="uploads" immediate="true"
+						onclick="PF('manageshare').close()" />
+					<p:commandButton value="确定" update="uploads"
+						onclick="PF('manageshare').close()" />
+
+				</p:dialog>
+			</p:fragment>
+
+
+
+
+			<h:commandLink styleClass="button3" value="上一步"
+				action="#{cregBean.prepage('zhusuo')}"
+				immediate="#{cregList.admin?'false':'false'}">
+				<f:param name="cregid" value="#{cregBean.creg.id}" />
+			</h:commandLink>
+			<p:commandButton action="#{cregBean.saveUpfiles()}" value="保存"
+				update="formone" />
+			<h:commandLink styleClass="button3" value="下一步"
+				action="#{cregBean.openpage('tips')}"
+				immediate="#{cregList.admin?'false':'false'}">
+				<f:param name="cregid" value="#{cregBean.creg.id}" />
+			</h:commandLink>
+
+
+
+		</h:form>
+	</ui:define>
+</ui:composition>

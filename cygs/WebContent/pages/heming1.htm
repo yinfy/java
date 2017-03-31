@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>财务负责人</title>
+</head>
+
+<body>
+
+	<fieldset class="GroupBox">
+		<legend class="GroupBoxTitle"> 名称查重 </legend>
+		<div id="collapseDiv">
+			<form dataset="cxDs" class="L5form">
+				<table border="1" id="mcccTable" width="100%">
+					<tr>
+					</tr>
+					<tr id="nametype">
+						<td class="FieldLabel" style="width: 15%"><label id="gmlx">冠名类型：</label>
+						</td>
+						<td class="FieldInput" style="width: 35%" colspan="3"><input
+							type="radio" id="county" name="nametype" field="nametype"
+							value="1" onclick="checkNameType()" /> <label id="countyLabel">冠区（县）名</label>
+							<input type="radio" id="city" name="nametype" field="nametype"
+							value="2" onclick="checkNameType()" /> <label id="cityLabel">冠市名</label>
+							<input type="radio" id="province" name="nametype"
+							field="nametype" value="3" onclick="checkNameType()" /> <label
+							id="provinceLabel">冠省名</label></td>
+						<td class="FieldLabel" style="width: 15%" style="display: none">
+							同音同字：</td>
+						<td class="FieldInput" style="width: 35%" style="display: none">
+							<input type="radio" name="entcat" field="entcat" value="1" />同音或同字查重
+							<input type="radio" name="entcat" field="entcat" value="2" />同字查重
+							<input type="radio" name="entcat" field="entcat" value="3" />同音查重
+						</td>
+					</tr>
+					<tr>
+						<td class="FieldLabel" style="width: 15%"><font color="red">*字号：</font>
+						</td>
+						<td class="FieldInput" style="width: 35%"><input type="text"
+							id="enttra_cx" name="enttra" field="enttra" onblur="getpy();"
+							onchange="noSearched()" title="字号" style="width: 80%" /></td>
+						<td class="FieldLabel" style="width: 15%"><font color="red">*字号拼音：</font>
+						</td>
+						<td class="FieldInput" style="width: 35%"><input type="text"
+							id="tradpiny_cx" name="tradpiny" field="tradpiny" readonly
+							title="字号拼音" style="width: 80%" /></td>
+					</tr>
+					<tr>
+						<td class="FieldLabel" style="width: 15%"><font color="red">*申请名称：</font>
+						</td>
+						<td class="FieldInput" style="width: 35%" colspan="1"><input
+							type="text" id="entname_cx" name="entname" field="entname"
+							onchange="noSearched()" title="申请名称" style="width: 80%" /></td>
+						<td class="FieldLabel" style="width: 15%;">行业：</td>
+						<td class="FieldInput" style="width: 35%;"><input
+							id="industry" name="industry" field="industry" title="行业名称"
+							style="width: 80%" /></td>
+						<td class="FieldLabel" style="width: 15%; display: none"><font
+							color="red">*申请名称拼音</font></td>
+						<td class="FieldInput" style="width: 35%; display: none"><input
+							id="entnamespell_cx" name="entnamespell" field="entnamespell"
+							title="申请名称拼音" style="width: 80%" /></td>
+					</tr>
+					<tr>
+						<td style="width: 50%; background-color: d4e1f1" align="center"
+							colspan="4">
+							<button onclick="query();" style="width: 75;">开始查重</button>&nbsp;&nbsp;
+							<button style="width: 75;" onclick="resetCxRecord()">重新填写</button>
+						</td>
+					</tr>
+				</table>
+				<br />
+				<table id='mcdjType' border="1" width="100%" style="display: none">
+					<tr>
+						<td style="width: 15%;" class="FieldLabel">名称登记分类:</td>
+						<td class="FieldInput"><input id="checktype_nz"
+							value='010201' type='radio' name='nameDjType' checked="checked"
+							onclick="checktype()" />内资&nbsp; <input id="checktype_wz"
+							value='010202' type='radio' name='nameDjType'
+							onclick="checktype()" />外资&nbsp; <input id="checktype_sy"
+							value='010203' type='radio' name='nameDjType'
+							onclick="checktype()" />私营&nbsp; <input id="checktype_nh"
+							value='010204' type='radio' name='nameDjType'
+							onclick="checktype()" />农合&nbsp; <input id="checktype_gt"
+							value='010205' type='radio' name='nameDjType'
+							onclick="checktype()" />个体&nbsp;</td>
+					</tr>
+				</table>
+				<br />
+				<table border="1" width="100%">
+					<tr>
+						<td style="width: 50%; background-color: d4e1f1" align="right">
+							<button onclick="gridprint();" style="width: 75;" id="printList"
+								disabled="disabled">打印列表</button>&nbsp;&nbsp;
+							<button onclick="confirmuse();" style="width: 75;"
+								id="confirmuseButton" disabled="disabled">确定使用</button>&nbsp;&nbsp;
+							<button id="backbutton" onclick="backtoList();"
+								style="width: 75;">返回</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</fieldset>
+
+</body>
+</html>

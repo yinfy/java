@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>财务负责人</title>
+</head>
+
+<body>
+
+	<form id="addForm" dataset="tzrxxDs" onsubmit="return false"
+		class="L5form">
+		<table border="1" width="100%">
+			<tr>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>投资人类型
+				</td>
+				<td class="FieldInput" style="width: 35%"><select id="INVTYPE"
+					onchange="showZhengjianOrZhengzhaonamc()" title="投资人类型"
+					name="INVTYPE" field="INVTYPE" style="width: 100%">
+						<option value="" selected="selected">请选择</option>
+						<option value="10">法人股东</option>
+						<option value="11">企业法人</option>
+						<option value="12">事业法人</option>
+						<option value="13">社团法人</option>
+						<option value="14">机关法人</option>
+						<option value="15">外商投资企业</option>
+						<option value="20">自然人股东</option>
+						<option value="21">农民自然人</option>
+						<option value="22">非农民自然人</option>
+						<option value="30">外国（地区）投资者</option>
+						<option value="31">外国（地区）企业</option>
+						<option value="32">外国（地区）经济组织</option>
+						<option value="33">外商投资投资性公司</option>
+						<option value="34">外商投资创业投资企业</option>
+						<option value="35">外籍自然人</option>
+						<option value="36">华侨</option>
+						<option value="40">合伙企业</option>
+						<option value="50">其他投资者</option>
+				</select></td>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>投资人
+				</td>
+				<td class="FieldInput" style="width: 35%"><input type="text"
+					id="INV" name='INV' field="INV" title="投资人" style="width: 90%" />
+				</td>
+			</tr>
+			<tr id="blicnamcTr">
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>证件类型
+				</td>
+				<td class="FieldInput" style="width: 35%"><select id="CERTYPE"
+					name="CERTYPE" field="CERTYPE" title="证件类型" style="width: 100%">
+						<option value="" selected="selected">请选择</option>
+						<option value="10">中华人民共和国居民身份证</option>
+						<option value="20">中华人民共和国军官证</option>
+						<option value="30">中华人民共和国警官证</option>
+						<option value="40">外国地区（护照）</option>
+						<option value="51">香港特别行政区护照</option>
+						<option value="52">香港（永久性）居民身份证</option>
+						<option value="53">澳门特别行政区护照</option>
+						<option value="54">澳门（永久性）居民身份证</option>
+						<option value="55">港澳居民来往内地通行证</option>
+						<option value="56">台湾居民身份证</option>
+						<option value="57">台湾居民来往大陆通行证</option>
+						<option value="58">台湾农民身份有关证明</option>
+						<option value="60">户口薄</option>
+						<option value="71">暂住证</option>
+						<option value="72">香港律师（中国委托公证人）...</option>
+						<option value="73">澳门居民身份证</option>
+						<option value="74">澳门特别行政区政府身份证明...</option>
+						<option value="90">其他有效身份证件</option>
+				</select></td>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>证件号码
+				</td>
+				<td class="FieldInput" style="width: 35%"><input type="text"
+					id="CERNO" name='CERNO' field="CERNO" title="证件号码"
+					style="width: 90%" /></td>
+			</tr>
+			<tr id="cernamcTr" style="display: none">
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>证照类型
+				</td>
+				<td class="FieldInput" style="width: 35%"><select id="BLICTYPE"
+					name="BLICTYPE" field="BLICTYPE" title="证照类型" style="width: 100%">
+				</select></td>
+				<td class="FieldLabel" style="width: 15%"><font color="red">*</font>证照号码
+				</td>
+				<td class="FieldInput" style="width: 35%"><input type="text"
+					id="BLICNO" name='BLICNO' field="BLICNO" title="证照号码"
+					style="width: 90%" /></td>
+			</tr>
+			<tr>
+				<td class="FieldLabel" style="width: 15%">认缴出资额</td>
+				<td class="FieldInput" style="width: 35%"><input type="text"
+					id="SUBCONAMrj" name='SUBCONAM' title="认缴出资额" onblur="jishuan()"
+					field="SUBCONAM" style="width: 100; text-align: right" />万元</td>
+				<td class="FieldLabel" style="width: 15%">出资比例</td>
+				<td class="FieldInput" style="width: 35%"><input type="text"
+					id="CONPROP1" name='CONPROP' title="出资比例" field="CONPROP"
+					style="width: 100; text-align: right" disabled />%</td>
+			</tr>
+		</table>
+		<br>
+		<table border="1" width="100%">
+			<tr>
+				<td class="FieldLabel" style="text-align: center">
+					<button id="getIdCard" onclick="readIdCard();"
+						style="display: none">读取二代证卡</button>&nbsp;&nbsp;
+					<button id="saveon" onclick="save()">保&nbsp;存</button>&nbsp;&nbsp;
+					<button id="saveadd" onclick="saveAndCon()">保存并增加</button>&nbsp;&nbsp;
+					<button onclick="hideTj();">关&nbsp;闭</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

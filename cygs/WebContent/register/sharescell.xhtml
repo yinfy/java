@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<div class="center" align="center">
+			<h:form id="formone">
+				<p:growl id="ajaxmsg" showDetail="true" />
+
+				<p:panel style="height:750px;">
+					<p:fragment>
+						<p:dataTable id="shareholders" var="share"
+							value="#{cregBean.creg.shareholders}" paginator="false" rows="20"
+							editable="true" editMode="cell" widgetVar="cellShares">
+
+							<p:column style="width:60px" headerText="股东类型">
+								<p:cellEditor>
+									<f:facet name="output">
+										<h:outputText value="#{share.shtype}" />
+									</f:facet>
+									<f:facet name="input">
+										<p:selectOneMenu value="#{share.shtype}" style="width:100%">
+											<p:ajax listener="#{cregBean.onShtypeChange(share)}"
+												update="Shareholder_shidtype shareholders" />
+											<f:selectItem itemLabel="请选择..." itemValue="录入" />
+											<f:selectItem itemLabel="自然人" itemValue="自然人" />
+											<f:selectItem itemLabel="法人单位" itemValue="法人单位" />
+											<f:selectItem itemLabel="其他" itemValue="其他" />
+										</p:selectOneMenu>
+									</f:facet>
+								</p:cellEditor>
+							</p:column>
+							<p:column style="width:80px" headerText="名称">
+								<p:cellEditor>
+									<f:facet name="output">
+										<h:outputText value="#{share.shname}" />
+									</f:facet>
+									<f:facet name="input">
+										<p:inputText id="Shareholder_shname" value="#{share.shname}">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText>
+										<p:message for="Shareholder_shname" />
+									</f:facet>
+								</p:cellEditor>
+							</p:column>
+							<p:column style="width:80px" headerText="证件类型">
+								<p:cellEditor>
+									<f:facet name="output">
+										<h:outputText value="#{share.shidtype}" />
+									</f:facet>
+									<f:facet name="input">
+										<p:selectOneMenu id="Shareholder_shidtype"
+											value="#{share.shidtype}">
+											<f:selectItem itemLabel="" itemValue="" />
+											<f:selectItems value="#{share.shidtypes}" />
+										</p:selectOneMenu>
+									</f:facet>
+								</p:cellEditor>
+							</p:column>
+
+							<p:column style="width:165px" headerText="证件号码">
+								<p:cellEditor>
+									<f:facet name="output">
+										<h:outputText value="#{share.shidno}" />
+									</f:facet>
+									<f:facet name="input">
+										<p:inputText id="Shareholder_shidno" value="#{share.shidno}">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText>
+										<p:message for="Shareholder_shidno" />
+									</f:facet>
+								</p:cellEditor>
+							</p:column>
+
+							<p:column style="width:160px" headerText="出资时间">
+								<p:cellEditor>
+									<f:facet name="output">
+										<h:outputFormat
+											value="#{share.shdate ne null?share.shdate:''}">
+											<f:convertDateTime pattern="yyyy/MM/dd" locale="zh_CN"
+												timeZone="GMT+8" />
+										</h:outputFormat>
+									</f:facet>
+									<f:facet name="input">
+										<p:calendar locale='zh_CN' id="Shareholder_shdate"
+											styleClass="sysfont" value="#{share.shdate}"
+											pattern="yyyy年M月d日" navigator="true" readonlyInput="false"
+											yearRange="c-20:c+20">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:calendar>
+									</f:facet>
+								</p:cellEditor>
+							</p:column>
+
+							<p:column style="width:100px" headerText="出资方式">
+								<p:cellEditor>
+									<f:facet name="output">
+										<h:outputText value="#{share.shmethod}" />
+									</f:facet>
+									<f:facet name="input">
+										<p:selectOneMenu id="Shareholder_shmethod"
+											value="#{share.shmethod}" style="width:100%">
+											<f:selectItem itemLabel="" itemValue="" />
+											<f:selectItem itemLabel="货币" itemValue="货币" />
+											<f:selectItem itemLabel="实物" itemValue="实物" />
+											<f:selectItem itemLabel="知识产权" itemValue="知识产权" />
+										</p:selectOneMenu>
+										<p:message for="Shareholder_shmethod" />
+									</f:facet>
+								</p:cellEditor>
+							</p:column>
+
+							<p:column style="width:160px" headerText="认缴出资额（万元）">
+								<p:cellEditor>
+									<f:facet name="output">
+										<h:outputText
+											value="#{share.shamount ne 0?share.shamount:'' }" />
+									</f:facet>
+									<f:facet name="input">
+										<p:inputText id="Shareholder_shamount"
+											value="#{share.shamount}">
+											<p:ajax event="blur" update="Shareholder_shpercent"
+												listener="#{cregBean.calpercent(share)}" />
+										</p:inputText>
+										<p:message for="Shareholder_shamount" />
+									</f:facet>
+								</p:cellEditor>
+							</p:column>
+
+							<p:column style="width:100px" headerText="出资比例">
+								<h:outputText id="Shareholder_shpercent"
+									value="#{share.shpercent ne 0?share.shpercent:''}" />
+							</p:column>
+							<p:column style="width:15px" headerText=""
+								rendered="#{not cregList.admin}">
+								<p:commandLink process="shareholders"
+									rendered="#{share.shtype ne '录入'}" update="formone" value="X"
+									action="#{cregBean.resetShare()}">
+									<f:setPropertyActionListener value="#{share}"
+										target="#{cregBean.selectedShare}" />
+								</p:commandLink>
+							</p:column>
+						</p:dataTable>
+					</p:fragment>
+				</p:panel>
+
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{cregBean.admin}">
+					<p:inputTextarea id="Companyreg_comment2" rows="8" cols="58"
+						value="#{cregBean.creg.comment2}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Companyreg_comment2" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not cregBean.admin and cregBean.creg.comment2 ne null and cregBean.creg.comment2 ne '' }">
+					<h:outputText value="#{cregBean.creg.comment2}"
+						style="width:100%;color:red;" />
+				</p:panel>
+
+				<h:commandLink styleClass="button3" value="上一步"
+					action="#{cregBean.prepage('creg')}"
+					immediate="#{cregList.admin?'true':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton action="#{cregBean.saveShares('full')}" value="保存"
+					update="formone" />
+				<h:commandLink styleClass="button3" value="下一步"
+					action="#{cregBean.openpage('ceo')}"
+					immediate="#{cregList.admin?'true':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href="#{request.contextPath}/css/style.css" rel="stylesheet"
+		type="text/css" />
+	<script type="text/javascript">
+        
+		function setText(element, text){
+			var ele=document.getElementById(element);
+			ele.innerHTML = text;
+		}
+		
+		PrimeFaces.locales['zh_CN'] = {
+				closeText: '关闭', 
+				prevText: '上个月', 
+				nextText: '下个月', 
+				currentText: '今天', 
+				monthNames: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'], 
+				monthNamesShort: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'], 
+				dayNames: ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'], 
+				dayNamesShort: ['日','一','二','三','四','五','六'], 
+				dayNamesMin: ['日','一','二','三','四','五','六'], 
+				weekHeader: '周', 
+				firstDay: 1, 
+				isRTL: false, 
+				showMonthAfterYear: true, 
+				yearSuffix: '', 
+				timeOnlyTitle: '仅时间', 
+				timeText: '时间', 
+				hourText: '时', 
+				minuteText: '分', 
+				secondText: '秒', 
+				ampm: false, 
+				month: '月', 
+				week: '周', 
+				day: '日', 
+				allDayText : '全天' 
+		};
+		$(function(){
+			    setInterval(function(){ $(".blink").fadeOut(500).fadeIn(500); },2000);
+		}); 
+		
+		  
+		  n=false;   
+		  function flash(){ 
+		  	n=!n; 
+		  	color= "blue";
+		  	font = "14px";
+		  	(n)?(color='blue'):(color='red');
+		  	(n)?(font='14px'):(font='20px');
+		  	var ele = window.document.getElementById("blink0");
+		  	if(ele!=null){
+			  	ele.style.color = color;
+			  	ele.style.fontSize = font;
+		  	}
+//		  	ele = window.document.getElementById("blink1");
+//		  	if(ele!=null){
+//			  	ele.style.color = color;
+//			  	ele.style.fontSize = font;
+//		  	}
+		  }
+		  //setInterval(function(){blink.color=blink.color=='#0000ff'?'red':'blue'},100);
+		  setInterval('flash()',800);
+  
+</script>
+
+	<title>朝阳工商分局</title>
+</h:head>
+<h:body>
+	<div class="center sysfont" align="center">
+		<div class="top center" align="center">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+				codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+				width="980" height="138">
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="movie" value="#{request.contextPath}/images/top.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="transparent" />
+				<param name="menu" value="false" />
+				<param name="wmode" value="opaque" />
+				<embed src="#{request.contextPath}/images/top.swf" wmode="opaque"
+					menu="false" bgcolor="#F0F0F0" quality="high" width="980"
+					height="138" allowScriptAccess="sameDomain"
+					type="application/x-shockwave-flash"
+					pluginspage="http://www.macromedia.com/go/getflashplayer" />
+			</object>
+		</div>
+
+		<div class="center" style="width: 1024px;" align="center">
+			<ui:insert name="content" />
+		</div>
+		<div style="clear: both;" />
+		<div>
+			<div class="powered">
+				<br /> <span>朝阳工商分局竭诚为您服务</span>
+			</div>
+		</div>
+	</div>
+</h:body>
+</html>

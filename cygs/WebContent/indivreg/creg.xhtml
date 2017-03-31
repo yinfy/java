@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:selectOneMenu value="#{indivBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="creg" itemLabel="creg" />
+			</p:selectOneMenu>
+			<p:dialog visible="#{not empty facesContext.messageList}"
+				header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{facesContext.messageList}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+			<!-- ************************************************************************************************************* -->
+			<div class="WordSection1" style="layout-grid: 15.6pt">
+				<p:panel styleClass="center" style="width:508.2pt; border:1px"
+					id="commentalluser"
+					rendered="#{not indivBean.admin and indivBean.creg.comment5 ne null and indivBean.creg.comment5 ne '' }">
+					<p:inputTextarea styleClass="center" style="width:100%;color:red;"
+						id="Indivreg_comment5" rows="8" cols="58"
+						value="#{indivBean.creg.comment5}" readonly="true">
+					</p:inputTextarea>
+				</p:panel>
+				<div align="center">
+					<p class="MsoNormal" align="center" style='text-align: center'>
+						<b><span style='font-size: 16.0pt; font-family: 宋体'>个体工商户开业登记申请书</span></b>
+					</p>
+
+					<p class="MsoNormal" align="center" style='text-align: center'>
+						<span lang="EN-US">&nbsp;</span>
+					</p>
+
+					<div align="right">
+						注册号：
+						<p:inputText id="Indivreg_cnameno"
+							value="#{indivBean.creg.cnameno}" style="width:220px;">
+							<f:converter converterId="gov.cygs.ConValidator" />
+						</p:inputText>
+						<p:watermark for="Indivreg_cnameno" value="注册号" />
+						<p:message for="Indivreg_cnameno" />
+					</div>
+
+					<table class="MsoTableGrid" border="1" cellspacing="0"
+						cellpadding="0" style='border-collapse: collapse; border: none'>
+						<tr>
+							<td width="73"
+								style='width: 55.05pt; border: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>名称</span>
+								</p>
+							</td>
+							<td width="495" colspan="5"
+								style='width: 371.05pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p:inputText id="Indivreg_cname" value="#{indivBean.creg.cname}"
+									style="width:95%;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Indivreg_cname" value="输入核准的名称"
+									id="watermark1" /> <p:message for="Indivreg_cname" />
+							</td>
+						</tr>
+						<tr>
+							<td width="73" rowspan="7"
+								style='width: 55.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>经营者</span>
+								</p>
+							</td>
+							<td width="113"
+								style='width: 3.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>姓名</span>
+								</p>
+							</td>
+							<td width="104"
+								style='width: 77.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:inputText id="Indivreg_shname"
+										value="#{indivBean.creg.shname}" style="width:90%;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText>
+									<p:watermark for="Indivreg_shname" value="输入姓名" />
+									<p:message for="Indivreg_shname" />
+								</p>
+							</td>
+							<td width="88"
+								style='width: 65.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>性别</span>
+								</p>
+							</td>
+							<td width="95"
+								style='width: 71.05pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:selectOneMenu value="#{indivBean.creg.shgender}">
+										<f:selectItem itemValue="男" itemLabel="男" />
+										<f:selectItem itemValue="女" itemLabel="女" />
+									</p:selectOneMenu>
+								</p>
+							</td>
+							<td width="95" rowspan="7"
+								style='width: 71.05pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>照</span> <span
+										style='font-family: 宋体'>片</span>
+								</p>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>粘贴处</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 14.6pt'>
+							<td width="113"
+								style='width: 3.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.6pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>身份证号码</span>
+								</p>
+							</td>
+							<td width="287" colspan="3"
+								style='width: 214.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.6pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:inputText id="Indivreg_shidno"
+										value="#{indivBean.creg.shidno}" style="width:90%;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText>
+									<p:watermark for="Indivreg_shidno" value="输入身份证号码" />
+									<p:message for="Indivreg_shidno" />
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="113"
+								style='width: 3.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>住所</span>
+								</p>
+								<p class="MsoNormal" align="center"
+									style='margin-top: 0cm; margin-right: -5.35pt; margin-bottom: 0cm; margin-left: 0cm; margin-bottom: .0001pt; text-align: center; text-indent: -5.35pt'>
+									<span style='font-family: 宋体'>（按身份证填写）</span>
+								</p>
+							</td>
+							<td width="287" colspan="3"
+								style='width: 214.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:inputText id="Indivreg_shaddr"
+										value="#{indivBean.creg.shaddr}" style="width:90%;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText>
+									<p:watermark for="Indivreg_shaddr" value="按身份证上的住址输入" />
+									<p:message for="Indivreg_shaddr" />
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="113"
+								style='width: 3.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>邮政编码</span>
+								</p>
+							</td>
+							<td width="104"
+								style='width: 77.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:inputText id="Indivreg_shzip"
+										value="#{indivBean.creg.shzip}" style="width:90%;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText>
+									<p:watermark for="Indivreg_shzip" value="130000" />
+									<p:message for="Indivreg_shzip" />
+								</p>
+							</td>
+							<td width="88"
+								style='width: 65.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>联系电话</span>
+								</p>
+							</td>
+							<td width="95"
+								style='width: 71.05pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:inputText id="Indivreg_shmobile"
+										value="#{indivBean.creg.shmobile}" style="width:90%;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText>
+									<p:watermark for="Indivreg_shmobile" value="输入电话号码" />
+									<p:message for="Indivreg_shmobile" />
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="113"
+								style='width: 3.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>电子邮箱</span>
+								</p>
+							</td>
+							<td width="287" colspan="3"
+								style='width: 214.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:inputText id="Indivreg_shemail"
+										value="#{indivBean.creg.shemail}" style="width:90%;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText>
+									<p:watermark for="Indivreg_shemail" value="输入电子邮件" />
+									<p:message for="Indivreg_shemail" />
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="113"
+								style='width: 3.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>政治面貌</span>
+								</p>
+							</td>
+							<td width="104"
+								style='width: 77.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:selectOneMenu id="Indivreg_shpolitical"
+										value="#{indivBean.creg.shpolitical}" style="width:125px">
+										<f:selectItems value="#{selectItems.politicals}" />
+									</p:selectOneMenu>
+								</p>
+							</td>
+							<td width="88"
+								style='width: 65.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>民族</span>
+								</p>
+							</td>
+							<td width="95"
+								style='width: 71.05pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:selectOneMenu id="Indivreg_shnat"
+										value="#{indivBean.creg.shnat}" style="width:85%">
+										<f:selectItems value="#{selectItems.nats}" />
+									</p:selectOneMenu>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="113"
+								style='width: 3.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>文化程度</span>
+								</p>
+							</td>
+							<td width="104"
+								style='width: 77.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:selectOneMenu id="Indivreg_shlevel"
+										value="#{indivBean.creg.shlevel}" style="width:125px">
+										<f:selectItems value="#{selectItems.levels}" />
+									</p:selectOneMenu>
+								</p>
+							</td>
+							<td width="88"
+								style='width: 65.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>职业状况</span>
+								</p>
+							</td>
+							<td width="95"
+								style='width: 71.05pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:inputText id="Indivreg_shcarr"
+										value="#{indivBean.creg.shcarr}" style="width:95%;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText>
+									<p:watermark for="Indivreg_shcarr" value="输入申请前职业状况" />
+									<p:message for="Indivreg_shcarr" />
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="73"
+								style='width: 55.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>组成形式</span>
+								</p>
+							</td>
+							<td width="113"
+								style='width: 3.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:selectOneMenu id="Indivreg_cmode"
+										value="#{indivBean.creg.cmode}" style="width:125px">
+										<f:ajax update="family_panel"
+											listener="#{indivBean.onCmodeChange}" />
+										<f:selectItem itemLabel="个人经营" itemValue="个人经营" />
+										<f:selectItem itemLabel="家庭经营" itemValue="家庭经营" />
+									</p:selectOneMenu>
+								</p>
+							</td>
+							<td width="104"
+								style='width: 77.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>参加经营的家庭成员姓名及身份证号码</span>
+								</p>
+							</td>
+							<td width="277" colspan="3"
+								style='width: 208.05pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<p:outputPanel id="family_panel" autoUpdate="true">
+										<p:inputTextarea rendered="#{indivBean.creg.cmode eq '家庭经营'}"
+											id="Indivreg_family" rows="5" style="width:95%;"
+											value="#{indivBean.creg.family}" counter="family_remain"
+											maxlength="200" counterTemplate="还可输入{0}字 ."
+											autoResize="false">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputTextarea>
+										<br />
+										<h:outputText id="family_remain"
+											rendered="#{indivBean.creg.cmode eq '家庭经营'}" />
+										<p:watermark for="Indivreg_family" value="输入家庭成员姓名及身份证号码"
+											rendered="#{indivBean.creg.cmode eq '家庭经营'}" />
+										<p:message for="Indivreg_family"
+											rendered="#{indivBean.creg.cmode eq '家庭经营'}" />
+									</p:outputPanel>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="73"
+								style='width: 55.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>经营范围</span>
+								</p>
+							</td>
+							<td width="495" colspan="5"
+								style='width: 371.05pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal">
+									<p:inputTextarea id="Indivreg_crange" rows="5"
+										style="width:95%;" value="#{indivBean.creg.crange}"
+										counter="crange_remain" maxlength="500"
+										counterTemplate="还可输入{0}字 ." autoResize="false">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputTextarea>
+									<br />
+									<h:outputText id="crange_remain" />
+									<p:message for="Indivreg_crange" />
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="73"
+								style='width: 55.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>经营场所</span>
+								</p>
+							</td>
+							<td width="495" colspan="5"
+								style='width: 371.05pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p:fragment>
+									<h:outputText rendered="false"
+										value="注意：行政区划的选择必须与核名时所选择的相一致！    已知情" style="color:red;" />
+									<p:selectBooleanCheckbox value="#{indivBean.confirmed}"
+										rendered="false">
+										<p:ajax update="prefix buttons" />
+									</p:selectBooleanCheckbox>
+								</p:fragment> <br /> <p:fragment>
+									<p:selectOneMenu id="prefix"
+										disabled="#{not indivBean.confirmed}"
+										value="#{indivBean.creg.prefix}" immediate="false"
+										style="width:220px;float:left;">
+										<f:ajax listener="#{indivBean.setDistriction}"
+											update="distriction_panel" />
+										<f:selectItems value="#{selectItems.districtions}" />
+									</p:selectOneMenu>
+								</p:fragment> <p:inputText id="Indivreg_caddress"
+									value="#{indivBean.creg.caddress}"
+									style="width:250px;float:left;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Indivreg_caddress" value="输入经营场所地址" /> <p:message
+									for="Indivreg_caddress" /> <span class="clearfloat" />
+							</td>
+						</tr>
+
+						<tr>
+							<td width="73"
+								style='width: 55.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>是否本人办理</span>
+								</p>
+							</td>
+							<td width="495" colspan="5"
+								style='width: 371.05pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p:selectOneMenu id="Indivreg_authMode"
+									value="#{indivBean.creg.authMode}" style="width:325px">
+									<f:selectItem itemLabel="本人办理" itemValue="本人办理" />
+									<f:selectItem itemLabel="非本人办理" itemValue="非本人办理" />
+								</p:selectOneMenu>
+							</td>
+						</tr>
+
+						<tr>
+							<td width="73"
+								style='width: 55.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>属地工商所</span>
+								</p>
+							</td>
+							<td width="495" colspan="5"
+								style='width: 371.05pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal">务必选择您辖区所属工商所，如不确定，请致电垂询。</p>
+								<p class="MsoNormal">
+									<p:selectOneMenu id="Indivreg_local"
+										value="#{indivBean.creg.local}" style="width:325px">
+										<f:selectItem itemLabel="清和工商所 88568401" itemValue="清和工商所" />
+										<f:selectItem itemLabel="桂林工商所 85663511" itemValue="桂林工商所" />
+										<f:selectItem itemDisabled="true" itemLabel="重庆工商所 88928200"
+											itemValue="重庆工商所" />
+										<f:selectItem itemDisabled="true" itemLabel="红旗工商所 85914535"
+											itemValue="红旗工商所" />
+										<f:selectItem itemDisabled="true" itemLabel="南湖工商所 85196279"
+											itemValue="南湖工商所" />
+										<f:selectItem itemDisabled="true" itemLabel="富锋工商所 85031007"
+											itemValue="富锋工商所" />
+										<f:selectItem itemDisabled="true" itemLabel="前进工商所 81090959"
+											itemValue="前进工商所" />
+										<f:selectItem itemDisabled="true" itemLabel="乐山工商所 85030540"
+											itemValue="乐山工商所" />
+									</p:selectOneMenu>
+								</p>
+							</td>
+						</tr>
+
+						<tr>
+							<td width="73"
+								style='width: 55.05pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>从业人员</span>
+								</p>
+							</td>
+							<td width="217" colspan="2"
+								style='width: 163.0pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="right" style='text-align: right'>
+									<p:inputText id="Indivreg_empnum"
+										value="#{indivBean.creg.empnum}" style="width:150px;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText>
+									<p:message for="Indivreg_empnum" />
+								</p>
+							</td>
+							<td width="88"
+								style='width: 65.95pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-family: 宋体'>资金数额</span>
+								</p>
+							</td>
+							<td width="189" colspan="2"
+								style='width: 142.1pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" align="right" style='text-align: right'>
+									<p:inputText id="Indivreg_capital"
+										value="#{indivBean.creg.capital}" style="width:150px;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText>
+									<p:message for="Indivreg_capital" />
+									（万元）
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="568" colspan="6"
+								style='width: 426.1pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt'>
+								<p class="MsoNormal" style='text-indent: 21.0pt'>
+									<span style='font-family: 宋体'>本人依照《个体工商户条例》申请登记为个体工商户，提交文件材料真实有效。谨对真实性承担责任。</span>
+								</p>
+								<p class="MsoNormal" style='text-indent: 21.0pt'>
+									<span lang="EN-US">&nbsp;</span>
+								</p>
+								<p class="MsoNormal" style='text-indent: 21.0pt'>
+									<span style='font-family: 宋体'>经营者签名：</span>
+								</p>
+								<p class="MsoNormal" style='text-indent: 21.0pt'>
+									<span lang="EN-US">&nbsp;</span>
+								</p>
+								<p class="MsoNormal" style='text-indent: 21.0pt'>
+									<span lang="EN-US">&nbsp;</span>
+								</p>
+								<p class="MsoNormal" align="right"
+									style='text-align: right; text-indent: 21.0pt'>
+									<span style='font-family: 宋体'>年</span> <span lang="EN-US">&nbsp;&nbsp;</span><span
+										style='font-family: 宋体'>月</span> &nbsp;&nbsp;<span
+										style='font-family: 宋体'>日</span><span lang="EN-US">&nbsp;
+									</span>
+								</p>
+								<p class="MsoNormal" style='text-indent: 21.0pt'>
+									<span lang="EN-US">&nbsp;</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				<p:commandButton value="是" type="button"
+					styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+				<p:commandButton value="否" type="button"
+					styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+			</p:confirmDialog>
+
+			<div align="center" class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{indivBean.admin}">
+					<p:inputTextarea styleClass="center" id="Indivreg_comment1"
+						rows="8" cols="58" value="#{indivBean.creg.comment1}"
+						counter="comment_remain" maxlength="1000"
+						counterTemplate="还可输入{0}字 ." autoResize="true">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Indivreg_comment1" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not indivBean.admin and indivBean.creg.comment1 ne null and indivBean.creg.comment1 ne '' }">
+					<h:outputText value="#{indivBean.creg.comment1}"
+						style="width:100%;color:red;" />
+				</p:panel>
+
+				<p:outputPanel id="buttons">
+					<p:commandButton style="text-align:center; margin:0 auto;"
+						action="#{indivBean.saveData('creg')}" value="保存" update="formone">
+						<p:confirm disabled="#{indivList.admin?'true':'true'}"
+							header="请确认" message="注意：行政区划的选择必须与核名时所选择的相一致！是否 已知情？"
+							icon="ui-icon-alert" />
+					</p:commandButton>
+					<p:commandButton style="text-align:center; margin:0 auto;"
+						value="下一步" action="#{indivBean.openpage('weituo')}"
+						immediate="#{indivList.admin?'false':'false'}">
+						<p:confirm disabled="#{indivList.admin?'true':'true'}"
+							header="请确认" message="注意：行政区划的选择必须与核名时所选择的相一致！是否 已知情？"
+							icon="ui-icon-alert" />
+						<f:param name="individ" value="#{indivBean.creg.id}" />
+					</p:commandButton>
+				</p:outputPanel>
+			</div>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

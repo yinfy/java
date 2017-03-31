@@ -1,0 +1,27 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/webpage.xhtml">
+
+
+	<ui:define name="content">
+		<div class="center" align="center" style="height: 400px;">
+			<h:panelGrid class="center" columns="2" cellpadding="0">
+				<p:panel styleClass="center" style="height:120px;width:150px;">
+					<a href="#{request.contextPath}/order/mint.xhtml"><img
+						src="#{request.contextPath}/images/o_order.png" alt="网上预约"
+						class="big_icon center" /></a>
+				</p:panel>
+				<p:panel styleClass="center" style="height:120px;width:150px;">
+					<a href="#{request.contextPath}/order/yuyue_search.xhtml"><img
+						src="#{request.contextPath}/images/m_chaxun.png" alt="预约查询"
+						class="big_icon center" /></a>
+				</p:panel>
+				<p:outputLabel style="width:150px;" styleClass="center" value="网上预约" />
+				<p:outputLabel style="width:150px;" styleClass="center" value="预约查询" />
+			</h:panelGrid>
+		</div>
+	</ui:define>
+</ui:composition>
+

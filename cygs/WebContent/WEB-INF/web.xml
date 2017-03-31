@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>cygs</display-name>
+	<session-config>
+		<session-timeout>15</session-timeout>
+	</session-config>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/cygs/notfound.xhtml</location>
+	</error-page>
+	<error-page>
+		<exception-type>com.sun.faces.context.FacesFileNotFoundException</exception-type>
+		<location>/cygs/notfound.xhtml</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/cygs/login.xhtml</location>
+	</error-page>
+	<error-page>
+		<exception-type>javax.faces.application.ViewExpiredException</exception-type>
+		<location>/cygs/login.xhtml</location>
+	</error-page>
+	<servlet>
+		<servlet-name>Faces Servlet</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.xhtml</url-pattern>
+	</servlet-mapping>
+	<filter>
+		<filter-name>Set Character Encoding</filter-name>
+		<filter-class>gov.cygs.filter.SetCharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>Set Character Encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>PrimeFaces FileUpload Filter</filter-name>
+		<filter-class>org.primefaces.webapp.filter.FileUploadFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>PrimeFaces FileUpload Filter</filter-name>
+		<servlet-name>Faces Servlet</servlet-name>
+	</filter-mapping>
+	<mime-mapping>
+		<extension>zip</extension>
+		<mime-type>application/zip</mime-type>
+	</mime-mapping>
+	<context-param>
+		<param-name>primefaces.UPLOADER</param-name>
+		<param-value>commons</param-value>
+	</context-param>
+	<context-param>
+		<param-name>com.sun.faces.resourceUpdateCheckPeriod</param-name>
+		<param-value>1</param-value>
+	</context-param>
+	<context-param>
+		<param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+		<param-value>server</param-value>
+	</context-param>
+	<welcome-file-list>
+		<welcome-file>index.xhtml</welcome-file>
+	</welcome-file-list>
+</web-app>

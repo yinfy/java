@@ -1,0 +1,119 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/userpage.xhtml">
+
+	<ui:define name="menu">
+		<ui:include name="menu" src="/layout/dymenu.xhtml" />
+	</ui:define>
+
+	<ui:define name="userdesk">
+		<div align="center">
+			<p></p>
+			<p></p>
+			<h:form id="formone">
+				<p:growl showDetail="true" />
+
+				<p:outputLabel value="当前人员：#{sysUserBean.user.displayName}" />
+				<p:fragment>
+					<p:dataTable emptyMessage="无记录" style="font:12px;" id="vacations"
+						var="vacation" value="#{sysUserBean.user.vacations}"
+						paginator="true" rows="20"
+						selection="#{sysUserBean.selectedVacation}"
+						rowKey="#{vacation.uuid}" selectionMode="single">
+						<p:ajax event="rowSelect"
+							listener="#{sysUserBean.onVacationSelect}" update="formone" />
+						<p:column style="width:180px" headerText="请假原因">
+							<h:outputText value="#{vacation.reason}" />
+						</p:column>
+						<p:column style="width:100px" headerText="开始日期">
+							<h:outputFormat value="#{vacation.begindate}">
+								<f:convertDateTime pattern="yyyy/MM/dd/" locale="zh_CN"
+									timeZone="GMT+8" />
+							</h:outputFormat>
+						</p:column>
+						<p:column style="width:100px" headerText="结束日期">
+							<h:outputFormat value="#{vacation.enddate}">
+								<f:convertDateTime pattern="yyyy/MM/dd/" locale="zh_CN"
+									timeZone="GMT+8" />
+							</h:outputFormat>
+						</p:column>
+						<p:column style="width:35px" headerText="">
+							<p:commandLink process="vacations" update="formone" value="修改"
+								oncomplete="PF('manage').show()">
+								<f:setPropertyActionListener value="#{vacation}"
+									target="#{sysUserBean.selectedVacation}" />
+							</p:commandLink>
+						</p:column>
+						<p:column style="width:35px" headerText="">
+							<p:commandLink process="vacations" update="formone" value="删除"
+								action="#{sysUserBean.deleteVacation()}">
+								<f:setPropertyActionListener value="#{vacation}"
+									target="#{sysUserBean.selectedVacation}" />
+							</p:commandLink>
+						</p:column>
+					</p:dataTable>
+
+					<p:commandButton update="vacations frag00" value="添加请假信息"
+						action="#{sysUserBean.newVacation}"
+						oncomplete="PF('manage').show()" />
+					<p:commandButton update="vacations" value="保存"
+						action="#{sysUserBean.saveVacation()}" />
+
+				</p:fragment>
+
+				<p:fragment id="frag00">
+					<p:dialog rendered="#{sysUserBean.selectedVacation ne null}"
+						header="请假信息" widgetVar="manage" modal="true" showEffect="fade"
+						hideEffect="fade" resizable="false" width="500">
+						<div>
+							<table align="left">
+								<tr>
+									<td>请假原因</td>
+									<td align="left" colspan="2"><p:inputText
+											id="Vacation_reason"
+											value="#{sysUserBean.selectedVacation.reason}">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText> <p:message for="Vacation_reason" /></td>
+								</tr>
+								<tr>
+									<td>开始日期</td>
+									<td align="left" colspan="2"><p:calendar locale="zh_CN"
+											id="Vacation_begindate" timeZone="GMT+8" mask="9999/99/99"
+											value="#{sysUserBean.selectedVacation.begindate}"
+											navigator="true" pattern="yyyy/MM/dd" readonlyInput="false"
+											yearRange="c-30:c+30">
+										</p:calendar> <p:message for="Vacation_begindate" /></td>
+								</tr>
+								<tr>
+									<td>结束日期</td>
+									<td align="left" colspan="2"><p:calendar locale="zh_CN"
+											id="Vacation_enddate" timeZone="GMT+8" mask="9999/99/99"
+											value="#{sysUserBean.selectedVacation.enddate}"
+											pattern="yyyy/MM/dd" navigator="true" readonlyInput="false"
+											yearRange="c-10:c+10">
+										</p:calendar> <p:message for="Vacation_enddate" /></td>
+								</tr>
+							</table>
+						</div>
+						<div class="clearfloat" />
+						<div>
+							<p:commandButton update="vacations" value="取消" immediate="true"
+								onclick="PF('manage').close()" />
+							<p:commandButton update="vacations" value="确定"
+								action="#{sysUserBean.saveVac()}" onclick="PF('manage').close()" />
+						</div>
+					</p:dialog>
+				</p:fragment>
+
+			</h:form>
+
+			<div style="clear: both;">
+				<br />
+			</div>
+		</div>
+		<p></p>
+		<p></p>
+	</ui:define>
+</ui:composition>

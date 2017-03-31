@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:selectOneMenu value="#{cregBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="share_name" itemLabel="share_name" />
+			</p:selectOneMenu>
+			<p:growl id="ajaxmsg" showDetail="true" />
+
+
+			<div align="center">
+				<!--  ######################### 投资人  ###########################  -->
+				<div>
+					<h1>公司投资人情况</h1>
+					<p:fragment>
+						<p:dataTable emptyMessage="无记录" id="shareholders" var="share"
+							value="#{cregBean.creg.shareholders}" paginator="false" rows="20"
+							selection="#{cregBean.selectedShare}" rowKey="#{share.uuid}"
+							selectionMode="single">
+							<p:ajax event="rowSelect" listener="#{cregBean.onRowSelect}"
+								update="formone" />
+							<p:column style="width:60px" headerText="股东类型">
+								<h:outputText value="#{share.shtype}" />
+							</p:column>
+							<p:column style="width:80px" headerText="名称">
+								<h:outputText value="#{share.shname}" />
+							</p:column>
+							<p:column style="width:80px" headerText="证件类型">
+								<h:outputText value="#{share.shidtype}" />
+							</p:column>
+							<p:column style="width:160px" headerText="证件号码">
+								<h:outputText value="#{share.shidno}" />
+							</p:column>
+							<p:column style="width:35px" headerText=""
+								rendered="#{not cregList.admin}">
+								<p:commandLink process="shareholders" update="formone"
+									value="修改" oncomplete="PF('manageshare').show()">
+									<f:setPropertyActionListener value="#{share}"
+										target="#{cregBean.selectedShare}" />
+								</p:commandLink>
+							</p:column>
+							<p:column style="width:35px" headerText=""
+								rendered="#{not cregList.admin}">
+								<p:commandLink process="shareholders" update="formone"
+									value="删除" action="#{cregBean.deleteShare()}">
+									<f:setPropertyActionListener value="#{share}"
+										target="#{cregBean.selectedShare}" />
+								</p:commandLink>
+							</p:column>
+						</p:dataTable>
+						<p:commandButton update="shareholders frag00" value="添加出资人"
+							action="#{cregBean.newShare}"
+							oncomplete="PF('manageshare').show()" />
+					</p:fragment>
+
+					<p:fragment id="frag00">
+						<p:dialog header="股东信息" widgetVar="manageshare" modal="true"
+							showEffect="fade" hideEffect="fade" resizable="false" width="500">
+							<div style="clear: both;"></div>
+							<div>
+								<table align="left" width="450">
+									<tr>
+										<td>*股东类型</td>
+										<td align="left"><p:fragment id="frag01">
+												<p:selectOneMenu value="#{cregBean.selectShtype}"
+													style="width:100%">
+													<p:ajax listener="#{cregBean.onShtypeChange}"
+														update="Shareholder_shidtype shareholders" />
+													<f:selectItem itemLabel="请选择..." itemValue="录入" />
+													<f:selectItem itemLabel="自然人" itemValue="自然人" />
+													<f:selectItem itemLabel="法人单位" itemValue="法人单位" />
+													<f:selectItem itemLabel="其他" itemValue="其他" />
+												</p:selectOneMenu>
+											</p:fragment></td>
+									</tr>
+									<tr>
+										<td>*投资者名称或姓名</td>
+										<td align="left"><p:inputText id="Shareholder_shname"
+												value="#{cregBean.selectedShare.shname}">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:message for="Shareholder_shname" /></td>
+									</tr>
+									<tr>
+										<td>*证件类型</td>
+										<td align="left"><p:selectOneMenu
+												id="Shareholder_shidtype" value="#{cregBean.selshidtype}">
+												<p:ajax listener="#{cregBean.onShidtypeChange}"
+													update="shareholders" />
+												<f:selectItem itemLabel="" itemValue="" />
+												<f:selectItems value="#{cregBean.shidtypes}" />
+											</p:selectOneMenu></td>
+									</tr>
+									<tr>
+										<td>*证件号码</td>
+										<td align="left"><p:inputText id="Shareholder_shidno"
+												value="#{cregBean.selectedShare.shidno}">
+												<f:converter converterId="gov.cygs.ConValidator" />
+											</p:inputText> <p:message for="Shareholder_shidno" /></td>
+									</tr>
+								</table>
+							</div>
+							<div class="center">
+								<p:commandButton update="shareholders" value="取消"
+									immediate="true" onclick="PF('manageshare').close()" />
+								<p:commandButton update="shareholders" value="保存"
+									onclick="PF('manageshare').close()" />
+							</div>
+						</p:dialog>
+					</p:fragment>
+				</div>
+				<!--  ######################### end of 投资人  ###########################  -->
+			</div>
+
+			<p:panel
+				style="width:508.2pt;display:block;text-align:center;margin:0 auto;"
+				id="comment" rendered="#{cregBean.admin}">
+				<p:inputTextarea id="Companyreg_comment10" rows="8" cols="58"
+					value="#{cregBean.creg.comment10}" counter="comment_remain"
+					maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+					<f:converter converterId="gov.cygs.ConValidator" />
+				</p:inputTextarea>
+				<br />
+				<h:outputText id="comment_remain" />
+				<p:message for="Companyreg_comment10" />
+			</p:panel>
+			<p:panel
+				style="width:508.2pt;display:block;text-align:center;margin:0 auto;"
+				id="commentuser"
+				rendered="#{not cregBean.admin and cregBean.creg.comment10 ne null and cregBean.creg.comment10 ne '' }">
+				<h:outputText value="#{cregBean.creg.comment10}"
+					style="width:100%;color:red;" />
+			</p:panel>
+			<h:commandLink styleClass="button3" value="上一步"
+				action="#{cregBean.prepage('heming')}"
+				immediate="#{cregBean.admin?'true':'false'}">
+				<f:param name="cregid" value="#{cregBean.creg.id}" />
+			</h:commandLink>
+			<p:commandButton action="#{cregBean.saveShares('half')}" value="保存"
+				update="formone" />
+			<p:commandLink styleClass="button3" value="提交审核"
+				action="#{cregBean.commitCheckName()}"
+				rendered="#{not cregBean.admin}">
+				<f:param name="cregid" value="#{cregBean.creg.id}" />
+			</p:commandLink>
+			<p:commandLink styleClass="button3" value="审核通过"
+				action="#{cregBean.approveName()}" rendered="#{cregBean.admin}"
+				oncomplete="refpara();closewin();">
+				<f:param name="cregid" value="#{cregBean.creg.id}" />
+			</p:commandLink>
+			<p:commandLink styleClass="button3" value="退回"
+				action="#{cregBean.rejectName()}" rendered="#{cregBean.admin}"
+				oncomplete="refpara();closewin();">
+				<f:param name="cregid" value="#{cregBean.creg.id}" />
+			</p:commandLink>
+		</h:form>
+	</ui:define>
+</ui:composition>

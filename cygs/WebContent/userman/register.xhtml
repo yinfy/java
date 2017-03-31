@@ -1,0 +1,130 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/webpage.xhtml">
+
+	<ui:define name="content">
+		<div align="center">
+			<p></p>
+			<p></p>
+			<h:form id="formone">
+				<p:growl showDetail="true" />
+				<div align="center">
+					<table width="720" border="0" cellpadding="3px" cellspacing="0">
+						<tr>
+							<td width="100">登录名*</td>
+							<td width="200"><h:outputText
+									rendered="#{sysUserBean.update}" style="width:240px"
+									value="#{sysUserBean.user.loginId}" /> <h:inputText
+									rendered="#{not sysUserBean.update}" class="input3"
+									id="SysUser_loginId" style="width:240px"
+									value="#{sysUserBean.user.loginId}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</h:inputText> <h:message for="SysUser_loginId" /></td>
+							<td width="300">请输入8~16位字母或数字</td>
+						</tr>
+						<tr>
+							<td>真实姓名*</td>
+							<td><h:inputText class="input3" style="width:240px"
+									id="SysUser_displayName"
+									value="#{sysUserBean.user.displayName}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</h:inputText></td>
+							<td>请务必输入真实姓名</td>
+						</tr>
+						<tr>
+							<td>身份证号*</td>
+							<td><h:inputText class="input3" style="width:240px"
+									value="#{sysUserBean.user.idno}">
+								</h:inputText></td>
+							<td>请务必输入真实有效身份证号</td>
+						</tr>
+						<tr>
+							<td width="260">手机号：</td>
+							<td width="260"><h:inputText class="input3"
+									style="width:240px" id="SysUser_mobileNo"
+									value="#{sysUserBean.user.mobileNo}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</h:inputText> <h:message for="SysUser_mobileNo" /></td>
+							<td>请务必输入真实的手机号码</td>
+						</tr>
+						<tr>
+							<td width="260">密码*</td>
+							<td width="260"><h:inputSecret class="input3"
+									style="width:240px" value="#{sysUserBean.user.password}"
+									id="SysUser_password">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</h:inputSecret> <h:message for="SysUser_password" /></td>
+							<td>请输入8~16位字母或数字</td>
+						</tr>
+						<tr>
+							<td width="260">再次输入密码*</td>
+							<td width="260"><h:inputSecret class="input3"
+									style="width:240px" value="#{sysUserBean.password2}"
+									id="SysUser_password2">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</h:inputSecret> <h:message for="SysUser_password2" /></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td width="260">电子邮件</td>
+							<td width="260"><h:inputText class="input3"
+									style="width:240px" value="#{sysUserBean.user.email}"
+									id="SysUser_emailId">
+								</h:inputText></td>
+							<td>如有电子邮件，请输入真实的电子邮件</td>
+						</tr>
+						<tr hidden="#{sysUserBean.update?'true':''}">
+							<td>将左侧滑动条拖动到100进行注册</td>
+							<td><h:outputText id="dragtxt"
+									value="#{sysUserBean.slidevalue}" /> <p:slider for="dragtxt">
+									<p:ajax event="slideEnd" listener="#{sysUserBean.onSlideEnd}"
+										update="saveButton dragtxt" />
+								</p:slider></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div style="padding-top: 20px; display: inherit;" align="center">
+					<p:commandButton value="#{sysUserBean.update?'保存':'注册'}"
+						id="saveButton" actionListener="#{sysUserBean.save_act}"
+						disabled="#{sysUserBean.savedisabled and not sysUserBean.update}"
+						update=":formone" />
+				</div>
+
+				<div class="box" id="box"
+					style="display: #{sysUserBean.saveSuccess?'block':'none'">
+					<div class="box_background"
+						style="display: #{sysUserBean.saveSuccess?'block':'none'"></div>
+					<div class="box_contents"
+						style="display: #{sysUserBean.saveSuccess?'block':'none'">
+						<table border="0" align="center">
+							<tr align="center">
+								<td><img src="#{request.contextPath}/images/weixiao.png" />
+								</td>
+								<td>
+									<p>您已注册成功！</p>
+									<p>快开启网上登记之旅吧！</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2"><p:commandButton value="确定"
+										immediate="true" action="#{sysUserBean.openpage('/index')}" />
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+
+			</h:form>
+
+			<div style="clear: both;">
+				<br />
+			</div>
+		</div>
+		<p></p>
+		<p></p>
+	</ui:define>
+</ui:composition>

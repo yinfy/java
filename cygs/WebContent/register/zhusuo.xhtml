@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:dialog visible="#{not empty cregBean.messages}"
+				header="#{cregBean.messages[0].severity eq 'ERROR 2'?'错误':' '}"
+				modal="true">
+				<p:repeat value="#{cregBean.messages}" var="message">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="logo,detail">
+						<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+							url="/images/info.png" />
+						<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+							url="/images/warn.png" />
+						<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+							url="/images/error.png" />
+						<h:outputText value="#{message.detail}" style="font-weight: bold" />
+					</h:panelGrid>
+				</p:repeat>
+			</p:dialog>
+
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true">
+			</p:messages>
+			<p:selectOneMenu value="#{cregBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="zhusuo" itemLabel="zhusuo" />
+			</p:selectOneMenu>
+			<div class="tableboard">
+
+				<div class="WordSection1" style='layout-grid: 15.6pt'>
+
+					<p class="MsoNormal" align="center"
+						style='text-align: center; line-height: 180%'>
+						<b><span
+							style='font-size: 22.0pt; line-height: 180%; font-family: 宋体; color: black'>吉林省市场主体住所（经营场所）登记表</span></b>
+					</p>
+
+					<table class="MsoNormal" border="1" cellspacing="0" cellpadding="0"
+						style='border-collapse: collapse; border: none' align="center">
+						<tr style='height: 32.25pt'>
+							<td width="273"
+								style='width: 163.6pt; border: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 32.25pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-size: 14.0pt; font-family: 宋体'>市场主体名称</span>
+								</p>
+							</td>
+							<td width="471"
+								style='width: 282.8pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 32.25pt'>
+								<p class="MsoNormal" align="left" style='text-align: left'>
+									<span lang="EN-US" style='font-size: 12.0pt; font-family: 宋体'>
+										<h:outputText value="#{cregBean.creg.cname}" />
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 31.5pt'>
+							<td width="273"
+								style='width: 163.6pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 31.5pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-size: 14.0pt; font-family: 宋体'>住所地址</span>
+								</p>
+							</td>
+							<td width="471"
+								style='width: 282.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 31.5pt'>
+								<p class="MsoNormal" align="left" style='text-align: left'>
+									<span lang="EN-US" style='font-size: 12.0pt; font-family: 宋体'>
+										<p:outputPanel autoUpdate="true" id="distriction_panel"
+											style="display:inline-block;">
+											<p:outputLabel value="#{cregBean.creg.prefix}"
+												id="distriction" />
+										</p:outputPanel> <h:outputText value="#{cregBean.creg.haddress}" />
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 22.45pt'>
+							<td width="273" rowspan="3"
+								style='width: 163.6pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.45pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span style='font-size: 14.0pt; font-family: 宋体'>经营场所地址</span>
+								</p>
+							</td>
+							<td width="471"
+								style='width: 282.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.45pt'>
+								<p class="MsoNormal" align="left" style='text-align: left'>
+									<span lang="EN-US" style='font-size: 12.0pt; font-family: 宋体'>1</span><span
+										style='font-size: 12.0pt; font-family: 宋体'>、 <p:inputText
+											disabled="true" id="Companyreg_markAddr1"
+											value="#{cregBean.creg.markAddr1}" style="width:330px;">
+										</p:inputText>
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 25.25pt'>
+							<td width="471"
+								style='width: 282.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.25pt'>
+								<p class="MsoNormal" align="left" style='text-align: left'>
+									<span lang="EN-US" style='font-size: 12.0pt; font-family: 宋体'>2</span><span
+										style='font-size: 12.0pt; font-family: 宋体'>、 <p:inputText
+											id="Companyreg_markAddr2" value="#{cregBean.creg.markAddr2}"
+											style="width:330px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText> <p:message for="Companyreg_markAddr2" />
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 21.1pt'>
+							<td width="471"
+								style='width: 282.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 21.1pt'>
+								<p class="MsoNormal" align="left" style='text-align: left'>
+									<span lang="EN-US" style='font-size: 12.0pt; font-family: 宋体'>3</span><span
+										style='font-size: 12.0pt; font-family: 宋体'>、 <p:inputText
+											id="Companyreg_markAddr3" value="#{cregBean.creg.markAddr3}"
+											style="width:330px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText> <p:message for="Companyreg_markAddr3" />
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='height: 458.2pt'>
+							<td width="744" colspan="2" valign="top"
+								style='width: 446.4pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 458.2pt'>
+								<p class="MsoNormal" align="left" style='text-align: left'>
+									<span style='font-size: 16.0pt; font-family: 黑体'>★提示：</span>
+								</p>
+								<p class="MsoNormal" align="left"
+									style='text-align: left; text-indent: 35.0pt; line-height: 23.0pt'>
+									<span lang="EN-US" style='font-size: 14.0pt; font-family: 宋体'>1</span><span
+										style='font-size: 14.0pt; font-family: 宋体'>、《中华人民共和国物权法》第七十七条规定："业主将住宅改变为经营性用房的，除遵守法律、法规以及管理规约外，应当经有利害关系的业主同意。"</span>
+								</p>
+								<p class="MsoNormal" align="left"
+									style='text-align: left; text-indent: 35.0pt; line-height: 23.0pt'>
+									<span lang="EN-US" style='font-size: 14.0pt; font-family: 宋体'>2</span><span
+										style='font-size: 14.0pt; font-family: 宋体'>、</span><span
+										style='font-size: 14.0pt; font-family: 宋体'>申请人将住宅改变为经营性用房的，应符合国家和我省相关强制性技术标准要求，保证建筑物的结构安全和消防安全，所从事的经营活动不得影响居民正常生活秩序，不得从事娱乐场所经营、互联网上网服务、危险化学品生产经营等存在安全生产隐患、污染环境、影响居民身体健康和生命财产安全的生产经营活动。</span>
+								</p>
+								<p class="MsoNormal" align="left"
+									style='text-align: left; text-indent: 35.0pt; line-height: 23.0pt'>
+									<span lang="EN-US" style='font-size: 14.0pt; font-family: 宋体'>3</span><span
+										style='font-size: 14.0pt; font-family: 宋体'>、申请人不得将非法建筑、危险建筑、</span><span
+										style='font-size: 14.0pt; font-family: 宋体'>建筑物内的公共部分</span><span
+										style='font-size: 14.0pt; font-family: 宋体'>和已纳入征收范围的房屋申请登记为住所（经营场所）。</span>
+								</p>
+								<p class="MsoNormal" align="left"
+									style='text-align: left; text-indent: 35.0pt; line-height: 23.0pt'>
+									<span lang="EN-US" style='font-size: 14.0pt; font-family: 宋体'>4</span><span
+										style='font-size: 14.0pt; font-family: 宋体'>、将住宅登记为住所（经营场所）的，不改变其原有房屋登记机关记载的房屋规划用途。</span>
+								</p>
+								<p class="MsoNormal" align="left"
+									style='text-align: left; text-indent: 28.0pt; line-height: 23.0pt'>
+									<span style='font-size: 14.0pt; font-family: 宋体'>本企业（个体工商户）已知悉上述内容，并严格遵守相关规定。由本企业（个体工商户）对住所（经营场所）的真实性、合法性和安全性负责。</span>
+								</p>
+								<p class="MsoNormal" align="left"
+									style='text-align: left; text-indent: 35.0pt; line-height: 23.0pt'>
+									<span lang="EN-US" style='font-size: 14.0pt; font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="MsoNormal" align="left"
+									style='text-align: left; text-indent: 273.0pt; layout-grid-mode: char'>
+									<span style='font-size: 14.0pt; font-family: 宋体'>申请人：</span>
+								</p>
+								<p class="MsoNormal" style='margin-top: 7.8pt'>
+									<span style='font-family: 宋体; color: black'>(全体股东签字)</span>
+								</p>
+								<p class="MsoNormal" style='margin-top: 7.8pt'>
+									<span style='font-family: 宋体; color: black'>(如果股东中含有法人股；要加盖法人股公章及法定代表人签字)</span>
+								</p>
+								<p class="MsoNormal" align="left"
+									style='text-align: left; text-indent: 224.0pt; layout-grid-mode: char'>
+									<span lang="EN-US" style='font-size: 14.0pt; font-family: 宋体'>&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+										style='font-size: 14.0pt; font-family: 宋体'>年<span
+										lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>月<span
+										lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>日
+									</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+
+					<p class="MsoNormal" align="left"
+						style='text-align: left; line-height: 20.0pt'>
+						<span style='font-family: 宋体; color: black'>注：<span
+							lang="EN-US">1</span>、企业（公司）、农民专业合作社设立登记时，申请人为股东（出资人）。股东是法人的，由股东盖章，股东是自然人的，由自然人签字；个体工商户开业登记时，由自然人签字。
+						</span>
+					</p>
+
+					<p class="MsoNormal" align="left"
+						style='text-align: left; line-height: 20.0pt'>
+						<span lang="EN-US" style='font-family: 宋体; color: black'>2</span><span
+							style='font-family: 宋体; color: black'>、企业（公司）、农民专业合作社变更登记时，由企业（公司）、农民专业合作社盖章；个体工商户变更登记时，由个体工商户盖章或签字。</span>
+					</p>
+				</div>
+			</div>
+			<div class="center">
+				<p:panel styleClass="center" style="width:508.2pt;" id="comment"
+					rendered="#{cregBean.admin}">
+					<p:inputTextarea id="Companyreg_comment8" rows="8" cols="58"
+						value="#{cregBean.creg.comment8}" counter="comment_remain"
+						maxlength="150" counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Companyreg_comment8" />
+				</p:panel>
+				<p:panel styleClass="center" style="width:508.2pt;" id="commentuser"
+					rendered="#{not cregBean.admin and cregBean.creg.comment8 ne null and cregBean.creg.comment8 ne '' }">
+					<h:outputText value="#{cregBean.creg.comment8}"
+						style="width:100%;color:red;" />
+				</p:panel>
+				<h:commandLink styleClass="button3" value="上一步"
+					action="#{cregBean.prepage('weituo')}"
+					immediate="#{cregList.admin?'false':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+				<p:commandButton action="#{cregBean.saveData('zhusuo')}" value="保存"
+					update="formone" />
+				<h:commandLink styleClass="button3" value="下一步"
+					action="#{cregBean.openpage('tips')}"
+					immediate="#{cregList.admin?'false':'false'}">
+					<f:param name="cregid" value="#{cregBean.creg.id}" />
+				</h:commandLink>
+			</div>
+		</h:form>
+	</ui:define>
+</ui:composition>

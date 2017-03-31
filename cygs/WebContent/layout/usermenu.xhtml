@@ -1,0 +1,19 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/userpage.xhtml">
+
+	<ui:define name="leftbar">
+		<div align="center">
+			<a href="#{request.contextPath}/userman/create_user.xhtml">个人信息</a>
+			<a href="#{request.contextPath}/register/index.xhtml">有限公司申报</a> <a
+				href="#{request.contextPath}/branch/index.xhtml">分公司申报</a> <a
+				href="#{request.contextPath}/personreg/index.xhtml">个人独资申报</a> <a
+				href="#{request.contextPath}/registerch/index.xhtml">有限公司变更</a> <a
+				href="#{request.contextPath}/order/index.xhtml">我的预约</a>
+			<p:commandButton action="#{loginUser.logout}" value="退出系统"
+				style="width:97%;" />
+		</div>
+	</ui:define>
+</ui:composition>

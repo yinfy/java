@@ -1,0 +1,217 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/userpage.xhtml">
+	<ui:define name="menu">
+		<ui:include name="menu" src="/layout/dymenu.xhtml" />
+	</ui:define>
+
+	<ui:define name="userdesk">
+		<div align="center">
+
+			<p:dialog widgetVar="statusDialog" modal="true" draggable="false"
+				closable="false" resizable="false" showHeader="false">
+				<h1 id="note">正在处理，请稍候......</h1>
+				<img src="#{request.contextPath}/images/ajaxloadingbar.gif" />
+			</p:dialog>
+
+			<h:form id="formone">
+				<p:dialog visible="#{not empty facesContext.messageList}"
+					header="#{facesContext.messageList[0].severity eq 'ERROR 2'?'错误':' '}"
+					modal="true">
+					<p:repeat value="#{facesContext.messageList}" var="message">
+						<h:panelGrid columns="2" style="width:100%"
+							columnClasses="logo,detail">
+							<p:graphicImage rendered="#{message.severity eq 'INFO 0'}"
+								url="/images/info.png" />
+							<p:graphicImage rendered="#{message.severity eq 'WARN 1'}"
+								url="/images/warn.png" />
+							<p:graphicImage rendered="#{message.severity eq 'ERROR 2'}"
+								url="/images/error.png" />
+							<h:outputText value="#{message.detail}" style="font-weight: bold" />
+						</h:panelGrid>
+					</p:repeat>
+				</p:dialog>
+				<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+					closable="true" />
+
+
+				<div align="left">
+					<p:fieldset rendered="#{cregchList.admin}" legend="筛选"
+						id="filterPanel" collapsed="false" widgetVar="filter"
+						toggleable="true" toggleSpeed="500">
+						<table>
+							<tr>
+								<td>公司名称</td>
+								<td colspan="2">申请日期</td>
+								<td>状态</td>
+							</tr>
+							<tr>
+								<td><p:inputText id="filterCompanyName"
+										value="#{cregchList.filterCompanyName}" /></td>
+								<td><p:calendar id="filterAppDateBegin"
+										value="#{cregchList.filterAppDateBegin}" pattern="yyyy/MM/dd"
+										navigator="true" readonlyInput="true" yearRange="c:c+5">
+									</p:calendar></td>
+								<td><p:calendar id="filterAppDateEnd"
+										value="#{cregchList.filterAppDateEnd}" pattern="yyyy/MM/dd"
+										navigator="true" readonlyInput="true" yearRange="c:c+5">
+									</p:calendar></td>
+								<td><p:selectOneMenu id="filterState"
+										value="#{cregchList.filterState}">
+										<f:selectItem itemValue="" itemLabel="" />
+										<f:selectItems value="#{selectItems.states}" />
+									</p:selectOneMenu></td>
+
+							</tr>
+						</table>
+
+						<br />
+						<div align="center">
+							<p:commandButton value="清空" update="oneTable filterPanel"
+								actionListener="#{cregchList.resetFilter}" immediate="true"
+								resetValues="true" />
+							<p:commandButton value="查询" update="oneTable filterPanel"
+								actionListener="#{cregchList.doFilter}" />
+						</div>
+					</p:fieldset>
+				</div>
+
+				<div align="center">
+					<p:dataTable id="oneTable" var="creg" value="#{cregchList.model}"
+						paginator="true" paginatorPosition="top" rows="10"
+						paginatorTemplate="{RowsPerPageDropdown} {FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}"
+						emptyMessage="无数据" editable="false" selectionMode="single"
+						selection="#{cregchList.selectedCreg}" rowKey="#{creg.id}"
+						rowsPerPageTemplate="5,10,15" lazy="true">
+						<f:facet name="header">
+							<h:outputText value="有限公司变更登记" style="font-size:32px;" />
+						</f:facet>
+
+						<p:column sortBy="#{creg.cname}" headerText="公司名称"
+							style="width:260px"
+							styleClass="#{(creg.capprove eq '已受理' and cregchList.admin)?'fn_red':'fn_black'}">
+							<h:commandLink
+								rendered="#{(not cregchList.admin and (creg.capprove eq '保存' or creg.capprove eq '已退回' or creg.capprove eq '核名通过')) or ((creg.capprove eq '已受理' or creg.capprove eq '审核中')  and  (creg.transport eq loginUser.user.loginId)) }"
+								value="#{creg.cname}" action="#{cregBean.openpage('creg')}"
+								target="_blank"
+								styleClass="#{(creg.capprove eq '已受理' and cregchList.admin)?'fn_red':'fn_black'}">
+								<f:param name="cregchid" value="#{creg.id}" />
+							</h:commandLink>
+							<h:outputText value="#{creg.cname}"
+								rendered="#{not((not cregchList.admin and (creg.capprove eq '保存' or creg.capprove eq '已退回' or creg.capprove eq '核名通过')) or ((creg.capprove eq '已受理' or creg.capprove eq '审核中')  and  (creg.transport eq loginUser.user.loginId)))}" />
+						</p:column>
+						<p:column sortBy="capptime" headerText="申请日期" style="width:80px"
+							styleClass="#{(creg.capprove eq '已受理' and cregchList.admin)?'fn_red':'fn_black'}">
+							<h:outputText value="#{creg.capptime}">
+								<f:convertDateTime pattern="yyyy/MM/dd" locale="en_SG"
+									timeZone="GMT+8" />
+							</h:outputText>
+						</p:column>
+						<p:column sortBy="#{creg.capprove}" headerText="状态"
+							style="width:80px"
+							styleClass="#{(creg.capprove eq '已受理' and cregchList.admin)?'fn_red':'fn_black'}">
+							<h:outputText value="#{creg.capprove}" />
+						</p:column>
+						<p:column sortBy="#{creg.jingshou}" headerText="审核人"
+							style="width:80px"
+							styleClass="#{(creg.capprove eq '已受理' and cregchList.admin)?'fn_red':'fn_black'}">
+							<h:outputText value="#{creg.jingshou}" />
+						</p:column>
+						<p:column headerText="操作" rendered="#{not cregchList.admin}"
+							style="text-align:center;width:180px;">
+							<p:commandButton value="提交"
+								style="width:70px;margin:0;float:left;"
+								rendered="#{creg.capprove eq '保存'}" update="formone"
+								action="#{cregchList.commit}" oncomplete="PF('welcome').show">
+								<f:setPropertyActionListener value="#{creg}"
+									target="#{cregchList.selectedCreg}" />
+							</p:commandButton>
+							<p:commandButton value="预览"
+								onclick="setText('note','正在生成和转换文档，请稍候......')"
+								style="width:70px;margin:0;float:left;"
+								rendered="#{creg.capprove ne '已生成' and creg.capprove ne '预审通过' }"
+								update="formone" action="#{cregchList.preview}">
+								<p:ajaxStatus onstart="PF('statusDialog').show()"
+									onsuccess="PF('statusDialog').hide()" />
+								<f:setPropertyActionListener value="#{creg}"
+									target="#{cregchList.selectedCreg}" />
+								<p:confirm header="注意"
+									message="注意：点击预览后下载生成的文档，该文档不是正式文档，只做参考用，不能用于到窗口办理业务"
+									icon="ui-icon-alert" />
+							</p:commandButton>
+							<p:link styleClass="s_icon"
+								rendered="#{creg.cno ne null and creg.cno ne ''}"
+								target="_blank"
+								href="/userspace/#{cregchList.currentUser.loginId}/#{creg.cname}_变更.zip"
+								value="."></p:link>
+
+							<p:commandButton value="生成"
+								onclick="setText('note','正在生成和转换文档，大约需要1分钟，请稍候......')"
+								style="width:70px;margin:0;float:left;"
+								rendered="#{creg.capprove eq '预审通过'}" update="formone"
+								action="#{cregchList.generate}">
+								<p:ajaxStatus onstart="PF('statusDialog').show()"
+									onsuccess="PF('statusDialog').hide()" />
+								<f:setPropertyActionListener value="#{creg}"
+									target="#{cregchList.selectedCreg}" />
+							</p:commandButton>
+							<p:link rendered="#{creg.capprove eq '已生成'}" target="_blank"
+								href="/userspace/#{cregchList.currentUser.loginId}/#{creg.cname}_变更.zip"
+								value="下载"></p:link>
+						</p:column>
+						<p:column headerText="审批" rendered="#{cregchList.admin}"
+							style="width:140px">
+							<p:commandButton value="退回"
+								style="width:70px;margin:0;float:left;"
+								rendered="#{creg.capprove eq '审核中' and creg.jingshou eq cregchList.currentUser.displayName}"
+								update="formone" action="#{cregchList.reject}">
+								<f:setPropertyActionListener value="#{creg}"
+									target="#{cregchList.selectedCreg}" />
+							</p:commandButton>
+							<p:commandButton value="批准"
+								style="width:70px;margin:0;float:left;"
+								rendered="#{creg.capprove eq '审核中' and creg.jingshou eq cregchList.currentUser.displayName}"
+								update="formone" action="#{cregchList.approve}">
+								<f:setPropertyActionListener value="#{creg}"
+									target="#{cregchList.selectedCreg}" />
+							</p:commandButton>
+						</p:column>
+						<f:facet name="footer">
+							<p:link styleClass="button3" target="_blank" style="width:110px;"
+								href="/registerch/creg.xhtml?cn=1" value="新的登记申请"
+								rendered="#{not loginUser.admin}" />
+						</f:facet>
+					</p:dataTable>
+				</div>
+				<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+					<p:commandButton value="确定" type="button"
+						styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+					<p:commandButton value="取消" type="button"
+						styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+				</p:confirmDialog>
+
+				<p:dialog visible="#{cregchList.showWelcome}" showHeader="false"
+					widgetVar="welcome" modal="true">
+					<table border="0">
+						<tr align="center">
+							<td><img src="#{request.contextPath}/images/weixiao.png" />
+							</td>
+							<td><span class="bigfont">
+									<p>您的公司变更申请已提交成功！</p>
+									<p>请稍后登录系统查看审批状态</p>
+							</span></td>
+						</tr>
+						<tr align="center">
+							<td colspan="2"><p:commandButton value="确定"
+									immediate="true" onclick="PF('welcome').hide()" /></td>
+						</tr>
+					</table>
+				</p:dialog>
+
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>
+

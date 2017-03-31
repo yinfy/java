@@ -1,0 +1,101 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/webpage.xhtml">
+
+	<ui:define name="content">
+		<div align="center">
+
+			<h:form id="formone">
+				<p:growl id="ajaxmsg" />
+
+				<div align="left">
+					<p:fieldset legend="输入查询条件" id="filterPanel" collapsed="false"
+						widgetVar="filter" toggleable="true" toggleSpeed="500">
+						<p:messages id="msgs" />
+						<table>
+							<tr>
+								<td>姓名</td>
+								<td>身份证号</td>
+								<td>日期</td>
+							</tr>
+							<tr>
+								<td><p:inputText id="filterPersonName"
+										value="#{yuyueList.filterPersonName}">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText></td>
+								<td><p:inputText id="filterPersonId"
+										value="#{yuyueList.filterPersonId}">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText></td>
+								<td><p:calendar id="filterOrderdate"
+										value="#{yuyueList.filterOrderdate}" pattern="yyyy/MM/dd"
+										navigator="true" readonlyInput="true" yearRange="c:c+5">
+									</p:calendar></td>
+							</tr>
+						</table>
+						<br />
+						<div align="center">
+							<p:commandButton value="清空" update="formone"
+								actionListener="#{yuyueList.resetUFilter}" immediate="true"
+								resetValues="true" />
+							<p:commandButton value="查询" update="formone"
+								actionListener="#{yuyueList.doUFilter}" />
+						</div>
+					</p:fieldset>
+				</div>
+
+				<div align="center">
+					<p:dataTable id="oneTable" var="yuyue" value="#{yuyueList.model}"
+						paginator="true" rows="10"
+						paginatorTemplate="{RowsPerPageDropdown} {FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}"
+						editable="true" selectionMode="single"
+						selection="#{yuyueList.selectedYuyue}" rowKey="#{yuyue.id}"
+						rowsPerPageTemplate="5,10,15" lazy="true"
+						style="display:#{yuyueList.resulteDisplay}">
+						<p:column sortBy="#{yuyue.ordertype}" headerText="预约类型"
+							style="width:80px">
+							<h:outputText value="#{yuyue.ordertype}" />
+						</p:column>
+						<p:column sortBy="#{yuyue.orderdate}" headerText="预约日期"
+							style="width:100px">
+							<h:outputFormat value="#{yuyue.orderdate}">
+								<f:convertDateTime pattern="yyyy/MM/dd/" locale="en_SG"
+									timeZone="GMT+8" />
+							</h:outputFormat>
+						</p:column>
+						<p:column sortBy="#{yuyue.ordertimeNew}" headerText="预约时段"
+							style="width:100px">
+							<h:outputText value="#{yuyue.ordertimeNew}" />
+						</p:column>
+						<p:column sortBy="#{yuyue.orderno}" headerText="预约编号"
+							style="width:100px">
+							<h:commandLink onclick="history.go(0)" value="#{yuyue.orderno}"
+								action="#{yuyueBean.openpage}" target="new_blank">
+								<f:param name="yuyueid" value="#{yuyue.id}" />
+							</h:commandLink>
+						</p:column>
+						<p:column sortBy="#{yuyue.personName}" headerText="姓名"
+							style="width:80px">
+							<h:outputText value="#{yuyue.personName}" />
+						</p:column>
+						<p:column sortBy="#{yuyue.personId}" headerText="身份证号"
+							style="width:120px">
+							<h:outputText value="#{yuyue.personId}" />
+						</p:column>
+						<p:column style="width:32px" headerText="">
+							<p:commandButton value="取消" id="cancelButton" update=":formone"
+								action="#{yuyueList.cancelYuyue}">
+								<f:setPropertyActionListener value="#{yuyue}"
+									target="#{yuyueList.selectedYuyue}" />
+							</p:commandButton>
+						</p:column>
+					</p:dataTable>
+				</div>
+
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>
+

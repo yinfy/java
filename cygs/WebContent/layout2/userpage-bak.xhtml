@@ -1,0 +1,68 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/webpage.xhtml">
+
+	<ui:define name="content">
+		<div align="center" class="pageArea">
+			<div class="leftbar">
+				<div align="center">
+					<p:link styleClass="button3" style="width:110px;"
+						href="/userman/create_user.xhtml" value="个人信息" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/order/index.xhtml" value="我的预约"
+						rendered="#{not loginUser.admin}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="http://211.141.74.198:4333/front/login.html" target="_blank"
+						value="核名" rendered="#{not loginUser.admin}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/intro.xhtml?i=4" value="新的申报"
+						rendered="#{not loginUser.admin}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/register/index.xhtml" value="有限公司申报"
+						rendered="#{not loginUser.admin}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/branch/index.xhtml" value="分公司申报"
+						rendered="#{not loginUser.admin}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/personreg/index.xhtml" value="个人独资申报"
+						rendered="#{not loginUser.admin}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/registerch/index.xhtml" value="有限公司变更"
+						rendered="#{not loginUser.admin}" />
+
+					<p:link styleClass="button3" style="width:110px;"
+						href="/register/index.xhtml" value="有限公司申报"
+						rendered="#{loginUser.admin}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/branch/index.xhtml" value="分公司申报"
+						rendered="#{loginUser.admin}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/personreg/index.xhtml" value="个人独资申报"
+						rendered="#{loginUser.admin}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/registerch/index.xhtml" value="有限公司变更"
+						rendered="#{loginUser.admin}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/order/order_search.xhtml" value="预约查询"
+						rendered="#{loginUser.admin}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/userman/user_manage.xhtml" value="用户管理"
+						rendered="#{loginUser.user.loginId eq 'admin'}" />
+					<p:link styleClass="button3" style="width:110px;"
+						href="/manage/dataoper.xhtml" value="导入导出"
+						rendered="#{loginUser.admin}" />
+					<p:commandButton styleClass="button3"
+						style="margin:0 0 0 0px;width:110px;" action="#{loginUser.logout}"
+						value="退出系统" />
+					<br />
+				</div>
+			</div>
+			<div class="userdesk">
+				<ui:insert name="userdesk" />
+			</div>
+		</div>
+		<div style="clear: both;" />
+	</ui:define>
+</ui:composition>

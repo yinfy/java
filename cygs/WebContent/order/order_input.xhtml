@@ -1,0 +1,106 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/webpage.xhtml">
+
+	<ui:define name="content">
+		<div align="center">
+
+			<h:form id="formone">
+
+				<div>
+					<p:growl id="ajaxMsg" autoUpdate="true" showDetail="true" />
+					<table>
+						<tr height="35">
+							<td>预约类型</td>
+							<td align="left"><p:selectOneMenu id="yuyue_ordertype"
+									value="#{yuyueBean.yuyue.ordertype}">
+									<f:selectItems value="#{selectItems.ordertypes}" />
+								</p:selectOneMenu></td>
+							<td></td>
+						</tr>
+
+						<tr height="35">
+							<td>预约日期</td>
+							<td align="left"><p:fragment autoUpdate="true">
+									<p:calendar locale="zh_CN" disabledWeekends="true"
+										id="orderdate_time" value="#{yuyueBean.yuyue.orderdate}"
+										pattern="yyyy/MM/dd" navigator="true" readonlyInput="true"
+										yearRange="c:c+1">
+										<p:ajax event="dateSelect"
+											listener="#{yuyueBean.onDateSelect}" update="timeseg" />
+									</p:calendar>
+								</p:fragment></td>
+							<td>可以预约3日后10日内的时间，不能预约周六周日</td>
+						</tr>
+
+						<tr height="35">
+							<td>预约时段</td>
+							<td align="left"><h:panelGrid columns="1"
+									style="margin-bottom:10px" cellpadding="5">
+									<p:selectOneRadio id="timeseg"
+										value="#{yuyueBean.yuyue.ordertime}" layout="grid" columns="1">
+										<f:selectItem
+											itemLabel="8:30~9:30,设立[#{yuyueBean.times['9~10'][0]}人], 变更[#{yuyueBean.times['9~10'][1]}人]"
+											itemValue="9~10" />
+										<f:selectItem
+											itemLabel="9:30~10:30,设立[#{yuyueBean.times['10~11'][0]}人], 变更[#{yuyueBean.times['10~11'][1]}人]"
+											itemValue="10~11" />
+										<f:selectItem
+											itemLabel="10:30~11:30,设立[#{yuyueBean.times['11~12'][0]}人], 变更[#{yuyueBean.times['11~12'][1]}人]"
+											itemValue="11~12" />
+										<f:selectItem
+											itemLabel="13:30~14:30,设立[#{yuyueBean.times['13~14'][0]}人], 变更[#{yuyueBean.times['13~14'][1]}人]"
+											itemValue="13~14" />
+										<f:selectItem
+											itemLabel="14:30~15:30,设立[#{yuyueBean.times['14~15'][0]}人], 变更[#{yuyueBean.times['14~15'][1]}人]"
+											itemValue="14~15" />
+									</p:selectOneRadio>
+								</h:panelGrid></td>
+							<td>选择一个时间段预约</td>
+						</tr>
+
+						<tr height="35">
+							<td>预约人姓名</td>
+							<td align="left"><p:inputText id="Yuyue_personName"
+									value="#{yuyueBean.yuyue.personName}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText></td>
+							<td>请务必输入真实的办事人员姓名</td>
+						</tr>
+
+						<tr height="35">
+							<td>身份证号</td>
+							<td align="left"><p:inputText id="Yuyue_personId"
+									value="#{yuyueBean.yuyue.personId}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText></td>
+							<td>请务必输入真实的办事人员身份证号码</td>
+						</tr>
+
+						<tr height="35">
+							<td>手机号码</td>
+							<td align="left"><p:inputText id="Yuyue_mobile"
+									value="#{yuyueBean.yuyue.mobile}">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <br /></td>
+							<td>请务必输入真实的办事人员手机号码</td>
+						</tr>
+					</table>
+				</div>
+				<div style="display: #{yuyueBean.response ne ''?'block':'none'">
+					<h1 style="color: red; font-weight: bold;">#{yuyueBean.response}</h1>
+				</div>
+				<div style="display: #{yuyueBean.responseMsg ne ''?'block':'none'">
+					<h1 style="color: red; font-weight: bold;">#{yuyueBean.responseMsg}</h1>
+				</div>
+				<div style="display: #{yuyueBean.response eq ''?'block':'none'">
+					<p:commandButton value="确定" id="saveButton" update=":formone"
+						actionListener="#{yuyueBean.saveData}">
+					</p:commandButton>
+				</div>
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>

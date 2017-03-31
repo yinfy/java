@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="../layout/layout.xhtml">
+	<ui:define name="content">
+		<h:form id="formone">
+			<p:messages id="ajaxmsg" showDetail="true" autoUpdate="true"
+				closable="true" />
+			<p:selectOneMenu value="#{cregBean.currentPage}"
+				style="display:none;">
+				<f:selectItem itemValue="heming" itemLabel="heming" />
+			</p:selectOneMenu>
+
+			<div class="WordSection1" style='layout-grid: 15.6pt'>
+
+				<p class="MsoBodyTextIndent2" align="center"
+					style='margin: 0cm; margin-bottom: .0001pt; text-align: center; line-height: normal'>
+					<b><span lang="EN-US"
+						style='font-size: 18.0pt; font-family: 宋体'>&nbsp;</span></b>
+				</p>
+
+				<p class="MsoBodyTextIndent2" align="center"
+					style='margin: 0cm; margin-bottom: .0001pt; text-align: center; line-height: normal'>
+					<b><span style='font-size: 18.0pt; font-family: 宋体'>公司名称预先核准申请书</span></b>
+				</p>
+
+				<p class="MsoNormal" align="center"
+					style='text-align: center; line-height: 35.0pt; text-autospace: none'>
+					<b><span style='font-family: 宋体'>注：</span></b><span
+						style='font-family: 宋体'>请仔细阅读本申请书《填写说明》，按要求填写。</span>
+				</p>
+
+				<div align="center">
+
+					<table class="MsoNormalTable" border="0" cellspacing="0"
+						cellpadding="0" width="678"
+						style='width: 508.2pt; border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm'>
+						<tr
+							style='mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 22.7pt'>
+							<td width="678" colspan="5"
+								style='width: 508.2pt; border: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.7pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<b><span style='font-size: 14.0pt; font-family: 黑体'>□企业设立名称预先核准<span
+											lang="EN-US"><span style='mso-spacerun: yes'>&nbsp;
+											</span></span></span></b>
+								</p>
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 1; height: 22.05pt'>
+							<td width="168"
+								style='width: 126.0pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.05pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>*申请企业名称</span>
+								</p>
+							</td>
+							<td width="510" align="left" colspan="4"
+								style='width: 382.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 22.05pt'>
+								<p:fragment>
+									<p:inputText id="Companyreg_cname1" styleClass="sysfont"
+										value="#{cregBean.creg.cname1}" style="width:390px;">
+										<f:converter converterId="gov.cygs.ConValidator" />
+									</p:inputText>
+									<p:selectBooleanButton id="cnameOpt1" styleClass="sysfont"
+										value="#{cregBean.creg.cnameOpt1}"
+										rendered="#{cregBean.admin}" onLabel="批准" offLabel="不批准"
+										style="width:90px;" onIcon="ui-icon-check"
+										offIcon="ui-icon-close">
+										<p:ajax update="formone"
+											listener="#{cregBean.NameOptionChange}" />
+									</p:selectBooleanButton>
+									<p:watermark for="Companyreg_cname1" value="输入申请企业名称"
+										id="watermark1" />
+									<p:message for="Companyreg_cname1" />
+								</p:fragment>
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 2; height: 21.7pt'>
+							<td width="168" rowspan="5"
+								style='width: 126.0pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 21.7pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>备选企业字号</span>
+								</p>
+							</td>
+							<td width="510" colspan="4" align="left"
+								style='width: 382.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 21.7pt'>
+								*1. <p:inputText id="Companyreg_cname2" styleClass="sysfont"
+									value="#{cregBean.creg.cname2}" style="width:368px;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:selectBooleanButton id="cnameOpt2" styleClass="sysfont"
+									value="#{cregBean.creg.cnameOpt2}" rendered="#{cregBean.admin}"
+									onLabel="批准" offLabel="不批准" style="width:90px;"
+									onIcon="ui-icon-check" offIcon="ui-icon-close">
+									<p:ajax update="formone"
+										listener="#{cregBean.NameOptionChange}" />
+								</p:selectBooleanButton> <p:watermark for="Companyreg_cname2" value="输入备选企业名称"
+									id="watermark2" /> <p:message for="Companyreg_cname2" />
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 3; height: 20.65pt'>
+							<td width="510" colspan="4" align="left"
+								style='width: 382.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 20.65pt'>2.
+
+								<p:inputText id="Companyreg_cname3" styleClass="sysfont"
+									value="#{cregBean.creg.cname3}" style="width:376px;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:selectBooleanButton id="cnameOpt3" styleClass="sysfont"
+									value="#{cregBean.creg.cnameOpt3}" rendered="#{cregBean.admin}"
+									onLabel="批准" offLabel="不批准" style="width:90px;"
+									onIcon="ui-icon-check" offIcon="ui-icon-close">
+									<p:ajax update="formone"
+										listener="#{cregBean.NameOptionChange}" />
+								</p:selectBooleanButton> <p:watermark for="Companyreg_cname3" value="输入备选企业名称"
+									id="watermark3" /> <p:message for="Companyreg_cname3" />
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 4; height: 20.95pt'>
+							<td width="510" colspan="4" align="left"
+								style='width: 382.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 20.95pt'>3.
+
+								<p:inputText id="Companyreg_cname4" styleClass="sysfont"
+									value="#{cregBean.creg.cname4}" style="width:376px;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:selectBooleanButton id="cnameOpt4" styleClass="sysfont"
+									value="#{cregBean.creg.cnameOpt4}" rendered="#{cregBean.admin}"
+									onLabel="批准" offLabel="不批准" style="width:90px;"
+									onIcon="ui-icon-check" offIcon="ui-icon-close">
+									<p:ajax update="formone"
+										listener="#{cregBean.NameOptionChange}" />
+								</p:selectBooleanButton> <p:watermark for="Companyreg_cname4" value="输入备选企业名称"
+									id="watermark4" /> <p:message for="Companyreg_cname4" />
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 5; height: 21.2pt'>
+							<td width="510" colspan="4" align="left"
+								style='width: 382.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 21.2pt'>4.
+								<p:inputText id="Companyreg_cname5" styleClass="sysfont"
+									value="#{cregBean.creg.cname5}" style="width:376px;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:selectBooleanButton id="cnameOpt5" styleClass="sysfont"
+									value="#{cregBean.creg.cnameOpt5}" rendered="#{cregBean.admin}"
+									onLabel="批准" offLabel="不批准" style="width:90px;"
+									onIcon="ui-icon-check" offIcon="ui-icon-close">
+									<p:ajax update="formone"
+										listener="#{cregBean.NameOptionChange}" />
+								</p:selectBooleanButton> <p:watermark for="Companyreg_cname5" value="输入备选企业名称"
+									id="watermark5" /> <p:message for="Companyreg_cname5" />
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 6; height: 20.75pt'>
+							<td width="510" colspan="4" align="left"
+								style='width: 382.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 20.75pt'>5.
+								<p:inputText id="Companyreg_cname6" styleClass="sysfont"
+									value="#{cregBean.creg.cname6}" style="width:376px;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:selectBooleanButton id="cnameOpt6" styleClass="sysfont"
+									value="#{cregBean.creg.cnameOpt6}" rendered="#{cregBean.admin}"
+									onLabel="批准" offLabel="不批准" style="width:90px;"
+									onIcon="ui-icon-check" offIcon="ui-icon-close">
+									<p:ajax update="formone"
+										listener="#{cregBean.NameOptionChange}" />
+								</p:selectBooleanButton> <p:watermark for="Companyreg_cname6" value="输入备选企业名称"
+									id="watermark6" /> <p:message for="Companyreg_cname6" />
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 7; height: 20.75pt'>
+							<td
+								style='border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 0cm 0cm 0cm; height: 20.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span
+										style='font-family: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"'>核准的名称</span>
+								</p>
+							</td>
+							<td width="510" colspan="4"
+								style='width: 382.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 20.75pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span lang="EN-US" style='font-family: 宋体'> <h:outputText
+											id="Companyreg_cname" styleClass="sysfont"
+											value="#{cregBean.creg.cname}" style="width:100%;" />
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 8; height: 20.75pt'>
+							<td
+								style='border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 0cm 0cm 0cm; height: 20.75pt'>
+								<p class="MsoNormal" align="center" style='text-align: center'>
+									<span
+										style='font-family: 宋体; mso-ascii-font-family: "Times New Roman"; mso-hansi-font-family: "Times New Roman"'>名称预先核准文号</span>
+								</p>
+							</td>
+							<td width="510" colspan="4" align="left"
+								style='width: 382.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 20.75pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span lang="EN-US" style='font-family: 宋体'> <h:outputText
+											value="#{cregBean.creg.cnameno}" styleClass="sysfont"
+											rendered="#{not cregBean.admin}" style="width:100%;" /> <p:inputText
+											id="Companyreg_cnameno" styleClass="sysfont"
+											rendered="#{cregBean.admin and  cregBean.namePassed}"
+											value="#{cregBean.creg.cnameno}" style="width:386px;">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputText> <p:watermark for="Companyreg_cnameno" value="输入预先核准文号"
+											id="watermark10" /> <p:message for="Companyreg_cnameno" />
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 9; height: 40.35pt'>
+							<td width="168"
+								style='width: 126.0pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 40.35pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>*企业住所地</span>
+								</p>
+							</td>
+							<td width="510" colspan="4"
+								style='width: 382.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 40.35pt'>
+								吉林省长春市朝阳区 <p:inputText id="Companyreg_haddress"
+									styleClass="sysfont" value="#{cregBean.creg.haddress}"
+									style="width:300px;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Companyreg_haddress" value="输入公司地址"
+									id="watermark7" /> <p:message for="Companyreg_haddress" />
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 10; height: 38.45pt'>
+							<td width="168"
+								style='width: 126.0pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.45pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>*注册资本</span>
+								</p>
+							</td>
+							<td width="156"
+								style='width: 116.65pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.45pt'>
+								<p:inputText id="Companyreg_capital" styleClass="sysfont"
+									value="#{cregBean.creg.capital}"
+									style="text-align:right; width:100px;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> 万元
+							</td>
+							<td width="92"
+								style='width: 69.3pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.45pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>公司类型</span>
+								</p>
+							</td>
+							<td width="262" colspan="2"
+								style='width: 196.25pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 38.45pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>有限责任公司</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 11; height: 112.0pt'>
+							<td width="168"
+								style='width: 126.0pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 112.0pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>经营范围</span>
+								</p>
+							</td>
+							<td width="510" colspan="4"
+								style='width: 382.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 112.0pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-indent: 5.25pt; text-autospace: none'>
+									<span lang="EN-US" style='font-family: 宋体'> <p:inputTextarea
+											id="Companyreg_crange2" styleClass="sysfont" rows="8"
+											cols="58" value="#{cregBean.creg.crange}"
+											counter="crange_remain" maxlength="500"
+											counterTemplate="还可输入{0}字 ." autoResize="false">
+											<f:converter converterId="gov.cygs.ConValidator" />
+										</p:inputTextarea> <br /> <p:watermark for="Companyreg_crange2"
+											value="输入至少首项经营范围" /> <h:outputText id="crange_remain" />
+										<p:message for="Companyreg_crange2" />
+
+									</span>
+								</p>
+							</td>
+						</tr>
+
+						<tr style='mso-yfti-irow: 24; mso-yfti-lastrow: yes'>
+							<td width="168" style='width: 126.0pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="156" style='width: 117.0pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="92" style='width: 69.0pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="7" style='width: 5.25pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="255" style='width: 191.25pt; padding: 0cm 0cm 0cm 0cm'></td>
+						</tr>
+					</table>
+				</div>
+
+				<span lang="EN-US"
+					style='font-size: 10.5pt; font-family: "Times New Roman", "serif"; mso-fareast-font-family: 宋体; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA'><br
+					clear="all" style='page-break-before: always' /> </span>
+
+				<p class="MsoNormal" align="center" style='text-align: center'>
+					<span lang="EN-US">&nbsp;</span>
+				</p>
+
+				<p class="MsoNormal" align="center" style='text-align: center'>
+					<span lang="EN-US">&nbsp;</span>
+				</p>
+
+				<div align="center">
+
+					<table class="MsoNormalTable" border="0" cellspacing="0"
+						cellpadding="0" width="678"
+						style='width: 508.65pt; border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 0cm 0cm 0cm'>
+						<tr
+							style='mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 12.45pt'>
+							<td width="678" colspan="9"
+								style='width: 508.65pt; border: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.45pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<b><span style='font-size: 14.0pt; font-family: 黑体'>指定代表或者共同委托代理人</span></b>
+								</p>
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 11; height: 25.4pt'>
+							<td width="111"
+								style='width: 83.4pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.4pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>具体经办</span>
+								</p>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-autospace: none'>
+									<span style='font-family: 宋体'>人姓名</span>
+								</p>
+							</td>
+							<td width="106" colspan="2"
+								style='width: 79.65pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.4pt'>
+								<h:inputText id="Companyreg_authDname2" styleClass="sysfont"
+									value="#{cregBean.creg.authDname2}" style="width:60px;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</h:inputText> <p:watermark for="Companyreg_authDname2" value="输入姓名"
+									id="watermark8" /> <h:message for="Companyreg_authDname2" />
+							</td>
+							<td width="85"
+								style='width: 63.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.4pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-indent: 5.25pt; text-autospace: none'>
+									<span style='font-family: 宋体'>身份证</span>
+								</p>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-indent: 5.25pt; text-autospace: none'>
+									<span style='font-family: 宋体'>件号码</span>
+								</p>
+							</td>
+							<td width="161" colspan="2"
+								style='width: 120.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.4pt'>
+								<h:inputText id="Companyreg_authIdno2" styleClass="sysfont"
+									value="#{cregBean.creg.authIdno2}" style="width:160px;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</h:inputText> <p:watermark for="Companyreg_authIdno2" value="输入证件号码"
+									id="watermark9" /> <h:message for="Companyreg_authIdno2" />
+
+							</td>
+							<td width="76" colspan="2"
+								style='width: 2.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.4pt'>
+								<p class="MsoNormal" align="center"
+									style='margin-right: -5.35pt; text-align: center; text-indent: -5.35pt; text-autospace: none'>
+									<span style='font-family: 宋体'>联系电话</span>
+								</p>
+							</td>
+							<td width="140"
+								style='width: 104.65pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.4pt'>
+
+								<p:inputText id="Companyreg_authMobile2" styleClass="sysfont"
+									value="#{cregBean.creg.authMobile2}" style="width:150px;">
+									<f:converter converterId="gov.cygs.ConValidator" />
+								</p:inputText> <p:watermark for="Companyreg_authMobile2" value="输入手机号码" /> <p:message
+									for="Companyreg_authMobile2" />
+
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 12; height: 25.4pt'>
+							<td width="111"
+								style='width: 83.4pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.4pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; layout-grid-mode: char; text-autospace: none'>
+									<span style='font-family: 宋体'>授权期限</span>
+								</p>
+							</td>
+							<td width="567" colspan="8"
+								style='width: 15.0cm; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.4pt'>
+								<p class="MsoNormal" align="center"
+									style='text-align: center; text-indent: 5.25pt; text-autospace: none'>
+									<span style='font-family: 宋体'>自 <p:calendar
+											locale='zh_CN' styleClass="sysfont"
+											value="#{cregBean.creg.authDateb2}" pattern="yyyy年M月d日"
+											navigator="true" readonlyInput="true" yearRange="c-1:c+1" />
+										至 <p:calendar locale='zh_CN' styleClass="sysfont"
+											value="#{cregBean.creg.authDatee2}" pattern="yyyy年M月d日"
+											navigator="true" readonlyInput="true" yearRange="c-1:c+1" />
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 13; height: 25.4pt'>
+							<td align="left" width="678" colspan="9"
+								style='width: 508.65pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 25.4pt'>
+								授权权限 <br /> 1、<p:inputSwitch styleClass="sysfont" onLabel="同意"
+									offLabel="不同意" value="#{cregBean.creg.authOpt17}"
+									style="width:60px;" /> 核对登记材料中的复印件并签署核对意见； <br /> 2、<p:inputSwitch
+									styleClass="sysfont" onLabel="同意" offLabel="不同意"
+									value="#{cregBean.creg.authOpt18}" style="width:60px;" />
+								修改有关表格的填写错误； <br /> 3、<p:inputSwitch styleClass="sysfont"
+									onLabel="同意" offLabel="不同意" value="#{cregBean.creg.authOpt19}"
+									style="width:60px;" /> 领取《企业名称预先核准通知书》。
+
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 14; height: 158.8pt'>
+							<td width="678" colspan="9"
+								style='width: 508.65pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 158.8pt'>
+								<p class="New" align="center"
+									style='text-align: center; layout-grid-mode: char'>
+									<span style='font-size: 12.0pt; font-family: 宋体'>（指定代表或委托代理人、具体经办人身份证件粘贴处）</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 15; height: 147.65pt'>
+							<td width="142" colspan="2"
+								style='width: 106.35pt; border-top: none; border-left: solid windowtext 1.5pt; border-bottom: solid windowtext 1.5pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 147.65pt'>
+								<p class="New" align="center"
+									style='text-align: center; layout-grid-mode: char'>
+									<span style='font-size: 12.0pt; font-family: 宋体'>申请人</span>
+								</p>
+								<p class="New" align="center"
+									style='text-align: center; layout-grid-mode: char'>
+									<span style='font-size: 12.0pt; font-family: 宋体'>签字或盖章</span>
+								</p>
+							</td>
+							<td width="536" colspan="7"
+								style='width: 402.3pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.5pt; border-right: solid windowtext 1.5pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 147.65pt'>
+								<p class="New" align="center"
+									style='text-align: center; layout-grid-mode: char; word-break: break-all'>
+									<span lang="EN-US" style='font-size: 12.0pt; font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="New" align="center"
+									style='text-align: center; layout-grid-mode: char'>
+									<span lang="EN-US" style='font-size: 12.0pt; font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="New" align="center"
+									style='text-align: center; layout-grid-mode: char'>
+									<span lang="EN-US" style='font-size: 12.0pt; font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="New" align="center"
+									style='text-align: center; layout-grid-mode: char'>
+									<span lang="EN-US" style='font-size: 12.0pt; font-family: 宋体'>&nbsp;</span>
+								</p>
+								<p class="New" align="right"
+									style='text-align: right; layout-grid-mode: char; word-break: break-all'>
+									<span style='font-size: 12.0pt; font-family: 宋体'> <p:calendar
+											locale="zh_CN" styleClass="sysfont"
+											value="#{cregBean.creg.authDate2}" pattern="yyyy年M月d日"
+											navigator="true" readonlyInput="true" yearRange="c-1:c+1" />
+
+									</span>
+								</p>
+							</td>
+						</tr>
+						<tr style='mso-yfti-irow: 16; mso-yfti-lastrow: yes'>
+							<td width="111" style='width: 83.25pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="31" style='width: 23.25pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="76" style='width: 57.0pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="85" style='width: 63.75pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="77" style='width: 57.75pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="83" style='width: 62.25pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="2" style='width: 1.5pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="74" style='width: 55.5pt; padding: 0cm 0cm 0cm 0cm'></td>
+							<td width="140" style='width: 105.0pt; padding: 0cm 0cm 0cm 0cm'></td>
+						</tr>
+					</table>
+
+				</div>
+
+				<p class="MsoNormal" align="center" style='text-align: center'>
+					<span lang="EN-US">&nbsp;</span>
+				</p>
+
+				<p:panel style="width:508.2pt;text-align:center; margin:0 auto;"
+					id="comment" rendered="#{cregBean.admin}">
+					<p:inputTextarea id="Companyreg_comment9" style="text-align:left;"
+						rows="8" cols="58" value="#{cregBean.creg.comment9}"
+						counter="comment_remain" maxlength="150"
+						counterTemplate="还可输入{0}字 ." autoResize="false">
+						<f:converter converterId="gov.cygs.ConValidator" />
+					</p:inputTextarea>
+					<br />
+					<h:outputText id="comment_remain" />
+					<p:message for="Companyreg_comment9" />
+				</p:panel>
+				<p:panel style="width:508.2pt;text-align:center; margin:0 auto;"
+					id="commentuser"
+					rendered="#{not cregBean.admin and cregBean.creg.comment9 ne null and cregBean.creg.comment9 ne '' }">
+					<h:outputText value="#{cregBean.creg.comment9}"
+						style="width:100%;color:red;" />
+				</p:panel>
+			</div>
+
+			<p:commandButton action="#{cregBean.saveData('heming')}" value="保存"
+				update="formone" />
+			<h:commandLink styleClass="button3" value="下一步"
+				action="#{cregBean.openpage('share_name')}">
+				<f:param name="cregid" value="#{cregBean.creg.id}" />
+			</h:commandLink>
+
+		</h:form>
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,54 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" template="/layout/webpage.xhtml">
+
+	<ui:define name="content">
+		<div align="center" class="pageArea">
+			<div class="panelBlock">
+				<p:panel header="选择网上登记事项" styleClass="panelBlock">
+由于系统刚刚开通，暂时只提供不设董事会的有限公司设立登记业务，其他登记类型还在研发中，请到登记窗口进行实地办理。
+</p:panel>
+			</div>
+			<div class="arrowBlock" />
+
+			<div class="panelBlock">
+				<p:panel header="电子表格填写" styleClass="panelBlock">
+根据提示填写电子表格
+</p:panel>
+			</div>
+			<div class="arrowBlock" />
+
+			<div class="panelBlock">
+				<p:panel header="初审、修改" styleClass="panelBlock">
+					<ul>
+						<li>提交表格，等待审核</li>
+						<li>审核不通过，根据标注内容修改表格，再次提交</li>
+					</ul>
+	（注：初审及修改时限为两个工作日，如两个工作日内示完成初审，请咨询电话：89617540）
+</p:panel>
+			</div>
+			<div class="arrowBlock" />
+
+			<div class="panelBlock">
+				<p:panel header="预约登记" styleClass="panelBlock">
+可通过“网上预约”预约现场办理时间，带齐材料与表格进行现场确认 <br />
+（注：表格打印未完成后请于15日内到登记窗口进行现场确认，逾期未进行现场确认，表格及初审自动作废）
+</p:panel>
+			</div>
+			<div class="arrowBlock" />
+
+			<div class="panelBlock">
+				<p:panel header="现场确认" styleClass="panelBlock">
+请带好材料到现场确认 <br />
+具体事项详见表格最后一页。
+</p:panel>
+			</div>
+		</div>
+
+		<div style="clear: both;">
+			<br />
+		</div>
+	</ui:define>
+</ui:composition>
