@@ -66,7 +66,7 @@ try{
 		String passvalue=null;
 		passvalue=Utils.getAttribute("individ");
 		String passvalue_para=Utils.getParam("individ");
-		if(passvalue_para!=null && (Integer.parseInt(passvalue_para)>=0)){
+		if(passvalue_para!=null && (Integer.parseInt(passvalue_para)>0)){
 			passvalue = passvalue_para; 
 		}
 		
