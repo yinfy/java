@@ -1322,4 +1322,31 @@ public class Personreg extends EntityImpl  implements Serializable {
 		this.special = special;
 	}
 
+	public boolean isEmptyComments(){
+		boolean isEmpty = true;
+		
+		if(!this.comment1.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment2.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment3.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment4.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment5.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment6.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment7.trim().equals("")){
+			isEmpty = false;
+		}
+		return isEmpty;
+	}	
+
 }

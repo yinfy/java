@@ -2698,7 +2698,50 @@ public class Companyreg extends EntityImpl implements Serializable {
 		return comment13;
 	}
 
-
+	public boolean isEmptyComments(){
+		boolean isEmpty = true;
+		
+		if(!this.comment1.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment2.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment3.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment4.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment5.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment6.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment7.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment8.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment9.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment10.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment11.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment12.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment13.trim().equals("")){
+			isEmpty = false;
+		}
+		return isEmpty;
+	}
 
 	public void setComment13(String comment13) {
 		this.comment13 = comment13;

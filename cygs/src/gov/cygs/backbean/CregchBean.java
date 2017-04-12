@@ -63,6 +63,8 @@ public class CregchBean implements Serializable {
 	private Person selectedPerson;
 	private List<Person> persons;
 	
+	private boolean rejected = false;
+	
 	private boolean admin=false;
 	private boolean namePassed=false;
 	private boolean savePassed=true;
@@ -213,9 +215,15 @@ try{
 	}
 	
 	public String reject(){
+		this.rejected = false;
+		if(this.creg.isEmptyComments()){
+			Utils.addMessage("错误", "未填写任何意见");
+			return "";
+		}		
 		this.saveData("tips");
 		cregchService.updateCreg(this.creg,"已退回");
-		return "/registerch/index";
+		this.rejected = true;
+		return "";
 	}
 
 	public String approve(){
@@ -504,6 +512,14 @@ try{
 
 	public void setConfirmed(boolean confirmed) {
 		this.confirmed = confirmed;
+	}
+
+	public boolean isRejected() {
+		return rejected;
+	}
+
+	public void setRejected(boolean rejected) {
+		this.rejected = rejected;
 	}
 	
 }

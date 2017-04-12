@@ -1355,7 +1355,28 @@ public class Companychg extends EntityImpl implements Serializable {
 			break;
 		}
 		return itemnum;
-		
 	}
+
+	public boolean isEmptyComments(){
+		boolean isEmpty = true;
+		
+		if(!this.comment1.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment2.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment3.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment4.trim().equals("")){
+			isEmpty = false;
+		}
+		if(!this.comment5.trim().equals("")){
+			isEmpty = false;
+		}
+		return isEmpty;
+	}	
+	
 	
 }
