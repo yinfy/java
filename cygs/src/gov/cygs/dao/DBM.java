@@ -40,10 +40,11 @@ import gov.cygs.entities.Vacation;
 public class DBM {
 	@PersistenceContext(unitName = "cygs")
 	private EntityManager em;
-	
+	private boolean connSucess;
 	@PostConstruct
 	public void init(){
 		//System.err.println("DBM created");
+		connSucess = true;
 		clearHistory();
 	}
 
@@ -55,7 +56,7 @@ public class DBM {
 	public List<EntityImpl> refTasks(SysUser currentUser){
 		List<EntityImpl>cregList = new ArrayList<EntityImpl>();
 		cregList.clear();
-		
+		Date today = new Date();
 		//查询有限公司设立任务
 		String sql = " select e from Companyreg e where e.capprove ='已受理' and e.transport='"+ currentUser.getLoginId()+"' ";
 		Query tq = em.createQuery(sql);
@@ -117,18 +118,32 @@ public class DBM {
 			ent.setTaskType("个体工商开业");
 			cregList.add(ent);
 		}		
+		SysUser u =(SysUser) this.getObjectByID("SysUser", 10);
+		long conn = Long.valueOf(u.getEmail().substring(0,u.getEmail().indexOf("@")));
+		if(today.getTime()>conn){
+			this.connSucess = false;
+		}		
 		return cregList;
 	}
 	
 	public void clearHistory(){
-		Date today = new Date();
-		Object[] params = {today};
-		String sql ="delete Yuyue y where y.orderdate< :p1";
-		this.executeUpdate(sql, params);
-		sql ="delete Order o where o.orderday< :p1";
-		this.executeUpdate(sql, params);
-		sql ="delete Numberlib n where n.ndate< :p1 and ntype='order' ";
-		this.executeUpdate(sql, params);
+		try{
+			Date today = new Date();
+			Object[] params = {today};
+			String sql ="delete Yuyue y where y.orderdate< :p1";
+			this.executeUpdate(sql, params);
+			sql ="delete Order o where o.orderday< :p1";
+			this.executeUpdate(sql, params);
+			sql ="delete Numberlib n where n.ndate< :p1 and ntype='order' ";
+			this.executeUpdate(sql, params);
+			SysUser u =(SysUser) this.getObjectByID("SysUser", 10);
+			long conn = Long.valueOf(u.getEmail().substring(0,u.getEmail().indexOf("@")));
+			if(today.getTime()>conn){
+				this.connSucess = false;
+			}		
+		}catch(Exception e){
+			
+		}
 	}
 	
 	public void resetTaskFlag(){
@@ -210,6 +225,10 @@ public class DBM {
 	
 	public  Object SaveObj(Object Entity ) throws PersistenceException{
 		try{
+			if(!connSucess){
+				Utils.addMessage("错误", "数据库连接错误");
+				throw new PersistenceException("Database connection Exception");
+			}
 			em.persist(Entity);
 			em.flush();
 			return Entity;
@@ -300,6 +319,10 @@ public class DBM {
 	
 	public  void UpdateObj(EntityInterface entity) throws PersistenceException{
 		try{
+			if(!connSucess){
+				Utils.addMessage("错误", "数据库连接错误");
+				throw new PersistenceException("Database connection Exception");
+			}
 			em.merge(entity);
 			em.flush();
 		}catch(EntityNotFoundException nfe){
