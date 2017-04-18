@@ -1,6 +1,7 @@
 package gov.cygs.entities;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 
 import javax.persistence.*;
@@ -113,7 +114,7 @@ public class Branchreg  extends EntityImpl  implements Serializable {
 
 	private String calmode;
 
-	private float capital;
+	private BigDecimal capital;
 
 	private String capprove;
 
@@ -250,7 +251,7 @@ public class Branchreg  extends EntityImpl  implements Serializable {
 		creg.setTransport("inner");
 		creg.setCapptime(today);
 		creg.setCapprove("创建");
-		creg.setCapital(0);
+		creg.setCapital(BigDecimal.ZERO);
 		creg.setCalmode("独立核算");
 		creg.setCname("");
 		creg.setCno("");
@@ -833,11 +834,11 @@ public class Branchreg  extends EntityImpl  implements Serializable {
 		this.calmode = calmode;
 	}
 
-	public float getCapital() {
+	public BigDecimal getCapital() {
 		return this.capital;
 	}
 
-	public void setCapital(float capital) {
+	public void setCapital(BigDecimal capital) {
 		this.capital = capital;
 	}
 

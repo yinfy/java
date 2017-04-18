@@ -20,6 +20,7 @@ import java.util.Locale;
 import java.util.Set;
 import java.util.UUID;
 import java.lang.reflect.Field;
+import java.math.BigDecimal;
 
 
 
@@ -152,7 +153,7 @@ public class Companyreg extends EntityImpl implements Serializable {
 
 	protected String caddress;
 
-	protected float capital;
+	protected BigDecimal capital;
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	protected Date capptime;
@@ -1119,13 +1120,13 @@ public class Companyreg extends EntityImpl implements Serializable {
 			int modSize=0;
 			List<Shmode> shmodes=sh.getShmodes();
 			for(Shmode mod:shmodes){
-				if(mod.getShamount()<=0){
+				if(mod.getShamount().doubleValue()<=0){
 					continue;
 				}
 				modSize++;
 			}
 			for(Shmode mod:shmodes){
-				if(mod.getShamount()<=0){
+				if(mod.getShamount().doubleValue()<=0){
 					continue;
 				}
 				if(modCount==1){
@@ -1171,7 +1172,7 @@ public class Companyreg extends EntityImpl implements Serializable {
 					line = lastLine;
 				}
 				str= line;
-				if(mod.getShamount()>0){
+				if(mod.getShamount().doubleValue()>0){
 					if(modcount==1){
 						str= str.replace("shname", sh.getShname());
 						str = str.replace("shidtype", sh.getShidtype());
@@ -1691,11 +1692,11 @@ public class Companyreg extends EntityImpl implements Serializable {
 		this.caddress = caddress;
 	}
 
-	public float getCapital() {
+	public BigDecimal getCapital() {
 		return this.capital;
 	}
 
-	public void setCapital(float capital) {
+	public void setCapital(BigDecimal capital) {
 		this.capital = capital;
 	}
 

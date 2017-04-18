@@ -3,6 +3,7 @@ package gov.cygs.utils;
 import gov.cygs.ejb.ConverterEJB;
 import gov.cygs.entities.Dictionary;
 
+import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -81,6 +82,9 @@ public class ConValidator implements Converter {
 				case "float":
 					obj= new Float(str);
 					break;
+				case "decimal":
+					obj= new BigDecimal(str);
+					break;
 				case "boolean":
 					obj= new Boolean(str);
 					break;
@@ -130,12 +134,16 @@ public class ConValidator implements Converter {
 		case "float":
 		case "boolean":
 			break;
+		case "decimal":
+			retstr = Utils.numFormat(obj);
+			break;
 		case "datetime":
 			SimpleDateFormat df=new SimpleDateFormat();
 			df.applyPattern("yyyy/MM/dd");
 			if(obj!=null) retstr=df.format(obj);
 			break;
 		}
+		
 		return retstr;
 	}
 	
@@ -262,7 +270,7 @@ public class ConValidator implements Converter {
 			break;
 		case "double":
 		case "float":
-			regex="-?[0-9]+.?[0-9]{0,2}";
+			regex="-?[0-9]+.?[0-9]{0,4}";
 			if(!valueStr.matches(regex) ){
 				errorMsg.add(fldDes+"不是有效的数字格式, 格式为：#########.##");
 			}

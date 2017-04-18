@@ -1,6 +1,7 @@
 package gov.cygs.entities;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 
 import javax.persistence.*;
@@ -68,7 +69,7 @@ public class Indivreg extends EntityImpl  implements Serializable {
 
 	private String caddress;
 
-	private float capital;
+	private BigDecimal capital;
 
 	private String cmode;
 	
@@ -179,7 +180,7 @@ public class Indivreg extends EntityImpl  implements Serializable {
 		creg.setTransport("inner");
 		creg.setCapptime(today);
 		creg.setCapprove("创建");
-		creg.setCapital(0);
+		creg.setCapital(BigDecimal.ZERO);
 		creg.setCmode("个人经营");
 		creg.setCname("");
 		creg.setCrange("");
@@ -558,11 +559,11 @@ public class Indivreg extends EntityImpl  implements Serializable {
 		this.caddress = caddress;
 	}
 
-	public float getCapital() {
+	public BigDecimal getCapital() {
 		return capital;
 	}
 
-	public void setCapital(float capital) {
+	public void setCapital(BigDecimal capital) {
 		this.capital = capital;
 	}
 

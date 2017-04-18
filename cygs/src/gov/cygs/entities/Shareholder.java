@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 import java.lang.reflect.Field;
+import java.math.BigDecimal;
 import java.math.BigInteger;
 
 
@@ -30,7 +31,7 @@ public class Shareholder extends EntityImpl implements Serializable {
 
 	protected String cuuid;
 
-	protected float shamount;
+	protected BigDecimal shamount;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	protected Date shdate;
@@ -89,7 +90,7 @@ public class Shareholder extends EntityImpl implements Serializable {
 		sh.setShname("");
 		sh.setShidno("");
 		sh.setShmethod("货币");
-		sh.setShamount(0);
+		sh.setShamount(BigDecimal.ZERO);
 		sh.setShpercent(0);
 		sh.setShtype("自然人");
 		sh.setShidtype("身份证");
@@ -141,23 +142,23 @@ public class Shareholder extends EntityImpl implements Serializable {
 		this.cuuid = cuuid;
 	}
 
-	public float getShamount() {
-		this.shamount = 0;
-		if(this.shmodes==null) return 0;
+	public BigDecimal getShamount() {
+		this.shamount = BigDecimal.ZERO;
+		if(this.shmodes==null) return BigDecimal.ZERO;
 		for(Shmode shmode: this.shmodes){
-			this.shamount =this.shamount + shmode.getShamount();
+			this.shamount =this.shamount.add( shmode.getShamount());
 		}
 		return this.shamount;
 	}
 
-	public void setShamount(float shamount) {
-		this.shamount = 0;
+	public void setShamount(BigDecimal shamount) {
+		this.shamount = BigDecimal.ZERO;
 		if(this.shmodes==null) {
-			this.shamount = 0;
+			this.shamount =BigDecimal.ZERO;
 			return ;
 		}
 		for(Shmode shmode: this.shmodes){
-			this.shamount =this.shamount + shmode.getShamount();
+			this.shamount =this.shamount.add(shmode.getShamount());
 		}
 		this.shamount = shamount;
 	}

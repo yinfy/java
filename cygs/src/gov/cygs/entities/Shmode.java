@@ -1,6 +1,8 @@
 package gov.cygs.entities;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 import javax.persistence.*;
 
@@ -23,7 +25,7 @@ public class Shmode extends EntityImpl implements Serializable {
 
 	protected String shuuid;
 
-	protected float shamount;
+	protected BigDecimal shamount;
 
 	protected String shmethod;
 
@@ -46,7 +48,7 @@ public class Shmode extends EntityImpl implements Serializable {
 		Shmode sh = this;
 		sh.setShuuid(uuid);
 		sh.setShmethod("货币");
-		sh.setShamount(0);
+		sh.setShamount(BigDecimal.ZERO);
 		sh.setShpercent(0);
 		sh.setUuid(uid.toString());
 		sh.setTransport("inner");
@@ -61,19 +63,19 @@ public class Shmode extends EntityImpl implements Serializable {
 		this.id = id;
 	}
 
-	public float getShamount() {
+	public BigDecimal getShamount() {
 		return this.shamount;
 	}
 
-	public void setShamount(float shamount) {
+	public void setShamount(BigDecimal shamount) {
 		try{
 			this.shamount = shamount;
-			float capital = this.getShareholder().getCompanyreg().getCapital();
+			BigDecimal capital = this.getShareholder().getCompanyreg().getCapital();
 
-			if(capital<=0){
+			if(capital.doubleValue()<=0){
 				this.shpercent = 0;
 			}else{
-				this.shpercent = (shamount/capital) * 100;
+				this.shpercent =((shamount.divide(capital, 4, BigDecimal.ROUND_HALF_UP)).multiply(new BigDecimal(100))).floatValue();
 			}
 		}catch(Exception e){
 		}
@@ -89,11 +91,11 @@ public class Shmode extends EntityImpl implements Serializable {
 
 	public float getShpercent() {
 		try{
-			float capital = this.getShareholder().getCompanyreg().getCapital();
-			if(capital<=0){
+			BigDecimal capital = this.getShareholder().getCompanyreg().getCapital();
+			if(capital.doubleValue()<=0){
 				this.shpercent = 0;
 			}else{
-				this.shpercent = (shamount/capital) * 100;
+				this.shpercent =((shamount.divide(capital, 4, BigDecimal.ROUND_HALF_UP)).multiply(new BigDecimal(100))).floatValue();
 			}
 		}catch(Exception e){
 		}

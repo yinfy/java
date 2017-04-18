@@ -28,6 +28,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.math.BigDecimal;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -226,6 +227,59 @@ public class Utils {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public static String getBalance(){
+		Context ctx;
+		Config config= new Config();
+		try {
+			ctx = new InitialContext();
+			SysConfig sysConfig=(SysConfig) ctx.lookup("java:module/SysConfig!gov.cygs.ejb.SysConfig");
+			config = sysConfig.getConfig();
+			
+			boolean sendSms = config.isSendSms();
+			if(!sendSms) {
+				return "";
+			}
+			
+			String smsUser = config.getSmsUser();
+			String smsPassword = config.getSmsPassword();
+			String smsId = config.getSmsId();
+			// 创建StringBuffer对象用来操作字符串
+			StringBuffer buff = new StringBuffer("http://sdk2.entinfo.cn/webservice.asmx/balance?");
+	
+			// 向StringBuffer追加用户名
+			buff.append("sn="+ smsUser);
+			
+			// smsId = MD5(smsUser +smsPassword);
+			
+			// 向StringBuffer追加密码  //smsId=MD5(sn+password)
+			buff.append("&pwd="+smsId);
+			
+			// 创建url对象
+			URL url = new URL(buff.toString());
+	
+			// 打开url连接
+			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+	
+			// 设置url请求方式 ‘get’ 或者 ‘post’
+			connection.setRequestMethod("POST");
+	
+			// 发送
+			BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+	
+			// 返回发送结果
+			String inputline = in.readLine();
+			inputline = in.readLine();
+			
+			System.err.println("查询短信余额, 结果为："+ inputline);
+			
+			return inputline;
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return "";
 	}
 	
 	public static List<Person> getPersons(Companychg creg){
@@ -1039,6 +1093,18 @@ public class Utils {
 				rstr = String.valueOf(num);
 			}
 		}
+		if(type.equals("BigDecimal")){
+			intv = ((BigDecimal)num).intValue();
+			if(((BigDecimal)num).compareTo(new BigDecimal(intv))==0){
+				rstr = String.valueOf(intv);
+			}else{
+				rstr = ((BigDecimal)num).toString();
+				while(rstr.endsWith("0")){
+					rstr = rstr.substring(0, rstr.length()-1);
+				}
+			}
+		}
+		
 		if(type.equals("Integer")){
 			rstr = String.valueOf(num);
 		}
@@ -1052,6 +1118,9 @@ public class Utils {
 		if(type.equals("Float")){
 			num=(float)(Math.round((float)num*Math.pow(10, prec))/Math.pow(10, prec));
 		}
+		if(type.equals("BigDecimal")){
+			num = ((BigDecimal)num).setScale(prec);
+		}		
 		return numFormat(num);
 	}
     
